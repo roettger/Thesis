@@ -10,7 +10,7 @@ Thematic concepts per year: [https://tinyurl.com/2h8smq2b](https://tinyurl.com/2
 # Chapter VI
 The epistolary novel in diachronic perspective
 
-![The epistolary novel in diachronic perspective]([https://raw.githubusercontent.com/roettger/Thesis/main/Chapter6/epistolary_novels_over_time_procentual.PNG])
+![The epistolary novel in diachronic perspective](https://raw.githubusercontent.com/roettger/Thesis/main/Chapter6/epistolary_novels_over_time_procentual.PNG)
 
 https://tinyurl.com/2zgf7y8h
 
