@@ -1,0 +1,15 @@
+#defaultView:BarChart
+prefix wd:<http://data.mimotext.uni-trier.de/entity/> 
+prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+Select  (str(SAMPLE(year(?date))) as ?year) (count(?themelabel) as ?count) ?themelabel 
+   WHERE{
+   ?item wdt:P36 ?theme.
+   ?theme rdfs:label ?themelabel .
+   ?item wdt:P9 ?date .
+   FILTER(lang(?themelabel) = "en")
+   BIND(str(year(?date)) as ?year)
+   SERVICE wikibase:label {bd:serviceParam wikibase:language "{AUTO_LANGUAGE}","en" .}
+  }
+
+GROUP BY ?themelabel ?year ?count
+having (?count> 1)
