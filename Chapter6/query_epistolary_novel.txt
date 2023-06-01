@@ -1,0 +1,29 @@
+#defaultView:BarChart
+prefix wd:<http://data.mimotext.uni-trier.de/entity/> 
+prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+
+SELECT (str(SAMPLE(year(?date))) as ?year) ((COUNT(?narrativelabel) / ?totalnarrative) * 100 as ?proportion) ?narrativelabel 
+WHERE {
+  {
+    SELECT (COUNT(?narrativelabel) as ?totalnarrative) ?date
+    WHERE {
+      ?item wdt:P33 ?narrative.
+      ?narrative rdfs:label ?narrativelabel.
+      ?item wdt:P9 ?date.
+      FILTER(LANG(?narrativelabel) = "en")
+      BIND(str(year(?date)) as ?year)
+    }
+    GROUP BY ?date
+  }
+  
+  ?item wdt:P33 ?narrative.
+  ?narrative rdfs:label ?narrativelabel.
+  ?item wdt:P9 ?date.
+  FILTER(LANG(?narrativelabel) = "en")
+  BIND(str(year(?date)) as ?year)
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+GROUP BY ?narrativelabel ?year ?totalnarrative
+
+
