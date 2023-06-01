@@ -4,8 +4,9 @@ A collection of SPARQL queries per chapter. Endpoint is: https://query.mimotext.
 # Chapter I
 # Chapter II
 # Chapter III
+Thematic concepts per year: https://tinyurl.com/2h8smq2b
 # Chapter IV
 # Chapter V
 # Chapter VI
-The epistolary novel: https://tinyurl.com/2zgf7y8h
+The epistolary novel in diachronic perspective: https://tinyurl.com/2zgf7y8h
 # Conclusion 
