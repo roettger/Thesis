@@ -1,4 +1,5 @@
 # Thesis
+A collection of SPARQL queries per chapter. Endpoint is: https://query.mimotext.uni-trier.de/proxy/wdqs/bigdata/namespace/wdq/sparql
 
 # Chapter I
 # Chapter II
