@@ -1,0 +1,29 @@
+#defaultView:BarChart
+prefix wd:<http://data.mimotext.uni-trier.de/entity/> 
+prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+
+SELECT ?decade (count(*) as ?count) 
+WHERE {
+  SELECT DISTINCT ?item ?decade
+  WHERE {
+      ?item wdt:P9 ?date;
+           wdt:P32 ?place .
+         ?place rdfs:label ?placeLabel .
+     filter(lang(?placeLabel) = "en")
+     filter(lcase(?placeLabel) = "imaginary place"@en)
+    
+    BIND(YEAR(?date) AS ?year)
+    FILTER(?year >= 1750)
+    BIND(
+      IF(?year < 1760, "1750s",
+      IF(?year < 1770, "1760s",
+      IF(?year < 1780, "1770s",
+      IF(?year < 1790, "1780s",
+      IF(?year < 1800, "1790s",
+      "1800, or later")))))
+      AS ?decade
+    )
+  }
+  ORDER BY asc(?date)
+}
+GROUP BY ?decade
