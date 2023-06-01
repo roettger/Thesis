@@ -4,7 +4,7 @@ A collection of SPARQL queries per chapter. Endpoint is: https://query.mimotext.
 # Chapter I
 # Chapter II
 # Chapter III
-Thematic concepts per year: https://tinyurl.com/2h8smq2b
+Thematic concepts per year: [https://tinyurl.com/2h8smq2b](https://tinyurl.com/2nmhz2xw)
 # Chapter IV
 # Chapter V
 # Chapter VI
