@@ -1,15 +1,32 @@
-
-@misc{rottgermann_collection_2023,
-	title = {Collection de romans français du dix-huitième siècle (1751-1800) / {Eighteenth}-{Century} {French} {Novels} (1751-1800)  [dataset]},
-	copyright = {Open Access},
-	shorttitle = {{MiMoText}/roman18},
-	url = {https://doi.org/10.5281/zenodo.7712928},
-	doi = {10.5281/zenodo.7712928},
-	language = {French},
-	publisher = {Zenodo},
-	author = {Röttgermann, Julia},
-	collaborator = {Klee, Anne and Schöch, Christof and Ondraszek, Sarah and Konstanciak, Johanna and Dudar, Julia and Probst, Amelie and Padieu, Damir and Gebhard, Henning},
-	year = {2023},
-	note = {itemType: dataset},
-	
-}
+cff-version: 1.2.0
+message: "If you use this corpus, please cite it as below."
+author:
+- family-names: "Röttgermann"
+  given-names: "Julia"
+  orcid: "https://orcid.org/0000-0002-1918-8117"
+collaborators:
+- family-names: "Dudar"
+  given-names: "Julia"
+- family-names: "Gebhard"
+  given-names: "Henning"
+- family-names: "Klee"
+  given-names: "Anne"
+  orcid: "https://orcid.org/0000-0002-1532-2649"
+- family-names: "Konstanciak"
+  given-names: "Johanna"
+ orcid: "https://orcid.org/0000-0003-0159-6144"
+- family-names: "Padieu"
+  given-names: "Damir"
+- family-names: "Probst"
+  given-names: "Amelie"
+- family-names: "Ondraszek"
+  given-names: "Sarah"
+  orcid: "https://orcid.org/0009-0003-7945-6704"
+- family-names: "Schöch"
+  given-names: "Christof"
+  orcid: "https://orcid.org/0000-0002-4557-2753"
+title: "Collection de romans français du dix-huitième siècle (1751-1800) / Eighteenth Century French Novels 1751-1800"
+version: 1.0.0
+doi: 10.5281/zenodo.7712928
+date-released: 2023-10-12
+url: "https://github.com/MiMoText/roman18"
