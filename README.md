@@ -22,7 +22,8 @@ Imaginary place as a narrative place: https://tinyurl.com/2dtgsozz
 
 Birth- and death places of authors 1751-1800
 
-<video src="https://raw.githubusercontent.com/roettger/Thesis/main/Chapter4/birth_and-death_places_of_authors.mp4" width="300" />
+[![Video Thumbnail](Chapter6/themes_epistolary_novel.PNG)]([https://raw.githubusercontent.com/main/Chapter4/birth_and-death_places_of_authors.mp4](https://raw.githubusercontent.com/roettger/Thesis/main/Chapter4/birth_and-death_places_of_authors.mp4))
+
 
 # Chapter V - Sentiment in French Novels 1751-1800
 
