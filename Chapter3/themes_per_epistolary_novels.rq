@@ -1,0 +1,16 @@
+# Thematic concepts for epistolary novels 
+#defaultView:BubbleChart
+PREFIX wd:<http://data.mimotext.uni-trier.de/entity/> 
+PREFIX wdt:<http://data.mimotext.uni-trier.de/prop/direct/>
+
+SELECT ?themeName (count (?themeName) as ?count)
+WHERE {
+   ?work wdt:P36 ?theme . # work has theme
+   ?work wdt:P33 wd:Q42. 
+   ?theme rdfs:label ?themeName . # get theme label (not only Link to theme)
+   FILTER(LANG(?themeName) = "en") # other options: "fr", "de". 
+} 
+
+group by ?themeName
+#having (count(?themeName) > 10)
+order by desc (?count)

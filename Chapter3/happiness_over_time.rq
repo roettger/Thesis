@@ -1,0 +1,26 @@
+# Query to retrieve the theme 'happiness' over time in French novels 1751-1800
+#defaultView:BarChart
+prefix wd:<http://data.mimotext.uni-trier.de/entity/> 
+prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+SELECT ?year (?countTheme / ?countAll AS ?rel)  ?countTheme
+WHERE {
+ {  
+   SELECT (str(SAMPLE(year(?date))) as ?year) (count(*) AS ?countTheme)
+   WHERE {
+     ?item wdt:P9 ?date;
+           wdt:P36 ?topic .
+     ?topic rdfs:label ?topicLabel .
+     filter(lang(?topicLabel) = "en")
+     filter(lcase(?topicLabel) = "happiness"@en)
+   }
+   GROUP BY ?date
+ }
+ {
+   SELECT (str(SAMPLE(year(?date))) as ?year) (count(*) AS ?countAll)
+   WHERE {
+     ?item wdt:P9 ?date.
+
+   }
+   GROUP BY ?date
+ }
+}

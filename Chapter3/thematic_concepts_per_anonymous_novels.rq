@@ -1,0 +1,13 @@
+# Häufigste Themen französischer Romane 1751-1800 mit anonymer Autorschaft
+#defaultView:BarChart
+prefix wd:<http://data.mimotext.uni-trier.de/entity/> 
+prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+SELECT ?aboutLabel (count(*) as ?count) 
+WHERE {
+  ?item wdt:P6 ?authorstring. # author: anonym
+  ?item wdt:P36 ?about.       # item: theme (about) 
+  
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "de". }
+}
+
+GROUP BY ?aboutLabel
