@@ -1,0 +1,21 @@
+#title:Change of narrative forms over 5-year periods
+#defaultView:BarChart
+PREFIX wd:<http://data.mimotext.uni-trier.de/entity/> 
+PREFIX wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT (str(SAMPLE(?periodStart)) AS ?period) (COUNT(?formLabel) AS ?count) ?formLabel 
+WHERE {
+    ?item wdt:P33 ?form.
+    ?form rdfs:label ?formLabel .
+    ?item wdt:P9 ?date .
+    FILTER(lang(?formLabel) = "en")
+   FILTER(YEAR(?date) < 1800) # filter for the publication date of interest
+    
+    # Calculating the 5-year period start year without using MOD
+    BIND((year(?date) - (year(?date) - xsd:integer(floor(xsd:decimal(year(?date)) / 10) * 10))) AS ?periodStart)
+    
+    SERVICE wikibase:label {bd:serviceParam wikibase:language "fr".}
+}
+GROUP BY ?periodStart ?formLabel 
+ORDER BY ?periodStart ?formLabel 

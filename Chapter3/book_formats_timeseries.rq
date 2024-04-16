@@ -1,0 +1,22 @@
+#title: Book formats
+#defaultView:BarChart
+prefix wd:<http://data.mimotext.uni-trier.de/entity/>
+prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+Select  (str(SAMPLE(?periodStart)) AS ?period) (count(?format) as ?count) ?format 
+   WHERE{
+   ?item wdt:P26 ?format.
+   ?item wdt:P9 ?date .
+  FILTER(lang(?format) = "fr")
+  FILTER(YEAR(?date) < 1800) # filter for the publication date of interest
+# FILTER(lcase(?format) = "12-in"@fr)
+      Filter (regex(lcase(?format), "in-\\d+[\\s\\S]"))
+
+    # Calculating the 5-year period start year without using MOD
+    BIND((year(?date) - (year(?date) - xsd:integer(floor(xsd:decimal(year(?date)) / 5) * 5))) AS ?periodStart) 
+    # BIND(str(year(?date)) as ?year)
+
+    SERVICE wikibase:label {bd:serviceParam wikibase:language "{AUTO_LANGUAGE}","fr" .}
+  }
+
+GROUP BY ?format ?periodStart ?count
+having (?count> 4)
