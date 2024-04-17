@@ -28,9 +28,11 @@ https://raw.githubusercontent.com/roettger/Thesis/main/Chapter4/birth_and-death_
 
 # Chapter V - Sentiment in French Novels 1751-1800
 
+French Novels with tone 'sensibility' per year [https://tinyurl.com/23gatlwp](https://tinyurl.com/23gatlwp) 
+
 # Chapter VI - Stylometric analysis 
 
-What do works with stylometric similarity have in common? [([https://tinyurl.com/29xrh3hv](https://tinyurl.com/29xrh3hv))]
+What do works with stylometric similarity have in common? [https://tinyurl.com/23gatlwp](https://tinyurl.com/23gatlwp)
 
 ![Stylometric analysis ](https://raw.githubusercontent.com/roettger/Thesis/main/Chapter6/stylometric_similarity_tree.PNG)
 
