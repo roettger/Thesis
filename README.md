@@ -30,6 +30,9 @@ https://raw.githubusercontent.com/roettger/Thesis/main/Chapter4/birth_and-death_
 
 French Novels with tone 'sensibility' per year https://tinyurl.com/29qqn6qk 
 
+![Sentiment analysis](https://raw.githubusercontent.com/roettger/Thesis/main/Chapter5/sentiment_novels-main/img/sentiment_per_year_dark_palette.png)
+
+
 # Chapter VI - Stylometric analysis 
 
 What do works with stylometric similarity have in common? [https://tinyurl.com/23gatlwp](https://tinyurl.com/23gatlwp)
