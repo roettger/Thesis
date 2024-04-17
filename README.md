@@ -17,7 +17,9 @@ Thematic concepts per year: [https://tinyurl.com/2h8smq2b](https://tinyurl.com/2
 
 # Chapter IV - Spaces and Places 
 
-Imaginary place as a narrative place: https://tinyurl.com/2dtgsozz 
+Imaginary place as a narrative place: [https://tinyurl.com/26yaccgf]
+
+![Imaginary place as a narrative place](https://raw.githubusercontent.com/roettger/Thesis/main/Chapter4/imaginary_place_per_decade.PNG)
 
 Birth- and death places of authors 1751-1800
 https://raw.githubusercontent.com/roettger/Thesis/main/Chapter4/birth_and-death_places_of_authors.mp4
