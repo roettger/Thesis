@@ -1,0 +1,33 @@
+#Evolution of "sensibility" theme in French novels 1751-1800 as relative frenquency
+#title:Evolution of sensibility" theme in French novels 1751-1800
+prefix mmd:<http://data.mimotext.uni-trier.de/entity/> 
+prefix mmdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+SELECT ?year (?countSentimental / ?countAll *100 AS ?percentage)  ?countSentimental ?countAll 
+WHERE {
+ {  
+   # Subquery to count novels with tonality 'sensibility'
+    SELECT ?year (count(*) AS ?countSentimental)
+    WHERE {
+      ?item mmdt:P9 ?date;
+            mmdt:P38 ?topic .
+      ?topic rdfs:label ?topicLabel .
+      # Filtering for English labels tone 'sensibility'
+      FILTER(lang(?topicLabel) = "en")
+      FILTER(lcase(?topicLabel) = "sensibility"@en)
+      BIND(YEAR(?date) AS ?year)
+    }
+    GROUP BY ?year
+  }
+  {
+    # Subquery to count all novels
+   SELECT ?year(count(*) AS ?countAll)
+   WHERE {
+     ?item mmdt:P9 ?date;
+         mmdt:P36 ?topic . 
+     ?topic rdfs:label ?topicLabel .
+     filter(lang(?topicLabel) = "en")
+     BIND(YEAR(?date) AS ?year)
+   }
+   GROUP BY ?year
+ }
+}
