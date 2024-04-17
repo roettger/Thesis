@@ -1,0 +1,27 @@
+# title: What do works with stylometric similarity have in common? 
+SELECT ?tone1Label ?tone2Label ?roman1 ?roman1Label ?token1 ?form1Label ?autor1Label 
+?roman2 ?roman2Label ?token2 ?form2Label ?autor2Label WHERE {
+  ?roman1 wdt:P2 wd:Q2. # instance of (P2) literary work (Q2)
+  ?roman2 wdt:P2 wd:Q2. # instance of (P2) literary work (Q2)
+
+  ?roman1 wdt:P49 ?roman2. # P49 = stylometric based similarity
+
+  ?roman1 wdt:P5 ?autor1. # P5 = author
+  ?roman2 wdt:P5 ?autor2.
+
+  ?roman1 wdt:P38 ?tone1. # P38 = tone
+  ?roman2 wdt:P38 ?tone2.
+
+  ?roman1 wdt:P33 ?form1. # P38 = narrative form
+  ?roman2 wdt:P33 ?form2.
+  
+  ?roman1 wdt:P40 ?token1. # P5 = author
+  ?roman2 wdt:P40 ?token2.
+
+   FILTER (?autor1 = ?autor2)  # Prüfen, ob der oder die Autorin übereinstimmt  
+  # FILTER (?tone1 = ?tone2) # Prüfen, ob die Tonalität übereinstimmt  
+  # FILTER (?form1 = ?form2)  # Prüfen, ob die narrative Form übereinstimmt
+  
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "fr". }
+}
