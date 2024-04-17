@@ -4,7 +4,7 @@ A collection of SPARQL queries per chapter. Endpoint is: https://query.mimotext.
 # Chapter I - Introduction 
 
 # Chapter II - Corpus building 
-The French epistolary novel in diachronic perspective 1751-1800 [https://tinyurl.com/2zgf7y8h]
+The French epistolary novel in diachronic perspective 1751-1800 [https://tinyurl.com/2zgf7y8h](https://tinyurl.com/2zgf7y8h)
 
 ![The epistolary novel in diachronic perspective](https://raw.githubusercontent.com/roettger/Thesis/main/Chapter6/epistolary_novels_over_time_procentual.PNG)
 
@@ -17,7 +17,7 @@ Thematic concepts per year: [https://tinyurl.com/2h8smq2b](https://tinyurl.com/2
 
 # Chapter IV - Spaces and Places 
 
-Imaginary place as a narrative place: [https://tinyurl.com/26yaccgf]
+Imaginary place as a narrative place: [https://tinyurl.com/26yaccgf](https://tinyurl.com/26yaccgf)
 
 ![Imaginary place as a narrative place](https://raw.githubusercontent.com/roettger/Thesis/main/Chapter4/imaginary_place_per_decade.PNG)
 
@@ -28,5 +28,6 @@ https://raw.githubusercontent.com/roettger/Thesis/main/Chapter4/birth_and-death_
 # Chapter V - Sentiment in French Novels 1751-1800
 
 # Chapter VI - Stylometric analysis 
+What do works with stylometric similarity have in common? [https://tinyurl.com/26w42kqe](https://tinyurl.com/26w42kqe)
 
 # Conclusion 
