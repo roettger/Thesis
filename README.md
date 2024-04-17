@@ -28,7 +28,7 @@ https://raw.githubusercontent.com/roettger/Thesis/main/Chapter4/birth_and-death_
 
 # Chapter V - Sentiment in French Novels 1751-1800
 
-French Novels with tone 'sensibility' per year [https://tinyurl.com/29qqn6](https://tinyurl.com/29qqn6)
+French Novels with tone 'sensibility' per year https://tinyurl.com/29qqn6qk 
 
 # Chapter VI - Stylometric analysis 
 
