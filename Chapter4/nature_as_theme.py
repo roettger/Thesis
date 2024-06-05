@@ -11,7 +11,7 @@ prefix wd:<http://data.mimotext.uni-trier.de/entity/>
 prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?date (?countNature / ?countAll AS ?rel)
+SELECT ?date ((?countNature / ?countAll)*100 AS ?rel)
 WHERE {
  {  
    SELECT ?date (count(*) AS ?countNature)
@@ -62,8 +62,8 @@ df['date'] = pd.to_datetime(df['date'])
 plt.figure(figsize=(10, 6))
 plt.plot(df['date'], df['rel'], marker='o')
 #plt.title('Nature as a narrative place in French Novels 1751-1800')
-plt.xlabel('year')
-plt.ylabel('proportion (%)')
+plt.xlabel('Year')
+plt.ylabel('Proportion (%)')
 plt.grid(True)
 plt.xticks(rotation=45)
 plt.tight_layout()
