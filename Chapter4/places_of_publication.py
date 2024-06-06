@@ -44,8 +44,12 @@ df = pd.DataFrame(data)
 plt.figure(figsize=(12, 8))
 sns.scatterplot(data=df, x="year", y="placelabel", hue="placelabel", marker='s', s=100, legend=None, palette="tab20")
 
-plt.title("Publikationsorte pro Jahr")
+#plt.title("Publikationsorte pro Jahr")
 plt.xlabel("Year")
 plt.ylabel("Place of publication")
 plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot with high resolution
+plt.savefig('places_of_publication.png', dpi=300)
 plt.show()
