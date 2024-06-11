@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_50235d1d01938c7c21171469c20390c6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_50235d1d01938c7c21171469c20390c6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_50235d1d01938c7c21171469c20390c6 = L.map(
+                "map_50235d1d01938c7c21171469c20390c6",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6e53ec3ed99ac231a2a48bc9bff905b0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6e53ec3ed99ac231a2a48bc9bff905b0.addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+            var marker_d856e183debb516821c9c58b39ecb209 = L.marker(
+                [23.0, 38.5],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_18a3ecf93a8aff93c79493f63e86be9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c75d70701fe4e1efa82dbcab757d2505 = $(`<div id="html_c75d70701fe4e1efa82dbcab757d2505" style="width: 100.0%; height: 100.0%;">Le palais du silence</div>`)[0];
+                popup_18a3ecf93a8aff93c79493f63e86be9e.setContent(html_c75d70701fe4e1efa82dbcab757d2505);
+            
+        
+
+        marker_d856e183debb516821c9c58b39ecb209.bindPopup(popup_18a3ecf93a8aff93c79493f63e86be9e)
+        ;
+
+        
+    
+    
+            var marker_12c6693fa36a4bc91fb14bb248954a51 = L.marker(
+                [14.248611111, 40.835833333],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_675f5ad84f7f436d6505c7f062a4a739 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ab529895010228e26f430ebc5c4cea7 = $(`<div id="html_8ab529895010228e26f430ebc5c4cea7" style="width: 100.0%; height: 100.0%;">Le diable amoureux</div>`)[0];
+                popup_675f5ad84f7f436d6505c7f062a4a739.setContent(html_8ab529895010228e26f430ebc5c4cea7);
+            
+        
+
+        marker_12c6693fa36a4bc91fb14bb248954a51.bindPopup(popup_675f5ad84f7f436d6505c7f062a4a739)
+        ;
+
+        
+    
+    
+            var marker_4e4a28e12077e8748f5d7f2453d2960f = L.marker(
+                [7.1881, 21.09375],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_771fc99bf326674e5770985a36498e4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b4f6c3e886cfc761b4b7bd190c640a0 = $(`<div id="html_0b4f6c3e886cfc761b4b7bd190c640a0" style="width: 100.0%; height: 100.0%;">Lieb-Rose</div>`)[0];
+                popup_771fc99bf326674e5770985a36498e4d.setContent(html_0b4f6c3e886cfc761b4b7bd190c640a0);
+            
+        
+
+        marker_4e4a28e12077e8748f5d7f2453d2960f.bindPopup(popup_771fc99bf326674e5770985a36498e4d)
+        ;
+
+        
+    
+    
+            var marker_0fd791d32c26cf3c0ca2238f10150c6c = L.marker(
+                [44.5, 32.5],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_ed84e77d9ad22352ee9f3835e72d0a0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17121cda922ea8bd7b21c03e10d9d8a3 = $(`<div id="html_17121cda922ea8bd7b21c03e10d9d8a3" style="width: 100.0%; height: 100.0%;">La princesse de Babilone</div>`)[0];
+                popup_ed84e77d9ad22352ee9f3835e72d0a0d.setContent(html_17121cda922ea8bd7b21c03e10d9d8a3);
+            
+        
+
+        marker_0fd791d32c26cf3c0ca2238f10150c6c.bindPopup(popup_ed84e77d9ad22352ee9f3835e72d0a0d)
+        ;
+
+        
+    
+    
+            var marker_3f3463cfc614554df1ff3438e7ae0d0d = L.marker(
+                [29.0, 27.0],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_bc66234f41928f599b477d5343047306 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c29229c8970db9d9e1dd349d60ead17 = $(`<div id="html_8c29229c8970db9d9e1dd349d60ead17" style="width: 100.0%; height: 100.0%;">Le vieux de la montagne</div>`)[0];
+                popup_bc66234f41928f599b477d5343047306.setContent(html_8c29229c8970db9d9e1dd349d60ead17);
+            
+        
+
+        marker_3f3463cfc614554df1ff3438e7ae0d0d.bindPopup(popup_bc66234f41928f599b477d5343047306)
+        ;
+
+        
+    
+    
+            var marker_d75b256cd4c65d922df85a64fcf24fb5 = L.marker(
+                [12.48, 41.89],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_7275d36421d976f5f4c63517c6762075 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e4ceb06c3b3a8158e643a3781adacdd = $(`<div id="html_8e4ceb06c3b3a8158e643a3781adacdd" style="width: 100.0%; height: 100.0%;">Numa Pompilius</div>`)[0];
+                popup_7275d36421d976f5f4c63517c6762075.setContent(html_8e4ceb06c3b3a8158e643a3781adacdd);
+            
+        
+
+        marker_d75b256cd4c65d922df85a64fcf24fb5.bindPopup(popup_7275d36421d976f5f4c63517c6762075)
+        ;
+
+        
+    
+    
+            var marker_376d49539490542e1b13e1d8b2c25a61 = L.marker(
+                [74.043333, 15.401944],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_3ea14750c060be57b9ad632d6bf9cd80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82c2823d26a968e637913db0e86ef6a4 = $(`<div id="html_82c2823d26a968e637913db0e86ef6a4" style="width: 100.0%; height: 100.0%;">Ma-gakou</div>`)[0];
+                popup_3ea14750c060be57b9ad632d6bf9cd80.setContent(html_82c2823d26a968e637913db0e86ef6a4);
+            
+        
+
+        marker_376d49539490542e1b13e1d8b2c25a61.bindPopup(popup_3ea14750c060be57b9ad632d6bf9cd80)
+        ;
+
+        
+    
+    
+            var marker_f4d4b4d03e0afc8a7b0ae9891447b3d3 = L.marker(
+                [-1.0, 53.0],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_d6d39e9f01dd12f0dbdf79038e1cb600 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70c9c2a05ab7c4308ff67b053942341e = $(`<div id="html_70c9c2a05ab7c4308ff67b053942341e" style="width: 100.0%; height: 100.0%;">Histoire de Fortunatus</div>`)[0];
+                popup_d6d39e9f01dd12f0dbdf79038e1cb600.setContent(html_70c9c2a05ab7c4308ff67b053942341e);
+            
+        
+
+        marker_f4d4b4d03e0afc8a7b0ae9891447b3d3.bindPopup(popup_d6d39e9f01dd12f0dbdf79038e1cb600)
+        ;
+
+        
+    
+    
+            var marker_605d9e7b5474b4ab0f928fb459fc5d83 = L.marker(
+                [-9.183333333, 38.7],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_50e1a4109facf60ccfcb8cfb11b3913b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf8995b5e4fcb62b0fb43365cd9dba41 = $(`<div id="html_cf8995b5e4fcb62b0fb43365cd9dba41" style="width: 100.0%; height: 100.0%;">Anecdotes de la cour de Bonhommie</div>`)[0];
+                popup_50e1a4109facf60ccfcb8cfb11b3913b.setContent(html_cf8995b5e4fcb62b0fb43365cd9dba41);
+            
+        
+
+        marker_605d9e7b5474b4ab0f928fb459fc5d83.bindPopup(popup_50e1a4109facf60ccfcb8cfb11b3913b)
+        ;
+
+        
+    
+    
+            var marker_81a376f23691937480f60e1e22eb7409 = L.marker(
+                [43.151944444, 16.139722222],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_523772ecc35635e7fdd86a6c2a56027e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41cb796112908f01b12b2a30ad355584 = $(`<div id="html_41cb796112908f01b12b2a30ad355584" style="width: 100.0%; height: 100.0%;">Vathek</div>`)[0];
+                popup_523772ecc35635e7fdd86a6c2a56027e.setContent(html_41cb796112908f01b12b2a30ad355584);
+            
+        
+
+        marker_81a376f23691937480f60e1e22eb7409.bindPopup(popup_523772ecc35635e7fdd86a6c2a56027e)
+        ;
+
+        
+    
+    
+            var marker_8e9d2d6e6259d657674c5029dbb52961 = L.marker(
+                [83.0, 22.8],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_c284cfa43e7121c33f3266238fb26f2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0bcb0cdbb33fb831e9379e58f8f3d2d = $(`<div id="html_d0bcb0cdbb33fb831e9379e58f8f3d2d" style="width: 100.0%; height: 100.0%;">Mirza et Fatmé</div>`)[0];
+                popup_c284cfa43e7121c33f3266238fb26f2b.setContent(html_d0bcb0cdbb33fb831e9379e58f8f3d2d);
+            
+        
+
+        marker_8e9d2d6e6259d657674c5029dbb52961.bindPopup(popup_c284cfa43e7121c33f3266238fb26f2b)
+        ;
+
+        
+    
+    
+            var marker_60b10ffacb9c39ae5da27d34ff4fb576 = L.marker(
+                [83.0, 22.8],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_080562ba8d84041628e5323011b670d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0248db33d3c6894ac2b42a2c3a659459 = $(`<div id="html_0248db33d3c6894ac2b42a2c3a659459" style="width: 100.0%; height: 100.0%;">Les folies philosophiques</div>`)[0];
+                popup_080562ba8d84041628e5323011b670d1.setContent(html_0248db33d3c6894ac2b42a2c3a659459);
+            
+        
+
+        marker_60b10ffacb9c39ae5da27d34ff4fb576.bindPopup(popup_080562ba8d84041628e5323011b670d1)
+        ;
+
+        
+    
+    
+            var marker_57c370cf8e83df29fdee4ddc314d989e = L.marker(
+                [-0.1275, 51.507222222],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_6f8e9f99125353c232a618dc670c565c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f437683215997c644c0afb9a08cf1a2 = $(`<div id="html_3f437683215997c644c0afb9a08cf1a2" style="width: 100.0%; height: 100.0%;">Lettres de deux amans, habitans d’une petite ville au pied des Alpes</div>`)[0];
+                popup_6f8e9f99125353c232a618dc670c565c.setContent(html_3f437683215997c644c0afb9a08cf1a2);
+            
+        
+
+        marker_57c370cf8e83df29fdee4ddc314d989e.bindPopup(popup_6f8e9f99125353c232a618dc670c565c)
+        ;
+
+        
+    
+    
+            var marker_fd0f815935225a2435c8843fea727a8f = L.marker(
+                [2.0, 47.0],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_46306b8bcf7a8a77d7ae1c4175ddbef4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8552b5ff7d817cbbce6108dbca781def = $(`<div id="html_8552b5ff7d817cbbce6108dbca781def" style="width: 100.0%; height: 100.0%;">Ancienne chronique de Gérard d’Euphrate</div>`)[0];
+                popup_46306b8bcf7a8a77d7ae1c4175ddbef4.setContent(html_8552b5ff7d817cbbce6108dbca781def);
+            
+        
+
+        marker_fd0f815935225a2435c8843fea727a8f.bindPopup(popup_46306b8bcf7a8a77d7ae1c4175ddbef4)
+        ;
+
+        
+    
+    
+            var marker_dde5de68fb15a4d8b476f5cf01f47218 = L.marker(
+                [2.0, 47.0],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_f175341235aed7a4f4253645ad4a1a02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eaade09a70c502372d53f44ba57aa8ea = $(`<div id="html_eaade09a70c502372d53f44ba57aa8ea" style="width: 100.0%; height: 100.0%;">La cabane mystérieuse</div>`)[0];
+                popup_f175341235aed7a4f4253645ad4a1a02.setContent(html_eaade09a70c502372d53f44ba57aa8ea);
+            
+        
+
+        marker_dde5de68fb15a4d8b476f5cf01f47218.bindPopup(popup_f175341235aed7a4f4253645ad4a1a02)
+        ;
+
+        
+    
+    
+            var marker_32ddf5fa015a1e35edc14db524685eff = L.marker(
+                [2.0, 47.0],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_436b51feb507b345ed5c54e0ee7a4b5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c15cfe6094281c09ca455ef551791ed3 = $(`<div id="html_c15cfe6094281c09ca455ef551791ed3" style="width: 100.0%; height: 100.0%;">Le crocodile</div>`)[0];
+                popup_436b51feb507b345ed5c54e0ee7a4b5a.setContent(html_c15cfe6094281c09ca455ef551791ed3);
+            
+        
+
+        marker_32ddf5fa015a1e35edc14db524685eff.bindPopup(popup_436b51feb507b345ed5c54e0ee7a4b5a)
+        ;
+
+        
+    
+    
+            var marker_b243024992d0a91bf1773f7b12c404c6 = L.marker(
+                [12.5, 42.5],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_2a1c309c09d21be40875281f04cac769 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_128848a8adadf6fe889504771df0557b = $(`<div id="html_128848a8adadf6fe889504771df0557b" style="width: 100.0%; height: 100.0%;">Seconde suite de l’Aventurier françois</div>`)[0];
+                popup_2a1c309c09d21be40875281f04cac769.setContent(html_128848a8adadf6fe889504771df0557b);
+            
+        
+
+        marker_b243024992d0a91bf1773f7b12c404c6.bindPopup(popup_2a1c309c09d21be40875281f04cac769)
+        ;
+
+        
+    
+    
+            var marker_c9507b22993a730e380218541727ed81 = L.marker(
+                [-3.5, 40.2],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_00b0c60f35329a4d7d4d21e005daa129 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1e869549d7d4c788820a75ce6213034 = $(`<div id="html_a1e869549d7d4c788820a75ce6213034" style="width: 100.0%; height: 100.0%;">L’Amérique découverte</div>`)[0];
+                popup_00b0c60f35329a4d7d4d21e005daa129.setContent(html_a1e869549d7d4c788820a75ce6213034);
+            
+        
+
+        marker_c9507b22993a730e380218541727ed81.bindPopup(popup_00b0c60f35329a4d7d4d21e005daa129)
+        ;
+
+        
+    
+    
+            var marker_d96ceb438525d4342d164c00085599bb = L.marker(
+                [26.683611, 40.343889],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_803e951656222baf58b8d5be37f8c684 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f475aed7965a72d6922cc15daa443bc0 = $(`<div id="html_f475aed7965a72d6922cc15daa443bc0" style="width: 100.0%; height: 100.0%;">Relation véridique qui a l’air d’un songe</div>`)[0];
+                popup_803e951656222baf58b8d5be37f8c684.setContent(html_f475aed7965a72d6922cc15daa443bc0);
+            
+        
+
+        marker_d96ceb438525d4342d164c00085599bb.bindPopup(popup_803e951656222baf58b8d5be37f8c684)
+        ;
+
+        
+    
+    
+            var marker_5bb9ebae76beb9f9ae4f343a633d3a18 = L.marker(
+                [52.0, 30.0],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_7a0a8701d727f196d0d64f2e98b31963 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01fa0c054537b1d92cd82c0d8e12e129 = $(`<div id="html_01fa0c054537b1d92cd82c0d8e12e129" style="width: 100.0%; height: 100.0%;">Les deux cousins</div>`)[0];
+                popup_7a0a8701d727f196d0d64f2e98b31963.setContent(html_01fa0c054537b1d92cd82c0d8e12e129);
+            
+        
+
+        marker_5bb9ebae76beb9f9ae4f343a633d3a18.bindPopup(popup_7a0a8701d727f196d0d64f2e98b31963)
+        ;
+
+        
+    
+    
+            var marker_57d4a15657427bf84a2686d599e56cc2 = L.marker(
+                [28.98, 41.0125],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_22316a59554d4a1bd54b7c46079963b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_812c8f01b35a021e25801ce8431ce640 = $(`<div id="html_812c8f01b35a021e25801ce8431ce640" style="width: 100.0%; height: 100.0%;">Les hauts faits d’Esplandian</div>`)[0];
+                popup_22316a59554d4a1bd54b7c46079963b5.setContent(html_812c8f01b35a021e25801ce8431ce640);
+            
+        
+
+        marker_57d4a15657427bf84a2686d599e56cc2.bindPopup(popup_22316a59554d4a1bd54b7c46079963b5)
+        ;
+
+        
+    
+    
+            var marker_00b956e3a67b93090634837c23b3d46a = L.marker(
+                [28.98, 41.0125],
+                {}
+            ).addTo(map_50235d1d01938c7c21171469c20390c6);
+        
+    
+        var popup_9a4334f627ecdf822eddd2708980f934 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0997673f6a6c8a9d8ef89e8b8b29319c = $(`<div id="html_0997673f6a6c8a9d8ef89e8b8b29319c" style="width: 100.0%; height: 100.0%;">Lisvart de Grèce</div>`)[0];
+                popup_9a4334f627ecdf822eddd2708980f934.setContent(html_0997673f6a6c8a9d8ef89e8b8b29319c);
+            
+        
+
+        marker_00b956e3a67b93090634837c23b3d46a.bindPopup(popup_9a4334f627ecdf822eddd2708980f934)
+        ;
+
+        
+    
+</script>
+</html>
