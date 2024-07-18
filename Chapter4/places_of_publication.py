@@ -42,7 +42,7 @@ df = pd.DataFrame(data)
 
 # Daten visualisieren
 plt.figure(figsize=(12, 8))
-sns.scatterplot(data=df, x="year", y="placelabel", marker='s', s=100, legend=None, palette="tab20")
+sns.scatterplot(data=df, x="year", y="placelabel", marker='s', s=100, legend=None)
 
 
 #plt.title("Publikationsorte pro Jahr")

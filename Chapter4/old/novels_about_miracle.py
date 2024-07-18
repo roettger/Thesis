@@ -37,4 +37,4 @@ for label, coords in data.items():
     folium.Marker(location=coords, popup=label).add_to(map)
 
 # Save the map
-map.save("map.html")
+map.save("map_novels_about_miracle.html")
