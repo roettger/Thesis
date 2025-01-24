@@ -1,0 +1,738 @@
+theme	period	count	formatCategory	themeLabel
+http://data.mimotext.uni-trier.de/entity/Q2882	1760	4	in-12	éducation
+http://data.mimotext.uni-trier.de/entity/Q2901	1760	1	in-12	état
+http://data.mimotext.uni-trier.de/entity/Q2930	1760	1	in-12	guerre
+http://data.mimotext.uni-trier.de/entity/Q2952	1760	1	in-12	interaction
+http://data.mimotext.uni-trier.de/entity/Q2994	1760	1	in-12	monarchie
+http://data.mimotext.uni-trier.de/entity/Q2999	1760	2	in-12	mort
+http://data.mimotext.uni-trier.de/entity/Q3005	1760	3	in-12	nature
+http://data.mimotext.uni-trier.de/entity/Q3071	1760	2	in-12	richesse
+http://data.mimotext.uni-trier.de/entity/Q3851	1760	1	in-12	Topic 0:[temps paraître encore]
+http://data.mimotext.uni-trier.de/entity/Q4027	1760	2	in-12	Topic 18:[paraître recevoir personne]
+http://data.mimotext.uni-trier.de/entity/Q2776	1775	12	in-12	amour
+http://data.mimotext.uni-trier.de/entity/Q2863	1775	1	in-12	destin
+http://data.mimotext.uni-trier.de/entity/Q2864	1775	2	in-12	deuil
+http://data.mimotext.uni-trier.de/entity/Q3005	1775	1	in-12	nature
+http://data.mimotext.uni-trier.de/entity/Q3039	1775	1	in-12	philosophie
+http://data.mimotext.uni-trier.de/entity/Q3066	1775	1	in-12	religion
+http://data.mimotext.uni-trier.de/entity/Q3085	1775	23	in-12	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q3087	1775	17	in-12	sentiment
+http://data.mimotext.uni-trier.de/entity/Q3120	1775	9	in-12	vertu
+http://data.mimotext.uni-trier.de/entity/Q2775	1775	1	in-12	amitié
+http://data.mimotext.uni-trier.de/entity/Q2790	1775	1	in-12	attraction
+http://data.mimotext.uni-trier.de/entity/Q2804	1775	2	in-12	bonheur
+http://data.mimotext.uni-trier.de/entity/Q2844	1775	2	in-12	correspondance
+http://data.mimotext.uni-trier.de/entity/Q2952	1775	2	in-12	interaction
+http://data.mimotext.uni-trier.de/entity/Q2992	1775	9	in-12	mœurs
+http://data.mimotext.uni-trier.de/entity/Q3011	1775	1	in-12	noblesse
+http://data.mimotext.uni-trier.de/entity/Q3034	1775	1	in-12	personnalité
+http://data.mimotext.uni-trier.de/entity/Q3851	1775	2	in-12	Topic 0:[temps paraître encore]
+http://data.mimotext.uni-trier.de/entity/Q4027	1775	3	in-12	Topic 18:[paraître recevoir personne]
+http://data.mimotext.uni-trier.de/entity/Q4032	1775	2	in-12	Topic 23:[femme homme esprit]
+http://data.mimotext.uni-trier.de/entity/Q2776	1780	8	in-12	amour
+http://data.mimotext.uni-trier.de/entity/Q2790	1780	2	in-12	attraction
+http://data.mimotext.uni-trier.de/entity/Q2864	1780	5	in-12	deuil
+http://data.mimotext.uni-trier.de/entity/Q2952	1780	3	in-12	interaction
+http://data.mimotext.uni-trier.de/entity/Q2969	1780	5	in-12	libertinage
+http://data.mimotext.uni-trier.de/entity/Q3034	1780	2	in-12	personnalité
+http://data.mimotext.uni-trier.de/entity/Q3064	1780	3	in-12	relation amoureuse
+http://data.mimotext.uni-trier.de/entity/Q3087	1780	20	in-12	sentiment
+http://data.mimotext.uni-trier.de/entity/Q3851	1780	4	in-12	Topic 0:[temps paraître encore]
+http://data.mimotext.uni-trier.de/entity/Q4027	1780	6	in-12	Topic 18:[paraître recevoir personne]
+http://data.mimotext.uni-trier.de/entity/Q4032	1780	3	in-12	Topic 23:[femme homme esprit]
+http://data.mimotext.uni-trier.de/entity/Q2776	1785	9	in-12	amour
+http://data.mimotext.uni-trier.de/entity/Q2864	1785	2	in-12	deuil
+http://data.mimotext.uni-trier.de/entity/Q3005	1785	2	in-12	nature
+http://data.mimotext.uni-trier.de/entity/Q3025	1785	3	in-12	passion
+http://data.mimotext.uni-trier.de/entity/Q3039	1785	8	in-12	philosophie
+http://data.mimotext.uni-trier.de/entity/Q3085	1785	27	in-12	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q3087	1785	29	in-12	sentiment
+http://data.mimotext.uni-trier.de/entity/Q3243	1785	1	in-12	campagne
+http://data.mimotext.uni-trier.de/entity/Q4032	1785	2	in-12	Topic 23:[femme homme esprit]
+http://data.mimotext.uni-trier.de/entity/Q2776	1750	10	in-12	amour
+http://data.mimotext.uni-trier.de/entity/Q2882	1750	4	in-12	éducation
+http://data.mimotext.uni-trier.de/entity/Q2891	1750	2	in-12	enfance
+http://data.mimotext.uni-trier.de/entity/Q2919	1750	13	in-12	galanterie
+http://data.mimotext.uni-trier.de/entity/Q2992	1750	5	in-12	mœurs
+http://data.mimotext.uni-trier.de/entity/Q3087	1750	19	in-12	sentiment
+http://data.mimotext.uni-trier.de/entity/Q4017	1750	1	in-12	Topic 8:[croire moins encore]
+http://data.mimotext.uni-trier.de/entity/Q4027	1750	5	in-12	Topic 18:[paraître recevoir personne]
+http://data.mimotext.uni-trier.de/entity/Q4032	1750	4	in-12	Topic 23:[femme homme esprit]
+http://data.mimotext.uni-trier.de/entity/Q3085	1750	13	in-12	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q3120	1750	2	in-12	vertu
+http://data.mimotext.uni-trier.de/entity/Q2990	1750	11	in-12	miracle
+http://data.mimotext.uni-trier.de/entity/Q3150	1750	7	in-12	cour
+http://data.mimotext.uni-trier.de/entity/Q3126	1750	16	in-12	voyage
+http://data.mimotext.uni-trier.de/entity/Q2969	1750	4	in-12	libertinage
+http://data.mimotext.uni-trier.de/entity/Q2933	1750	2	in-12	histoire
+http://data.mimotext.uni-trier.de/entity/Q3048	1750	3	in-12	politique
+http://data.mimotext.uni-trier.de/entity/Q2992	1755	7	in-12	mœurs
+http://data.mimotext.uni-trier.de/entity/Q3039	1755	9	in-12	philosophie
+http://data.mimotext.uni-trier.de/entity/Q3126	1755	6	in-12	voyage
+http://data.mimotext.uni-trier.de/entity/Q2919	1755	11	in-12	galanterie
+http://data.mimotext.uni-trier.de/entity/Q2776	1755	12	in-12	amour
+http://data.mimotext.uni-trier.de/entity/Q2978	1755	6	in-12	malheur
+http://data.mimotext.uni-trier.de/entity/Q3085	1755	11	in-12	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q3120	1755	4	in-12	vertu
+http://data.mimotext.uni-trier.de/entity/Q3087	1760	17	in-12	sentiment
+http://data.mimotext.uni-trier.de/entity/Q3150	1760	3	in-12	cour
+http://data.mimotext.uni-trier.de/entity/Q2919	1760	13	in-12	galanterie
+http://data.mimotext.uni-trier.de/entity/Q2992	1760	9	in-12	mœurs
+http://data.mimotext.uni-trier.de/entity/Q3126	1760	18	in-12	voyage
+http://data.mimotext.uni-trier.de/entity/Q2978	1760	3	in-12	malheur
+http://data.mimotext.uni-trier.de/entity/Q3085	1760	12	in-12	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q3039	1760	4	in-12	philosophie
+http://data.mimotext.uni-trier.de/entity/Q2907	1760	3	in-12	famille
+http://data.mimotext.uni-trier.de/entity/Q2919	1765	17	in-12	galanterie
+http://data.mimotext.uni-trier.de/entity/Q3085	1765	43	in-12	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q3087	1765	50	in-12	sentiment
+http://data.mimotext.uni-trier.de/entity/Q3120	1765	16	in-12	vertu
+http://data.mimotext.uni-trier.de/entity/Q2978	1765	16	in-12	malheur
+http://data.mimotext.uni-trier.de/entity/Q2882	1765	4	in-12	éducation
+http://data.mimotext.uni-trier.de/entity/Q2891	1765	2	in-12	enfance
+http://data.mimotext.uni-trier.de/entity/Q2901	1765	3	in-12	état
+http://data.mimotext.uni-trier.de/entity/Q3005	1765	4	in-12	nature
+http://data.mimotext.uni-trier.de/entity/Q3006	1765	1	in-12	naufrage
+http://data.mimotext.uni-trier.de/entity/Q3039	1765	5	in-12	philosophie
+http://data.mimotext.uni-trier.de/entity/Q3243	1765	2	in-12	campagne
+http://data.mimotext.uni-trier.de/entity/Q2984	1765	10	in-12	mélancolie
+http://data.mimotext.uni-trier.de/entity/Q3126	1765	14	in-12	voyage
+http://data.mimotext.uni-trier.de/entity/Q2776	1765	27	in-12	amour
+http://data.mimotext.uni-trier.de/entity/Q2907	1765	15	in-12	famille
+http://data.mimotext.uni-trier.de/entity/Q2990	1765	5	in-12	miracle
+http://data.mimotext.uni-trier.de/entity/Q2787	1765	2	in-12	art
+http://data.mimotext.uni-trier.de/entity/Q2798	1765	2	in-12	beauté
+http://data.mimotext.uni-trier.de/entity/Q2992	1765	18	in-12	mœurs
+http://data.mimotext.uni-trier.de/entity/Q3011	1765	3	in-12	noblesse
+http://data.mimotext.uni-trier.de/entity/Q3026	1765	3	in-12	pastorale en littérature
+http://data.mimotext.uni-trier.de/entity/Q4032	1765	5	in-12	Topic 23:[femme homme esprit]
+http://data.mimotext.uni-trier.de/entity/Q2848	1765	5	in-12	crime
+http://data.mimotext.uni-trier.de/entity/Q2864	1765	4	in-12	deuil
+http://data.mimotext.uni-trier.de/entity/Q2930	1765	1	in-12	guerre
+http://data.mimotext.uni-trier.de/entity/Q2933	1765	2	in-12	histoire
+http://data.mimotext.uni-trier.de/entity/Q3048	1765	4	in-12	politique
+http://data.mimotext.uni-trier.de/entity/Q4027	1765	4	in-12	Topic 18:[paraître recevoir personne]
+http://data.mimotext.uni-trier.de/entity/Q2776	1770	14	in-12	amour
+http://data.mimotext.uni-trier.de/entity/Q3087	1770	17	in-12	sentiment
+http://data.mimotext.uni-trier.de/entity/Q3120	1770	5	in-12	vertu
+http://data.mimotext.uni-trier.de/entity/Q2984	1770	2	in-12	mélancolie
+http://data.mimotext.uni-trier.de/entity/Q3085	1770	17	in-12	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q2919	1770	8	in-12	galanterie
+http://data.mimotext.uni-trier.de/entity/Q2992	1770	10	in-12	mœurs
+http://data.mimotext.uni-trier.de/entity/Q3039	1770	8	in-12	philosophie
+http://data.mimotext.uni-trier.de/entity/Q3126	1770	12	in-12	voyage
+http://data.mimotext.uni-trier.de/entity/Q2978	1770	9	in-12	malheur
+http://data.mimotext.uni-trier.de/entity/Q2998	1770	3	in-12	morale
+http://data.mimotext.uni-trier.de/entity/Q2930	1770	3	in-12	guerre
+http://data.mimotext.uni-trier.de/entity/Q3150	1770	5	in-12	cour
+http://data.mimotext.uni-trier.de/entity/Q2791	1770	1	in-12	autobiographie
+http://data.mimotext.uni-trier.de/entity/Q2907	1775	6	in-12	famille
+http://data.mimotext.uni-trier.de/entity/Q2919	1775	4	in-12	galanterie
+http://data.mimotext.uni-trier.de/entity/Q2978	1775	9	in-12	malheur
+http://data.mimotext.uni-trier.de/entity/Q2895	1775	3	in-12	érotisme
+http://data.mimotext.uni-trier.de/entity/Q3126	1775	6	in-12	voyage
+http://data.mimotext.uni-trier.de/entity/Q2791	1775	2	in-12	autobiographie
+http://data.mimotext.uni-trier.de/entity/Q2882	1775	2	in-12	éducation
+http://data.mimotext.uni-trier.de/entity/Q2891	1775	1	in-12	enfance
+http://data.mimotext.uni-trier.de/entity/Q3243	1775	1	in-12	campagne
+http://data.mimotext.uni-trier.de/entity/Q2882	1780	2	in-12	éducation
+http://data.mimotext.uni-trier.de/entity/Q2992	1780	9	in-12	mœurs
+http://data.mimotext.uni-trier.de/entity/Q3039	1780	7	in-12	philosophie
+http://data.mimotext.uni-trier.de/entity/Q2978	1780	9	in-12	malheur
+http://data.mimotext.uni-trier.de/entity/Q2907	1780	6	in-12	famille
+http://data.mimotext.uni-trier.de/entity/Q3085	1780	19	in-12	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q3025	1780	3	in-12	passion
+http://data.mimotext.uni-trier.de/entity/Q2919	1780	9	in-12	galanterie
+http://data.mimotext.uni-trier.de/entity/Q3120	1780	5	in-12	vertu
+http://data.mimotext.uni-trier.de/entity/Q3126	1780	9	in-12	voyage
+http://data.mimotext.uni-trier.de/entity/Q2775	1780	1	in-12	amitié
+http://data.mimotext.uni-trier.de/entity/Q2844	1780	6	in-12	correspondance
+http://data.mimotext.uni-trier.de/entity/Q3011	1780	2	in-12	noblesse
+http://data.mimotext.uni-trier.de/entity/Q3012	1780	7	in-12	nuit
+http://data.mimotext.uni-trier.de/entity/Q2998	1780	4	in-12	morale
+http://data.mimotext.uni-trier.de/entity/Q2772	1750	2	in-12	alimentation
+http://data.mimotext.uni-trier.de/entity/Q2787	1750	2	in-12	art
+http://data.mimotext.uni-trier.de/entity/Q2861	1750	1	in-12	dérision
+http://data.mimotext.uni-trier.de/entity/Q2903	1750	1	in-12	être humain
+http://data.mimotext.uni-trier.de/entity/Q2953	1750	1	in-12	ironie
+http://data.mimotext.uni-trier.de/entity/Q3005	1750	4	in-12	nature
+http://data.mimotext.uni-trier.de/entity/Q3039	1750	3	in-12	philosophie
+http://data.mimotext.uni-trier.de/entity/Q3066	1750	2	in-12	religion
+http://data.mimotext.uni-trier.de/entity/Q3089	1750	2	in-12	sociabilité
+http://data.mimotext.uni-trier.de/entity/Q2787	1755	2	in-12	art
+http://data.mimotext.uni-trier.de/entity/Q2790	1755	1	in-12	attraction
+http://data.mimotext.uni-trier.de/entity/Q2901	1755	1	in-12	état
+http://data.mimotext.uni-trier.de/entity/Q2999	1755	1	in-12	mort
+http://data.mimotext.uni-trier.de/entity/Q3005	1755	1	in-12	nature
+http://data.mimotext.uni-trier.de/entity/Q3034	1755	1	in-12	personnalité
+http://data.mimotext.uni-trier.de/entity/Q3243	1755	1	in-12	campagne
+http://data.mimotext.uni-trier.de/entity/Q3851	1755	1	in-12	Topic 0:[temps paraître encore]
+http://data.mimotext.uni-trier.de/entity/Q4032	1755	2	in-12	Topic 23:[femme homme esprit]
+http://data.mimotext.uni-trier.de/entity/Q2772	1755	2	in-12	alimentation
+http://data.mimotext.uni-trier.de/entity/Q2793	1755	1	in-12	aventure
+http://data.mimotext.uni-trier.de/entity/Q2812	1755	1	in-12	catastrophe
+http://data.mimotext.uni-trier.de/entity/Q2835	1755	1	in-12	conte
+http://data.mimotext.uni-trier.de/entity/Q2850	1755	1	in-12	critique sociale
+http://data.mimotext.uni-trier.de/entity/Q2864	1755	2	in-12	deuil
+http://data.mimotext.uni-trier.de/entity/Q2896	1755	1	in-12	esclavage
+http://data.mimotext.uni-trier.de/entity/Q2903	1755	1	in-12	être humain
+http://data.mimotext.uni-trier.de/entity/Q2930	1755	2	in-12	guerre
+http://data.mimotext.uni-trier.de/entity/Q2953	1755	1	in-12	ironie
+http://data.mimotext.uni-trier.de/entity/Q2988	1755	1	in-12	migration
+http://data.mimotext.uni-trier.de/entity/Q2994	1755	3	in-12	monarchie
+http://data.mimotext.uni-trier.de/entity/Q3015	1755	1	in-12	optimisme
+http://data.mimotext.uni-trier.de/entity/Q3061	1755	1	in-12	raison
+http://data.mimotext.uni-trier.de/entity/Q3071	1755	1	in-12	richesse
+http://data.mimotext.uni-trier.de/entity/Q3089	1755	2	in-12	sociabilité
+http://data.mimotext.uni-trier.de/entity/Q3090	1755	1	in-12	société
+http://data.mimotext.uni-trier.de/entity/Q3869	1755	1	in-12	Topic 18:[point voir jour]
+http://data.mimotext.uni-trier.de/entity/Q3997	1755	2	in-12	voyage maritime
+http://data.mimotext.uni-trier.de/entity/Q2787	1760	2	in-12	art
+http://data.mimotext.uni-trier.de/entity/Q3011	1760	2	in-12	noblesse
+http://data.mimotext.uni-trier.de/entity/Q3484	1760	1	in-12	État
+http://data.mimotext.uni-trier.de/entity/Q4032	1760	3	in-12	Topic 23:[femme homme esprit]
+http://data.mimotext.uni-trier.de/entity/Q2772	1780	1	in-12	alimentation
+http://data.mimotext.uni-trier.de/entity/Q2798	1780	2	in-12	beauté
+http://data.mimotext.uni-trier.de/entity/Q2895	1780	2	in-12	érotisme
+http://data.mimotext.uni-trier.de/entity/Q3026	1780	3	in-12	pastorale en littérature
+http://data.mimotext.uni-trier.de/entity/Q3089	1780	1	in-12	sociabilité
+http://data.mimotext.uni-trier.de/entity/Q3487	1780	3	in-12	Locus amoenus
+http://data.mimotext.uni-trier.de/entity/Q4031	1780	2	in-12	Topic 22:[bon petit dame]
+http://data.mimotext.uni-trier.de/entity/Q2804	1780	3	in-12	bonheur
+http://data.mimotext.uni-trier.de/entity/Q2787	1790	1	in-12	art
+http://data.mimotext.uni-trier.de/entity/Q2798	1790	2	in-12	beauté
+http://data.mimotext.uni-trier.de/entity/Q2804	1790	2	in-12	bonheur
+http://data.mimotext.uni-trier.de/entity/Q2917	1790	1	in-12	fuite
+http://data.mimotext.uni-trier.de/entity/Q2999	1790	1	in-12	mort
+http://data.mimotext.uni-trier.de/entity/Q3005	1790	1	in-12	nature
+http://data.mimotext.uni-trier.de/entity/Q3012	1790	2	in-12	nuit
+http://data.mimotext.uni-trier.de/entity/Q3026	1790	2	in-12	pastorale en littérature
+http://data.mimotext.uni-trier.de/entity/Q3039	1790	3	in-12	philosophie
+http://data.mimotext.uni-trier.de/entity/Q4042	1790	1	in-12	Topic 33:[porte grand voir]
+http://data.mimotext.uni-trier.de/entity/Q2776	1795	17	in-12	amour
+http://data.mimotext.uni-trier.de/entity/Q2790	1795	3	in-12	attraction
+http://data.mimotext.uni-trier.de/entity/Q2804	1795	6	in-12	bonheur
+http://data.mimotext.uni-trier.de/entity/Q2863	1795	2	in-12	destin
+http://data.mimotext.uni-trier.de/entity/Q2907	1795	12	in-12	famille
+http://data.mimotext.uni-trier.de/entity/Q2952	1795	2	in-12	interaction
+http://data.mimotext.uni-trier.de/entity/Q2978	1795	17	in-12	malheur
+http://data.mimotext.uni-trier.de/entity/Q3034	1795	3	in-12	personnalité
+http://data.mimotext.uni-trier.de/entity/Q3071	1795	1	in-12	richesse
+http://data.mimotext.uni-trier.de/entity/Q3085	1795	39	in-12	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q3087	1795	29	in-12	sentiment
+http://data.mimotext.uni-trier.de/entity/Q2798	1750	2	in-12	beauté
+http://data.mimotext.uni-trier.de/entity/Q3026	1750	2	in-12	pastorale en littérature
+http://data.mimotext.uni-trier.de/entity/Q2864	1750	3	in-12	deuil
+http://data.mimotext.uni-trier.de/entity/Q4031	1750	1	in-12	Topic 22:[bon petit dame]
+http://data.mimotext.uni-trier.de/entity/Q2907	1750	2	in-12	famille
+http://data.mimotext.uni-trier.de/entity/Q3071	1750	1	in-12	richesse
+http://data.mimotext.uni-trier.de/entity/Q3243	1750	1	in-12	campagne
+http://data.mimotext.uni-trier.de/entity/Q4042	1750	2	in-12	Topic 33:[porte grand voir]
+http://data.mimotext.uni-trier.de/entity/Q2895	1750	1	in-12	érotisme
+http://data.mimotext.uni-trier.de/entity/Q2930	1750	1	in-12	guerre
+http://data.mimotext.uni-trier.de/entity/Q2994	1750	2	in-12	monarchie
+http://data.mimotext.uni-trier.de/entity/Q3087	1755	14	in-12	sentiment
+http://data.mimotext.uni-trier.de/entity/Q3150	1755	5	in-12	cour
+http://data.mimotext.uni-trier.de/entity/Q2882	1755	4	in-12	éducation
+http://data.mimotext.uni-trier.de/entity/Q2889	1755	1	in-12	encyclopédie
+http://data.mimotext.uni-trier.de/entity/Q2891	1755	3	in-12	enfance
+http://data.mimotext.uni-trier.de/entity/Q3066	1755	2	in-12	religion
+http://data.mimotext.uni-trier.de/entity/Q4042	1755	1	in-12	Topic 33:[porte grand voir]
+http://data.mimotext.uni-trier.de/entity/Q2907	1755	3	in-12	famille
+http://data.mimotext.uni-trier.de/entity/Q4027	1755	2	in-12	Topic 18:[paraître recevoir personne]
+http://data.mimotext.uni-trier.de/entity/Q2990	1755	1	in-12	miracle
+http://data.mimotext.uni-trier.de/entity/Q2772	1765	1	in-12	alimentation
+http://data.mimotext.uni-trier.de/entity/Q3066	1765	2	in-12	religion
+http://data.mimotext.uni-trier.de/entity/Q3089	1765	1	in-12	sociabilité
+http://data.mimotext.uni-trier.de/entity/Q3487	1765	1	in-12	Locus amoenus
+http://data.mimotext.uni-trier.de/entity/Q3869	1765	1	in-12	Topic 18:[point voir jour]
+http://data.mimotext.uni-trier.de/entity/Q3150	1765	5	in-12	cour
+http://data.mimotext.uni-trier.de/entity/Q2969	1765	2	in-12	libertinage
+http://data.mimotext.uni-trier.de/entity/Q2775	1765	1	in-12	amitié
+http://data.mimotext.uni-trier.de/entity/Q2844	1765	2	in-12	correspondance
+http://data.mimotext.uni-trier.de/entity/Q2863	1765	3	in-12	destin
+http://data.mimotext.uni-trier.de/entity/Q3025	1765	4	in-12	passion
+http://data.mimotext.uni-trier.de/entity/Q2873	1765	1	in-12	drame
+http://data.mimotext.uni-trier.de/entity/Q3012	1765	1	in-12	nuit
+http://data.mimotext.uni-trier.de/entity/Q2845	1760	3	in-12	correspondance littéraire
+http://data.mimotext.uni-trier.de/entity/Q2990	1760	3	in-12	miracle
+http://data.mimotext.uni-trier.de/entity/Q2776	1760	10	in-12	amour
+http://data.mimotext.uni-trier.de/entity/Q2969	1760	1	in-12	libertinage
+http://data.mimotext.uni-trier.de/entity/Q2798	1760	1	in-12	beauté
+http://data.mimotext.uni-trier.de/entity/Q3026	1760	1	in-12	pastorale en littérature
+http://data.mimotext.uni-trier.de/entity/Q4017	1760	1	in-12	Topic 8:[croire moins encore]
+http://data.mimotext.uni-trier.de/entity/Q4042	1760	1	in-12	Topic 33:[porte grand voir]
+http://data.mimotext.uni-trier.de/entity/Q2881	1760	2	in-12	écriture
+http://data.mimotext.uni-trier.de/entity/Q2984	1760	2	in-12	mélancolie
+http://data.mimotext.uni-trier.de/entity/Q2775	1760	1	in-12	amitié
+http://data.mimotext.uni-trier.de/entity/Q2848	1760	1	in-12	crime
+http://data.mimotext.uni-trier.de/entity/Q2863	1760	2	in-12	destin
+http://data.mimotext.uni-trier.de/entity/Q2864	1760	2	in-12	deuil
+http://data.mimotext.uni-trier.de/entity/Q3120	1760	2	in-12	vertu
+http://data.mimotext.uni-trier.de/entity/Q3120	1795	6	in-12	vertu
+http://data.mimotext.uni-trier.de/entity/Q3998	1795	2	in-12	affection
+http://data.mimotext.uni-trier.de/entity/Q4032	1795	2	in-12	Topic 23:[femme homme esprit]
+http://data.mimotext.uni-trier.de/entity/Q2844	1795	3	in-12	correspondance
+http://data.mimotext.uni-trier.de/entity/Q2845	1795	1	in-12	correspondance littéraire
+http://data.mimotext.uni-trier.de/entity/Q2864	1795	7	in-12	deuil
+http://data.mimotext.uni-trier.de/entity/Q2882	1795	2	in-12	éducation
+http://data.mimotext.uni-trier.de/entity/Q2891	1795	1	in-12	enfance
+http://data.mimotext.uni-trier.de/entity/Q2999	1795	2	in-12	mort
+http://data.mimotext.uni-trier.de/entity/Q3064	1795	4	in-12	relation amoureuse
+http://data.mimotext.uni-trier.de/entity/Q3086	1795	1	in-12	sensualisme
+http://data.mimotext.uni-trier.de/entity/Q3025	1750	1	in-12	passion
+http://data.mimotext.uni-trier.de/entity/Q3012	1750	2	in-12	nuit
+http://data.mimotext.uni-trier.de/entity/Q2907	1785	7	in-12	famille
+http://data.mimotext.uni-trier.de/entity/Q2978	1785	17	in-12	malheur
+http://data.mimotext.uni-trier.de/entity/Q3126	1785	28	in-12	voyage
+http://data.mimotext.uni-trier.de/entity/Q2992	1785	11	in-12	mœurs
+http://data.mimotext.uni-trier.de/entity/Q2882	1785	3	in-12	éducation
+http://data.mimotext.uni-trier.de/entity/Q2919	1785	16	in-12	galanterie
+http://data.mimotext.uni-trier.de/entity/Q3150	1785	3	in-12	cour
+http://data.mimotext.uni-trier.de/entity/Q3048	1785	5	in-12	politique
+http://data.mimotext.uni-trier.de/entity/Q2984	1785	2	in-12	mélancolie
+http://data.mimotext.uni-trier.de/entity/Q2992	1790	1	in-12	mœurs
+http://data.mimotext.uni-trier.de/entity/Q3126	1790	9	in-12	voyage
+http://data.mimotext.uni-trier.de/entity/Q3018	1790	1	in-12	orientalisme
+http://data.mimotext.uni-trier.de/entity/Q3150	1790	1	in-12	cour
+http://data.mimotext.uni-trier.de/entity/Q2776	1795	19	in-18	amour
+http://data.mimotext.uni-trier.de/entity/Q2820	1795	1	in-18	christianisme
+http://data.mimotext.uni-trier.de/entity/Q2848	1795	3	in-18	crime
+http://data.mimotext.uni-trier.de/entity/Q2849	1795	2	in-18	critique d'art
+http://data.mimotext.uni-trier.de/entity/Q2867	1795	1	in-18	dialogue
+http://data.mimotext.uni-trier.de/entity/Q2882	1795	2	in-18	éducation
+http://data.mimotext.uni-trier.de/entity/Q2891	1795	2	in-18	enfance
+http://data.mimotext.uni-trier.de/entity/Q2895	1795	5	in-18	érotisme
+http://data.mimotext.uni-trier.de/entity/Q2901	1795	2	in-18	état
+http://data.mimotext.uni-trier.de/entity/Q2907	1795	5	in-18	famille
+http://data.mimotext.uni-trier.de/entity/Q2952	1795	5	in-18	interaction
+http://data.mimotext.uni-trier.de/entity/Q2969	1795	4	in-18	libertinage
+http://data.mimotext.uni-trier.de/entity/Q2972	1795	2	in-18	Lumières
+http://data.mimotext.uni-trier.de/entity/Q2987	1795	1	in-18	métaphysique
+http://data.mimotext.uni-trier.de/entity/Q2994	1795	1	in-18	monarchie
+http://data.mimotext.uni-trier.de/entity/Q2998	1795	1	in-18	morale
+http://data.mimotext.uni-trier.de/entity/Q3039	1795	5	in-18	philosophie
+http://data.mimotext.uni-trier.de/entity/Q3051	1795	1	in-18	préjugé
+http://data.mimotext.uni-trier.de/entity/Q3066	1795	1	in-18	religion
+http://data.mimotext.uni-trier.de/entity/Q3069	1795	5	in-18	révolution
+http://data.mimotext.uni-trier.de/entity/Q3087	1795	20	in-18	sentiment
+http://data.mimotext.uni-trier.de/entity/Q3088	1795	2	in-18	sexualité
+http://data.mimotext.uni-trier.de/entity/Q3150	1795	4	in-18	cour
+http://data.mimotext.uni-trier.de/entity/Q2790	1795	2	in-18	attraction
+http://data.mimotext.uni-trier.de/entity/Q3012	1795	4	in-18	nuit
+http://data.mimotext.uni-trier.de/entity/Q3034	1795	2	in-18	personnalité
+http://data.mimotext.uni-trier.de/entity/Q3998	1795	1	in-18	affection
+http://data.mimotext.uni-trier.de/entity/Q4032	1795	3	in-18	Topic 23:[femme homme esprit]
+http://data.mimotext.uni-trier.de/entity/Q2776	1780	3	in-18	amour
+http://data.mimotext.uni-trier.de/entity/Q2787	1780	2	in-18	art
+http://data.mimotext.uni-trier.de/entity/Q2919	1780	1	in-18	galanterie
+http://data.mimotext.uni-trier.de/entity/Q2992	1780	1	in-18	mœurs
+http://data.mimotext.uni-trier.de/entity/Q3011	1780	2	in-18	noblesse
+http://data.mimotext.uni-trier.de/entity/Q3087	1780	7	in-18	sentiment
+http://data.mimotext.uni-trier.de/entity/Q4027	1780	3	in-18	Topic 18:[paraître recevoir personne]
+http://data.mimotext.uni-trier.de/entity/Q4032	1780	1	in-18	Topic 23:[femme homme esprit]
+http://data.mimotext.uni-trier.de/entity/Q3085	1785	4	in-18	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q3087	1785	6	in-18	sentiment
+http://data.mimotext.uni-trier.de/entity/Q2775	1785	1	in-18	amitié
+http://data.mimotext.uni-trier.de/entity/Q2776	1785	4	in-18	amour
+http://data.mimotext.uni-trier.de/entity/Q2830	1785	1	in-18	comédie
+http://data.mimotext.uni-trier.de/entity/Q2907	1785	1	in-18	famille
+http://data.mimotext.uni-trier.de/entity/Q2944	1785	1	in-18	imagination
+http://data.mimotext.uni-trier.de/entity/Q2978	1785	2	in-18	malheur
+http://data.mimotext.uni-trier.de/entity/Q2984	1785	1	in-18	mélancolie
+http://data.mimotext.uni-trier.de/entity/Q3005	1785	2	in-18	nature
+http://data.mimotext.uni-trier.de/entity/Q3038	1785	1	in-18	peuple
+http://data.mimotext.uni-trier.de/entity/Q3107	1785	1	in-18	tragédie
+http://data.mimotext.uni-trier.de/entity/Q3119	1785	1	in-18	vérité
+http://data.mimotext.uni-trier.de/entity/Q3120	1785	2	in-18	vertu
+http://data.mimotext.uni-trier.de/entity/Q2895	1785	3	in-12	érotisme
+http://data.mimotext.uni-trier.de/entity/Q2896	1785	1	in-18	esclavage
+http://data.mimotext.uni-trier.de/entity/Q3006	1785	1	in-18	naufrage
+http://data.mimotext.uni-trier.de/entity/Q3126	1785	4	in-18	voyage
+http://data.mimotext.uni-trier.de/entity/Q2998	1785	2	in-12	morale
+http://data.mimotext.uni-trier.de/entity/Q3120	1785	3	in-12	vertu
+http://data.mimotext.uni-trier.de/entity/Q2895	1790	1	in-12	érotisme
+http://data.mimotext.uni-trier.de/entity/Q3048	1790	2	in-12	politique
+http://data.mimotext.uni-trier.de/entity/Q2776	1790	2	in-12	amour
+http://data.mimotext.uni-trier.de/entity/Q2863	1790	1	in-12	destin
+http://data.mimotext.uni-trier.de/entity/Q2907	1790	2	in-12	famille
+http://data.mimotext.uni-trier.de/entity/Q3066	1790	1	in-12	religion
+http://data.mimotext.uni-trier.de/entity/Q3087	1790	7	in-12	sentiment
+http://data.mimotext.uni-trier.de/entity/Q3120	1790	2	in-12	vertu
+http://data.mimotext.uni-trier.de/entity/Q2978	1790	6	in-18	malheur
+http://data.mimotext.uni-trier.de/entity/Q3005	1790	3	in-18	nature
+http://data.mimotext.uni-trier.de/entity/Q3085	1790	7	in-18	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q2864	1790	1	in-18	deuil
+http://data.mimotext.uni-trier.de/entity/Q2933	1770	1	in-12	histoire
+http://data.mimotext.uni-trier.de/entity/Q3422	1775	1	in-12	village
+http://data.mimotext.uni-trier.de/entity/Q3150	1775	3	in-12	cour
+http://data.mimotext.uni-trier.de/entity/Q2984	1775	2	in-12	mélancolie
+http://data.mimotext.uni-trier.de/entity/Q3006	1775	2	in-12	naufrage
+http://data.mimotext.uni-trier.de/entity/Q2998	1775	2	in-12	morale
+http://data.mimotext.uni-trier.de/entity/Q3048	1775	1	in-12	politique
+http://data.mimotext.uni-trier.de/entity/Q2990	1775	2	in-12	miracle
+http://data.mimotext.uni-trier.de/entity/Q3005	1780	1	in-12	nature
+http://data.mimotext.uni-trier.de/entity/Q3048	1780	1	in-12	politique
+http://data.mimotext.uni-trier.de/entity/Q2990	1780	4	in-12	miracle
+http://data.mimotext.uni-trier.de/entity/Q2817	1780	2	in-12	chevalerie
+http://data.mimotext.uni-trier.de/entity/Q3150	1780	1	in-12	cour
+http://data.mimotext.uni-trier.de/entity/Q2891	1780	1	in-12	enfance
+http://data.mimotext.uni-trier.de/entity/Q3998	1780	1	in-12	affection
+http://data.mimotext.uni-trier.de/entity/Q2998	1765	2	in-12	morale
+http://data.mimotext.uni-trier.de/entity/Q3422	1765	1	in-12	village
+http://data.mimotext.uni-trier.de/entity/Q3006	1770	1	in-12	naufrage
+http://data.mimotext.uni-trier.de/entity/Q2798	1770	1	in-12	beauté
+http://data.mimotext.uni-trier.de/entity/Q3012	1770	1	in-12	nuit
+http://data.mimotext.uni-trier.de/entity/Q3026	1770	1	in-12	pastorale en littérature
+http://data.mimotext.uni-trier.de/entity/Q4027	1770	1	in-12	Topic 18:[paraître recevoir personne]
+http://data.mimotext.uni-trier.de/entity/Q4032	1770	1	in-12	Topic 23:[femme homme esprit]
+http://data.mimotext.uni-trier.de/entity/Q2896	1770	1	in-12	esclavage
+http://data.mimotext.uni-trier.de/entity/Q3025	1770	1	in-12	passion
+http://data.mimotext.uni-trier.de/entity/Q2863	1770	1	in-12	destin
+http://data.mimotext.uni-trier.de/entity/Q2882	1770	5	in-12	éducation
+http://data.mimotext.uni-trier.de/entity/Q2891	1770	1	in-12	enfance
+http://data.mimotext.uni-trier.de/entity/Q3066	1770	1	in-12	religion
+http://data.mimotext.uni-trier.de/entity/Q3851	1770	2	in-12	Topic 0:[temps paraître encore]
+http://data.mimotext.uni-trier.de/entity/Q3876	1770	1	in-12	Topic 25:[point voir moins]
+http://data.mimotext.uni-trier.de/entity/Q2863	1780	1	in-12	destin
+http://data.mimotext.uni-trier.de/entity/Q2999	1780	2	in-12	mort
+http://data.mimotext.uni-trier.de/entity/Q3243	1780	1	in-12	campagne
+http://data.mimotext.uni-trier.de/entity/Q2775	1795	1	in-12	amitié
+http://data.mimotext.uni-trier.de/entity/Q3011	1795	1	in-12	noblesse
+http://data.mimotext.uni-trier.de/entity/Q4027	1795	1	in-12	Topic 18:[paraître recevoir personne]
+http://data.mimotext.uni-trier.de/entity/Q2998	1750	1	in-12	morale
+http://data.mimotext.uni-trier.de/entity/Q2978	1750	2	in-12	malheur
+http://data.mimotext.uni-trier.de/entity/Q2969	1755	1	in-12	libertinage
+http://data.mimotext.uni-trier.de/entity/Q2848	1770	2	in-12	crime
+http://data.mimotext.uni-trier.de/entity/Q2990	1770	1	in-12	miracle
+http://data.mimotext.uni-trier.de/entity/Q2990	1785	4	in-12	miracle
+http://data.mimotext.uni-trier.de/entity/Q2984	1795	6	in-12	mélancolie
+http://data.mimotext.uni-trier.de/entity/Q3126	1795	20	in-12	voyage
+http://data.mimotext.uni-trier.de/entity/Q3005	1795	7	in-12	nature
+http://data.mimotext.uni-trier.de/entity/Q3039	1795	6	in-12	philosophie
+http://data.mimotext.uni-trier.de/entity/Q2919	1795	9	in-12	galanterie
+http://data.mimotext.uni-trier.de/entity/Q3001	1795	2	in-12	mystère
+http://data.mimotext.uni-trier.de/entity/Q2992	1795	6	in-12	mœurs
+http://data.mimotext.uni-trier.de/entity/Q2998	1795	3	in-12	morale
+http://data.mimotext.uni-trier.de/entity/Q2919	1790	4	in-18	galanterie
+http://data.mimotext.uni-trier.de/entity/Q3012	1790	1	in-18	nuit
+http://data.mimotext.uni-trier.de/entity/Q3064	1790	1	in-18	relation amoureuse
+http://data.mimotext.uni-trier.de/entity/Q3126	1790	7	in-18	voyage
+http://data.mimotext.uni-trier.de/entity/Q4027	1790	1	in-18	Topic 18:[paraître recevoir personne]
+http://data.mimotext.uni-trier.de/entity/Q2895	1790	3	in-18	érotisme
+http://data.mimotext.uni-trier.de/entity/Q2969	1790	3	in-18	libertinage
+http://data.mimotext.uni-trier.de/entity/Q2978	1790	2	in-12	malheur
+http://data.mimotext.uni-trier.de/entity/Q2978	1795	18	in-18	malheur
+http://data.mimotext.uni-trier.de/entity/Q3126	1795	17	in-18	voyage
+http://data.mimotext.uni-trier.de/entity/Q2896	1795	3	in-18	esclavage
+http://data.mimotext.uni-trier.de/entity/Q2919	1795	5	in-18	galanterie
+http://data.mimotext.uni-trier.de/entity/Q2984	1795	4	in-18	mélancolie
+http://data.mimotext.uni-trier.de/entity/Q3085	1795	23	in-18	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q3048	1795	2	in-12	politique
+http://data.mimotext.uni-trier.de/entity/Q2990	1795	3	in-12	miracle
+http://data.mimotext.uni-trier.de/entity/Q2848	1795	3	in-12	crime
+http://data.mimotext.uni-trier.de/entity/Q2849	1795	1	in-12	critique d'art
+http://data.mimotext.uni-trier.de/entity/Q2850	1795	1	in-12	critique sociale
+http://data.mimotext.uni-trier.de/entity/Q2867	1795	1	in-12	dialogue
+http://data.mimotext.uni-trier.de/entity/Q2901	1795	1	in-12	état
+http://data.mimotext.uni-trier.de/entity/Q2947	1795	1	in-12	inceste
+http://data.mimotext.uni-trier.de/entity/Q3055	1795	1	in-12	propriété
+http://data.mimotext.uni-trier.de/entity/Q3066	1795	1	in-12	religion
+http://data.mimotext.uni-trier.de/entity/Q3090	1795	1	in-12	société
+http://data.mimotext.uni-trier.de/entity/Q3115	1795	1	in-12	utopie
+http://data.mimotext.uni-trier.de/entity/Q3199	1795	1	in-12	France
+http://data.mimotext.uni-trier.de/entity/Q3876	1795	1	in-12	Topic 25:[point voir moins]
+http://data.mimotext.uni-trier.de/entity/Q2772	1795	2	in-18	alimentation
+http://data.mimotext.uni-trier.de/entity/Q3064	1795	4	in-18	relation amoureuse
+http://data.mimotext.uni-trier.de/entity/Q3071	1795	3	in-18	richesse
+http://data.mimotext.uni-trier.de/entity/Q3089	1795	2	in-18	sociabilité
+http://data.mimotext.uni-trier.de/entity/Q3851	1795	3	in-18	Topic 0:[temps paraître encore]
+http://data.mimotext.uni-trier.de/entity/Q2787	1795	2	in-18	art
+http://data.mimotext.uni-trier.de/entity/Q2804	1795	2	in-18	bonheur
+http://data.mimotext.uni-trier.de/entity/Q2863	1795	3	in-18	destin
+http://data.mimotext.uni-trier.de/entity/Q3120	1795	6	in-18	vertu
+http://data.mimotext.uni-trier.de/entity/Q4027	1795	2	in-18	Topic 18:[paraître recevoir personne]
+http://data.mimotext.uni-trier.de/entity/Q2998	1755	1	in-12	morale
+http://data.mimotext.uni-trier.de/entity/Q3006	1755	2	in-12	naufrage
+http://data.mimotext.uni-trier.de/entity/Q3048	1755	3	in-12	politique
+http://data.mimotext.uni-trier.de/entity/Q2994	1765	1	in-12	monarchie
+http://data.mimotext.uni-trier.de/entity/Q2919	1785	1	in-18	galanterie
+http://data.mimotext.uni-trier.de/entity/Q2992	1785	1	in-18	mœurs
+http://data.mimotext.uni-trier.de/entity/Q2848	1785	1	other	crime
+http://data.mimotext.uni-trier.de/entity/Q2882	1785	1	other	éducation
+http://data.mimotext.uni-trier.de/entity/Q2891	1785	1	other	enfance
+http://data.mimotext.uni-trier.de/entity/Q2969	1785	2	other	libertinage
+http://data.mimotext.uni-trier.de/entity/Q4027	1785	1	other	Topic 18:[paraître recevoir personne]
+http://data.mimotext.uni-trier.de/entity/Q4031	1785	1	other	Topic 22:[bon petit dame]
+http://data.mimotext.uni-trier.de/entity/Q4032	1785	1	other	Topic 23:[femme homme esprit]
+http://data.mimotext.uni-trier.de/entity/Q2772	1785	1	other	alimentation
+http://data.mimotext.uni-trier.de/entity/Q2787	1785	1	other	art
+http://data.mimotext.uni-trier.de/entity/Q2907	1785	1	other	famille
+http://data.mimotext.uni-trier.de/entity/Q3012	1785	1	other	nuit
+http://data.mimotext.uni-trier.de/entity/Q3066	1785	1	other	religion
+http://data.mimotext.uni-trier.de/entity/Q3089	1785	1	other	sociabilité
+http://data.mimotext.uni-trier.de/entity/Q2895	1795	2	in-12	érotisme
+http://data.mimotext.uni-trier.de/entity/Q3018	1795	1	in-12	orientalisme
+http://data.mimotext.uni-trier.de/entity/Q3150	1795	1	in-12	cour
+http://data.mimotext.uni-trier.de/entity/Q2772	1780	1	in-18	alimentation
+http://data.mimotext.uni-trier.de/entity/Q2798	1780	4	in-18	beauté
+http://data.mimotext.uni-trier.de/entity/Q2804	1780	2	in-18	bonheur
+http://data.mimotext.uni-trier.de/entity/Q2907	1780	2	in-18	famille
+http://data.mimotext.uni-trier.de/entity/Q3005	1780	2	in-18	nature
+http://data.mimotext.uni-trier.de/entity/Q3012	1780	1	in-18	nuit
+http://data.mimotext.uni-trier.de/entity/Q3026	1780	4	in-18	pastorale en littérature
+http://data.mimotext.uni-trier.de/entity/Q3089	1780	1	in-18	sociabilité
+http://data.mimotext.uni-trier.de/entity/Q3243	1780	1	in-18	campagne
+http://data.mimotext.uni-trier.de/entity/Q2848	1780	3	in-12	crime
+http://data.mimotext.uni-trier.de/entity/Q3869	1780	1	in-12	Topic 18:[point voir jour]
+http://data.mimotext.uni-trier.de/entity/Q4042	1780	1	in-12	Topic 33:[porte grand voir]
+http://data.mimotext.uni-trier.de/entity/Q2804	1785	2	in-12	bonheur
+http://data.mimotext.uni-trier.de/entity/Q2891	1785	1	in-12	enfance
+http://data.mimotext.uni-trier.de/entity/Q2969	1785	2	in-12	libertinage
+http://data.mimotext.uni-trier.de/entity/Q3012	1785	3	in-12	nuit
+http://data.mimotext.uni-trier.de/entity/Q3026	1785	1	in-12	pastorale en littérature
+http://data.mimotext.uni-trier.de/entity/Q3487	1785	1	in-12	Locus amoenus
+http://data.mimotext.uni-trier.de/entity/Q3851	1785	4	in-12	Topic 0:[temps paraître encore]
+http://data.mimotext.uni-trier.de/entity/Q4027	1785	2	in-12	Topic 18:[paraître recevoir personne]
+http://data.mimotext.uni-trier.de/entity/Q2988	1795	1	in-12	migration
+http://data.mimotext.uni-trier.de/entity/Q3012	1795	4	in-12	nuit
+http://data.mimotext.uni-trier.de/entity/Q3851	1795	2	in-12	Topic 0:[temps paraître encore]
+http://data.mimotext.uni-trier.de/entity/Q4042	1795	3	in-12	Topic 33:[porte grand voir]
+http://data.mimotext.uni-trier.de/entity/Q2817	1775	1	in-12	chevalerie
+http://data.mimotext.uni-trier.de/entity/Q2984	1780	1	in-12	mélancolie
+http://data.mimotext.uni-trier.de/entity/Q2930	1780	2	in-12	guerre
+http://data.mimotext.uni-trier.de/entity/Q2864	1780	2	in-18	deuil
+http://data.mimotext.uni-trier.de/entity/Q2988	1780	1	in-18	migration
+http://data.mimotext.uni-trier.de/entity/Q3045	1780	1	in-18	poésie
+http://data.mimotext.uni-trier.de/entity/Q3126	1780	3	in-18	voyage
+http://data.mimotext.uni-trier.de/entity/Q3487	1780	1	in-18	Locus amoenus
+http://data.mimotext.uni-trier.de/entity/Q2901	1780	1	in-18	état
+http://data.mimotext.uni-trier.de/entity/Q2994	1780	2	in-18	monarchie
+http://data.mimotext.uni-trier.de/entity/Q3039	1780	1	in-18	philosophie
+http://data.mimotext.uni-trier.de/entity/Q3048	1780	2	in-18	politique
+http://data.mimotext.uni-trier.de/entity/Q3066	1780	1	in-18	religion
+http://data.mimotext.uni-trier.de/entity/Q3085	1780	3	in-18	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q2790	1785	2	in-12	attraction
+http://data.mimotext.uni-trier.de/entity/Q2844	1785	1	in-12	correspondance
+http://data.mimotext.uni-trier.de/entity/Q2952	1785	1	in-12	interaction
+http://data.mimotext.uni-trier.de/entity/Q3034	1785	2	in-12	personnalité
+http://data.mimotext.uni-trier.de/entity/Q3998	1785	1	in-12	affection
+http://data.mimotext.uni-trier.de/entity/Q2798	1785	1	in-18	beauté
+http://data.mimotext.uni-trier.de/entity/Q2804	1785	1	in-18	bonheur
+http://data.mimotext.uni-trier.de/entity/Q2864	1785	1	in-18	deuil
+http://data.mimotext.uni-trier.de/entity/Q2930	1785	1	in-18	guerre
+http://data.mimotext.uni-trier.de/entity/Q2994	1785	1	in-18	monarchie
+http://data.mimotext.uni-trier.de/entity/Q3026	1785	1	in-18	pastorale en littérature
+http://data.mimotext.uni-trier.de/entity/Q3487	1785	1	in-18	Locus amoenus
+http://data.mimotext.uni-trier.de/entity/Q2772	1790	2	in-18	alimentation
+http://data.mimotext.uni-trier.de/entity/Q3039	1790	1	in-18	philosophie
+http://data.mimotext.uni-trier.de/entity/Q3066	1790	1	in-18	religion
+http://data.mimotext.uni-trier.de/entity/Q3089	1790	2	in-18	sociabilité
+http://data.mimotext.uni-trier.de/entity/Q3997	1790	1	in-18	voyage maritime
+http://data.mimotext.uni-trier.de/entity/Q2882	1790	1	in-18	éducation
+http://data.mimotext.uni-trier.de/entity/Q2891	1790	1	in-18	enfance
+http://data.mimotext.uni-trier.de/entity/Q2901	1790	1	in-18	état
+http://data.mimotext.uni-trier.de/entity/Q2994	1790	1	in-18	monarchie
+http://data.mimotext.uni-trier.de/entity/Q3071	1790	1	in-18	richesse
+http://data.mimotext.uni-trier.de/entity/Q2845	1795	2	in-18	correspondance littéraire
+http://data.mimotext.uni-trier.de/entity/Q2864	1795	1	in-18	deuil
+http://data.mimotext.uni-trier.de/entity/Q2988	1795	1	in-18	migration
+http://data.mimotext.uni-trier.de/entity/Q3107	1795	1	in-18	tragédie
+http://data.mimotext.uni-trier.de/entity/Q3048	1770	1	in-12	politique
+http://data.mimotext.uni-trier.de/entity/Q2817	1780	2	in-18	chevalerie
+http://data.mimotext.uni-trier.de/entity/Q2930	1780	2	in-18	guerre
+http://data.mimotext.uni-trier.de/entity/Q4031	1780	1	in-18	Topic 22:[bon petit dame]
+http://data.mimotext.uni-trier.de/entity/Q2990	1780	1	in-18	miracle
+http://data.mimotext.uni-trier.de/entity/Q2978	1780	1	in-18	malheur
+http://data.mimotext.uni-trier.de/entity/Q2790	1770	1	in-12	attraction
+http://data.mimotext.uni-trier.de/entity/Q2804	1770	1	in-12	bonheur
+http://data.mimotext.uni-trier.de/entity/Q2952	1770	1	in-12	interaction
+http://data.mimotext.uni-trier.de/entity/Q3034	1770	1	in-12	personnalité
+http://data.mimotext.uni-trier.de/entity/Q2790	1775	1	in-18	attraction
+http://data.mimotext.uni-trier.de/entity/Q2919	1775	1	in-18	galanterie
+http://data.mimotext.uni-trier.de/entity/Q2952	1775	1	in-18	interaction
+http://data.mimotext.uni-trier.de/entity/Q2969	1775	1	in-18	libertinage
+http://data.mimotext.uni-trier.de/entity/Q3012	1775	1	in-18	nuit
+http://data.mimotext.uni-trier.de/entity/Q3034	1775	1	in-18	personnalité
+http://data.mimotext.uni-trier.de/entity/Q3064	1775	1	in-18	relation amoureuse
+http://data.mimotext.uni-trier.de/entity/Q3851	1775	1	in-18	Topic 0:[temps paraître encore]
+http://data.mimotext.uni-trier.de/entity/Q4027	1775	1	in-18	Topic 18:[paraître recevoir personne]
+http://data.mimotext.uni-trier.de/entity/Q4031	1775	1	in-18	Topic 22:[bon petit dame]
+http://data.mimotext.uni-trier.de/entity/Q4032	1775	1	in-18	Topic 23:[femme homme esprit]
+http://data.mimotext.uni-trier.de/entity/Q2845	1780	2	in-12	correspondance littéraire
+http://data.mimotext.uni-trier.de/entity/Q2914	1780	1	in-12	finance
+http://data.mimotext.uni-trier.de/entity/Q2972	1780	1	in-12	Lumières
+http://data.mimotext.uni-trier.de/entity/Q3035	1780	1	in-12	perspective
+http://data.mimotext.uni-trier.de/entity/Q3050	1780	1	in-12	pouvoir
+http://data.mimotext.uni-trier.de/entity/Q3079	1780	1	in-12	sadisme
+http://data.mimotext.uni-trier.de/entity/Q3090	1780	2	in-12	société
+http://data.mimotext.uni-trier.de/entity/Q3117	1780	1	in-12	vanité
+http://data.mimotext.uni-trier.de/entity/Q3994	1780	1	in-12	esprit
+http://data.mimotext.uni-trier.de/entity/Q4017	1780	1	in-12	Topic 8:[croire moins encore]
+http://data.mimotext.uni-trier.de/entity/Q2822	1780	1	in-12	civilisation
+http://data.mimotext.uni-trier.de/entity/Q2823	1780	1	in-12	classe sociale
+http://data.mimotext.uni-trier.de/entity/Q2850	1780	1	in-12	critique sociale
+http://data.mimotext.uni-trier.de/entity/Q3038	1780	1	in-12	peuple
+http://data.mimotext.uni-trier.de/entity/Q3422	1780	1	in-12	village
+http://data.mimotext.uni-trier.de/entity/Q2988	1785	1	in-12	migration
+http://data.mimotext.uni-trier.de/entity/Q2999	1785	1	in-12	mort
+http://data.mimotext.uni-trier.de/entity/Q3011	1785	1	in-12	noblesse
+http://data.mimotext.uni-trier.de/entity/Q3064	1785	2	in-12	relation amoureuse
+http://data.mimotext.uni-trier.de/entity/Q2848	1785	3	in-12	crime
+http://data.mimotext.uni-trier.de/entity/Q4031	1785	1	in-12	Topic 22:[bon petit dame]
+http://data.mimotext.uni-trier.de/entity/Q2864	1790	1	in-12	deuil
+http://data.mimotext.uni-trier.de/entity/Q2919	1790	2	in-12	galanterie
+http://data.mimotext.uni-trier.de/entity/Q3011	1790	1	in-12	noblesse
+http://data.mimotext.uni-trier.de/entity/Q3054	1790	1	in-12	progrès
+http://data.mimotext.uni-trier.de/entity/Q3064	1790	1	in-12	relation amoureuse
+http://data.mimotext.uni-trier.de/entity/Q3090	1790	1	in-12	société
+http://data.mimotext.uni-trier.de/entity/Q3851	1790	1	in-12	Topic 0:[temps paraître encore]
+http://data.mimotext.uni-trier.de/entity/Q2844	1795	1	in-18	correspondance
+http://data.mimotext.uni-trier.de/entity/Q2917	1795	1	in-18	fuite
+http://data.mimotext.uni-trier.de/entity/Q2776	1785	1	other	amour
+http://data.mimotext.uni-trier.de/entity/Q3087	1785	1	other	sentiment
+http://data.mimotext.uni-trier.de/entity/Q3048	1785	1	in-18	politique
+http://data.mimotext.uni-trier.de/entity/Q2895	1785	1	in-18	érotisme
+http://data.mimotext.uni-trier.de/entity/Q3006	1785	3	in-12	naufrage
+http://data.mimotext.uni-trier.de/entity/Q2776	1790	5	in-18	amour
+http://data.mimotext.uni-trier.de/entity/Q2984	1790	2	in-18	mélancolie
+http://data.mimotext.uni-trier.de/entity/Q3048	1790	1	in-18	politique
+http://data.mimotext.uni-trier.de/entity/Q2930	1790	1	in-18	guerre
+http://data.mimotext.uni-trier.de/entity/Q2933	1790	1	in-18	histoire
+http://data.mimotext.uni-trier.de/entity/Q3087	1790	3	in-18	sentiment
+http://data.mimotext.uni-trier.de/entity/Q2992	1790	1	in-18	mœurs
+http://data.mimotext.uni-trier.de/entity/Q3025	1795	1	in-18	passion
+http://data.mimotext.uni-trier.de/entity/Q3048	1795	1	in-18	politique
+http://data.mimotext.uni-trier.de/entity/Q3039	1795	2	other	philosophie
+http://data.mimotext.uni-trier.de/entity/Q2848	1755	1	in-12	crime
+http://data.mimotext.uni-trier.de/entity/Q2863	1755	1	in-12	destin
+http://data.mimotext.uni-trier.de/entity/Q3012	1755	1	in-12	nuit
+http://data.mimotext.uni-trier.de/entity/Q2774	1760	1	in-12	âme
+http://data.mimotext.uni-trier.de/entity/Q2789	1760	1	in-12	athéisme
+http://data.mimotext.uni-trier.de/entity/Q2804	1760	1	in-12	bonheur
+http://data.mimotext.uni-trier.de/entity/Q2820	1760	1	in-12	christianisme
+http://data.mimotext.uni-trier.de/entity/Q2823	1760	1	in-12	classe sociale
+http://data.mimotext.uni-trier.de/entity/Q2844	1760	1	in-12	correspondance
+http://data.mimotext.uni-trier.de/entity/Q2849	1760	1	in-12	critique d'art
+http://data.mimotext.uni-trier.de/entity/Q2850	1760	1	in-12	critique sociale
+http://data.mimotext.uni-trier.de/entity/Q2851	1760	1	in-12	culpabilité
+http://data.mimotext.uni-trier.de/entity/Q2865	1760	1	in-12	devoir
+http://data.mimotext.uni-trier.de/entity/Q2867	1760	1	in-12	dialogue
+http://data.mimotext.uni-trier.de/entity/Q2880	1760	1	in-12	économie
+http://data.mimotext.uni-trier.de/entity/Q2891	1760	1	in-12	enfance
+http://data.mimotext.uni-trier.de/entity/Q2902	1760	1	in-12	état de nature
+http://data.mimotext.uni-trier.de/entity/Q2903	1760	1	in-12	être humain
+http://data.mimotext.uni-trier.de/entity/Q2917	1760	1	in-12	fuite
+http://data.mimotext.uni-trier.de/entity/Q2937	1760	1	in-12	idéal
+http://data.mimotext.uni-trier.de/entity/Q2948	1760	1	in-12	individualisme
+http://data.mimotext.uni-trier.de/entity/Q2968	1760	1	in-12	liberté
+http://data.mimotext.uni-trier.de/entity/Q2972	1760	1	in-12	Lumières
+http://data.mimotext.uni-trier.de/entity/Q2976	1760	1	in-12	mal
+http://data.mimotext.uni-trier.de/entity/Q2977	1760	1	in-12	maladie
+http://data.mimotext.uni-trier.de/entity/Q2998	1760	1	in-12	morale
+http://data.mimotext.uni-trier.de/entity/Q3020	1760	1	in-12	paix
+http://data.mimotext.uni-trier.de/entity/Q3025	1760	2	in-12	passion
+http://data.mimotext.uni-trier.de/entity/Q3029	1760	1	in-12	péché
+http://data.mimotext.uni-trier.de/entity/Q3035	1760	1	in-12	perspective
+http://data.mimotext.uni-trier.de/entity/Q3045	1760	1	in-12	poésie
+http://data.mimotext.uni-trier.de/entity/Q3048	1760	1	in-12	politique
+http://data.mimotext.uni-trier.de/entity/Q3050	1760	1	in-12	pouvoir
+http://data.mimotext.uni-trier.de/entity/Q3051	1760	1	in-12	préjugé
+http://data.mimotext.uni-trier.de/entity/Q3053	1760	1	in-12	problème
+http://data.mimotext.uni-trier.de/entity/Q3061	1760	1	in-12	raison
+http://data.mimotext.uni-trier.de/entity/Q3062	1760	1	in-12	réalité
+http://data.mimotext.uni-trier.de/entity/Q3063	1760	1	in-12	réforme
+http://data.mimotext.uni-trier.de/entity/Q3064	1760	1	in-12	relation amoureuse
+http://data.mimotext.uni-trier.de/entity/Q3066	1760	1	in-12	religion
+http://data.mimotext.uni-trier.de/entity/Q3086	1760	1	in-12	sensualisme
+http://data.mimotext.uni-trier.de/entity/Q3090	1760	1	in-12	société
+http://data.mimotext.uni-trier.de/entity/Q3097	1760	1	in-12	suicide
+http://data.mimotext.uni-trier.de/entity/Q3104	1760	1	in-12	tolérance
+http://data.mimotext.uni-trier.de/entity/Q3107	1760	1	in-12	tragédie
+http://data.mimotext.uni-trier.de/entity/Q3115	1760	1	in-12	utopie
+http://data.mimotext.uni-trier.de/entity/Q3121	1760	1	in-12	vie
+http://data.mimotext.uni-trier.de/entity/Q3142	1760	1	in-12	paysage
+http://data.mimotext.uni-trier.de/entity/Q3180	1760	1	in-12	Alpes
+http://data.mimotext.uni-trier.de/entity/Q3275	1760	1	in-12	Angleterre
+http://data.mimotext.uni-trier.de/entity/Q3521	1760	1	in-12	Paris
+http://data.mimotext.uni-trier.de/entity/Q3876	1760	1	in-12	Topic 25:[point voir moins]
+http://data.mimotext.uni-trier.de/entity/Q3126	1750	1	in-18	voyage
+http://data.mimotext.uni-trier.de/entity/Q2817	1750	1	in-12	chevalerie
+http://data.mimotext.uni-trier.de/entity/Q2907	1770	3	in-12	famille
+http://data.mimotext.uni-trier.de/entity/Q3085	1790	2	in-12	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q4031	1795	1	in-18	Topic 22:[bon petit dame]
+http://data.mimotext.uni-trier.de/entity/Q2992	1795	2	in-18	mœurs
+http://data.mimotext.uni-trier.de/entity/Q2984	1755	2	in-12	mélancolie
+http://data.mimotext.uni-trier.de/entity/Q3025	1795	1	in-12	passion
+http://data.mimotext.uni-trier.de/entity/Q2787	1795	1	in-12	art
+http://data.mimotext.uni-trier.de/entity/Q2798	1795	1	in-12	beauté
+http://data.mimotext.uni-trier.de/entity/Q3026	1795	1	in-12	pastorale en littérature
+http://data.mimotext.uni-trier.de/entity/Q2930	1795	1	in-12	guerre
+http://data.mimotext.uni-trier.de/entity/Q2933	1795	1	in-12	histoire
+http://data.mimotext.uni-trier.de/entity/Q2772	1785	1	in-12	alimentation
+http://data.mimotext.uni-trier.de/entity/Q2863	1785	1	in-12	destin
+http://data.mimotext.uni-trier.de/entity/Q3071	1785	1	in-12	richesse
+http://data.mimotext.uni-trier.de/entity/Q3089	1785	1	in-12	sociabilité
+http://data.mimotext.uni-trier.de/entity/Q2817	1790	1	in-18	chevalerie
+http://data.mimotext.uni-trier.de/entity/Q3006	1795	2	in-18	naufrage
+http://data.mimotext.uni-trier.de/entity/Q3001	1795	1	in-18	mystère
+http://data.mimotext.uni-trier.de/entity/Q3126	1785	1	other	voyage
+http://data.mimotext.uni-trier.de/entity/Q2895	1790	1	other	érotisme
+http://data.mimotext.uni-trier.de/entity/Q2919	1790	1	other	galanterie
+http://data.mimotext.uni-trier.de/entity/Q2907	1790	1	in-18	famille
+http://data.mimotext.uni-trier.de/entity/Q2978	1795	1	other	malheur
+http://data.mimotext.uni-trier.de/entity/Q2799	1795	1	in-18	bible
+http://data.mimotext.uni-trier.de/entity/Q2990	1795	2	in-18	miracle
+http://data.mimotext.uni-trier.de/entity/Q3150	1795	1	other	cour
+http://data.mimotext.uni-trier.de/entity/Q3005	1795	1	other	nature
+http://data.mimotext.uni-trier.de/entity/Q3085	1795	2	other	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q3120	1795	1	other	vertu
+http://data.mimotext.uni-trier.de/entity/Q2919	1795	2	other	galanterie
+http://data.mimotext.uni-trier.de/entity/Q2776	1795	1	other	amour
+http://data.mimotext.uni-trier.de/entity/Q2976	1795	1	in-18	mal
+http://data.mimotext.uni-trier.de/entity/Q4031	1765	1	in-12	Topic 22:[bon petit dame]
+http://data.mimotext.uni-trier.de/entity/Q2798	1770	1	in-18	beauté
+http://data.mimotext.uni-trier.de/entity/Q2895	1770	1	in-18	érotisme
+http://data.mimotext.uni-trier.de/entity/Q2969	1770	1	in-18	libertinage
+http://data.mimotext.uni-trier.de/entity/Q3012	1770	1	in-18	nuit
+http://data.mimotext.uni-trier.de/entity/Q3026	1770	1	in-18	pastorale en littérature
+http://data.mimotext.uni-trier.de/entity/Q3126	1770	1	in-18	voyage
+http://data.mimotext.uni-trier.de/entity/Q4031	1770	1	in-18	Topic 22:[bon petit dame]
+http://data.mimotext.uni-trier.de/entity/Q4032	1770	1	in-18	Topic 23:[femme homme esprit]
+http://data.mimotext.uni-trier.de/entity/Q2864	1770	1	in-12	deuil
+http://data.mimotext.uni-trier.de/entity/Q3005	1770	1	in-12	nature
+http://data.mimotext.uni-trier.de/entity/Q2992	1775	1	other	mœurs
+http://data.mimotext.uni-trier.de/entity/Q3126	1775	1	other	voyage
+http://data.mimotext.uni-trier.de/entity/Q2776	1775	2	other	amour
+http://data.mimotext.uni-trier.de/entity/Q2978	1775	2	other	malheur
+http://data.mimotext.uni-trier.de/entity/Q3085	1775	3	other	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q2930	1775	1	other	guerre
+http://data.mimotext.uni-trier.de/entity/Q3087	1775	1	other	sentiment
+http://data.mimotext.uni-trier.de/entity/Q3115	1780	1	in-12	utopie
+http://data.mimotext.uni-trier.de/entity/Q3297	1780	1	in-12	île
+http://data.mimotext.uni-trier.de/entity/Q2817	1785	2	in-12	chevalerie
+http://data.mimotext.uni-trier.de/entity/Q3006	1785	1	other	naufrage
+http://data.mimotext.uni-trier.de/entity/Q3085	1785	1	other	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q2914	1785	1	in-12	finance
+http://data.mimotext.uni-trier.de/entity/Q3521	1785	1	in-12	Paris
+http://data.mimotext.uni-trier.de/entity/Q2992	1790	1	other	mœurs
+http://data.mimotext.uni-trier.de/entity/Q3085	1790	2	other	sentimentalisme
+http://data.mimotext.uni-trier.de/entity/Q3087	1790	1	other	sentiment
+http://data.mimotext.uni-trier.de/entity/Q3150	1790	1	in-18	cour
+http://data.mimotext.uni-trier.de/entity/Q3126	1790	2	other	voyage
+http://data.mimotext.uni-trier.de/entity/Q3006	1790	1	other	naufrage
+http://data.mimotext.uni-trier.de/entity/Q2978	1790	1	other	malheur
+http://data.mimotext.uni-trier.de/entity/Q3048	1790	2	other	politique
+http://data.mimotext.uni-trier.de/entity/Q3039	1790	1	other	philosophie
+http://data.mimotext.uni-trier.de/entity/Q3120	1790	1	in-18	vertu
+http://data.mimotext.uni-trier.de/entity/Q3994	1760	1	in-12	esprit
+http://data.mimotext.uni-trier.de/entity/Q2822	1775	1	in-12	civilisation
+http://data.mimotext.uni-trier.de/entity/Q2823	1775	1	in-12	classe sociale
+http://data.mimotext.uni-trier.de/entity/Q2845	1775	1	in-12	correspondance littéraire
+http://data.mimotext.uni-trier.de/entity/Q2850	1775	1	in-12	critique sociale
+http://data.mimotext.uni-trier.de/entity/Q2917	1775	1	in-12	fuite
+http://data.mimotext.uni-trier.de/entity/Q2933	1775	1	in-12	histoire
+http://data.mimotext.uni-trier.de/entity/Q2969	1775	1	in-12	libertinage
+http://data.mimotext.uni-trier.de/entity/Q3038	1775	1	in-12	peuple
+http://data.mimotext.uni-trier.de/entity/Q3006	1780	1	in-12	naufrage
+http://data.mimotext.uni-trier.de/entity/Q2896	1790	1	in-18	esclavage
