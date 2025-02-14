@@ -11,6 +11,7 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - chapter6_stylometry.qmd
     - summary.qmd
     - references.qmd
 
