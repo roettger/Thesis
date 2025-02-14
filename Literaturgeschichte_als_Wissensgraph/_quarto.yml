@@ -1,0 +1,28 @@
+project:
+  type: book
+
+book:
+  title: "Literaturgeschichte als Wissensgraph"
+  author: "Julia Röttgermann"
+  date: "14.2.2025"
+  search: true
+  repo-url: https://github.com/roettger/Thesis
+  downloads: [pdf, epub]
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+
+

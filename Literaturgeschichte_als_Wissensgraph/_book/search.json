@@ -1,0 +1,32 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Literaturgeschichte als Wissensgraph",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Ein Wikidata der Literaturgeschichtsschreibung",
+    "section": "",
+    "text": "„Algorithms have changed both what we study, and how we study it.“\n[(Moretti 2016, 2)]\nWährend der Mensch der Aufklärung noch im optimistischen Unterfangen das aktuelle Weltwissen abzubilden eine machbare Herausforderung sah, kapituliert der Mensch des 21. Jahrhunderts unter einer Flut an Daten und Informationen.[^2] Die digitale Revolution erschließt in Sekundenschnelle nicht nur eine individuell kaum zu bewältigende Menge an weltweiten Nachrichten, Blogposts oder Social Media Posts - auch die Literaturwissenschaften können anno 2025 auf eine weit über den klassischen Kanon hinausgehende Masse an literarischen Texten",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Ein Wikidata der Literaturgeschichtsschreibung</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  }
+]

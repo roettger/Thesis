@@ -1,0 +1,7 @@
+# Ein Wikidata der Literaturgeschichtsschreibung 
+
+*„Algorithms have changed both what we study, and how we study it.“*
+
+ *[(Moretti 2016, 2\)]*
+
+Während der Mensch der Aufklärung noch im optimistischen Unterfangen das aktuelle Weltwissen abzubilden eine machbare Herausforderung sah, kapituliert der Mensch des 21\. Jahrhunderts unter einer Flut an Daten und Informationen.[^2] Die digitale Revolution erschließt in Sekundenschnelle nicht nur eine individuell kaum zu bewältigende Menge an weltweiten Nachrichten, Blogposts oder Social Media Posts \- auch die Literaturwissenschaften können anno 2025 auf eine weit über den klassischen Kanon hinausgehende Masse an literarischen Texten 
