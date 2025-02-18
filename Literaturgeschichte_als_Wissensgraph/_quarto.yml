@@ -12,12 +12,13 @@ book:
   downloads: [pdf, epub]
   chapters:
     - index.qmd
-    - intro.qmd
     - chapter6_stylometry.qmd
     - summary.qmd
     - references.qmd
 
 bibliography: references.bib
+csl: DHd.csl
+
 
 format:
   html:
@@ -26,6 +27,11 @@ format:
       - brand
   pdf:
     documentclass: scrreprt
-
-
+    include-in-header: 
+      text: |
+        \usepackage{makeidx}
+        \makeindex
+    include-after-body: 
+      text: |
+        \printindex
 

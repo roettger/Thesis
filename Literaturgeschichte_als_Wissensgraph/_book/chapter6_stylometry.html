@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Stilometrische Analyse von Französischen Romanen 1751-1800 – Literaturgeschichte als Wissensgraph</title>
+<title>1&nbsp; Stilometrische Analyse von Französischen Romanen 1751-1800 – Literaturgeschichte als Wissensgraph</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -31,7 +51,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./summary.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter6_stylometry.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><strong>Stilometrische Analyse von Französischen Romanen 1751-1800</strong></span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter6_stylometry.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><strong>Stilometrische Analyse von Französischen Romanen 1751-1800</strong></span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -134,20 +154,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Ein Wikidata der Literaturgeschichtsschreibung</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./chapter6_stylometry.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><strong>Stilometrische Analyse von Französischen Romanen 1751-1800</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><strong>Stilometrische Analyse von Französischen Romanen 1751-1800</strong></span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -166,29 +180,26 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#einleitung-was-ist-stilometrie" id="toc-einleitung-was-ist-stilometrie" class="nav-link active" data-scroll-target="#einleitung-was-ist-stilometrie"><span class="header-section-number">2.1</span> Einleitung: Was ist Stilometrie?</a></li>
-  <li><a href="#pionierstudien-und-toolentwicklung" id="toc-pionierstudien-und-toolentwicklung" class="nav-link" data-scroll-target="#pionierstudien-und-toolentwicklung"><span class="header-section-number">2.2</span> Pionierstudien und Toolentwicklung</a></li>
-  <li><a href="#theoretische-grundlagen-distanzmaße" id="toc-theoretische-grundlagen-distanzmaße" class="nav-link" data-scroll-target="#theoretische-grundlagen-distanzmaße"><span class="header-section-number">2.3</span> Theoretische Grundlagen: Distanzmaße</a></li>
-  <li><a href="#fallstudie-wer-ist-der-autor-von-létourdi-1784" id="toc-fallstudie-wer-ist-der-autor-von-létourdi-1784" class="nav-link" data-scroll-target="#fallstudie-wer-ist-der-autor-von-létourdi-1784"><span class="header-section-number">2.4</span> Fallstudie: Wer ist der Autor von <em>L’Étourdi</em> (1784)?</a>
+  <li><a href="#einleitung-was-ist-stilometrie" id="toc-einleitung-was-ist-stilometrie" class="nav-link active" data-scroll-target="#einleitung-was-ist-stilometrie"><span class="header-section-number">1.1</span> Einleitung: Was ist Stilometrie?</a></li>
+  <li><a href="#pionierstudien-und-toolentwicklung" id="toc-pionierstudien-und-toolentwicklung" class="nav-link" data-scroll-target="#pionierstudien-und-toolentwicklung"><span class="header-section-number">1.2</span> Pionierstudien und Toolentwicklung</a></li>
+  <li><a href="#theoretische-grundlagen-distanzmaße" id="toc-theoretische-grundlagen-distanzmaße" class="nav-link" data-scroll-target="#theoretische-grundlagen-distanzmaße"><span class="header-section-number">1.3</span> Theoretische Grundlagen: Distanzmaße</a></li>
+  <li><a href="#fallstudie-wer-ist-der-autor-von-létourdi-1784" id="toc-fallstudie-wer-ist-der-autor-von-létourdi-1784" class="nav-link" data-scroll-target="#fallstudie-wer-ist-der-autor-von-létourdi-1784"><span class="header-section-number">1.4</span> Fallstudie: Wer ist der Autor von <em>L’Étourdi</em> (1784)?</a>
   <ul class="collapse">
-  <li><a href="#korpuszusammensetzung-und-textgrundlage" id="toc-korpuszusammensetzung-und-textgrundlage" class="nav-link" data-scroll-target="#korpuszusammensetzung-und-textgrundlage"><span class="header-section-number">2.4.1</span> Korpuszusammensetzung und Textgrundlage</a></li>
-  <li><a href="#sollte-doch-apollinaire-recht-behalten" id="toc-sollte-doch-apollinaire-recht-behalten" class="nav-link" data-scroll-target="#sollte-doch-apollinaire-recht-behalten"><span class="header-section-number">2.4.2</span> Sollte doch Apollinaire recht behalten?</a></li>
-  <li><a href="#überraschende-erkenntnis-dendrogram-und-numerische-distanzwerte-legen-verschiedene-hypothesen-nahe" id="toc-überraschende-erkenntnis-dendrogram-und-numerische-distanzwerte-legen-verschiedene-hypothesen-nahe" class="nav-link" data-scroll-target="#überraschende-erkenntnis-dendrogram-und-numerische-distanzwerte-legen-verschiedene-hypothesen-nahe"><span class="header-section-number">2.4.3</span> Überraschende Erkenntnis: Dendrogram und numerische Distanzwerte legen verschiedene Hypothesen nahe</a></li>
+  <li><a href="#korpuszusammensetzung-und-textgrundlage" id="toc-korpuszusammensetzung-und-textgrundlage" class="nav-link" data-scroll-target="#korpuszusammensetzung-und-textgrundlage"><span class="header-section-number">1.4.1</span> Korpuszusammensetzung und Textgrundlage</a></li>
+  <li><a href="#sollte-doch-apollinaire-recht-behalten" id="toc-sollte-doch-apollinaire-recht-behalten" class="nav-link" data-scroll-target="#sollte-doch-apollinaire-recht-behalten"><span class="header-section-number">1.4.2</span> Sollte doch Apollinaire recht behalten?</a></li>
+  <li><a href="#überraschende-erkenntnis-dendrogram-und-numerische-distanzwerte-legen-verschiedene-hypothesen-nahe" id="toc-überraschende-erkenntnis-dendrogram-und-numerische-distanzwerte-legen-verschiedene-hypothesen-nahe" class="nav-link" data-scroll-target="#überraschende-erkenntnis-dendrogram-und-numerische-distanzwerte-legen-verschiedene-hypothesen-nahe"><span class="header-section-number">1.4.3</span> Überraschende Erkenntnis: Dendrogram und numerische Distanzwerte legen verschiedene Hypothesen nahe</a></li>
   </ul></li>
-  <li><a href="#abfrage-der-stilometrischen-analyse-in-sparql" id="toc-abfrage-der-stilometrischen-analyse-in-sparql" class="nav-link" data-scroll-target="#abfrage-der-stilometrischen-analyse-in-sparql"><span class="header-section-number">2.5</span> Abfrage der stilometrischen Analyse in SPARQL</a></li>
-  <li><a href="#rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind" id="toc-rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind" class="nav-link" data-scroll-target="#rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind"><span class="header-section-number">2.6</span> Rousseaus Werke im Graphen und Werke, die jenen stilometrisch “nah” sind</a></li>
-  <li><a href="#welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form" id="toc-welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form" class="nav-link" data-scroll-target="#welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form"><span class="header-section-number">2.7</span> Welche Gemeinsamkeiten haben Werke, die sich basierend auf einer stilometrischen Analyse ähnlich sind: Autor, Tonalität, narrative Form?</a></li>
-  <li><a href="#modellierung-des-ergebnisses-in-wikibase" id="toc-modellierung-des-ergebnisses-in-wikibase" class="nav-link" data-scroll-target="#modellierung-des-ergebnisses-in-wikibase"><span class="header-section-number">2.8</span> Modellierung des Ergebnisses in Wikibase</a></li>
-  <li><a href="#zusammenfassung" id="toc-zusammenfassung" class="nav-link" data-scroll-target="#zusammenfassung"><span class="header-section-number">2.9</span> Zusammenfassung</a>
+  <li><a href="#abfrage-der-stilometrischen-analyse-in-sparql" id="toc-abfrage-der-stilometrischen-analyse-in-sparql" class="nav-link" data-scroll-target="#abfrage-der-stilometrischen-analyse-in-sparql"><span class="header-section-number">1.5</span> Abfrage der stilometrischen Analyse in SPARQL</a></li>
+  <li><a href="#rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind" id="toc-rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind" class="nav-link" data-scroll-target="#rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind"><span class="header-section-number">1.6</span> Rousseaus Werke im Graphen und Werke, die jenen stilometrisch “nah” sind</a></li>
+  <li><a href="#welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form" id="toc-welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form" class="nav-link" data-scroll-target="#welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form"><span class="header-section-number">1.7</span> Welche Gemeinsamkeiten haben Werke, die sich basierend auf einer stilometrischen Analyse ähnlich sind: Autor, Tonalität, narrative Form?</a></li>
+  <li><a href="#modellierung-des-ergebnisses-in-wikibase" id="toc-modellierung-des-ergebnisses-in-wikibase" class="nav-link" data-scroll-target="#modellierung-des-ergebnisses-in-wikibase"><span class="header-section-number">1.8</span> Modellierung des Ergebnisses in Wikibase</a></li>
+  <li><a href="#zusammenfassung" id="toc-zusammenfassung" class="nav-link" data-scroll-target="#zusammenfassung"><span class="header-section-number">1.9</span> Zusammenfassung</a></li>
+  <li><a href="#bibliographie" id="toc-bibliographie" class="nav-link" data-scroll-target="#bibliographie"><span class="header-section-number">1.10</span> Bibliographie</a></li>
+  <li><a href="#appendix-sparql-queries" id="toc-appendix-sparql-queries" class="nav-link" data-scroll-target="#appendix-sparql-queries"><span class="header-section-number">1.11</span> Appendix: SPARQL-Queries</a>
   <ul class="collapse">
-  <li><a href="#referenzen" id="toc-referenzen" class="nav-link" data-scroll-target="#referenzen"><span class="header-section-number">2.9.1</span> Referenzen</a></li>
-  </ul></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">2.10</span> </a></li>
-  <li><a href="#appendix-sparql-queries" id="toc-appendix-sparql-queries" class="nav-link" data-scroll-target="#appendix-sparql-queries"><span class="header-section-number">2.11</span> Appendix: SPARQL-Queries</a>
-  <ul class="collapse">
-  <li><a href="#files-mit-volltext-url-und-mindestens-drei-werken-pro-autorin" id="toc-files-mit-volltext-url-und-mindestens-drei-werken-pro-autorin" class="nav-link" data-scroll-target="#files-mit-volltext-url-und-mindestens-drei-werken-pro-autorin"><span class="header-section-number">2.11.1</span> Files mit Volltext-URL und mindestens drei Werken pro Autor:in</a></li>
-  <li><a href="#rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind-1" id="toc-rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind-1" class="nav-link" data-scroll-target="#rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind-1"><span class="header-section-number">2.11.2</span> Rousseaus Werke im Graphen und Werke, die jenen stilometrisch “nah” sind</a></li>
-  <li><a href="#welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form-1" id="toc-welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form-1" class="nav-link" data-scroll-target="#welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form-1"><span class="header-section-number">2.11.3</span> Welche Gemeinsamkeiten haben Werke, die sich basierend auf einer stilometrischen Analyse ähnlich sind: Autor, Tonalität, narrative Form?</a></li>
+  <li><a href="#files-mit-volltext-url-und-mindestens-drei-werken-pro-autorin" id="toc-files-mit-volltext-url-und-mindestens-drei-werken-pro-autorin" class="nav-link" data-scroll-target="#files-mit-volltext-url-und-mindestens-drei-werken-pro-autorin"><span class="header-section-number">1.11.1</span> Files mit Volltext-URL und mindestens drei Werken pro Autor:in</a></li>
+  <li><a href="#rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind-1" id="toc-rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind-1" class="nav-link" data-scroll-target="#rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind-1"><span class="header-section-number">1.11.2</span> Rousseaus Werke im Graphen und Werke, die jenen stilometrisch “nah” sind</a></li>
+  <li><a href="#welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form-1" id="toc-welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form-1" class="nav-link" data-scroll-target="#welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form-1"><span class="header-section-number">1.11.3</span> Welche Gemeinsamkeiten haben Werke, die sich basierend auf einer stilometrischen Analyse ähnlich sind: Autor, Tonalität, narrative Form?</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -198,7 +209,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><strong>Stilometrische Analyse von Französischen Romanen 1751-1800</strong></span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><strong>Stilometrische Analyse von Französischen Romanen 1751-1800</strong></span></h1>
 </div>
 
 
@@ -216,61 +227,74 @@ ul.task-list li input[type="checkbox"] {
 
 
 <blockquote class="blockquote">
-<p>The close reader sees things in a text — single moments and large amorphous movements —to which computer programs give no easy access. The computer, on the other hand, reveals hidden patterns and enables us to marshal hosts of instances too numerous for our unassisted powers. — (Burrows 2002a: 696)</p>
+<p>The close reader sees things in a text — single moments and large amorphous movements —to which computer programs give no easy access. The computer, on the other hand, reveals hidden patterns and enables us to marshal hosts of instances too numerous for our unassisted powers.</p>
 </blockquote>
-<section id="einleitung-was-ist-stilometrie" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="einleitung-was-ist-stilometrie"><span class="header-section-number">2.1</span> Einleitung: Was ist Stilometrie?</h2>
-<p>Was ist Stilometrie und wozu können wir die Methode hinsichtlich einer datenbasierten Literaturgeschichte einsetzen? Die Methode, die Anwendung sowohl in den Digitalen Geisteswissenschaften als auch in der forensischen Linguistik findet, nutzt linguistische Merkmale, statistische Modelle, und computergestützte Verfahren, um stilistische Muster in schriftlichen Texten zu identifizieren und zu vergleichen. Eines der meist verbreiteten Ziele der Stilometrie ist es dabei, die Autorschaft eines Textes mit computationellen Mitteln nachzuweisen <a href="https://www.zotero.org/google-docs/?maUret">(Burrows 2005; Craig / Kinney 2009; Hoover 2010; Rotari / Jander / Rybicki 2021)</a>. Daneben gibt es jedoch auch Studien, die die statistischen sprachlichen Eigenschaften hinsichtlich von Gender-Unterschieden, Phänomene wie die individuellen Veränderungen eines Schreibstils im Laufe der Zeit oder in unterschiedlichen literarischen Gattungen analysieren <a href="https://www.zotero.org/google-docs/?zoKZNO">(Holmes 1998; Jannidis / Lauer 2014; Schöch 2017; Weidman / Pastor 2021)</a>.<br>
-Der Begriff Stilometrie setzt sich aus den beiden Wortteilen “Stil” und “-metrie” zusammen, also eine literarische oder linguistische Kategorie (Stil) und das Konfix “-metrie”, das suggeriert, dass etwas gezählt wird.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Zunächst stellt sich daher die Frage: Was ist Stil? Dazu haben <a href="https://www.zotero.org/google-docs/?broken=IVkLlM">Herrmann, van Dalen-Oskam und Schöch</a> 2015 eine Definition formuliert, die man sowohl für computationelle Methoden als auch im klassischen literaturwissenschaftlichen Sinne anwenden kann: “Style is a property of texts constituted by an ensemble of formal features which can be observed quantitatively or qualitatively” <a href="https://www.zotero.org/google-docs/?Ri2hm4">(Berenike Herrmann / Van Dalen-Oskam / Schöch 2015: 44)</a>. Stilometrie nutzt das Zählen stilistischer Merkmale in Form der Verwendungshäufigkeit bestimmter Wörter (‘most frequent words’), um Aussagen zur Textähnlichkeit zu generieren, die unter bestimmten Bedingungen Rückschlüsse auf die Autorschaft zulassen.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
-<p>Das vorliegende Kapitel beginnt damit, die Anfänge bzw. wegweisende Studien der Stilometrie zu beschreiben. Als Pionierstudien der Stilometrie werden die Studie zu den <em>Federalist Papers</em> <a href="https://www.zotero.org/google-docs/?XNe5yZ">(Mosteller / Wallace 1983)</a> und Burrow’s Delta <a href="https://www.zotero.org/google-docs/?DQ9bVV">(Burrows 2002b)</a> zusammengefasst. Als weitere theoretische Grundlage werden verschiedene Distanzmaße und zudem die Relevanz des R-Pakets ‘stylo’ innerhalb der Community der Digital Humanities beschrieben.<br>
+<blockquote class="blockquote">
+<p>— <span class="citation" data-cites="burrows_delta_2002">Burrows (<a href="chapter6_stylometry.html#ref-burrows_delta_2002" role="doc-biblioref">2002</a>)</span>; pp.&nbsp;696</p>
+</blockquote>
+<section id="einleitung-was-ist-stilometrie" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="einleitung-was-ist-stilometrie"><span class="header-section-number">1.1</span> Einleitung: Was ist Stilometrie?</h2>
+<p>Was ist Stilometrie und wozu können wir die Methode hinsichtlich einer datenbasierten Literaturgeschichte einsetzen? Die Methode, die Anwendung sowohl in den Digitalen Geisteswissenschaften als auch in der forensischen Linguistik findet, nutzt linguistische Merkmale, statistische Modelle, und computergestützte Verfahren, um stilistische Muster in schriftlichen Texten zu identifizieren und zu vergleichen. Eines der meist verbreiteten Ziele der Stilometrie ist es dabei, die Autorschaft eines Textes mit computationellen Mitteln nachzuweisen <span class="citation" data-cites="burrows_delta_2002 hoover_dh2010_nodate rotari_grimm_2021">(<a href="chapter6_stylometry.html#ref-burrows_delta_2002" role="doc-biblioref">Burrows 2002</a>; <a href="chapter6_stylometry.html#ref-hoover_dh2010_nodate" role="doc-biblioref">Hoover 2010</a>; <a href="chapter6_stylometry.html#ref-rotari_grimm_2021" role="doc-biblioref">Rotari / Jander / Rybicki 2021</a>)</span>. Daneben gibt es jedoch auch Studien, die die statistischen sprachlichen Eigenschaften hinsichtlich von Gender-Unterschieden, Phänomene wie die individuellen Veränderungen eines Schreibstils im Laufe der Zeit oder in unterschiedlichen literarischen Gattungen analysieren <span class="citation" data-cites="holmes_evolution_1998 jannidis_1_2014 schoch_corneille_2014 weidman_modernism_2021">(<a href="chapter6_stylometry.html#ref-holmes_evolution_1998" role="doc-biblioref">Holmes 1998</a>; <a href="chapter6_stylometry.html#ref-jannidis_1_2014" role="doc-biblioref">Jannidis / Lauer 2014</a>; <a href="chapter6_stylometry.html#ref-schoch_corneille_2014" role="doc-biblioref">Schöch 2014</a>; <a href="chapter6_stylometry.html#ref-weidman_modernism_2021" role="doc-biblioref">Weidman / Pastor 2021</a>)</span>.<br>
+Der Begriff Stilometrie setzt sich aus den beiden Wortteilen “Stil” und “-metrie” zusammen, also eine literarische oder linguistische Kategorie (Stil) und das Konfix “-metrie”, das suggeriert, dass etwas gezählt wird.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Zunächst stellt sich daher die Frage: Was ist Stil? Dazu haben <span class="citation" data-cites="berenike_herrmann_revisiting_2015">Berenike Herrmann / Van Dalen-Oskam / Schöch (<a href="chapter6_stylometry.html#ref-berenike_herrmann_revisiting_2015" role="doc-biblioref">2015</a>)</span> eine Definition formuliert, die man sowohl für computationelle Methoden als auch im klassischen literaturwissenschaftlichen Sinne anwenden kann: “Style is a property of texts constituted by an ensemble of formal features which can be observed quantitatively or qualitatively” <span class="citation" data-cites="berenike_herrmann_revisiting_2015">(<a href="chapter6_stylometry.html#ref-berenike_herrmann_revisiting_2015" role="doc-biblioref">Berenike Herrmann / Van Dalen-Oskam / Schöch 2015</a>)</span>. Stilometrie nutzt das Zählen stilistischer Merkmale in Form der Verwendungshäufigkeit bestimmter Wörter (‘most frequent words’), um Aussagen zur Textähnlichkeit zu generieren, die unter bestimmten Bedingungen Rückschlüsse auf die Autorschaft zulassen.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>Das vorliegende Kapitel beginnt damit, die Anfänge bzw. wegweisende Studien der Stilometrie zu beschreiben. Als Pionierstudien der Stilometrie werden die Studie zu den <em>Federalist Papers</em> <span class="citation" data-cites="mosteller_inference_1963">(<a href="chapter6_stylometry.html#ref-mosteller_inference_1963" role="doc-biblioref">Mosteller / Wallace 1963</a>)</span> und Burrow’s Delta <span class="citation" data-cites="burrows_delta_2002">(<a href="chapter6_stylometry.html#ref-burrows_delta_2002" role="doc-biblioref">Burrows 2002</a>)</span> zusammengefasst. Als weitere theoretische Grundlage werden verschiedene Distanzmaße und zudem die Relevanz des R-Pakets ‘stylo’ innerhalb der Community der Digital Humanities beschrieben.<br>
 Im Anschluss beschreibe ich einen konkreten Anwendungsfall. Dazu untersuche ich eine Fallstudie zu einem Roman mit ungeklärter Autorschaft aus der Textsammlung roman18 in mehreren Schritten: Verwendung eines Subkorpus von roman18, Analyse mit um Texte eines potentiellen Autors erweitertem Datensatz, Hierarchical Wards Clustering, Bootstrap Consensus Tree. Eine überraschende Erkenntnis liefert der Vergleich aus Clustering und numerischen Distanzwerten der stilometrischen Analyse. Abschließend beschreibe und diskutiere ich die Modellierung in Wikibase unter Verwendung von ‘ranks’ und SPARQL-Abfragen zu Gemeinsamkeiten stilometrisch naher Werke.</p>
 <p><em>Keywords: Stilometrie, Federalist Papers, Delta, stylo, Hierarchical Wards Clustering, Bootstrap Consensus Tree, Principal Component Analysis, Wikibase, preferred rank, SPARQL.</em></p>
 </section>
-<section id="pionierstudien-und-toolentwicklung" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="pionierstudien-und-toolentwicklung"><span class="header-section-number">2.2</span> Pionierstudien und Toolentwicklung</h2>
-<p>Eine Studie von Mosteller und Wallace 1964 zu den <em>Federalist Papers</em> verschaffte der Stilometrie den wissenschaftlichen Durchbruch: Die <em>Federalist Papers</em> sind eine 1787-1788 veröffentlichte Sammlung von 85 Essays zur politischen Theorie. In diesen 900 bis 3500 Wörter langen Schriften, die während der Debatte über die Ratifizierung der Verfassung der Vereinigten Staaten verfasst wurden, werden die Argumente für das Regierungssystem dargelegt, dass die USA schließlich angenommen haben und unter dem sie bis zum heutigen Tag leben. Die Autorschaft dieser Artikel, unterzeichnet mit dem Pseudonym “Publius”, war lange Zeit unklar <a href="https://www.zotero.org/google-docs/?SEaPc6">(Laramée 2018)</a>. Mithilfe der Analyse der Wortfrequenzen gelang es Mosteller und Wallace, die ungeklärte Zuordnung aus mehreren möglichen Autoren aufzulösen <a href="https://www.zotero.org/google-docs/?wNAfTv">(Kenny 1982: 8–9)</a>. Die Bedingungen in der <em>Federalist Paper</em>-Studie können sicherlich auch als ideal gelten, werden doch mehrere Parameter - wie Kontext, Gender und Gattung - konstant gehalten.</p>
-<p>Ein weiterer bedeutender Beitrag zur Stilometrie stammt von John Burrows, der das Distanzmaß ›Delta‹ entwickelte, mithilfe dessen sich für einen anonymen Text eine Zuordnung zu einem Korpus bekannter Texte und Autor:innen treffen lässt. Seine Studie, die multivariate statistische Verfahren wie Cluster- oder Principal Component Analyse (PCA) einsetzt, und die daraus resultierenden Erkenntnisse haben bedeutende Impulse für die Stilometrie und die Autorschaftsattribution in den Computational Literary Studies geliefert. Burrows Delta verwendet den Manhattan-Abstand und hat sich als besonders effektiv erwiesen, um Autorschaftsfragen oder die Beteiligung einzelner Autoren an umfangreichen Textsammlungen zu klären <a href="https://www.zotero.org/google-docs/?iXqerG">(Büttner et al.&nbsp;2017)</a>. Basierend auf Burrows Delta wurden weitere Varianten zur Verbesserung vorgeschlagen, beispielsweise der Vorschlag, statt der Manhattan-Distanz den Kosinus-Winkel zwischen den Vektoren zu verwenden <a href="https://www.zotero.org/google-docs/?yxqqUr">(Smith / Aldridge 2011)</a>.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
-<p>Bezüglich der Toolentwicklung kommt Maciej Eder, Jan Rybicki und Mike Kestemont der Verdienst zu, ein eingängiges, leicht bedienbares Tool für die Statistikumgebung R entwickelt zu haben, dass auch zur weiten Verbreitung der Methode in den Digital Humanities und darüber hinaus geführt hat <a href="https://www.zotero.org/google-docs/?lHf3So">(Horstmann 2018)</a>: “Stylo” <a href="https://www.zotero.org/google-docs/?sxwNMr">(Eder / Rybicki / Kestemont 2016)</a>.</p>
+<section id="pionierstudien-und-toolentwicklung" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="pionierstudien-und-toolentwicklung"><span class="header-section-number">1.2</span> Pionierstudien und Toolentwicklung</h2>
+<p>Eine Studie von Mosteller und Wallace 1964 zu den <em>Federalist Papers</em> verschaffte der Stilometrie den wissenschaftlichen Durchbruch: Die <em>Federalist Papers</em> sind eine 1787-1788 veröffentlichte Sammlung von 85 Essays zur politischen Theorie. In diesen 900 bis 3500 Wörter langen Schriften, die während der Debatte über die Ratifizierung der Verfassung der Vereinigten Staaten verfasst wurden, werden die Argumente für das Regierungssystem dargelegt, dass die USA schließlich angenommen haben und unter dem sie bis zum heutigen Tag leben. Die Autorschaft dieser Artikel, unterzeichnet mit dem Pseudonym “Publius”, war lange Zeit unklar <span class="citation" data-cites="laramee_introduction_2018">(<a href="chapter6_stylometry.html#ref-laramee_introduction_2018" role="doc-biblioref">Laramée 2018</a>)</span>. Mithilfe der Analyse der Wortfrequenzen gelang es Mosteller und Wallace, die ungeklärte Zuordnung aus mehreren möglichen Autoren aufzulösen [<span class="citation" data-cites="kenny_1_1982">Kenny (<a href="chapter6_stylometry.html#ref-kenny_1_1982" role="doc-biblioref">1982</a>)</span>; pp.8–9]. Die Bedingungen in der <em>Federalist Paper</em>-Studie können sicherlich auch als ideal gelten, werden doch mehrere Parameter - wie Kontext, Gender und Gattung - konstant gehalten.</p>
+<p>Ein weiterer bedeutender Beitrag zur Stilometrie stammt von John Burrows, der das Distanzmaß ›Delta‹ entwickelte, mithilfe dessen sich für einen anonymen Text eine Zuordnung zu einem Korpus bekannter Texte und Autor:innen treffen lässt. Seine Studie, die multivariate statistische Verfahren wie Cluster- oder Principal Component Analyse (PCA) einsetzt, und die daraus resultierenden Erkenntnisse haben bedeutende Impulse für die Stilometrie und die Autorschaftsattribution in den Computational Literary Studies geliefert. Burrows Delta verwendet den Manhattan-Abstand und hat sich als besonders effektiv erwiesen, um Autorschaftsfragen oder die Beteiligung einzelner Autoren an umfangreichen Textsammlungen zu klären <span class="citation" data-cites="buttner_delta_2017">(<a href="chapter6_stylometry.html#ref-buttner_delta_2017" role="doc-biblioref">Büttner et al. 2017</a>)</span>. Basierend auf Burrows Delta wurden weitere Varianten zur Verbesserung vorgeschlagen, beispielsweise der Vorschlag, statt der Manhattan-Distanz den Kosinus-Winkel zwischen den Vektoren zu verwenden <span class="citation" data-cites="smith_improving_2011">(<a href="chapter6_stylometry.html#ref-smith_improving_2011" role="doc-biblioref">Smith / Aldridge 2011</a>)</span>.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>Bezüglich der Toolentwicklung kommt Maciej Eder, Jan Rybicki und Mike Kestemont der Verdienst zu, ein eingängiges, leicht bedienbares Tool für die Statistikumgebung R entwickelt zu haben, dass auch zur weiten Verbreitung der Methode in den Digital Humanities und darüber hinaus geführt hat <span class="citation" data-cites="horstmann_methodenbeitrag_2024">(<a href="chapter6_stylometry.html#ref-horstmann_methodenbeitrag_2024" role="doc-biblioref">Horstmann 2024</a>)</span>: “Stylo” <span class="citation" data-cites="eder_stylometry_2016">(<a href="chapter6_stylometry.html#ref-eder_stylometry_2016" role="doc-biblioref">Eder / Rybicki / Kestemont 2016</a>)</span>.</p>
 </section>
-<section id="theoretische-grundlagen-distanzmaße" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="theoretische-grundlagen-distanzmaße"><span class="header-section-number">2.3</span> Theoretische Grundlagen: Distanzmaße</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="distance_measures_evert_2017.jpg" class="img-fluid figure-img"></p>
-<figcaption>Distanzmaße: Manhattan-Distanz, Euklidische Distanz und Kosinus-Distanz [Stefan Evert, 2017. Lizenziert unter Creative Commons Namensnennung 4.0 International (CC-BY)]</figcaption>
+<section id="theoretische-grundlagen-distanzmaße" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="theoretische-grundlagen-distanzmaße"><span class="header-section-number">1.3</span> Theoretische Grundlagen: Distanzmaße</h2>
+<div id="fig-distance-measures" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-distance-measures-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="evert_jannidis_schoch_2016.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-distance-measures-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: Distanzmaße: Manhattan-Distanz, Euklidische Distanz und Kosinus-Distanz [Stefan Evert, 2017. Lizenziert unter Creative Commons Namensnennung 4.0 International (CC-BY)]
+</figcaption>
 </figure>
 </div>
-<p><strong>Abb. 6.1</strong> Distanzmaße: Manhattan-Distanz, Euklidische Distanz und Kosinus-Distanz [Stefan Evert, 2017. Lizenziert unter Creative Commons Namensnennung 4.0 International (CC-BY)]</p>
-<p>Im Kontext der Textanalyse werden verschiedene Distanzmaße verwendet, um die Unterschiede zwischen Texten zu quantifizieren <a href="https://www.zotero.org/google-docs/?broken=kg8XTk">(cf.&nbsp;Schöch 2017: 294–295)</a>. Die <strong>Manhattan-Distanz</strong> misst die absolute Distanz zweier Vektoren in jeder einzelnen Dimension. Die Summe dieser absoluten Distanzen ergibt die Gesamtdistanz, wobei jede Dimension gleich gewichtet wird (Abb. 6.1) .</p>
+<p>Im Kontext der Textanalyse werden verschiedene Distanzmaße verwendet, um die Unterschiede zwischen Texten zu quantifizieren [<span class="citation" data-cites="jannidis_quantitative_2017">Schöch (<a href="chapter6_stylometry.html#ref-jannidis_quantitative_2017" role="doc-biblioref">2017</a>)</span>; pp.&nbsp;294–295]. Die <strong>Manhattan-Distanz</strong> misst die absolute Distanz zweier Vektoren in jeder einzelnen Dimension. Die Summe dieser absoluten Distanzen ergibt die Gesamtdistanz, wobei jede Dimension gleich gewichtet wird (<a href="#fig-distance-measures" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>).</p>
 <p>Die <strong>Euklidische Distanz</strong> ähnelt der Vogelfluglinie zwischen zwei Punkten. Hierbei werden die Distanzen in jeder Dimension quadriert, summiert und schließlich die Quadratwurzel aus der Gesamtsumme gezogen. Dies führt dazu, dass größere Distanzen in einer einzelnen Dimension durch die Quadrierung stärker gewichtet werden, was in der stilometrischen Autorschaftsattribution besonders relevant ist, da häufig vorkommende Wörter einen überproportionalen Einfluss haben können. Bei der euklidischen Distanz haben die höchstfrequenten Wörter besonders viel Einfluss.</p>
 <p>Der <strong>Kosinus-Abstand</strong> wird als eine Form der Vektor-Normalisierung betrachtet, da bei der Berechnung des Winkels zwischen Vektoren die Länge der Vektoren keine Rolle spielt. Im Gegensatz zu Manhattan- und Euklidischem Abstand ermöglicht der Kosinus-Abstand eine Bewertung, die unabhängig von der Länge der Vektoren ist.</p>
-<p>In Bezug auf die stilometrische Autorschaftsattribution betonen <a href="https://www.zotero.org/google-docs/?k31SAF">Büttner et al.&nbsp;2017</a>, dass das charakteristische stilistische Profil eines Autors eher in der qualitativen Kombination bestimmter Wortpräferenzen zu finden ist. Dies bezieht sich auf das grundlegende Muster von über- bzw. unterdurchschnittlich häufigem Gebrauch von Wörtern, anstatt auf die Amplitude dieser Abweichungen. “Delta” in der stilometrischen Autorschaftsattribution nutzt die Manhattan-Distanz und erweist sich als erfolgreich, da es strukturelle Unterschiede in den sprachlichen Vorlieben eines Autors erfasst, ohne stark von der Intensität des Autorenprofils in einem bestimmten Text beeinflusst zu werden <a href="https://www.zotero.org/google-docs/?O9h98g">(Evert et al.&nbsp;2016)</a>.</p>
-<p>Nachdem nun wegweisende Studien der Stilometrie vorgestellt und theoretische Grundlagen der Methode erläutert wurden, stellt sich die Frage, wozu stilometrische Analysen im Kontext einer datenbasierten Literaturgeschichte beitragen können. Eine der häufigsten Anwendungsfälle stellt sicherlich die Autorschaftsattribution dar. Ob J. K. Rowling <a href="https://www.zotero.org/google-docs/?R83fLa">(Juola 2013)</a> oder Shakespeare <a href="https://www.zotero.org/google-docs/?DuYc0j">(Craig / Kinney 2009)</a> lassen sich hier viele Anwendungsstudien zitieren.<br>
-Stilometrie lässt sich jedoch neben der Analyse von Autorschaftssignalen auch zur Bestimmung von Gattungszugehörigkeit einsetzen <a href="https://www.zotero.org/google-docs/?spXJZp">(Schöch 2014)</a> oder in der diachronen Betrachtung einer stilistischen Handschrift eines einzelnen Autors oder Autorin, beispielsweise in der Frage: Gibt es so etwas wie “late style” <a href="https://www.zotero.org/google-docs/?JFpMMD">(Pearce Reeve 2018; Rebora / Salgaro 2018)</a>?</p>
+<p>In Bezug auf die stilometrische Autorschaftsattribution betonen <span class="citation" data-cites="buttner_delta_2017">(<a href="chapter6_stylometry.html#ref-buttner_delta_2017" role="doc-biblioref">Büttner et al. 2017</a>)</span>, dass das charakteristische stilistische Profil eines Autors eher in der qualitativen Kombination bestimmter Wortpräferenzen zu finden ist. Dies bezieht sich auf das grundlegende Muster von über- bzw. unterdurchschnittlich häufigem Gebrauch von Wörtern, anstatt auf die Amplitude dieser Abweichungen. “Delta” in der stilometrischen Autorschaftsattribution nutzt die Manhattan-Distanz und erweist sich als erfolgreich, da es strukturelle Unterschiede in den sprachlichen Vorlieben eines Autors erfasst, ohne stark von der Intensität des Autorenprofils in einem bestimmten Text beeinflusst zu werden <span class="citation" data-cites="evert_understanding_2017">(<a href="chapter6_stylometry.html#ref-evert_understanding_2017" role="doc-biblioref">Evert et al. 2017</a>)</span>.</p>
+<p>Nachdem nun wegweisende Studien der Stilometrie vorgestellt und theoretische Grundlagen der Methode erläutert wurden, stellt sich die Frage, wozu stilometrische Analysen im Kontext einer datenbasierten Literaturgeschichte beitragen können. Eine der häufigsten Anwendungsfälle stellt sicherlich die Autorschaftsattribution dar. Ob J. K. Rowling <span class="citation" data-cites="juola_rowling_2015">(<a href="chapter6_stylometry.html#ref-juola_rowling_2015" role="doc-biblioref">Juola 2015</a>)</span> oder Shakespeare <span class="citation" data-cites="craig_shakespeare_2009">(<a href="chapter6_stylometry.html#ref-craig_shakespeare_2009" role="doc-biblioref">Craig / Kinney 2009</a>)</span> lassen sich hier viele Anwendungsstudien zitieren.<br>
+Stilometrie lässt sich jedoch neben der Analyse von Autorschaftssignalen auch zur Bestimmung von Gattungszugehörigkeit einsetzen <span class="citation" data-cites="schoch_corneille_2014">(<a href="chapter6_stylometry.html#ref-schoch_corneille_2014" role="doc-biblioref">Schöch 2014</a>)</span> oder in der diachronen Betrachtung einer stilistischen Handschrift eines einzelnen Autors oder Autorin, beispielsweise in der Frage: Gibt es so etwas wie “late style” <span class="citation" data-cites="reeve_jonathanreevelate-style-pca_nodate rebora_is_2018">(<a href="chapter6_stylometry.html#ref-reeve_jonathanreevelate-style-pca_nodate" role="doc-biblioref">Reeve</a>; <a href="chapter6_stylometry.html#ref-rebora_is_2018" role="doc-biblioref">Rebora / Salgaro 2018</a>)</span>?</p>
 <p>Wieso funktioniert die Methode Stilometrie? Dies lässt sich durch einen interessanten historischen Vergleich in der kunsthistorischen Forschung veranschaulichen, den Mike Kestemont beschreibt. Der Wechsel von Inhaltswörtern zu Funktionswörtern in Studien zur Autorschaftsattribution findet hier eine bemerkenswerte Parallele:</p>
 <p>“Giovanni Morelli (1816-1891) was among the first to suggest that the attribution of, for instance, a<br>
-Quattrocento painting to some Italian master, could not happen based on ‘content’ […] Morelli thought it better to restrict an authorship analysis to discrete details such as ears, hands and feet”<br>
-<a href="https://www.zotero.org/google-docs/?dWQiXi">(Kestemont 2014: 61)</a></p>
+Quattrocento painting to some Italian master, could not happen based on ‘content’ […] Morelli thought it better to restrict an authorship analysis to discrete details such as ears, hands and feet”&nbsp;<span class="citation" data-cites="kestemont_function_2014">(<a href="chapter6_stylometry.html#ref-kestemont_function_2014" role="doc-biblioref">Kestemont 2014: 61</a>)</span></p>
 <p>Auch in der Malerei lassen sich über die Analyse von unwillkürlich getroffenen Entscheidungen, wie der Art, die Hände, Ohren oder Füße zu malen, Rückschlüsse auf die Autorschaft ziehen. Das Zitat unterstreicht die Faszination darüber, dass Menschen, sei es in Texten oder Gemälden, unbewusste Entscheidungen treffen, die in der Summe Aufschlüsse über ihre künstlerische Handschrift geben, so auch bei der Verwendung bestimmter Funktionswörter.</p>
-<p>Im nächsten Abschnitt sollen mithilfe von Stilometrie innerhalb des Korpus französischer Romane 1751-1800 (roman18) Aussagen zur möglichen Autorschaft untersucht werden; Erzählform oder thematische Ausrichtung sind ebenfalls im Graphen als Statements hinterlegt und könnten theoretisch in einem weiteren Schritt auch mit in Betracht gezogen werden, werden jedoch in der hier vorliegenden Anwendung ausgeklammert. Stilometrie wird in der hier vorliegenden Untersuchung mit dem Tool Stylo in R durchgeführt <a href="https://www.zotero.org/google-docs/?g9mj28">(Eder / Kestemont / Rybicki 2016)</a>.</p>
+<p>Im nächsten Abschnitt sollen mithilfe von Stilometrie innerhalb des Korpus französischer Romane 1751-1800 (roman18) Aussagen zur möglichen Autorschaft untersucht werden; Erzählform oder thematische Ausrichtung sind ebenfalls im Graphen als Statements hinterlegt und könnten theoretisch in einem weiteren Schritt auch mit in Betracht gezogen werden, werden jedoch in der hier vorliegenden Anwendung ausgeklammert. Stilometrie wird in der hier vorliegenden Untersuchung mit dem Tool Stylo in R durchgeführt <span class="citation" data-cites="eder_stylometry_2016">(<a href="chapter6_stylometry.html#ref-eder_stylometry_2016" role="doc-biblioref">Eder / Rybicki / Kestemont 2016</a>)</span>.</p>
 </section>
-<section id="fallstudie-wer-ist-der-autor-von-létourdi-1784" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="fallstudie-wer-ist-der-autor-von-létourdi-1784"><span class="header-section-number">2.4</span> Fallstudie: Wer ist der Autor von <em>L’Étourdi</em> (1784)?</h2>
-<p>Ein Roman mit abweichenden Angaben zur Autorschaft aus der Romansammlung roman18 <a href="https://www.zotero.org/google-docs/?pcwdy0">(Röttgermann 2023)</a> soll nun als Anschauungsbeispiel der stilometrischen Analyse dienen. <em>L’Étourdi</em> ist ein Roman aus dem Jahr 1782. Laut bibliographischen Metadaten <a href="https://www.zotero.org/google-docs/?ueBbXr">(Martin / Mylne / Frautschi 1977: 272)</a> ist der Autor André-Robert Andréa de Nerciat (Abb. 6.2).<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> Die für die Generation des TEI-Volltexts verwendete Quelle Wikisource hingegen bezeichnet das Werk als “<a href="https://fr.wikisource.org/wiki/Auteur:Anonyme">Anonyme</a>, attribué à <a href="https://fr.wikisource.org/wiki/Auteur:Donatien_Alphonse_Fran%C3%A7ois_de_Sade">Donatien Alphonse François de Sade</a> ou attribué à <a href="https://fr.wikisource.org/wiki/Auteur:Andr%C3%A9-Robert_Andr%C3%A9a_de_Nerciat">André-Robert Andréa de Nerciat</a>, ou attribué au chevalier de Neufville-Montador.”<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="étourdi_bgrf.png" class="img-fluid figure-img"></p>
-<figcaption>Bibliographischer Eintrag 84.50 zu <em>L’étourdi</em> (Martin / Mylne / Frautschi 1977: 272).</figcaption>
+<section id="fallstudie-wer-ist-der-autor-von-létourdi-1784" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="fallstudie-wer-ist-der-autor-von-létourdi-1784"><span class="header-section-number">1.4</span> Fallstudie: Wer ist der Autor von <em>L’Étourdi</em> (1784)?</h2>
+<p>Ein Roman mit abweichenden Angaben zur Autorschaft aus der Romansammlung roman18 <span class="citation" data-cites="rottgermann_collection_2023">(<a href="chapter6_stylometry.html#ref-rottgermann_collection_2023" role="doc-biblioref">Röttgermann 2023</a>)</span> soll nun als Anschauungsbeispiel der stilometrischen Analyse dienen. <em>L’Étourdi</em> ist ein Roman aus dem Jahr 1782. Laut bibliographischen Metadaten <span class="citation" data-cites="martin_bibliographie_1977">(<a href="chapter6_stylometry.html#ref-martin_bibliographie_1977" role="doc-biblioref">Martin / Mylne / Frautschi 1977: 272</a>)</span> ist der Autor André-Robert Andréa de Nerciat (<a href="#fig-etourdi" class="quarto-xref">Figure&nbsp;<span>1.2</span></a>).<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> Die für die Generation des TEI-Volltexts verwendete Quelle Wikisource hingegen bezeichnet das Werk als “<a href="https://fr.wikisource.org/wiki/Auteur:Anonyme">Anonyme</a>, attribué à <a href="https://fr.wikisource.org/wiki/Auteur:Donatien_Alphonse_Fran%C3%A7ois_de_Sade">Donatien Alphonse François de Sade</a> ou attribué à <a href="https://fr.wikisource.org/wiki/Auteur:Andr%C3%A9-Robert_Andr%C3%A9a_de_Nerciat">André-Robert Andréa de Nerciat</a>, ou attribué au chevalier de Neufville-Montador.”<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<div id="fig-etourdi" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-etourdi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="etourdi.JPG" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-etourdi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.2: Bibliographischer Eintrag 84.50 zu <em>L’étourdi</em> (Martin / Mylne / Frautschi 1977: 272).
+</figcaption>
 </figure>
 </div>
 <p>Da die beiden Quellen verschiedene Aussagen hinsichtlich der Autorschaft des Romans enthalten, eignet sich das Werk gut als Fallbeispiel für eine stilometrische Analyse hinsichtlich der Frage der Autorschaft. Da die Frage der Autorschaft nicht völlig offen ist, sondern es eine begrenzte Zahl von möglichen Kandidaten gibt, können wir im hier skizzierten Forschungsdesign in Anlehnung an Burrows (2002) von einem ‘closed game’<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> sprechen.</p>
-<section id="korpuszusammensetzung-und-textgrundlage" class="level3" data-number="2.4.1">
-<h3 data-number="2.4.1" class="anchored" data-anchor-id="korpuszusammensetzung-und-textgrundlage"><span class="header-section-number">2.4.1</span> Korpuszusammensetzung und Textgrundlage</h3>
-<p>In einem ersten Analyseschritt wurde ein Subkorpus zu roman18 erstellt, welches pro Autor mindestens drei Werke enthält. Dazu wurde eine SPARQL-Abfrage verfasst, die das Volltextkorpus roman18 nach diesem Kriterium filtert (Abb. 6.3).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="sparql_3_works_per_authors_subcorpus.png" class="img-fluid figure-img"></p>
-<figcaption>SPARQL-Query: Files mit Volltext-URL und mindestens drei Werken pro Autor:in, <a href="https://tinyurl.com/232rx7wb" class="uri">https://tinyurl.com/232rx7wb</a>.</figcaption>
+<section id="korpuszusammensetzung-und-textgrundlage" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="korpuszusammensetzung-und-textgrundlage"><span class="header-section-number">1.4.1</span> Korpuszusammensetzung und Textgrundlage</h3>
+<p>In einem ersten Analyseschritt wurde ein Subkorpus zu roman18 erstellt, welches pro Autor mindestens drei Werke enthält. Dazu wurde eine SPARQL-Abfrage verfasst, die das Volltextkorpus roman18 nach diesem Kriterium filtert (<a href="#fig-subcorpus" class="quarto-xref">Figure&nbsp;<span>1.3</span></a>).</p>
+<div id="fig-subcorpus" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-subcorpus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="sparql_3_works_per_authors_subcorpus.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-subcorpus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.3: SPARQL-Query: Files mit Volltext-URL und mindestens drei Werken pro Autor:in, <a href="https://tinyurl.com/232rx7wb" class="uri">https://tinyurl.com/232rx7wb</a>.
+</figcaption>
 </figure>
 </div>
 <p>Das so gefilterte Korpus ergab folgende Autor:innen mit ihrer Anzahl an Werken:</p>
@@ -368,148 +392,355 @@ Quattrocento painting to some Italian master, could not happen based on ‘conte
 </tr>
 </tbody>
 </table>
-<p>Es ist wichtig, pro Autor:in mehrere Werke im Untersuchungskorpus und damit genug textuelles Untersuchungsmaterial zu haben, um eine erfolgreiche stilometrische Analyse durchzuführen <a href="https://www.zotero.org/google-docs/?BxtJbN">(cf.&nbsp;Eder 2013)</a>. Die verwendeten Texte sind zuvor normalisiert und modernisiert worden, Phänomene wie historische Verbformen im Französisch des 18. Jahrhunderts oder Verwendung von Schaft-S wurden so ersetzt.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
-<p>In einem ersten Analyseschritt wurden die Werke als Plaintext im Tool Stylo <a href="https://www.zotero.org/google-docs/?fUHFfi">(Eder / Kestemont / Rybicki 2016)</a> in R mit folgenden Einstellungen analysiert: Wurzburg distance, 2000 MFW. Bevor wir die ersten Ergebnisse anschauen und analysieren sei hier in Erinnerung gerufen, dass die stilometrische Analyse nicht nur Hinweise auf die Autorschaft geben kann, sondern dass ebenfalls Gattungssignale, der Publikationszeitrahmen oder thematische Nähe ein Einflussfaktor für eine große Nähe zwischen zwei Werken sein kann.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="wurzburg_distance_2000MFW.jpg" class="img-fluid figure-img"></p>
-<figcaption>Stilometrische Untersuchung von roman18 mit stylo, Wurzburg distance, 2000 MFW.</figcaption>
+<p>Es ist wichtig, pro Autor:in mehrere Werke im Untersuchungskorpus und damit genug textuelles Untersuchungsmaterial zu haben, um eine erfolgreiche stilometrische Analyse durchzuführen <span class="citation" data-cites="eder_does_2015">(cf. <a href="chapter6_stylometry.html#ref-eder_does_2015" role="doc-biblioref">Eder 2015</a>)</span>. Die verwendeten Texte sind zuvor normalisiert und modernisiert worden, Phänomene wie historische Verbformen im Französisch des 18. Jahrhunderts oder Verwendung von Schaft-S wurden so ersetzt.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
+<p>In einem ersten Analyseschritt wurden die Werke als Plaintext im Tool Stylo <span class="citation" data-cites="eder_stylometry_2016">(<a href="chapter6_stylometry.html#ref-eder_stylometry_2016" role="doc-biblioref">Eder / Rybicki / Kestemont 2016</a>)</span> in R mit folgenden Einstellungen analysiert: Wurzburg distance, 2000 MFW. Bevor wir die ersten Ergebnisse anschauen und analysieren sei hier in Erinnerung gerufen, dass die stilometrische Analyse nicht nur Hinweise auf die Autorschaft geben kann, sondern dass ebenfalls Gattungssignale, der Publikationszeitrahmen oder thematische Nähe ein Einflussfaktor für eine große Nähe zwischen zwei Werken sein kann.</p>
+<div id="fig-wurzburg-distance" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-wurzburg-distance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="wurzburg_distance_2000MFW.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-wurzburg-distance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.4: Stilometrische Untersuchung von roman18 mit stylo, Wurzburg distance, 2000 MFW.
+</figcaption>
 </figure>
 </div>
-<p>Hinsichtlich der genannten potentiellen Autoren (Nerciat, Sade) lässt sich im von Stylo verwendeten Hierarchical Ward Clustering im ersten Durchlauf kein eindeutiges Ergebnis erkennen. Der untersuchte Roman clustert weder eng mit den Romanen von Sade, noch mit Nerciats Werken (Abb. 6.4). Je näher die Werke an einem Ast des Dendrograms liegen, desto näher ist auch ihre stilometrische Ähnlichkeit.<br>
+<p>Hinsichtlich der genannten potentiellen Autoren (Nerciat, Sade) lässt sich im von Stylo verwendeten Hierarchical Ward Clustering im ersten Durchlauf kein eindeutiges Ergebnis erkennen. Der untersuchte Roman clustert weder eng mit den Romanen von Sade, noch mit Nerciats Werken <a href="#fig-wurzburg-distance" class="quarto-xref">Figure&nbsp;<span>1.4</span></a>. Je näher die Werke an einem Ast des Dendrograms liegen, desto näher ist auch ihre stilometrische Ähnlichkeit.<br>
 Stylo ermöglicht es, das untersuchte Korpus mit einer Principal Component Analyse (PCA) zu untersuchen, um jene Elemente darzustellen, die ausschlaggebende Komponenten der stilometrischen Analyse sind.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="150_MFW_pca_loadings.png" class="img-fluid figure-img"></p>
-<figcaption>PCA(Principal Components Analysis) mit Loadings</figcaption>
+<div id="fig-pca-loadings" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pca-loadings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="150_MFW_pca_loadings.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pca-loadings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.5: PCA(Principal Components Analysis) mit Loadings
+</figcaption>
 </figure>
 </div>
-<p>Im oberen Bereich der PCA erkennt man, dass in der Principal Component Analyse mehrere Werke des gleichen Autors, Baculard d’Arnaud, clustern (Abb. 6.5). Die hier visualisierten Loadings sind ‘coeur’, ‘mon’, ‘ma’ oder ‘amour’. Es zeigt sich, dass hier einerseits Funktionswörter ausschlaggebend sind, andererseits ist Baculard d’Arnaud ein Verfasser einer Vielzahl von Sentimentalromanen. Insofern sind die hier visualisierten Loadings ‘coeur’ (Herz) oder ‘amour’ (Liebe) plausibel.<br>
+<p>Im oberen Bereich der PCA erkennt man, dass in der Principal Component Analyse mehrere Werke des gleichen Autors, Baculard d’Arnaud, clustern (<a href="#fig-pca-loadings" class="quarto-xref">Figure&nbsp;<span>1.5</span></a>). Die hier visualisierten Loadings sind ‘coeur’, ‘mon’, ‘ma’ oder ‘amour’. Es zeigt sich, dass hier einerseits Funktionswörter ausschlaggebend sind, andererseits ist Baculard d’Arnaud ein Verfasser einer Vielzahl von Sentimentalromanen. Insofern sind die hier visualisierten Loadings ‘coeur’ (Herz) oder ‘amour’ (Liebe) plausibel.<br>
 Da sich insgesamt im ersten Analyseschritt jedoch keine eindeutige Zuordnung zu den hypothetischen Autoren im Clustering-Verfahren zeigte, wurde ein weiterer Durchgang der stilometrischen Analyse durchgeführt. Einer der potentiellen Autoren, Neufville-Montador, war zunächst nicht im Romankorpus vertreten. Um zu verifizieren, ob sich hier eine stilometrische Nähe zeigt, wurden ergänzend erzählende Texte von Neufville-Montador dem Untersuchungskorpus hinzugefügt.</p>
 </section>
-<section id="sollte-doch-apollinaire-recht-behalten" class="level3" data-number="2.4.2">
-<h3 data-number="2.4.2" class="anchored" data-anchor-id="sollte-doch-apollinaire-recht-behalten"><span class="header-section-number">2.4.2</span> Sollte doch Apollinaire recht behalten?</h3>
+<section id="sollte-doch-apollinaire-recht-behalten" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="sollte-doch-apollinaire-recht-behalten"><span class="header-section-number">1.4.2</span> Sollte doch Apollinaire recht behalten?</h3>
 <p>Neben Nerciat und Marquis de Sade wird in <em>L’Enfer de la Bibliothèque nationale</em> eine weitere Autorschaftshypothese geäußert: Neufville-Montador. Könnte es sein, dass doch Apollinaire recht hatte, als er schrieb:</p>
-<p>“Cet ouvrage a été attribué tour à tour et sans beaucoup de raison au marquis de Sade et au chevalier Andrea de Nerciat. On en a aussi attribué la paternité, avec plus de vraisemblance, au chevalier de Neufville-Montador.” <a href="https://www.zotero.org/google-docs/?WLbiq7">(Apollinaire 1919)</a></p>
+<p>“Cet ouvrage a été attribué tour à tour et sans beaucoup de raison au marquis de Sade et au chevalier Andrea de Nerciat. On en a aussi attribué la paternité, avec plus de vraisemblance, au chevalier de Neufville-Montador.” <span class="citation" data-cites="apollinaire_lenfer_1919">(<a href="chapter6_stylometry.html#ref-apollinaire_lenfer_1919" role="doc-biblioref">Apollinaire 1919</a>)</span></p>
 <p>Apollinaire hält demnach Neufville-Montador für den wahrscheinlichsten Autor. Um dies zu überprüfen, wurde in einem zweiten Schritt das für die stilometrischen Analysen verwendete Korpus erweitert. Dazu wurde nach verfügbaren Volltexten des Autors Neufville-Montador recherchiert. Ein von ihm verfasstes <a href="https://gallica.bnf.fr/services/engine/search/sru?operation=searchRetrieve&amp;version=1.2&amp;collapsing=disabled&amp;query=%28gallica%20all%20%22neufville-montador%22%29%20and%20arkPress%20all%20%22cb46635638h_date%22&amp;rk=64378;0"><em>Almanach nocturne a l’usage du grand m</em>onde</a> <a href="https://gallica.bnf.fr/services/engine/search/sru?operation=searchRetrieve&amp;version=1.2&amp;collapsing=disabled&amp;query=%28gallica%20all%20%22neufville-montador%22%29%20and%20arkPress%20all%20%22cb46635638h_date%22&amp;rk=64378;0">1739-1742</a>, welches als Faksimile in der digitalen Sammlung der französischen Nationalbibliothek verfügbar ist, enthält erzählende Passagen, die für die Analyse verwendet wurden. Außerdem ist ein Roman von Neufville-Almanach über GoogleBooks verfügbar (Confessions de la Baronne de ***, 1848). <a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> Beide Werke wurden über die bereits beschriebene Digitalisierungspipeline mithilfe von OCR4all und einem Modell für französische Drucke des 18. Jahrhunderts erschlossen und als Plaintext dem bestehenden Korpus hinzugefügt. Wie hat sich mit dem so erweiterten Datensatz die Analyse verändert?</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="with_neufville_montador.jpg" class="img-fluid figure-img"></p>
-<figcaption>Stilometrische Analyse mit erweiterten Datensatz, 3500 MFW, Wurzburg distance.</figcaption>
+<div id="fig-with-neufville" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-with-neufville-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="with_neufville_montador.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-with-neufville-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.6: Stilometrische Analyse mit erweiterten Datensatz, 3500 MFW, Wurzburg distance.
+</figcaption>
 </figure>
 </div>
-<p>Abb 6.6 der stilometrischen Analyse mit erweitertem Datensatz zeigt, dass die Werke von Sade zusammen clustern, die Werke von Nerciat zusammen clustern und das untersuchte Werk <em>L’étourdi</em> von den drei möglichen Kandidaten-Autoren am nächsten mit Neufville-Montador clustert. Sollte demnach Apollinaire recht behalten?</p>
-<p>Stylo bietet als zusätzliche Möglichkeit der Analyse die Verwendung des ‘Bootstrap Consensus Tree’ (Abb. 6.7). Dabei handelt es sich um eine kreisförmige Visualisierung, die mehrere Durchläufe der Clusteranalyse mit variierender Anzahl der am häufigsten vorkommenden Wörter zu einer konsolidierten Ergebnisvisualisierung zusammenführt. Der Sinn dieser Analyse liegt darin zu überprüfen, wie stabil das Clustering bei verschiedenen Einstellung der Verwendung der MFW (most frequent words) ist. Dieser Prozess, auch als ‘Bootstrap’ bezeichnet, verwebt die individuellen Analysedurchläufe ähnlich dem Schnüren eines Schuhs (‘bootstrapping’) und zieht sie am Ende zusammen. Ähnliche Texte werden hier auf einem Zweig durch Clustering repräsentiert. Bei der Auswahl des ‘Consensus Tree’ müssen zusätzliche Parameter im MFW-Setting festgelegt werden, darunter der Start- und Endpunkt der Analyse (‘Minimum’ / ‘Maximum’), sowie die Anzahl der hinzugefügten Wörter in jeder einzelnen Analyse (‘Increment’). In meiner Analyse habe ich mich für einen Startwert von 2000, ein Inkrement von 100 Wörtern und ein Maximum von 4000 entschieden. Bei dieser Höhe der verwendeten meist frequenten Wörter (2000+) ist von einer Mischung aus Funktions- und Inhaltswörtern auszugehen.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="bootstrap_consensus_tree_with_neufville.jpg" class="img-fluid figure-img"></p>
-<figcaption>Bootstrap consensus tree, Wurzburg distance, 2000-4000 MFW.</figcaption>
+<p>Die Abbildung <a href="#fig-with-neufville" class="quarto-xref">Figure&nbsp;<span>1.6</span></a> der stilometrischen Analyse mit erweitertem Datensatz zeigt, dass die Werke von Sade zusammen clustern, die Werke von Nerciat zusammen clustern und das untersuchte Werk <em>L’étourdi</em> von den drei möglichen Kandidaten-Autoren am nächsten mit Neufville-Montador clustert. Sollte demnach Apollinaire recht behalten?</p>
+<p>Stylo bietet als zusätzliche Möglichkeit der Analyse die Verwendung des ‘Bootstrap Consensus Tree’ (<a href="#fig-bootstrap-neufville" class="quarto-xref">Figure&nbsp;<span>1.7</span></a>). Dabei handelt es sich um eine kreisförmige Visualisierung, die mehrere Durchläufe der Clusteranalyse mit variierender Anzahl der am häufigsten vorkommenden Wörter zu einer konsolidierten Ergebnisvisualisierung zusammenführt. Der Sinn dieser Analyse liegt darin zu überprüfen, wie stabil das Clustering bei verschiedenen Einstellung der Verwendung der MFW (most frequent words) ist. Dieser Prozess, auch als ‘Bootstrap’ bezeichnet, verwebt die individuellen Analysedurchläufe ähnlich dem Schnüren eines Schuhs (‘bootstrapping’) und zieht sie am Ende zusammen. Ähnliche Texte werden hier auf einem Zweig durch Clustering repräsentiert. Bei der Auswahl des ‘Consensus Tree’ müssen zusätzliche Parameter im MFW-Setting festgelegt werden, darunter der Start- und Endpunkt der Analyse (‘Minimum’ / ‘Maximum’), sowie die Anzahl der hinzugefügten Wörter in jeder einzelnen Analyse (‘Increment’). In meiner Analyse habe ich mich für einen Startwert von 2000, ein Inkrement von 100 Wörtern und ein Maximum von 4000 entschieden. Bei dieser Höhe der verwendeten meist frequenten Wörter (2000+) ist von einer Mischung aus Funktions- und Inhaltswörtern auszugehen.</p>
+<div id="fig-bootstrap-neufville" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bootstrap-neufville-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="bootstrap_consensus_tree_with_neufville.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bootstrap-neufville-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.7: Bootstrap consensus tree, Wurzburg distance, 2000-4000 MFW.
+</figcaption>
 </figure>
 </div>
-<p>Das schrittweise Erhöhen des Parameter der am häufigsten vorkommenden Wörter (MFW) im Bootstrap Consensus Tree zeigt, dass die Nähe des Textes <em>L’Étourdi</em> zu den verwendeten Texten mit Autorschaft von Neufville-Montador relativ stabil ist (Abb. 6.7). Unter der Annahme, dass entweder Marquis de Sade, Andréa de Nerciat oder Neufville-Montador der Autor von <em>L’Étourdi</em> ist, können wir anhand der Ergebnisse dieser stilometrischen Untersuchung mit dem Tool Stylo in R feststellen, dass Neufville-Montador im hier untersuchten Setting aus der Kandidatenliste als der wahrscheinlichste Autor des Romans gelten kann.</p>
+<p>Das schrittweise Erhöhen des Parameter der am häufigsten vorkommenden Wörter (MFW) im Bootstrap Consensus Tree zeigt, dass die Nähe des Textes <em>L’Étourdi</em> zu den verwendeten Texten mit Autorschaft von Neufville-Montador relativ stabil ist (<a href="#fig-bootstrap-neufville" class="quarto-xref">Figure&nbsp;<span>1.7</span></a>). Unter der Annahme, dass entweder Marquis de Sade, Andréa de Nerciat oder Neufville-Montador der Autor von <em>L’Étourdi</em> ist, können wir anhand der Ergebnisse dieser stilometrischen Untersuchung mit dem Tool Stylo in R feststellen, dass Neufville-Montador im hier untersuchten Setting aus der Kandidatenliste als der wahrscheinlichste Autor des Romans gelten kann.</p>
 </section>
-<section id="überraschende-erkenntnis-dendrogram-und-numerische-distanzwerte-legen-verschiedene-hypothesen-nahe" class="level3" data-number="2.4.3">
-<h3 data-number="2.4.3" class="anchored" data-anchor-id="überraschende-erkenntnis-dendrogram-und-numerische-distanzwerte-legen-verschiedene-hypothesen-nahe"><span class="header-section-number">2.4.3</span> Überraschende Erkenntnis: Dendrogram und numerische Distanzwerte legen verschiedene Hypothesen nahe</h3>
-<p>Die bisherige Analyse stützte sich wie eine Vielzahl an stilometrischen Studien, die in den Digital Humanities durchgeführt werden auf die Erkenntnis aus der Visualisierung der Dendrogramme oder Bootstrap-Trees. Eine Nähe auf einem Ast des durch Clustering generierten Trees ließ auf eine Nähe der Werke und somit Autorschaften schließen. Diese Annahme ist zwar grundsätzlich nicht als falsch anzusehen und ein Großteil der stilometrischen Studien in den Digital Humanities geht hier ähnlich vor, jedoch zeigte sich überraschenderweise im hier untersuchten Fall, dass Dendrogram und numerische Werte unterschiedliche Autorschaftshypothesen nahe legen (Abb 6.8). Während das Hierarchical Wards Clustering Neufville-Montadors Werke auf dem nächsten Ast zu <em>L’étourdi</em> verortete, zeigen die rohen numerischen Werte ein anderes Bild: Hier liegt Nerciats Werk <em>Félicia</em> am nächsten zu <em>L’étourdi</em> und legt somit eine Autorschaft Nerciats nahe.</p>
-<p><img src="detail_dendrogram_Etourdi_with_neufville.jpg" class="img-fluid" alt="Dendrogram vs.&nbsp;distance table, 3500 MFW, Wurzburg distance."> <img src="stylometry_numerical.png" class="img-fluid"></p>
+<section id="überraschende-erkenntnis-dendrogram-und-numerische-distanzwerte-legen-verschiedene-hypothesen-nahe" class="level3" data-number="1.4.3">
+<h3 data-number="1.4.3" class="anchored" data-anchor-id="überraschende-erkenntnis-dendrogram-und-numerische-distanzwerte-legen-verschiedene-hypothesen-nahe"><span class="header-section-number">1.4.3</span> Überraschende Erkenntnis: Dendrogram und numerische Distanzwerte legen verschiedene Hypothesen nahe</h3>
+<p>Die bisherige Analyse stützte sich wie eine Vielzahl an stilometrischen Studien, die in den Digital Humanities durchgeführt werden auf die Erkenntnis aus der Visualisierung der Dendrogramme oder Bootstrap-Trees. Eine Nähe auf einem Ast des durch Clustering generierten Trees ließ auf eine Nähe der Werke und somit Autorschaften schließen. Diese Annahme ist zwar grundsätzlich nicht als falsch anzusehen und ein Großteil der stilometrischen Studien in den Digital Humanities geht hier ähnlich vor, jedoch zeigte sich überraschenderweise im hier untersuchten Fall, dass Dendrogram und numerische Werte unterschiedliche Autorschaftshypothesen nahe legen <span class="quarto-unresolved-ref">?fig-numerical</span>. Während das Hierarchical Wards Clustering Neufville-Montadors Werke auf dem nächsten Ast zu <em>L’étourdi</em> verortete, zeigen die rohen numerischen Werte ein anderes Bild: Hier liegt Nerciats Werk <em>Félicia</em> am nächsten zu <em>L’étourdi</em> und legt somit eine Autorschaft Nerciats nahe.</p>
+<p><img src="detail_dendrogram_Etourdi_with_neufville.jpg" class="img-fluid" alt="Dendrogram vs.&nbsp;distance table, 3500 MFW, Wurzburg distance."><img src="stylometry_numerical.png" id="fig-numerical" class="img-fluid"></p>
 <p>Im Clustering-Prozess ist jeweils von einem gewissen Informationsverlust auszugehen, sodass hier die numerischen Werte die verlässlichere Quelle darstellen.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> Diese bilden daher auch die Grundlage der im Knowledge Graphen importierten Resource Description Framework (RDF) Triples zur stilometrischen Analyse der Romane.<br>
 Eine qualitative Bewertung des Romans und der potentiell ähnlichen Werke anhand der bei Lektüre festgestellten stilistischen Merkmale wären neben der stilometrischen Analyse ein weiterer ergänzender Schritt, der hier jedoch nicht Gegenstand der Untersuchung ist. <a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></p>
 <p>In einigen Beispielen an SPARQL-Abfragen sei nun illustriert, wie sich diese Statements abfragen lassen und welche Schlüsse sich daraus ziehen lassen.</p>
 </section>
 </section>
-<section id="abfrage-der-stilometrischen-analyse-in-sparql" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="abfrage-der-stilometrischen-analyse-in-sparql"><span class="header-section-number">2.5</span> Abfrage der stilometrischen Analyse in SPARQL</h2>
+<section id="abfrage-der-stilometrischen-analyse-in-sparql" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="abfrage-der-stilometrischen-analyse-in-sparql"><span class="header-section-number">1.5</span> Abfrage der stilometrischen Analyse in SPARQL</h2>
 <p>Die Ergebnisse der hier beschriebenen Analyse sind hinsichtlich der numerischen Werte der stilometrischen Ähnlichkeit im Knowledge Graphen als Statements importiert. Dies ermöglicht es, über entsprechende SPARQL-Abfragen bezogen auf Einzelwerke oder Autoren nach den - laut stilometrischer Analyse - ähnlichsten Werken zu fragen. Im gehe daher in SPARQL-Abfagen der Frage nach, welche Gemeinsamkeiten Werke haben, die sich stilometrisch nah sind: Teilen Sie die Erzählform, Autorschaft oder Tonalität?<br>
 Zunächst eine Abfrage, die verdeutlicht, welche Werke stilometrisch nah zu Rousseaus Werken sind.</p>
 </section>
-<section id="rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind"><span class="header-section-number">2.6</span> <a href="http://tinyurl.com/ylafpk9d">Rousseaus Werke im Graphen und Werke, die jenen stilometrisch “nah” sind</a></h2>
+<section id="rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind"><span class="header-section-number">1.6</span> <a href="http://tinyurl.com/ylafpk9d">Rousseaus Werke im Graphen und Werke, die jenen stilometrisch “nah” sind</a></h2>
 <p><iframe style="width:100%;max-width:100%;height:450px" frameborder="0" allowfullscreen="" src="http://tinyurl.com/ylafpk9d" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></p>
-<p>Man sieht in den Ergebnissen der Abfrage, dass die nächsten Werke häufig diejenigen des untersuchten Autors (hier: Rousseau) sind (Abb. 6.10). Zu seiner fabel-/märchenhaften Erzählung <a href="https://data.mimotext.uni-trier.de/wiki/Item:Q1379"><em>La reine Fantasque</em></a> (1758) hingegen sieht man in der Listung der ähnlichsten Werke auch Werke, die ebenfalls Märchen sind, beispielsweise <a href="https://data.mimotext.uni-trier.de/wiki/Item:Q1013"><em>Ah! quel conte!</em></a> (1754) von Crébillon. Gemeinsamkeiten dieser beiden Werke sind unter anderem ihre Erzählform (“3e personne”), ihr Handlungsort (“cadre fantaisiste“), auch einige aus Topic Modeling hervorgegangene Themenwerte (“monarchie”<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>) oder ähnliche Hauptfiguren (“la fée Discrette” / “la fée Toutou-rien”).<br>
+<p>Man sieht in den Ergebnissen der Abfrage, dass die nächsten Werke häufig diejenigen des untersuchten Autors (hier: Rousseau) sind. Zu seiner fabel-/märchenhaften Erzählung <a href="https://data.mimotext.uni-trier.de/wiki/Item:Q1379"><em>La reine Fantasque</em></a> (1758) hingegen sieht man in der Listung der ähnlichsten Werke auch Werke, die ebenfalls Märchen sind, beispielsweise <a href="https://data.mimotext.uni-trier.de/wiki/Item:Q1013"><em>Ah! quel conte!</em></a> (1754) von Crébillon. Gemeinsamkeiten dieser beiden Werke sind unter anderem ihre Erzählform (“3e personne”), ihr Handlungsort (“cadre fantaisiste“), auch einige aus Topic Modeling hervorgegangene Themenwerte (“monarchie”<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>) oder ähnliche Hauptfiguren (“la fée Discrette” / “la fée Toutou-rien”).<br>
 In diesem Beispiel zeigt sich, dass das Gattungssignal je nach Vergleichskorpus durchaus das Autorschaftssignal überlagern kann.</p>
 <p>Wir haben im Knowledge Graphen über SPARQL-Abfragen die Möglichkeit uns anzusehen, welche Gemeinsamkeiten Werke haben, die in einer stilometrischen Analyse unter den nächst ähnlichen Werken sind: Haben Sie den gleichen Autor oder die gleiche Autorin? Teilen Sie die narrative Form? Stimmt ihre Tonalität überein?</p>
 </section>
-<section id="welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form"><span class="header-section-number">2.7</span> <a href="https://tinyurl.com/24q38l55">Welche Gemeinsamkeiten haben Werke, die sich basierend auf einer stilometrischen Analyse ähnlich sind: Autor, Tonalität, narrative Form?</a></h2>
+<section id="welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form"><span class="header-section-number">1.7</span> <a href="https://tinyurl.com/24q38l55">Welche Gemeinsamkeiten haben Werke, die sich basierend auf einer stilometrischen Analyse ähnlich sind: Autor, Tonalität, narrative Form?</a></h2>
 <p><iframe style="width:100%;max-width:100%;height:450px" frameborder="0" allowfullscreen="" src="https://tinyurl.com/24q38l55" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></p>
-<p>Für insgesamt <strong>657 Statements</strong> zu französischen Romanen 1751-1800, die über eine stilometrische Nähe<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> und Angaben zu Tonalität, narrativer Form und Autor:in verfügen, ergibt sich dabei folgendes Bild: Bei 369 Statements zu stilometrischer Nähe stimmt die narrative Form überein. Bei 382 Statements stimmt der Autor oder die Autorin überein. Bei 157 Statements stimmt die Tonalität der Werke überein, also haben die Werke jeweils den gleichen Wert wie beispielsweise “satire” oder “mélancolie” (Abb. 6.11).</p>
+<p>Für insgesamt <strong>657 Statements</strong> zu französischen Romanen 1751-1800, die über eine stilometrische Nähe<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> und Angaben zu Tonalität, narrativer Form und Autor:in verfügen, ergibt sich dabei folgendes Bild: Bei 369 Statements zu stilometrischer Nähe stimmt die narrative Form überein. Bei 382 Statements stimmt der Autor oder die Autorin überein. Bei 157 Statements stimmt die Tonalität der Werke überein, also haben die Werke jeweils den gleichen Wert wie beispielsweise “satire” oder “mélancolie”.</p>
 <p>Diese Varianten der SPARQL-Abfragen legen nahe, dass von den gemeinsamen Features im Graphen das Autorschaftssignal am häufigsten zu einer stilometrischen Nähe zweier Werke führt, gefolgt von der narrativen Form (als Beispiel: ‘epistolary’).</p>
 </section>
-<section id="modellierung-des-ergebnisses-in-wikibase" class="level2" data-number="2.8">
-<h2 data-number="2.8" class="anchored" data-anchor-id="modellierung-des-ergebnisses-in-wikibase"><span class="header-section-number">2.8</span> Modellierung des Ergebnisses in Wikibase</h2>
-<p>Können wir im Hinblick auf das diskutierte Fallbeispiel der Autorschaftsfrage von <em>L’Étourdi</em> mit Sicherheit sagen, dass, basierend auf den numerischen Ergebnissen der vorgestellten stilometrischen Analyse, Nerciat der Autor war? Dies ist in dieser Eindeutigkeit sicher nicht möglich, da die stilometrische Analyse einerseits vom Vergleichskorpus und andererseits von weiteren Einflussfaktoren abhängen kann <a href="https://www.zotero.org/google-docs/?M86EBF">(Schöch 2017: 296)</a>. Schon Burrows spricht in seiner wegweisenden Studie von “likely authorship” <a href="https://www.zotero.org/google-docs/?RezQQS">(Burrows 2002b)</a>.<br>
-So hat neben dem Autorschaftssignal auch die thematische Nähe oder ähnliche Gattung einen Einfluss darauf, ob sich Werke in der Analyse nah sind. Es wäre auch möglich, dass eine weitere historische Quelle entdeckt wird, die einen noch nicht im Korpus vertretenen Autor als wahrscheinlichsten Autor annimmt und dessen Werke in der hier vorgestellten Analyse nicht mit berücksichtigt sind, dessen Werke jedoch noch näher an <em>L´Étourdi</em> liegen. Für die berücksichtigten Quellen und das vorgestellte untersuchte Korpus können wir jedoch sagen, dass unter den drei möglichen Autoren die wahrscheinlichste Variante laut stilometrischer Analyse mit den beschriebenen Parametereinstellungen Nerciat darstellt.</p>
-<p>Wie lässt sich nun dieses Ergebnis im Knowledge Graphen modellieren? Müssen wir uns hinsichtlich der Werk-Person Relation ‘author of’ im Graphen für einen eindeutigen Wert entscheiden? In der verwendeten Infrastruktur (Wikibase) ist es durchaus möglich, alle drei Varianten als Statements aufzunehmen und über einen weiteren Qualifier (‘rank’) eine Abstufung der Wahrscheinlichkeiten vorzunehmen. Wikibase bietet die Möglichkeit Statements mit einem ‘rank’ zu versehen: <code>wikibase:PreferredRank</code>, <code>wikibase:NormalRank</code> und <code>wikibase:DeprecatedRank</code> sind die Abstufungen, die hier gewählt werden können (Abb. 6.12).<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> Dies bietet die Möglichkeit, konfligierende Aussagen im Graphen zu integrieren. Die Ergebnisse der stilometrischen Analyse können so in Wikibase abgebildet werden:</p>
+<section id="modellierung-des-ergebnisses-in-wikibase" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="modellierung-des-ergebnisses-in-wikibase"><span class="header-section-number">1.8</span> Modellierung des Ergebnisses in Wikibase</h2>
+<p>Können wir im Hinblick auf das diskutierte Fallbeispiel der Autorschaftsfrage von <em>L’Étourdi</em> mit Sicherheit sagen, dass, basierend auf den numerischen Ergebnissen der vorgestellten stilometrischen Analyse, Nerciat der Autor war? Dies ist in dieser Eindeutigkeit sicher nicht möglich, da die stilometrische Analyse einerseits vom Vergleichskorpus und andererseits von weiteren Einflussfaktoren abhängen kann <span class="citation" data-cites="jannidis_quantitative_2017">(<a href="chapter6_stylometry.html#ref-jannidis_quantitative_2017" role="doc-biblioref">Schöch 2017: 296</a>)</span>. Schon Burrows spricht in seiner wegweisenden Studie von “likely authorship” <span class="citation" data-cites="burrows_delta_2002">(<a href="chapter6_stylometry.html#ref-burrows_delta_2002" role="doc-biblioref">Burrows 2002</a>)</span>. So hat neben dem Autorschaftssignal auch die thematische Nähe oder ähnliche Gattung einen Einfluss darauf, ob sich Werke in der Analyse nah sind. Es wäre auch möglich, dass eine weitere historische Quelle entdeckt wird, die einen noch nicht im Korpus vertretenen Autor als wahrscheinlichsten Autor annimmt und dessen Werke in der hier vorgestellten Analyse nicht mit berücksichtigt sind, dessen Werke jedoch noch näher an <em>L´Étourdi</em> liegen. Für die berücksichtigten Quellen und das vorgestellte untersuchte Korpus können wir jedoch sagen, dass unter den drei möglichen Autoren die wahrscheinlichste Variante laut stilometrischer Analyse mit den beschriebenen Parametereinstellungen Nerciat darstellt.</p>
+<p>Wie lässt sich nun dieses Ergebnis im Knowledge Graphen modellieren? Müssen wir uns hinsichtlich der Werk-Person Relation ‘author of’ im Graphen für einen eindeutigen Wert entscheiden? In der verwendeten Infrastruktur (Wikibase) ist es durchaus möglich, alle drei Varianten als Statements aufzunehmen und über einen weiteren Qualifier (‘rank’) eine Abstufung der Wahrscheinlichkeiten vorzunehmen. Wikibase bietet die Möglichkeit Statements mit einem ‘rank’ zu versehen: <code>wikibase:PreferredRank</code>, <code>wikibase:NormalRank</code> und <code>wikibase:DeprecatedRank</code> sind die Abstufungen, die hier gewählt werden können <a href="#fig-ranks" class="quarto-xref">Figure&nbsp;<span>1.8</span></a>.<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> Dies bietet die Möglichkeit, konfligierende Aussagen im Graphen zu integrieren. Die Ergebnisse der stilometrischen Analyse können so in Wikibase abgebildet werden:</p>
 <p>NERCIAT, André-Robert Andréa de - &gt; preferred rank<br>
 NEUFVILLE DE BRUNABOIS-MONTADOR, chevalier Jean-Florent-Joseph de -&gt; normal rank<br>
 SADE, Donatien-Alphonse-François, marquis de -&gt; deprecated rank</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="ranks_wikibase.png" class="img-fluid figure-img"></p>
-<figcaption>Preferred rank, normal rank und deprecated rank in Wikibase (MiMoTextBase)</figcaption>
+<div id="fig-ranks" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ranks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="ranks_wikibase.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ranks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.8: Preferred rank, normal rank und deprecated rank in Wikibase (MiMoTextBase)
+</figcaption>
 </figure>
 </div>
 <p>Sollten spätere Analysen oder neue Quellen eine veränderte Sachlage ergeben, können die Ranks der möglichen Werte auch wieder neu justiert werden. Werden in SPARQL-Abfragen keine ‘ranks’ spezifiziert, so wird üblicherweise der Wert, der mit ‘preferred rank’ gekennzeichnet ist, als Ergebnis ausgegeben.<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a><br>
-Zusätzlich zu dieser möglichen Abstufung der Statements wurden für die hier beschriebene stilometrische Analyse in den Graphen die numerischen Werte, die aus der Analyse hervorgegangen sind, als Statements importiert.<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> Im Gegensatz zum Clustering Dendrogram erlauben die rohen numerischen Werte im Knowledge Graphen präzisere Aussagen hinsichtlich der stilometrischen Nähe zweier Werke <a href="https://www.zotero.org/google-docs/?zVgv3s">(cf.&nbsp;Schöch 2023)</a>.</p>
+Zusätzlich zu dieser möglichen Abstufung der Statements wurden für die hier beschriebene stilometrische Analyse in den Graphen die numerischen Werte, die aus der Analyse hervorgegangen sind, als Statements importiert.<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> Im Gegensatz zum Clustering Dendrogram erlauben die rohen numerischen Werte im Knowledge Graphen präzisere Aussagen hinsichtlich der stilometrischen Nähe zweier Werke <span class="citation" data-cites="schoch_dear_2023">(cf. <a href="chapter6_stylometry.html#ref-schoch_dear_2023" role="doc-biblioref">Schöch 2023</a>)</span>.</p>
 </section>
-<section id="zusammenfassung" class="level2" data-number="2.9">
-<h2 data-number="2.9" class="anchored" data-anchor-id="zusammenfassung"><span class="header-section-number">2.9</span> Zusammenfassung</h2>
-<p>Im vorliegenden Kapitel ließ sich zeigen, wie eine umstrittene Autorschaft eines französischen Romans des 18. Jahrhunderts mithilfe der Computational Literary Studies Methode Stilometrie zwar nicht abschließend geklärt werden kann, jedoch aus einer Auswahl an möglichen Kandidaten (‘closed game’) der wahrscheinlichste Kandidat herauskristallisiert werden konnte. Neben dem klassischen Hierarchical Wards Clustering <a href="https://www.zotero.org/google-docs/?Y9OKCB">(Ward 1963)</a> wurde zusätzlich ein Bootstrapping angewandt, um zu überprüfen, wie stabil die stilometrische Nähe von Werken bei unterschiedlichen Parametereinstellungen (Anzahl der verwendeten most frequent words) ist. Die numerischen Werte der Ähnlichkeiten wichen jedoch von den “next neighbours” im Clustering-Verfahren ab und wurden als verlässlicherer Wert im Graphen importiert.<br>
+<section id="zusammenfassung" class="level2" data-number="1.9">
+<h2 data-number="1.9" class="anchored" data-anchor-id="zusammenfassung"><span class="header-section-number">1.9</span> Zusammenfassung</h2>
+<p>Im vorliegenden Kapitel ließ sich zeigen, wie eine umstrittene Autorschaft eines französischen Romans des 18. Jahrhunderts mithilfe der Computational Literary Studies Methode Stilometrie zwar nicht abschließend geklärt werden kann, jedoch aus einer Auswahl an möglichen Kandidaten (‘closed game’) der wahrscheinlichste Kandidat herauskristallisiert werden konnte. Neben dem klassischen Hierarchical Wards Clustering <span class="citation" data-cites="ward_hierarchical_1963">(<a href="chapter6_stylometry.html#ref-ward_hierarchical_1963" role="doc-biblioref">Ward 1963</a>)</span> wurde zusätzlich ein Bootstrapping angewandt, um zu überprüfen, wie stabil die stilometrische Nähe von Werken bei unterschiedlichen Parametereinstellungen (Anzahl der verwendeten most frequent words) ist. Die numerischen Werte der Ähnlichkeiten wichen jedoch von den “next neighbours” im Clustering-Verfahren ab und wurden als verlässlicherer Wert im Graphen importiert.<br>
 Aus den möglichen Autor-Kandidaten - hervorgegangen aus historischen Quellen - wurden die Kandidaten Sade, Nerciat und Neufville-Montador identifiziert. Aus den drei möglichen Kandidaten geht in der hier beschriebenen Analyse als wahrscheinlichste Variante eine Autorschaft Nerciats hervor. Die Methode Stilometrie kann so datenbasiert zu einer Literaturgeschichte des französischen Romans des 18. Jahrhunderts hinsichtlich von offenen Fragen der Autorschaft beitragen.<br>
 Die Modellierung in Wikibase zeigt, dass im Knowledge Graphen konfligierende Aussagen nebeneinander stehend importiert werden können. Die Nutzung von Rängen (‘ranks’) ermöglicht über die Qualifizierung von Statements eine Abstufung der Plausibilität der möglichen Autorschafts-Varianten.</p>
-<section id="referenzen" class="level3" data-number="2.9.1">
-<h3 data-number="2.9.1" class="anchored" data-anchor-id="referenzen"><span class="header-section-number">2.9.1</span> Referenzen</h3>
-<p><a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Apollinaire, Guillaume</strong> (1919): <em>L’Enfer de la Bibliothèque nationale</em>. Bibliothèque des curieux.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Berenike Herrmann, J.</strong> / <strong>Van Dalen-Oskam, Karina</strong> / <strong>Schöch, Christof</strong> (2015): “Revisiting Style, a Key Concept in Literary Studies”, in: <em>Journal of Literary Theory</em> 9 (1): 10.1515/jlt-2015-0003.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Burrows, John</strong> (2002a): “The Englishing of Juvenal: Computational Stylistics and Translated Texts”, in: <em>Style</em> 36 (4): 677–698.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Burrows, John</strong> (2002b): “‘Delta’: a Measure of Stylistic Difference and a Guide to Likely Authorship”, in: <em>Literary and Linguistic Computing</em> 17 (3): 267–287. 10.1093/llc/17.3.267.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Burrows, John</strong> (2005): “Who wrote Shamela? Verifying the Authorship of a Parodic Text”, in: <em>Digital Scholarship in the Humanities</em> 20 (4): 437–450. 10.1093/llc/fqi049.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Büttner, Andreas et al.</strong> (2017): “»Delta« in der stilometrischen Autorschaftsattribution”, 10.17175/2017_006.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Craig, Hugh</strong> / <strong>Kinney, Arthur F.</strong> (eds.) (2009): <em>Shakespeare, Computers, and the Mystery of Authorship</em>. 1. Aufl. Cambridge University Press.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Du, Keli</strong> / <strong>Dudar, Julia</strong> / <strong>Schöch, Christof</strong> (2022): “Evaluation of measures of distinctiveness: Classification of literary texts on the basis of distinctive words”, in: <em>Journal of Computational Literary Studies</em> 1 (1): 10.48694/JCLS.102.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Eder, Maciej</strong> (2013): “Does size matter? Authorship attribution, small samples, big problem”, in: <em>Digital Scholarship in the Humanities</em> 30 (2): 167–182. 10.1093/llc/fqt066.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Eder, Maciej</strong> / <strong>Kestemont, Mike</strong> / <strong>Rybicki, Jan</strong> (2016): “Stylometry with R: A package for computational text analysis”, in: <em>The R Journal</em> 16 (1): 1–15.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Evert, Stefan</strong> / <strong>Jannidis, Fotis</strong> / <strong>Proisl, Thomas</strong> / <strong>Vitt, Thorsten</strong> / <strong>Schöch, Christof</strong> / <strong>Pielström, Steffen</strong> / <strong>Reger, Isabella</strong> (2016): <em>Outliers or Key Profiles? Understanding Distance Measures for Authorship Attribution</em>. in: <em>Digital Identities: the Past and the Future</em>. Kraków: ADHO. 188–191. http://dh2016.adho.org/abstracts/253.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Holmes, David</strong> (1998): “The Evolution of Stylometry in Humanities Scholarship”, in: <em>Literary and Linguistic Computing</em> 13 (3): 111–117. 10.1093/llc/13.3.111.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Hoover, David L.</strong> (2010): <em>Teasing out Authorship and Style with t-tests and Zeta</em>. in: <em>Digital Humanities Conference</em>. London. http://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/html/ab-658.html.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Horstmann, Jan</strong> (2018): <em>Stilometrie</em>. in: <em>forTEXT. Literatur digital erforschen</em>. https://fortext.net/routinen/methoden/stilometrie.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Jannidis, Fotis</strong> / <strong>Lauer, Gerhard</strong> (2014): “Burrows’s Delta and Its Use in German Literary History” in: Erlin, Matt / Tatlock, Lynne (eds.): <em>Distant Readings. Topologies of German Culture in the Long Nineteenth Century</em>. Rochester: Camden House 29–54.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Juola, Patrick</strong> (2013): “How a Computer Program Helped Reveal J. K. Rowling as Author of A Cuckoo’s Calling”, in: <em>Scientific American</em> August (20):.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Kenny, Anthony</strong> (1982): “The Statistical Study of Literary Style” in: <em>The Computation of Style: An Introduction to Statistics for Students of Literature and Humanities</em>. Elsevier 1–14.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Kestemont, Mike</strong> (2014): <em>Function Words in Authorship Attribution. From Black Magic to Theory?</em>. in: <em>Proceedings of the 3rd Workshop on Computational Linguistics for Literature (CLFL)</em>. Gothenburg, Sweden: Association for Computational Linguistics. 59–66. https://aclanthology.org/W14-0908 [letzter Zugriff 29. September 2023].</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Köhler, Reinhard</strong> / <strong>Altmann, Gabriel</strong> / <strong>Piotrowski, Rajmund G.</strong> (2008): <em>Quantitative Linguistik / Quantitative Linguistics: Ein internationales Handbuch / An International Handbook</em>. Walter de Gruyter.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Laramée, François Dominic</strong> (2018): “Introduction to stylometry with Python”, in: <em>Programming Historian</em>:</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Malyshev, Stanislav</strong> / <strong>Krötzsch, Markus</strong> / <strong>González, Larry</strong> / <strong>Gonsior, Julius</strong> / <strong>Bielefeldt, Adrian</strong> (2018): <em>Getting the Most Out of Wikidata: Semantic Technology Usage in Wikipedia’s Knowledge Graph</em>. in: Vrandečić, Denny / Bontcheva, Kalina / Suárez-Figueroa, Mari Carmen / Presutti, Valentina / Celino, Irene / Sabou, Marta / Kaffee, Lucie-Aimée / Simperl, Elena (eds.): <em>The Semantic Web – ISWC 2018</em> (= Lecture Notes in Computer Science). Cham: Springer International Publishing. 376–394. (= Lecture Notes in Computer Science).</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Martin, Angus</strong> / <strong>Mylne, Vivienne</strong> / <strong>Frautschi, Richard L.</strong> (1977): <em>Bibliographie du genre romanesque français, 1751-1800</em>. London: Mansell.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Mosteller, F.</strong> / <strong>Wallace, D. L.</strong> (1983): <em>Applied Bayesian and Classical Inference: The Case of the Federalist Papers</em>. 2nd ed.&nbsp;Springer New York.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Pearce Reeve, Jon</strong> (2018): <em>Does „Late Style“ Exist? New Stylometric Approaches to Variation in Single-Author Corpora</em>. in: <em>Puentes/Bridges</em>. México DF: ADHO. https://dh2018.adho.org/does-late-style-exist-new-stylometric-approaches-to-variation-in-single-author-corpora/.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Rebora, Simone</strong> / <strong>Salgaro, Massimo</strong> (2018): “Is “Late Style” measurable? A stylometric analysis of Johann Wolfgang Goethe’s, Robert Musil’s, and Franz Kafka’s late works”, in: <em>Elephant&amp;Castle</em>:</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Rotari, Gabriela</strong> / <strong>Jander, Melina</strong> / <strong>Rybicki, Jan</strong> (2021): “The Grimm Brothers: A stylometric network analysis”, in: <em>Digital Scholarship in the Humanities</em> 36 (1): 172–186. 10.1093/llc/fqz088.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Röttgermann, Julia</strong> (2023): <em>Collection de romans français du dix-huitième siècle (1751-1800) / Eighteenth-Century French Novels (1751-1800)&nbsp; [dataset]</em>. Zenodo. https://doi.org/10.5281/zenodo.10404966.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Schöch, Christof</strong> (2014): “Corneille, Molière et les autres. Stilometrische Analysen zu Autorschaft und Gattungszugehörigkeit im französischen Theater der Klassik” in: Schöch, Christof / Schneider, Lars (eds.): <em>Literaturwissenschaft im digitalen Medienwandel</em> (= Beihefte von Philologie im Netz 7). 130–157.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Schöch, Christof</strong> (2017): “Quantitative Analyse” in: Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte (eds.): <em>Digital Humanities: Eine Einführung</em>. Stuttgart: Metzler 279–298.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Schöch, Christof</strong> (2023): <em>Dear fellow stylometrists, let’s drop the dendrogram and cherish the distance matrix</em>. in: <em>The Dragonfly’s Gaze</em>. https://dragonfly.hypotheses.org/1414 [letzter Zugriff 15. Januar 2024].</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Smith, Peter W. H.</strong> / <strong>Aldridge, W.</strong> (2011): “Improving Authorship Attribution: Optimizing Burrows’ Delta Method”, in: <em>Journal of Quantitative Linguistics</em> 18 (1): 63–88. https://doi.org/10.1080/09296174.2011.533591.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Ward, Joe H.</strong> (1963): “Hierarchical Grouping to Optimize an Objective Function”, in: <em>Journal of the American Statistical Association</em> 58 (301): 236–244. 10.2307/2282967.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Weidman, Sean</strong> / <strong>Pastor, Aaren</strong> (2021): “Modernism and Gender at the Limits of Stylometry”, in: <em>Digital Humanities Quarterly</em> 015 (4):.</a><br>
-<a href="https://www.zotero.org/google-docs/?4xA93b"><strong>Werner, Helmut</strong> (2014): “Einführung: Der Lebemann” in: <em>Der Lebemann</em> (= Klassiker der Erotik 62).</a></p>
 </section>
+<section id="bibliographie" class="level2" data-number="1.10">
+<h2 data-number="1.10" class="anchored" data-anchor-id="bibliographie"><span class="header-section-number">1.10</span> Bibliographie</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-apollinaire_lenfer_1919" class="csl-entry" role="listitem">
+<strong>Apollinaire, Guillaume</strong> (1919): <em><a href="https://fr.wikisource.org/wiki/Livre:Apollinaire_-_L%E2%80%99Enfer_de_la_Biblioth%C3%A8que_nationale.djvu">L’<span>Enfer</span>
+de la <span>Bibliothèque</span> nationale</a></em>. Bibliothèque des
+curieux.
+</div>
+<div id="ref-berenike_herrmann_revisiting_2015" class="csl-entry" role="listitem">
+<strong>Berenike Herrmann, J.</strong> / <strong>Van Dalen-Oskam,
+Karina</strong> / <strong>Schöch, Christof</strong> (2015): "Revisiting
+<span>Style</span>, a <span>Key</span> <span>Concept</span> in
+<span>Literary</span> <span>Studies</span>", in: <em>Journal of Literary
+Theory</em> 9 (1): <a href="https://doi.org/10.1515/jlt-2015-0003">10.1515/jlt-2015-0003</a>.
+</div>
+<div id="ref-burrows_delta_2002" class="csl-entry" role="listitem">
+<strong>Burrows, John</strong> (2002):
+"<span>„<span>Delta</span>“</span>: a <span>Measure</span> of
+<span>Stylistic</span> <span>Difference</span> and a <span>Guide</span>
+to <span>Likely</span> <span>Authorship</span>", in: <em>Literary and
+Linguistic Computing</em> 17 (3): 267–287. <a href="https://doi.org/10.1093/llc/17.3.267">10.1093/llc/17.3.267</a>.
+</div>
+<div id="ref-buttner_delta_2017" class="csl-entry" role="listitem">
+<strong>Büttner, Andreas</strong> et al. (2017): "<a href="http://dx.doi.org/10.17175/2017_006">»<span>Delta</span>« in der
+stilometrischen <span>Autorschaftsattribution</span></a>",.
+</div>
+<div id="ref-craig_shakespeare_2009" class="csl-entry" role="listitem">
+<strong>Craig, Hugh</strong> / <strong>Kinney, Arthur F.</strong> (eds.)
+(2009): <em><a href="https://doi.org/10.1017/CBO9780511605437">Shakespeare,
+<span>Computers</span>, and the <span>Mystery</span> of
+<span>Authorship</span></a></em>. Cambridge: Cambridge University Press.
+</div>
+<div id="ref-du_evaluation_2022" class="csl-entry" role="listitem">
+<strong>Du, Keli</strong> / <strong>Dudar, Julia</strong> /
+<strong>Schöch, Christof</strong> (2022): "Evaluation of
+<span>Measures</span> of <span>Distinctiveness</span>.
+<span>Classification</span> of <span>Literary</span> <span>Texts</span>
+on the <span>Basis</span> of <span>Distinctive</span>
+<span>Words</span>", in: <em>Journal of Computational Literary
+Studies</em> 1 (1): <a href="https://doi.org/10.48694/jcls.102">10.48694/jcls.102</a>.
+</div>
+<div id="ref-eder_does_2015" class="csl-entry" role="listitem">
+<strong>Eder, Maciej</strong> (2015): "Does size matter?
+<span>Authorship</span> attribution, small samples, big problem", in:
+<em>Digital Scholarship in the Humanities</em> 30 (2): 167–182. <a href="https://doi.org/10.1093/llc/fqt066">10.1093/llc/fqt066</a>.
+</div>
+<div id="ref-eder_stylometry_2016" class="csl-entry" role="listitem">
+<strong>Eder, Maciej</strong> / <strong>Rybicki, Jan</strong> /
+<strong>Kestemont, Mike</strong> (2016): "Stylometry with
+<span>R</span>: <span>A</span> <span>Package</span> for
+<span>Computational</span> <span>Text</span> <span>Analysis</span>", in:
+<em>The R Journal</em> 8: 107–121. <a href="https://doi.org/10.32614/RJ-2016-007">10.32614/RJ-2016-007</a>.
+</div>
+<div id="ref-evert_understanding_2017" class="csl-entry" role="listitem">
+<strong>Evert, Stefan</strong> / <strong>Proisl, Thomas</strong> /
+<strong>Jannidis, Fotis</strong> / <strong>Reger, Isabella</strong> /
+<strong>Pielström, Steffen</strong> / <strong>Schöch, Christof</strong>
+/ <strong>Vitt, Thorsten</strong> (2017): "Understanding and explaining
+<span>Delta</span> measures for authorship attribution", in: <em>Digital
+Scholarship in the Humanities</em> 32 (suppl_2): ii4–ii16. <a href="https://doi.org/10.1093/llc/fqx023">10.1093/llc/fqx023</a>.
+</div>
+<div id="ref-holmes_evolution_1998" class="csl-entry" role="listitem">
+<strong>Holmes, D. I.</strong> (1998): "The <span>Evolution</span> of
+<span>Stylometry</span> in <span>Humanities</span>
+<span>Scholarship</span>", in: <em>Literary and Linguistic
+Computing</em> 13 (3): 111–117. <a href="https://doi.org/10.1093/llc/13.3.111">10.1093/llc/13.3.111</a>.
+</div>
+<div id="ref-hoover_dh2010_nodate" class="csl-entry" role="listitem">
+<strong>Hoover, David L.</strong> (2010): <em><span>DH2010</span>:
+<span>Teasing</span> <span>Out</span> <span>Authorship</span> and
+<span>Style</span> with <span>T</span>-tests and <span>Zeta</span></em>.
+<a href="https://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/html/ab-658.html">https://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/html/ab-658.html</a>
+[letzter Zugriff 18. Februar 2025].
+</div>
+<div id="ref-horstmann_methodenbeitrag_2024" class="csl-entry" role="listitem">
+<strong>Horstmann, Jan</strong> (2024): "Methodenbeitrag:
+<span>Stilometrie</span>", <a href="https://doi.org/10.48694/FORTEXT.3769">10.48694/FORTEXT.3769</a>.
+</div>
+<div id="ref-jannidis_1_2014" class="csl-entry" role="listitem">
+<strong>Jannidis, Fotis</strong> / <strong>Lauer, Gerhard</strong>
+(2014): "1: <span>Burrows</span>’s <span>Delta</span> and
+<span>Its</span> <span>Use</span> in <span>German</span>
+<span>Literary</span> <span>History</span>" in: Erlin, Matt / Tatlock,
+Lynne (eds.): <em>Distant <span>Readings</span>: <span>Topologies</span>
+of <span>German</span> <span>Culture</span> in the <span>Long</span>
+<span>Nineteenth</span> <span>Century</span></em>. Boydell; Brewer
+27–54. <a href="https://doi.org/10.1515/9781571138903-003">10.1515/9781571138903-003</a>.
+</div>
+<div id="ref-juola_rowling_2015" class="csl-entry" role="listitem">
+<strong>Juola, Patrick</strong> (2015): "The <span>Rowling</span>
+<span>Case</span>: <span>A</span> <span>Proposed</span>
+<span>Standard</span> <span>Analytic</span> <span>Protocol</span> for
+<span>Authorship</span> <span>Questions</span>", in: <em>Digital
+Scholarship in the Humanities</em>: fqv040. <a href="https://doi.org/10.1093/llc/fqv040">10.1093/llc/fqv040</a>.
+</div>
+<div id="ref-kenny_1_1982" class="csl-entry" role="listitem">
+<strong>Kenny, ANTHONY</strong> (1982): "1 - <span>The</span>
+<span>Statistical</span> <span>Study</span> of <span>Literary</span>
+<span>Style</span>" in: Kenny, ANTHONY (ed.): <em>The
+<span>Computation</span> of <span>Style</span></em>. Amsterdam: Pergamon
+1–14. <a href="https://doi.org/10.1016/B978-0-08-024281-1.50006-1">10.1016/B978-0-08-024281-1.50006-1</a>.
+</div>
+<div id="ref-kestemont_function_2014" class="csl-entry" role="listitem">
+<strong>Kestemont, Mike</strong> (2014): <em>Function <span>Words</span>
+in <span>Authorship</span> <span>Attribution</span>. <span>From</span>
+<span>Black</span> <span>Magic</span> to <span>Theory</span>?</em> in:
+<em>Proceedings of the 3rd <span>Workshop</span> on
+<span>Computational</span> <span>Linguistics</span> for
+<span>Literature</span> (<span>CLFL</span>)</em>. Gothenburg, Sweden:
+Association for Computational Linguistics. 59–66. <a href="https://aclanthology.org/W14-0908">https://aclanthology.org/W14-0908</a>
+[letzter Zugriff 29. September 2023].
+</div>
+<div id="ref-kohler_quantitative_2005" class="csl-entry" role="listitem">
+<strong>Köhler, Reinhard</strong> / <strong>Altmann, Gabriel</strong> /
+<strong>Piotrowski, Rajmund G.</strong> (2005): <em>Quantitative
+<span>Linguistik</span> / <span>Quantitative</span>
+<span>Linguistics</span>: <span>Ein</span> internationales
+<span>Handbuch</span> / <span>An</span> <span>International</span>
+<span>Handbook</span></em>. 1. Aufl. Berlin: De Gruyter Mouton.
+</div>
+<div id="ref-laramee_introduction_2018" class="csl-entry" role="listitem">
+<strong>Laramée, François Dominic</strong> (2018): "<a href="https://programminghistorian.org/en/lessons/introduction-to-stylometry-with-python">Introduction
+to stylometry with <span>Python</span></a>", in: <em>Programming
+Historian</em>:
+</div>
+<div id="ref-malyshev_getting_2018" class="csl-entry" role="listitem">
+<strong>Malyshev, Stanislav</strong> / <strong>Krötzsch, Markus</strong>
+/ <strong>González, Larry</strong> / <strong>Gonsior, Julius</strong> /
+<strong>Bielefeldt, Adrian</strong> (2018): <em><a href="https://doi.org/10.1007/978-3-030-00668-6_23">Getting the
+<span>Most</span> <span>Out</span> of <span>Wikidata</span>:
+<span>Semantic</span> <span>Technology</span> <span>Usage</span> in
+<span>Wikipedia</span>’s <span>Knowledge</span>
+<span>Graph</span></a></em>. in: Vrandečić, Denny / Bontcheva, Kalina /
+Suárez-Figueroa, Mari Carmen / Presutti, Valentina / Celino, Irene /
+Sabou, Marta / Kaffee, Lucie-Aimée / Simperl, Elena (eds.): <em>The
+<span>Semantic</span> <span>Web</span> – <span>ISWC</span> 2018</em> (=
+Lecture <span>Notes</span> in <span>Computer</span>
+<span>Science</span>). Cham: Springer International Publishing. 376–394.
+(= Lecture <span>Notes</span> in <span>Computer</span>
+<span>Science</span>).
+</div>
+<div id="ref-martin_bibliographie_1977" class="csl-entry" role="listitem">
+<strong>Martin, Angus</strong> / <strong>Mylne, Vivienne</strong> /
+<strong>Frautschi, Richard L.</strong> (1977): <em>Bibliographie du
+genre romanesque français, 1751-1800</em>. London: Mansell.
+</div>
+<div id="ref-mosteller_inference_1963" class="csl-entry" role="listitem">
+<strong>Mosteller, Frederick</strong> / <strong>Wallace, David
+L.</strong> (1963): "Inference in an <span>Authorship</span>
+<span>Problem</span>", in: <em>Journal of the American Statistical
+Association</em> 58 (302): 275. <a href="https://doi.org/10.2307/2283270">10.2307/2283270</a>.
+</div>
+<div id="ref-rebora_is_2018" class="csl-entry" role="listitem">
+<strong>Rebora, Simone</strong> / <strong>Salgaro, Massimo</strong>
+(2018): "<a href="https://www.academia.edu/37943274/Is_Late_Style_measurable_A_stylometric_analysis_of_Johann_Wolfgang_Goethe_s_Robert_Musil_s_and_Franz_Kafka_s_late_works">Is
+<span>„<span>Late</span> <span>Style</span>“</span> measurable?
+<span>A</span> stylometric analysis of <span>Johann</span>
+<span>Wolfgang</span> <span>Goethe</span>’s, <span>Robert</span>
+<span>Musil</span>’s, and <span>Franz</span> <span>Kafka</span>’s late
+works</a>", in: <em>Elephant&amp;amp;Castle</em>:
+</div>
+<div id="ref-reeve_jonathanreevelate-style-pca_nodate" class="csl-entry" role="listitem">
+<strong>Reeve, Jonathan</strong>:
+<em><span>JonathanReeve</span>/late-style-<span>PCA</span>:
+<span>An</span> attempt to experimentally test <span>Edward</span>
+<span>Said</span>’s claims about late style using computational text
+analysis and principal component analysis.</em> <a href="https://github.com/JonathanReeve/late-style-PCA">https://github.com/JonathanReeve/late-style-PCA</a>
+[letzter Zugriff 28. September 2023].
+</div>
+<div id="ref-rotari_grimm_2021" class="csl-entry" role="listitem">
+<strong>Rotari, Gabriela</strong> / <strong>Jander, Melina</strong> /
+<strong>Rybicki, Jan</strong> (2021): "The <span>Grimm</span>
+<span>Brothers</span>: <span>A</span> stylometric network analysis", in:
+<em>Digital Scholarship in the Humanities</em> 36 (1): 172–186. <a href="https://doi.org/10.1093/llc/fqz088">10.1093/llc/fqz088</a>.
+</div>
+<div id="ref-rottgermann_collection_2023" class="csl-entry" role="listitem">
+<strong>Röttgermann, Julia</strong> (2023): <em>Collection de romans
+français du dix-huitième siècle (1751-1800) /
+<span>Eighteenth</span>-<span>Century</span> <span>French</span>
+<span>Novels</span> (1751-1800) [dataset]</em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.10404966">https://doi.org/10.5281/zenodo.10404966</a>.
+</div>
+<div id="ref-schoch_corneille_2014" class="csl-entry" role="listitem">
+<strong>Schöch, Christof</strong> (2014): "Corneille,
+<span>Molière</span> et les autres. <span>Stilometrische</span>
+<span>Analysen</span> zu <span>Autorschaft</span> und
+<span>Gattungszugehörigkeit</span> im französischen <span>Theater</span>
+der <span>Klassik</span>", in: <em>Literaturwissenschaft im digitalen
+Medienwandel</em> Beiheft 7: 130–157.
+</div>
+<div id="ref-jannidis_quantitative_2017" class="csl-entry" role="listitem">
+<strong>Schöch, Christof</strong> (2017): "Quantitative
+<span>Analyse</span>" in: Jannidis, Fotis / Kohle, Hubertus / Rehbein,
+Malte (eds.): <em>Digital <span>Humanities</span></em>. Stuttgart: J.B.
+Metzler 279–298. <a href="https://doi.org/10.1007/978-3-476-05446-3_20">10.1007/978-3-476-05446-3_20</a>.
+</div>
+<div id="ref-schoch_dear_2023" class="csl-entry" role="listitem">
+<strong>Schöch, Christof</strong> (2023): <em>Dear fellow stylometrists,
+let’s drop the dendrogram and cherish the distance matrix</em>. in:
+<em>The Dragonfly’s Gaze</em>. <a href="https://dragonfly.hypotheses.org/1414">https://dragonfly.hypotheses.org/1414</a>
+[letzter Zugriff 18. Februar 2025].
+</div>
+<div id="ref-smith_improving_2011" class="csl-entry" role="listitem">
+<strong>Smith, Peter W. H.</strong> / <strong>Aldridge, W.</strong>
+(2011): "Improving <span>Authorship</span> <span>Attribution</span>:
+<span>Optimizing</span> <span>Burrows</span>’ <span>Delta</span>
+<span>Method</span>*", in: <em>Journal of Quantitative Linguistics</em>
+18 (1): 63–88. <a href="https://doi.org/10.1080/09296174.2011.533591">10.1080/09296174.2011.533591</a>.
+</div>
+<div id="ref-ward_hierarchical_1963" class="csl-entry" role="listitem">
+<strong>Ward, Joe H.</strong> (1963): "Hierarchical
+<span>Grouping</span> to <span>Optimize</span> an <span>Objective</span>
+<span>Function</span>", in: <em>Journal of the American Statistical
+Association</em> 58 (301): 236–244. <a href="https://doi.org/10.1080/01621459.1963.10500845">10.1080/01621459.1963.10500845</a>.
+</div>
+<div id="ref-weidman_modernism_2021" class="csl-entry" role="listitem">
+<strong>Weidman, Sean</strong> / <strong>Pastor, Aaren</strong> (2021):
+"<a href="https://www.digitalhumanities.org/dhq/vol/15/4/000566/000566.html">Modernism
+and <span>Gender</span> at the <span>Limits</span> of
+<span>Stylometry</span></a>", in: <em>Digital Humanities Quarterly</em>
+15 (4):
+</div>
+<div id="ref-werner_einfuhrung_2014" class="csl-entry" role="listitem">
+<strong>Werner, Helmut</strong> (2014): "<a href="https://seyerlein.de/shop/item/9783944964744/klassiker-der-erotik-62-der-lebemann-von-andrea-de-nerciat-e-book-epub">Einführung:
+<span>Der</span> <span>Lebemann</span></a>" in: <em>Der
+<span>Lebemann</span></em> (= Klassiker der <span>Erotik</span> 62).
+</div>
+</div>
 </section>
-<section id="section" class="level2" data-number="2.10">
-<h2 data-number="2.10" class="anchored" data-anchor-id="section"><span class="header-section-number">2.10</span> </h2>
-</section>
-<section id="appendix-sparql-queries" class="level2" data-number="2.11">
-<h2 data-number="2.11" class="anchored" data-anchor-id="appendix-sparql-queries"><span class="header-section-number">2.11</span> Appendix: SPARQL-Queries</h2>
-<section id="files-mit-volltext-url-und-mindestens-drei-werken-pro-autorin" class="level3" data-number="2.11.1">
-<h3 data-number="2.11.1" class="anchored" data-anchor-id="files-mit-volltext-url-und-mindestens-drei-werken-pro-autorin"><span class="header-section-number">2.11.1</span> <a href="https://tinyurl.com/232rx7wb">Files mit Volltext-URL und mindestens drei Werken pro Autor:in</a></h3>
+<section id="appendix-sparql-queries" class="level2" data-number="1.11">
+<h2 data-number="1.11" class="anchored" data-anchor-id="appendix-sparql-queries"><span class="header-section-number">1.11</span> Appendix: SPARQL-Queries</h2>
+<section id="files-mit-volltext-url-und-mindestens-drei-werken-pro-autorin" class="level3" data-number="1.11.1">
+<h3 data-number="1.11.1" class="anchored" data-anchor-id="files-mit-volltext-url-und-mindestens-drei-werken-pro-autorin"><span class="header-section-number">1.11.1</span> <a href="https://tinyurl.com/232rx7wb">Files mit Volltext-URL und mindestens drei Werken pro Autor:in</a></h3>
 <p><iframe style="width:100%;max-width:100%;height:450px" frameborder="0" allowfullscreen="" src="https://tinyurl.com/232rx7wb" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></p>
 </section>
-<section id="rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind-1" class="level3" data-number="2.11.2">
-<h3 data-number="2.11.2" class="anchored" data-anchor-id="rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind-1"><span class="header-section-number">2.11.2</span> <a href="http://tinyurl.com/ylafpk9d">Rousseaus Werke im Graphen und Werke, die jenen stilometrisch “nah” sind</a></h3>
+<section id="rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind-1" class="level3" data-number="1.11.2">
+<h3 data-number="1.11.2" class="anchored" data-anchor-id="rousseaus-werke-im-graphen-und-werke-die-jenen-stilometrisch-nah-sind-1"><span class="header-section-number">1.11.2</span> <a href="http://tinyurl.com/ylafpk9d">Rousseaus Werke im Graphen und Werke, die jenen stilometrisch “nah” sind</a></h3>
 <p><iframe style="width:100%;max-width:100%;height:450px" frameborder="0" allowfullscreen="" src="http://tinyurl.com/ylafpk9d" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></p>
 </section>
-<section id="welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form-1" class="level3" data-number="2.11.3">
-<h3 data-number="2.11.3" class="anchored" data-anchor-id="welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form-1"><span class="header-section-number">2.11.3</span> <a href="https://tinyurl.com/24q38l55">Welche Gemeinsamkeiten haben Werke, die sich basierend auf einer stilometrischen Analyse ähnlich sind: Autor, Tonalität, narrative Form?</a></h3>
+<section id="welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form-1" class="level3" data-number="1.11.3">
+<h3 data-number="1.11.3" class="anchored" data-anchor-id="welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-stilometrischen-analyse-ähnlich-sind-autor-tonalität-narrative-form-1"><span class="header-section-number">1.11.3</span> <a href="https://tinyurl.com/24q38l55">Welche Gemeinsamkeiten haben Werke, die sich basierend auf einer stilometrischen Analyse ähnlich sind: Autor, Tonalität, narrative Form?</a></h3>
 <p><iframe style="width:100%;max-width:100%;height:450px" frameborder="0" allowfullscreen="" src="https://tinyurl.com/24q38l55" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></p>
 
 
@@ -518,19 +749,19 @@ Die Modellierung in Wikibase zeigt, dass im Knowledge Graphen konfligierende Aus
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>Morozov (1854-1946) verwendet erstmals den Begriff ‚stilometrija /<em>Stilometrie</em>‘ in Russland <a href="https://www.zotero.org/google-docs/?f8q9Cp">(Köhler / Altmann / Piotrowski 2008: 37 ff)</a>. Für eine allgemeine Einführung in die Methode der Stilometrie im Kontext der Digital Humanities cf.&nbsp;<a href="https://www.zotero.org/google-docs/?HuzYg6">Laramée 2018; Horstmann 2018; Eder / Rybicki / Kestemont 2016</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Hinzufügen könnte man außerdem, dass der Computer hier völlig neue Möglichkeiten eröffnete. Gingen Mosteller und Wallace in Teilen ihrer Berechnung noch händisch vor, ist es heute eine Selbstverständlichkeit, eine stilometrische Studie von einem Computer berechnen zu lassen. “The most important technological advances in authorship studies have arisen from the computer.” stellen sie auch selbst 20 Jahre nach ihrer wegweisenden Studie in einem Zusatzkapitel fest <a href="https://www.zotero.org/google-docs/?0tygyZ">(Mosteller / Wallace 1983: 268)</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Das Projekt “<strong><em>Zeta und Konsorten</em>.</strong> Distinktivitätsmaße für die Computational Literary Studies.“ am Trier Center for Digital Humanities hat es sich zum Ziel gesetzt, ein tieferes Verständnis verschiedener Distinktivitätsmaße zu erreichen und Verbesserungen in deren Implementierung und Anwendung vorzuschlagen <a href="https://www.zotero.org/google-docs/?zdepy5">(cf.&nbsp;Du / Dudar / Schöch 2022)</a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Außerdem werden zwei weitere mögliche Autorschaften genannt: Neufville-Montador oder Marquis de Sade <a href="https://www.zotero.org/google-docs/?t2xpqb">(Martin / Mylne / Frautschi 1977: 272)</a>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Morozov (1854-1946) verwendet erstmals den Begriff ‚stilometrija /<em>Stilometrie</em>‘ in Russland [<span class="citation" data-cites="kohler_quantitative_2005">Köhler / Altmann / Piotrowski (<a href="chapter6_stylometry.html#ref-kohler_quantitative_2005" role="doc-biblioref">2005</a>)</span>; pp.&nbsp;37 ff.]. Für eine allgemeine Einführung in die Methode der Stilometrie im Kontext der Digital Humanities cf. <span class="citation" data-cites="laramee_introduction_2018 horstmann_methodenbeitrag_2024 eder_stylometry_2016">(<a href="chapter6_stylometry.html#ref-laramee_introduction_2018" role="doc-biblioref">Laramée 2018</a>; <a href="chapter6_stylometry.html#ref-horstmann_methodenbeitrag_2024" role="doc-biblioref">Horstmann 2024</a>; <a href="chapter6_stylometry.html#ref-eder_stylometry_2016" role="doc-biblioref">Eder / Rybicki / Kestemont 2016</a>)</span>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Hinzufügen könnte man außerdem, dass der Computer hier völlig neue Möglichkeiten eröffnete. Gingen Mosteller und Wallace in Teilen ihrer Berechnung noch händisch vor, ist es heute eine Selbstverständlichkeit, eine stilometrische Studie von einem Computer berechnen zu lassen. “The most important technological advances in authorship studies have arisen from the computer.” stellen sie auch selbst 20 Jahre nach ihrer wegweisenden Studie in einem Zusatzkapitel fest [<span class="citation" data-cites="mosteller_inference_1963">Mosteller / Wallace (<a href="chapter6_stylometry.html#ref-mosteller_inference_1963" role="doc-biblioref">1963</a>)</span>; pp.&nbsp;268].<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Das Projekt “<strong><em>Zeta und Konsorten</em>.</strong> Distinktivitätsmaße für die Computational Literary Studies.“ am Trier Center for Digital Humanities hat es sich zum Ziel gesetzt, ein tieferes Verständnis verschiedener Distinktivitätsmaße zu erreichen und Verbesserungen in deren Implementierung und Anwendung vorzuschlagen <span class="citation" data-cites="du_evaluation_2022">(cf. <a href="chapter6_stylometry.html#ref-du_evaluation_2022" role="doc-biblioref">Du / Dudar / Schöch 2022</a>)</span>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Außerdem werden zwei weitere mögliche Autorschaften genannt: Neufville-Montador oder Marquis de Sade <span class="citation" data-cites="martin_bibliographie_1977">(<a href="chapter6_stylometry.html#ref-martin_bibliographie_1977" role="doc-biblioref">Martin / Mylne / Frautschi 1977: 272</a>)</span>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn5"><p><a href="https://fr.wikisource.org/wiki/L%E2%80%99%C3%89tourdi,_1784" class="uri">https://fr.wikisource.org/wiki/L%E2%80%99%C3%89tourdi,_1784</a>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn6"><p>cf.&nbsp;Burrows (2002): “The closed games take two forms. Where only two or three writers are eligible candidates for the<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn7"><p>Eine detaillierte Beschreibung dazu in Kapitel 2: Korpusaufbau.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn8"><p>Die verwendeten erzählenden Texte von Neufville-Montador sind hier einsehbar: <a href="https://github.com/MiMoText/Stylometric_Analysis/tree/main/corpora/Neufville_Montador" class="uri">https://github.com/MiMoText/Stylometric_Analysis/tree/main/corpora/Neufville_Montador</a>.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn9"><p>Die anhand des Fallbeispiels festgestellte Diskrepanz wurde anlässlich des Workshops <em>Potentials and Limits of Stylometry for Early Modern Text in Romance Languages</em> am 11. Oktober 2023 am Trier Center for Digital Humanities im Anschluss an den Vortrag “Decoding Literary Signatures: Stylometric Insights into Authorship Attribution in 18th Century French Novels” diskutiert. An dieser Stelle Dank an Artjoms Šeja (Institute of Polish Language, Polish Academy of Sciences) und Christof Schöch (Trier Center for Digital Humanities ) für Anregung und Hinweise.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p>Gleichwohl finden sich in der Fachliteratur weitere Hinweise, beispielsweise im Vorwort einer deutschen Übersetzung: “Dieser galante Roman, der die Jugend eines solchen Lebemannes schildert, zeichnet ein treffendes Sittengemälde der französischen Gesellschaft des Ancien Régime unmittelbar vor der Revolution. Wenngleich dieser Roman auch anonym erschienen ist, dürfte A. de Nerciat der Verfasser sein. An dieser Zuschreibung, die uns durch die Tradition überliefert ist, haben wir keinen Grund zu zweifeln, weil auch stilistische und sprachliche Gründe dafür sprechen.” <a href="https://www.zotero.org/google-docs/?ZuRqVZ">(Werner 2014: 4)</a>.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Gleichwohl finden sich in der Fachliteratur weitere Hinweise, beispielsweise im Vorwort einer deutschen Übersetzung: “Dieser galante Roman, der die Jugend eines solchen Lebemannes schildert, zeichnet ein treffendes Sittengemälde der französischen Gesellschaft des Ancien Régime unmittelbar vor der Revolution. Wenngleich dieser Roman auch anonym erschienen ist, dürfte A. de Nerciat der Verfasser sein. An dieser Zuschreibung, die uns durch die Tradition überliefert ist, haben wir keinen Grund zu zweifeln, weil auch stilistische und sprachliche Gründe dafür sprechen.” <span class="citation" data-cites="werner_einfuhrung_2014">(<a href="chapter6_stylometry.html#ref-werner_einfuhrung_2014" role="doc-biblioref">Werner 2014: 4</a>)</span>.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn11"><p><a href="https://data.mimotext.uni-trier.de/wiki/File:Wordle_topic_modeling_2023_topic_039_monarchie.png" class="uri">https://data.mimotext.uni-trier.de/wiki/File:Wordle_topic_modeling_2023_topic_039_monarchie.png</a>.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn12"><p>Stilometrisch nah im Graphen sind Werke, die unter den nächst ähnlichen Werken basierend auf der beschriebenen stilometrischen Analyse sind. Der Cut-Off liegt im Knowledge Graphen bei den fünf ähnlichsten Werken.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn13"><p>“Another type of built-in annotation on statements is the <em>statement rank</em>, which can be <em>normal</em> (default), <em>preferred</em>, or <em>deprecated</em>. Ranks are a simple filtering mechanism when there are many statements for one property”. <a href="https://www.zotero.org/google-docs/?n9uCLt">(Malyshev et al.&nbsp;2018: 379)</a>.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>“Another type of built-in annotation on statements is the <em>statement rank</em>, which can be <em>normal</em> (default), <em>preferred</em>, or <em>deprecated</em>. Ranks are a simple filtering mechanism when there are many statements for one property”. <span class="citation" data-cites="malyshev_getting_2018">(<a href="chapter6_stylometry.html#ref-malyshev_getting_2018" role="doc-biblioref">Malyshev et al. 2018: 379</a>)</span>.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn14"><p>SPARQL-Abfrage: Wer ist der Autor von L’Étourdi? <a href="http://tinyurl.com/yvmpfk6q" class="uri">http://tinyurl.com/yvmpfk6q</a>.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn15"><p>Die entsprechende Property heißt P49 (“stylometric based similarity”), https://data.mimotext.uni-trier.de/wiki/Property:P49.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
@@ -956,13 +1187,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link" aria-label="Ein Wikidata der Literaturgeschichtsschreibung">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Ein Wikidata der Literaturgeschichtsschreibung</span></span>
+      <a href="./index.html" class="pagination-link" aria-label="Preface">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./summary.html" class="pagination-link" aria-label="Summary">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
