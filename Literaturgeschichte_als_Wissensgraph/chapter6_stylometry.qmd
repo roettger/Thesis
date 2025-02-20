@@ -66,6 +66,8 @@ Ein Roman mit abweichenden Angaben zur Autorschaft aus der Romansammlung roman18
 Da die beiden Quellen verschiedene Aussagen hinsichtlich der Autorschaft des Romans enthalten, eignet sich das Werk gut als Fallbeispiel für eine stilometrische Analyse hinsichtlich der Frage der Autorschaft. Da die Frage der Autorschaft nicht völlig offen ist, sondern es eine begrenzte Zahl von möglichen Kandidaten gibt, können wir im hier skizzierten Forschungsdesign in Anlehnung an Burrows (2002) von einem ‘closed game’[^6] sprechen.
 
 [^6]: cf. Burrows (2002): “The closed games take two forms. Where only two or three writers are eligible candidates for the
+authorship of a particular text and where that text is of a sufficient length, we are now well equipped to form strong inferences about their rival claims. The classic study of this kind is Mosteller and Wallace (1964). Holmes (2001) offers an excellent recent specimen. Where the real question is whether or not a particular writer (and no other) is the
+author, we are equally well equipped to test his or her claims.”
 
 ### Korpuszusammensetzung und Textgrundlage
 
@@ -138,7 +140,7 @@ Das schrittweise Erhöhen des Parameter der am häufigsten vorkommenden Wörter 
 
 Die bisherige Analyse stützte sich wie eine Vielzahl an stilometrischen Studien, die in den Digital Humanities durchgeführt werden auf die Erkenntnis aus der Visualisierung der Dendrogramme oder Bootstrap-Trees. Eine Nähe auf einem Ast des durch Clustering generierten Trees ließ auf eine Nähe der Werke und somit Autorschaften schließen. Diese Annahme ist zwar grundsätzlich nicht als falsch anzusehen und ein Großteil der stilometrischen Studien in den Digital Humanities geht hier ähnlich vor, jedoch zeigte sich überraschenderweise im hier untersuchten Fall, dass Dendrogram und numerische Werte unterschiedliche Autorschaftshypothesen nahe legen. Während das Hierarchical Wards Clustering Neufville-Montadors Werke auf dem nächsten Ast zu *L’étourdi* verortete, zeigen die rohen numerischen Werte ein anderes Bild: Hier liegt Nerciats Werk *Félicia* am nächsten zu *L’étourdi* und legt somit eine Autorschaft Nerciats nahe.
 
-![Dendrogram vs. distance table, 3500 MFW, Wurzburg distance.](detail_dendrogram_Etourdi_with_neufville.jpg)![](stylometry_numerical.png){#fig-numerical}
+![Distance table, 3500 MFW, Wurzburg distance.](stylometry_numerical.png){#fig-numerical}
 
 Im Clustering-Prozess ist jeweils von einem gewissen Informationsverlust auszugehen, sodass hier die numerischen Werte die verlässlichere Quelle darstellen.[^9] Diese bilden daher auch die Grundlage der im Knowledge Graphen importierten Resource Description Framework (RDF) Triples zur stilometrischen Analyse der Romane.\
 Eine qualitative Bewertung des Romans und der potentiell ähnlichen Werke anhand der bei Lektüre festgestellten stilistischen Merkmale wären neben der stilometrischen Analyse ein weiterer ergänzender Schritt, der hier jedoch nicht Gegenstand der Untersuchung ist. [^10]
@@ -151,7 +153,7 @@ In einigen Beispielen an SPARQL-Abfragen sei nun illustriert, wie sich diese Sta
 
 ## Abfrage der stilometrischen Analyse in SPARQL
 
-Die Ergebnisse der hier beschriebenen Analyse sind hinsichtlich der numerischen Werte der stilometrischen Ähnlichkeit im Knowledge Graphen als Statements importiert. Dies ermöglicht es, über entsprechende SPARQL-Abfragen bezogen auf Einzelwerke oder Autoren nach den - laut stilometrischer Analyse - ähnlichsten Werken zu fragen. Im gehe daher in SPARQL-Abfagen der Frage nach, welche Gemeinsamkeiten Werke haben, die sich stilometrisch nah sind: Teilen Sie die Erzählform, Autorschaft oder Tonalität?\
+Die Ergebnisse der hier beschriebenen Analyse sind hinsichtlich der numerischen Werte der stilometrischen Ähnlichkeit im Knowledge Graphen als Statements importiert. Dies ermöglicht es, über entsprechende SPARQL-Abfragen bezogen auf Einzelwerke oder Autoren nach den - laut stilometrischer Analyse - ähnlichsten Werken zu fragen. Ich gehe daher in SPARQL-Abfagen der Frage nach, welche Gemeinsamkeiten Werke haben, die sich stilometrisch nah sind: Teilen Sie die Erzählform, Autorschaft oder Tonalität?\
 Zunächst eine Abfrage, die verdeutlicht, welche Werke stilometrisch nah zu Rousseaus Werken sind.  
 
 ## [Rousseaus Werke im Graphen und Werke, die jenen stilometrisch “nah” sind](http://tinyurl.com/ylafpk9d)  
