@@ -1,3 +1,6 @@
-# Summary
+# Abstract
 
-In summary, this book has no content whatsoever.
+Die im Kontext des Forschungsprojekts *Mining and Modeling Text* (MiMoText) verortete Dissertation befasst sich mit der Erstellung eines Korpus französischer Romane aus der Zeit 1751-1800, die erstmalig in TEI-konformes XML übertragen und im Rahmen der *European Literary Text Collection* (ELTeC) publiziert werden. Auf das Korpus werden quantitative Methoden der Textanalyse angewendet mit dem Ziel, literaturwissenschaftlich verwertbare Informationen zu Aspekten wie Themen, Orten, Textähnlichkeiten und Sentiments zu extrahieren. Alle extrahierten Daten werden als Linked Open Data in einem Wissensgraphen modelliert, mit weiteren Informationen aus MiMoText verknüpft und stehen für strukturierte Abfragen zur Verfügung. In beispielhaften SPARQL-Abfragen werden makroanalytische Strukturen dargestellt und sich abzeichnende Muster in den  Daten im Sinne einer datenbasierten Literaturgeschichtsschreibung interpretiert. 
+
+
+Keywords: 	*Französischer Roman, Aufklärung, 18. Jahrhundert, Linked Open Data, XML/TEI, Sentiment Analyse, Named Entity Recognition, Topic Modeling, Stilometrie, Wikibase, SPARQL*. In summary, this book has no content whatsoever.

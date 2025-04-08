@@ -10,11 +10,11 @@ book:
   search: true
   repo-url: https://github.com/roettger/Thesis
   downloads: [pdf, epub]
-  chapters:
-    - index.qmd
-    - chapter6_stylometry.qmd
-    - summary.qmd
-    - references.qmd
+chapters:
+  - index.qmd
+  - chapter6_stylometry.qmd
+  - summary.qmd
+  - references.qmd
 
 bibliography: references.bib
 csl: DHd.csl
@@ -33,15 +33,9 @@ format:
     include-after-body:
       text: |
         \printindex
-
-        downloads: [pdf, epub]
-chapters:
-  - index.qmd
-  - chapter6_stylometry.qmd
-  - summary.qmd
-  - references.qmd
-html:
+    toc:  true
+    toc-depth: 3    
+  html:
     theme: cosmo
     toc: true
     toc-depth: 3
-
