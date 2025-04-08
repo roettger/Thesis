@@ -6,7 +6,7 @@ book:
   subtitle: "Automatische Erhebung literaturhistorisch relevanter Informationen aus Volltexten am Beispiel von französischen Romanen des XVIII. Jahrhunderts"
   author: "Julia Röttgermann"
   date: "2025.02.14"
-  cover-image: wissensgraph.JPG
+  cover-image: (img_00\wissensgraph.JPG)
   search: true
   repo-url: https://github.com/roettger/Thesis
   downloads: [pdf, epub]
@@ -19,19 +19,29 @@ book:
 bibliography: references.bib
 csl: DHd.csl
 
-
 format:
-  html:
-    theme:
-      - cosmo
-      - brand
   pdf:
-    documentclass: scrreprt
-    include-in-header: 
+    documentclass: classicthesis
+    geometry: a4paper
+    fontsize: 12pt
+    include-in-header:
       text: |
+        \usepackage{graphicx}
+        \usepackage{amsmath}
         \usepackage{makeidx}
         \makeindex
-    include-after-body: 
+    include-after-body:
       text: |
         \printindex
+
+        downloads: [pdf, epub]
+chapters:
+  - index.qmd
+  - chapter6_stylometry.qmd
+  - summary.qmd
+  - references.qmd
+html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
 

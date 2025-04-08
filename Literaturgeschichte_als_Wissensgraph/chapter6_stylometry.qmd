@@ -31,7 +31,7 @@ Ein weiterer bedeutender Beitrag zur Stilometrie stammt von John Burrows, der da
 Bezüglich der Toolentwicklung kommt Maciej Eder, Jan Rybicki und Mike Kestemont der Verdienst zu, ein eingängiges, leicht bedienbares Tool für die Statistikumgebung R entwickelt zu haben, dass auch zur weiten Verbreitung der Methode in den Digital Humanities und darüber hinaus geführt hat [@horstmann_methodenbeitrag_2024]: “Stylo” [@eder_stylometry_2016].
 
 ## Theoretische Grundlagen: Distanzmaße
-![Distanzmaße: Manhattan-Distanz, Euklidische Distanz und Kosinus-Distanz [Stefan Evert, 2017. Lizenziert unter Creative Commons Namensnennung 4.0 International (CC-BY)]](\img_06\evert_jannidis_schoch_2016.png){#fig-distance-measures}
+![Distanzmaße: Manhattan-Distanz, Euklidische Distanz und Kosinus-Distanz [Stefan Evert, 2017. Lizenziert unter Creative Commons Namensnennung 4.0 International (CC-BY)]](img_06\evert_jannidis_schoch_2016.png){#fig-distance-measures}
 
 Im Kontext der Textanalyse werden verschiedene Distanzmaße verwendet, um die Unterschiede zwischen Texten zu quantifizieren [@jannidis_quantitative_2017; pp. 294–295]. Die **Manhattan-Distanz** misst die absolute Distanz zweier Vektoren in jeder einzelnen Dimension. Die Summe dieser absoluten Distanzen ergibt die Gesamtdistanz, wobei jede Dimension gleich gewichtet wird (@fig-distance-measures).
 
@@ -61,7 +61,7 @@ Ein Roman mit abweichenden Angaben zur Autorschaft aus der Romansammlung roman18
 
 [^5]: <https://fr.wikisource.org/wiki/L%E2%80%99%C3%89tourdi,_1784>.
 
-![Bibliographischer Eintrag 84.50 zu *L’étourdi* (Martin / Mylne / Frautschi 1977: 272).](\img_06\etourdi.JPG){#fig-etourdi}
+![Bibliographischer Eintrag 84.50 zu *L’étourdi* (Martin / Mylne / Frautschi 1977: 272).](img_06\etourdi.JPG){#fig-etourdi}
 
 Da die beiden Quellen verschiedene Aussagen hinsichtlich der Autorschaft des Romans enthalten, eignet sich das Werk gut als Fallbeispiel für eine stilometrische Analyse hinsichtlich der Frage der Autorschaft. Da die Frage der Autorschaft nicht völlig offen ist, sondern es eine begrenzte Zahl von möglichen Kandidaten gibt, können wir im hier skizzierten Forschungsdesign in Anlehnung an Burrows (2002) von einem ‘closed game’[^6] sprechen.
 
@@ -106,12 +106,12 @@ Es ist wichtig, pro Autor:in mehrere Werke im Untersuchungskorpus und damit genu
 
 In einem ersten Analyseschritt wurden die Werke als Plaintext im Tool Stylo [@eder_stylometry_2016] in R mit folgenden Einstellungen analysiert: Wurzburg distance, 2000 MFW. Bevor wir die ersten Ergebnisse anschauen und analysieren sei hier in Erinnerung gerufen, dass die stilometrische Analyse nicht nur Hinweise auf die Autorschaft geben kann, sondern dass ebenfalls Gattungssignale, der Publikationszeitrahmen oder thematische Nähe ein Einflussfaktor für eine große Nähe zwischen zwei Werken sein kann.
 
-![Stilometrische Untersuchung von roman18 mit stylo, Wurzburg distance, 2000 MFW.](\img_06\wurzburg_distance_2000MFW.jpg){#fig-wurzburg-distance}
+![Stilometrische Untersuchung von roman18 mit stylo, Wurzburg distance, 2000 MFW.](img_06\wurzburg_distance_2000MFW.jpg){#fig-wurzburg-distance}
 
 Hinsichtlich der genannten potentiellen Autoren (Nerciat, Sade) lässt sich im von Stylo verwendeten Hierarchical Ward Clustering im ersten Durchlauf kein eindeutiges Ergebnis erkennen. Der untersuchte Roman clustert weder eng mit den Romanen von Sade, noch mit Nerciats Werken @fig-wurzburg-distance. Je näher die Werke an einem Ast des Dendrograms liegen, desto näher ist auch ihre stilometrische Ähnlichkeit.\
 Stylo ermöglicht es, das untersuchte Korpus mit einer Principal Component Analyse (PCA) zu untersuchen, um jene Elemente darzustellen, die ausschlaggebende Komponenten der stilometrischen Analyse sind.
 
-![PCA(Principal Components Analysis) mit Loadings](\img_06\150_MFW_pca_loadings.png){#fig-pca-loadings}
+![PCA(Principal Components Analysis) mit Loadings](img_06\150_MFW_pca_loadings.png){#fig-pca-loadings}
 
 Im oberen Bereich der PCA erkennt man, dass in der Principal Component Analyse mehrere Werke des gleichen Autors, Baculard d’Arnaud, clustern (@fig-pca-loadings). Die hier visualisierten Loadings sind ‘coeur’, ‘mon’, ‘ma’ oder ‘amour’. Es zeigt sich, dass hier einerseits Funktionswörter ausschlaggebend sind, andererseits ist Baculard d’Arnaud ein Verfasser einer Vielzahl von Sentimentalromanen. Insofern sind die hier visualisierten Loadings ‘coeur’ (Herz) oder ‘amour’ (Liebe) plausibel.\
 Da sich insgesamt im ersten Analyseschritt jedoch keine eindeutige Zuordnung zu den hypothetischen Autoren im Clustering-Verfahren zeigte, wurde ein weiterer Durchgang der stilometrischen Analyse durchgeführt. Einer der potentiellen Autoren, Neufville-Montador, war zunächst nicht im Romankorpus vertreten. Um zu verifizieren, ob sich hier eine stilometrische Nähe zeigt, wurden ergänzend erzählende Texte von Neufville-Montador dem Untersuchungskorpus hinzugefügt.
@@ -126,13 +126,13 @@ Apollinaire hält demnach Neufville-Montador für den wahrscheinlichsten Autor. 
 
 [^8]: Die verwendeten erzählenden Texte von Neufville-Montador sind hier einsehbar: <https://github.com/MiMoText/Stylometric_Analysis/tree/main/corpora/Neufville_Montador>.
 
-![Stilometrische Analyse mit erweiterten Datensatz, 3500 MFW, Wurzburg distance.](\img_06\with_neufville_montador.jpg){#fig-with-neufville} 
+![Stilometrische Analyse mit erweiterten Datensatz, 3500 MFW, Wurzburg distance.](img_06\with_neufville_montador.jpg){#fig-with-neufville} 
 
 Die Abbildung @fig-with-neufville der stilometrischen Analyse mit erweitertem Datensatz zeigt, dass die Werke von Sade zusammen clustern, die Werke von Nerciat zusammen clustern und das untersuchte Werk *L’étourdi* von den drei möglichen Kandidaten-Autoren am nächsten mit Neufville-Montador clustert. Sollte demnach Apollinaire recht behalten?
 
 Stylo bietet als zusätzliche Möglichkeit der Analyse die Verwendung des 'Bootstrap Consensus Tree' (@fig-bootstrap-neufville). Dabei handelt es sich um eine kreisförmige Visualisierung, die mehrere Durchläufe der Clusteranalyse mit variierender Anzahl der am häufigsten vorkommenden Wörter zu einer konsolidierten Ergebnisvisualisierung zusammenführt. Der Sinn dieser Analyse liegt darin zu überprüfen, wie stabil das Clustering bei verschiedenen Einstellung der Verwendung der MFW (most frequent words) ist. Dieser Prozess, auch als 'Bootstrap' bezeichnet, verwebt die individuellen Analysedurchläufe ähnlich dem Schnüren eines Schuhs ('bootstrapping') und zieht sie am Ende zusammen. Ähnliche Texte werden hier auf einem Zweig durch Clustering repräsentiert. Bei der Auswahl des 'Consensus Tree' müssen zusätzliche Parameter im MFW-Setting festgelegt werden, darunter der Start- und Endpunkt der Analyse ('Minimum' / 'Maximum'), sowie die Anzahl der hinzugefügten Wörter in jeder einzelnen Analyse ('Increment'). In meiner Analyse habe ich mich für einen Startwert von 2000, ein Inkrement von 100 Wörtern und ein Maximum von 4000 entschieden. Bei dieser Höhe der verwendeten meist frequenten Wörter (2000+) ist von einer Mischung aus Funktions- und Inhaltswörtern auszugehen.
 
-![Bootstrap consensus tree, Wurzburg distance, 2000-4000 MFW.](\img_06\bootstrap_consensus_tree_with_neufville.jpg){#fig-bootstrap-neufville}
+![Bootstrap consensus tree, Wurzburg distance, 2000-4000 MFW.](img_06\bootstrap_consensus_tree_with_neufville.jpg){#fig-bootstrap-neufville}
 
 Das schrittweise Erhöhen des Parameter der am häufigsten vorkommenden Wörter (MFW) im Bootstrap Consensus Tree zeigt, dass die Nähe des Textes *L’Étourdi* zu den verwendeten Texten mit Autorschaft von Neufville-Montador relativ stabil ist (@fig-bootstrap-neufville). Unter der Annahme, dass entweder Marquis de Sade, Andréa de Nerciat oder Neufville-Montador der Autor von *L’Étourdi* ist, können wir anhand der Ergebnisse dieser stilometrischen Untersuchung mit dem Tool Stylo in R feststellen, dass Neufville-Montador im hier untersuchten Setting aus der Kandidatenliste als der wahrscheinlichste Autor des Romans gelten kann.
 
@@ -140,7 +140,7 @@ Das schrittweise Erhöhen des Parameter der am häufigsten vorkommenden Wörter 
 
 Die bisherige Analyse stützte sich wie eine Vielzahl an stilometrischen Studien, die in den Digital Humanities durchgeführt werden auf die Erkenntnis aus der Visualisierung der Dendrogramme oder Bootstrap-Trees. Eine Nähe auf einem Ast des durch Clustering generierten Trees ließ auf eine Nähe der Werke und somit Autorschaften schließen. Diese Annahme ist zwar grundsätzlich nicht als falsch anzusehen und ein Großteil der stilometrischen Studien in den Digital Humanities geht hier ähnlich vor, jedoch zeigte sich überraschenderweise im hier untersuchten Fall, dass Dendrogram und numerische Werte unterschiedliche Autorschaftshypothesen nahe legen. Während das Hierarchical Wards Clustering Neufville-Montadors Werke auf dem nächsten Ast zu *L’étourdi* verortete, zeigen die rohen numerischen Werte ein anderes Bild: Hier liegt Nerciats Werk *Félicia* am nächsten zu *L’étourdi* und legt somit eine Autorschaft Nerciats nahe.
 
-![Distance table, 3500 MFW, Wurzburg distance.](\img_06\stylometry_numerical.png){#fig-numerical}
+![Distance table, 3500 MFW, Wurzburg distance.](img_06\stylometry_numerical.png){#fig-numerical}
 
 Im Clustering-Prozess ist jeweils von einem gewissen Informationsverlust auszugehen, sodass hier die numerischen Werte die verlässlichere Quelle darstellen.[^9] Diese bilden daher auch die Grundlage der im Knowledge Graphen importierten Resource Description Framework (RDF) Triples zur stilometrischen Analyse der Romane.\
 Eine qualitative Bewertung des Romans und der potentiell ähnlichen Werke anhand der bei Lektüre festgestellten stilistischen Merkmale wären neben der stilometrischen Analyse ein weiterer ergänzender Schritt, der hier jedoch nicht Gegenstand der Untersuchung ist. [^10]
@@ -192,7 +192,7 @@ NERCIAT, André-Robert Andréa de - \> preferred rank\
 NEUFVILLE DE BRUNABOIS-MONTADOR, chevalier Jean-Florent-Joseph de -\> normal rank\
 SADE, Donatien-Alphonse-François, marquis de -\> deprecated rank
 
-![Preferred rank, normal rank und deprecated rank in Wikibase (MiMoTextBase)](\img_06\ranks_wikibase.png){#fig-ranks}
+![Preferred rank, normal rank und deprecated rank in Wikibase (MiMoTextBase)](img_06\ranks_wikibase.png){#fig-ranks}
 
 Sollten spätere Analysen oder neue Quellen eine veränderte Sachlage ergeben, können die Ranks der möglichen Werte auch wieder neu justiert werden. Werden in SPARQL-Abfragen keine ‘ranks’ spezifiziert, so wird üblicherweise der Wert, der mit ‘preferred rank’ gekennzeichnet ist, als Ergebnis ausgegeben.[^14]\
 Zusätzlich zu dieser möglichen Abstufung der Statements wurden für die hier beschriebene stilometrische Analyse in den Graphen die numerischen Werte, die aus der Analyse hervorgegangen sind, als Statements importiert.[^15] Im Gegensatz zum Clustering Dendrogram erlauben die rohen numerischen Werte im Knowledge Graphen präzisere Aussagen hinsichtlich der stilometrischen Nähe zweier Werke [cf. @schoch_dear_2023].
@@ -214,19 +214,22 @@ Die Modellierung in Wikibase zeigt, dass im Knowledge Graphen konfligierende Aus
 
 ## Appendix: SPARQL-Queries
 
-### [Files mit Volltext-URL und mindestens drei Werken pro Autor:in](https://tinyurl.com/232rx7wb)
+### Files mit Volltext-URL und mindestens drei Werken pro Autor:in
+
+[https://tinyurl.com/232rx7wb](https://tinyurl.com/232rx7wb)
 
 ```{=html}
 <p><iframe  style="width:100%;max-width:100%;height:450px" frameborder="0" allowfullscreen src="https://tinyurl.com/232rx7wb" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></p>
 ```
 
-### [Rousseaus Werke im Graphen und Werke, die jenen stilometrisch “nah” sind](http://tinyurl.com/ylafpk9d)  
-
+### Rousseaus Werke im Graphen und Werke, die jenen stilometrisch “nah” sind
+[http://tinyurl.com/ylafpk9d](http://tinyurl.com/ylafpk9d)  
 ```{=html}
 <p><iframe  style="width:100%;max-width:100%;height:450px" frameborder="0" allowfullscreen src="http://tinyurl.com/ylafpk9d" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></p>
 ```
 
-### [Welche Gemeinsamkeiten haben Werke, die sich basierend auf einer stilometrischen Analyse ähnlich sind: Autor, Tonalität, narrative Form? ](https://tinyurl.com/24q38l55)  
+### Welche Gemeinsamkeiten haben Werke, die sich basierend auf einer stilometrischen Analyse ähnlich sind: Autor, Tonalität, narrative Form? 
+[https://tinyurl.com/24q38l55](https://tinyurl.com/24q38l55)  
 
 ```{=html}
 <p><iframe  style="width:100%;max-width:100%;height:450px" frameborder="0" allowfullscreen src="https://tinyurl.com/24q38l55" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></p>
