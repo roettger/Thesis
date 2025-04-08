@@ -235,7 +235,7 @@ div.csl-indent {
 <section id="einleitung-was-ist-stilometrie" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="einleitung-was-ist-stilometrie"><span class="header-section-number">1.1</span> Einleitung: Was ist Stilometrie?</h2>
 <p>Was ist Stilometrie und wozu können wir die Methode hinsichtlich einer datenbasierten Literaturgeschichte einsetzen? Die Methode, die Anwendung sowohl in den Digitalen Geisteswissenschaften als auch in der forensischen Linguistik findet, nutzt linguistische Merkmale, statistische Modelle, und computergestützte Verfahren, um stilistische Muster in schriftlichen Texten zu identifizieren und zu vergleichen. Eines der meist verbreiteten Ziele der Stilometrie ist es dabei, die Autorschaft eines Textes mit computationellen Mitteln nachzuweisen <span class="citation" data-cites="burrows_delta_2002 hoover_dh2010_nodate rotari_grimm_2021">(<a href="chapter6_stylometry.html#ref-burrows_delta_2002" role="doc-biblioref">Burrows 2002</a>; <a href="chapter6_stylometry.html#ref-hoover_dh2010_nodate" role="doc-biblioref">Hoover 2010</a>; <a href="chapter6_stylometry.html#ref-rotari_grimm_2021" role="doc-biblioref">Rotari / Jander / Rybicki 2021</a>)</span>. Daneben gibt es jedoch auch Studien, die die statistischen sprachlichen Eigenschaften hinsichtlich von Gender-Unterschieden, Phänomene wie die individuellen Veränderungen eines Schreibstils im Laufe der Zeit oder in unterschiedlichen literarischen Gattungen analysieren <span class="citation" data-cites="holmes_evolution_1998 jannidis_1_2014 schoch_corneille_2014 weidman_modernism_2021">(<a href="chapter6_stylometry.html#ref-holmes_evolution_1998" role="doc-biblioref">Holmes 1998</a>; <a href="chapter6_stylometry.html#ref-jannidis_1_2014" role="doc-biblioref">Jannidis / Lauer 2014</a>; <a href="chapter6_stylometry.html#ref-schoch_corneille_2014" role="doc-biblioref">Schöch 2014</a>; <a href="chapter6_stylometry.html#ref-weidman_modernism_2021" role="doc-biblioref">Weidman / Pastor 2021</a>)</span>.<br>
-Der Begriff Stilometrie setzt sich aus den beiden Wortteilen “Stil” und “-metrie” zusammen, also eine literarische oder linguistische Kategorie (Stil) und das Konfix “-metrie”, das suggeriert, dass etwas gezählt wird.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Zunächst stellt sich daher die Frage: Was ist Stil? Dazu haben <span class="citation" data-cites="berenike_herrmann_revisiting_2015">Berenike Herrmann / Van Dalen-Oskam / Schöch (<a href="chapter6_stylometry.html#ref-berenike_herrmann_revisiting_2015" role="doc-biblioref">2015</a>)</span> eine Definition formuliert, die man sowohl für computationelle Methoden als auch im klassischen literaturwissenschaftlichen Sinne anwenden kann: “Style is a property of texts constituted by an ensemble of formal features which can be observed quantitatively or qualitatively” <span class="citation" data-cites="berenike_herrmann_revisiting_2015">(<a href="chapter6_stylometry.html#ref-berenike_herrmann_revisiting_2015" role="doc-biblioref">Berenike Herrmann / Van Dalen-Oskam / Schöch 2015</a>)</span>. Stilometrie nutzt das Zählen stilistischer Merkmale in Form der Verwendungshäufigkeit bestimmter Wörter (‘most frequent words’), um Aussagen zur Textähnlichkeit zu generieren, die unter bestimmten Bedingungen Rückschlüsse auf die Autorschaft zulassen.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+Der Begriff Stilometrie setzt sich aus den beiden Wortteilen “Stil” und “-metrie” zusammen, also eine literarische oder linguistische Kategorie (Stil) und das Konfix “-metrie”, das suggeriert, dass etwas gezählt wird.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Zunächst stellt sich daher die Frage: Was ist Stil? Dazu haben <span class="citation" data-cites="berenike_herrmann_revisiting_2015">Herrmann / Van Dalen-Oskam / Schöch (<a href="chapter6_stylometry.html#ref-berenike_herrmann_revisiting_2015" role="doc-biblioref">2015</a>)</span> eine Definition formuliert, die man sowohl für computationelle Methoden als auch im klassischen literaturwissenschaftlichen Sinne anwenden kann: “Style is a property of texts constituted by an ensemble of formal features which can be observed quantitatively or qualitatively” <span class="citation" data-cites="berenike_herrmann_revisiting_2015">(<a href="chapter6_stylometry.html#ref-berenike_herrmann_revisiting_2015" role="doc-biblioref">Herrmann / Van Dalen-Oskam / Schöch 2015</a>)</span>. Stilometrie nutzt das Zählen stilistischer Merkmale in Form der Verwendungshäufigkeit bestimmter Wörter (‘most frequent words’), um Aussagen zur Textähnlichkeit zu generieren, die unter bestimmten Bedingungen Rückschlüsse auf die Autorschaft zulassen.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 <p>Das vorliegende Kapitel beginnt damit, die Anfänge bzw. wegweisende Studien der Stilometrie zu beschreiben. Als Pionierstudien der Stilometrie werden die Studie zu den <em>Federalist Papers</em> <span class="citation" data-cites="mosteller_inference_1963">(<a href="chapter6_stylometry.html#ref-mosteller_inference_1963" role="doc-biblioref">Mosteller / Wallace 1963</a>)</span> und Burrow’s Delta <span class="citation" data-cites="burrows_delta_2002">(<a href="chapter6_stylometry.html#ref-burrows_delta_2002" role="doc-biblioref">Burrows 2002</a>)</span> zusammengefasst. Als weitere theoretische Grundlage werden verschiedene Distanzmaße und zudem die Relevanz des R-Pakets ‘stylo’ innerhalb der Community der Digital Humanities beschrieben.<br>
 Im Anschluss beschreibe ich einen konkreten Anwendungsfall. Dazu untersuche ich eine Fallstudie zu einem Roman mit ungeklärter Autorschaft aus der Textsammlung roman18 in mehreren Schritten: Verwendung eines Subkorpus von roman18, Analyse mit um Texte eines potentiellen Autors erweitertem Datensatz, Hierarchical Wards Clustering, Bootstrap Consensus Tree. Eine überraschende Erkenntnis liefert der Vergleich aus Clustering und numerischen Distanzwerten der stilometrischen Analyse. Abschließend beschreibe und diskutiere ich die Modellierung in Wikibase unter Verwendung von ‘ranks’ und SPARQL-Abfragen zu Gemeinsamkeiten stilometrisch naher Werke.</p>
 <p><em>Keywords: Stilometrie, Federalist Papers, Delta, stylo, Hierarchical Wards Clustering, Bootstrap Consensus Tree, Principal Component Analysis, Wikibase, preferred rank, SPARQL.</em></p>
@@ -251,7 +251,7 @@ Im Anschluss beschreibe ich einen konkreten Anwendungsfall. Dazu untersuche ich 
 <div id="fig-distance-measures" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-distance-measures-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="evert_jannidis_schoch_2016.png" class="img-fluid figure-img">
+<img src="\img_06\evert_jannidis_schoch_2016.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-distance-measures-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1.1: Distanzmaße: Manhattan-Distanz, Euklidische Distanz und Kosinus-Distanz [Stefan Evert, 2017. Lizenziert unter Creative Commons Namensnennung 4.0 International (CC-BY)]
@@ -276,7 +276,7 @@ Quattrocento painting to some Italian master, could not happen based on ‘conte
 <div id="fig-etourdi" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-etourdi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="etourdi.JPG" class="img-fluid figure-img">
+<img src="\img_06\etourdi.JPG" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-etourdi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1.2: Bibliographischer Eintrag 84.50 zu <em>L’étourdi</em> (Martin / Mylne / Frautschi 1977: 272).
@@ -397,7 +397,7 @@ Figure&nbsp;1.3: SPARQL-Query: Files mit Volltext-URL und mindestens drei Werken
 <div id="fig-wurzburg-distance" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-wurzburg-distance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="wurzburg_distance_2000MFW.jpg" class="img-fluid figure-img">
+<img src="\img_06\wurzburg_distance_2000MFW.jpg" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-wurzburg-distance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1.4: Stilometrische Untersuchung von roman18 mit stylo, Wurzburg distance, 2000 MFW.
@@ -409,7 +409,7 @@ Stylo ermöglicht es, das untersuchte Korpus mit einer Principal Component Analy
 <div id="fig-pca-loadings" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-pca-loadings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="150_MFW_pca_loadings.png" class="img-fluid figure-img">
+<img src="\img_06\150_MFW_pca_loadings.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pca-loadings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1.5: PCA(Principal Components Analysis) mit Loadings
@@ -427,7 +427,7 @@ Da sich insgesamt im ersten Analyseschritt jedoch keine eindeutige Zuordnung zu 
 <div id="fig-with-neufville" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-with-neufville-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="with_neufville_montador.jpg" class="img-fluid figure-img">
+<img src="\img_06\with_neufville_montador.jpg" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-with-neufville-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1.6: Stilometrische Analyse mit erweiterten Datensatz, 3500 MFW, Wurzburg distance.
@@ -439,7 +439,7 @@ Figure&nbsp;1.6: Stilometrische Analyse mit erweiterten Datensatz, 3500 MFW, Wur
 <div id="fig-bootstrap-neufville" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-bootstrap-neufville-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="bootstrap_consensus_tree_with_neufville.jpg" class="img-fluid figure-img">
+<img src="\img_06\bootstrap_consensus_tree_with_neufville.jpg" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bootstrap-neufville-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1.7: Bootstrap consensus tree, Wurzburg distance, 2000-4000 MFW.
@@ -454,7 +454,7 @@ Figure&nbsp;1.7: Bootstrap consensus tree, Wurzburg distance, 2000-4000 MFW.
 <div id="fig-numerical" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-numerical-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="stylometry_numerical.png" class="img-fluid figure-img">
+<img src="\img_06\stylometry_numerical.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-numerical-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1.8: Distance table, 3500 MFW, Wurzburg distance.
@@ -494,7 +494,7 @@ SADE, Donatien-Alphonse-François, marquis de -&gt; deprecated rank</p>
 <div id="fig-ranks" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ranks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="ranks_wikibase.png" class="img-fluid figure-img">
+<img src="\img_06\ranks_wikibase.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ranks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1.9: Preferred rank, normal rank und deprecated rank in Wikibase (MiMoTextBase)
@@ -517,13 +517,6 @@ Die Modellierung in Wikibase zeigt, dass im Knowledge Graphen konfligierende Aus
 <strong>Apollinaire, Guillaume</strong> (1919): <em><a href="https://fr.wikisource.org/wiki/Livre:Apollinaire_-_L%E2%80%99Enfer_de_la_Biblioth%C3%A8que_nationale.djvu">L’<span>Enfer</span>
 de la <span>Bibliothèque</span> nationale</a></em>. Bibliothèque des
 curieux.
-</div>
-<div id="ref-berenike_herrmann_revisiting_2015" class="csl-entry" role="listitem">
-<strong>Berenike Herrmann, J.</strong> / <strong>Van Dalen-Oskam,
-Karina</strong> / <strong>Schöch, Christof</strong> (2015): "Revisiting
-<span>Style</span>, a <span>Key</span> <span>Concept</span> in
-<span>Literary</span> <span>Studies</span>", in: <em>Journal of Literary
-Theory</em> 9 (1): <a href="https://doi.org/10.1515/jlt-2015-0003">10.1515/jlt-2015-0003</a>.
 </div>
 <div id="ref-burrows_delta_2002" class="csl-entry" role="listitem">
 <strong>Burrows, John</strong> (2002):
@@ -570,6 +563,13 @@ Studies</em> 1 (1): <a href="https://doi.org/10.48694/jcls.102">10.48694/jcls.10
 / <strong>Vitt, Thorsten</strong> (2017): "Understanding and explaining
 <span>Delta</span> measures for authorship attribution", in: <em>Digital
 Scholarship in the Humanities</em> 32 (suppl_2): ii4–ii16. <a href="https://doi.org/10.1093/llc/fqx023">10.1093/llc/fqx023</a>.
+</div>
+<div id="ref-berenike_herrmann_revisiting_2015" class="csl-entry" role="listitem">
+<strong>Herrmann, J.</strong> / <strong>Van Dalen-Oskam, Karina</strong>
+/ <strong>Schöch, Christof</strong> (2015): "Revisiting
+<span>Style</span>, a <span>Key</span> <span>Concept</span> in
+<span>Literary</span> <span>Studies</span>", in: <em>Journal of Literary
+Theory</em> 9 (1): <a href="https://doi.org/10.1515/jlt-2015-0003">10.1515/jlt-2015-0003</a>.
 </div>
 <div id="ref-holmes_evolution_1998" class="csl-entry" role="listitem">
 <strong>Holmes, D. I.</strong> (1998): "The <span>Evolution</span> of
