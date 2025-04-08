@@ -5,8 +5,8 @@ book:
   title: "Literaturgeschichte als Wissensgraph"
   subtitle: "Automatische Erhebung literaturhistorisch relevanter Informationen aus Volltexten am Beispiel von französischen Romanen des XVIII. Jahrhunderts"
   author: "Julia Röttgermann"
-  date: "2025.02.14"
-  cover-image: (img_00\wissensgraph.JPG)
+  date: "2025.04.08"
+  cover-image: img_00\wissensgraph.JPG
   search: true
   repo-url: https://github.com/roettger/Thesis
   downloads: [pdf, epub]
@@ -20,22 +20,11 @@ bibliography: references.bib
 csl: DHd.csl
 
 format:
-  pdf:
-    documentclass: classicthesis
-    geometry: a4paper
-    fontsize: 12pt
-    include-in-header:
-      text: |
-        \usepackage{graphicx}
-        \usepackage{amsmath}
-        \usepackage{makeidx}
-        \makeindex
-    include-after-body:
-      text: |
-        \printindex
-    toc:  true
-    toc-depth: 3    
   html:
     theme: cosmo
     toc: true
     toc-depth: 3
+  pdf:
+    geometry: a4paper
+    fontsize: 12pt
+---
