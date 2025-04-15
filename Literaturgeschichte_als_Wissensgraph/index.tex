@@ -6,7 +6,8 @@
 \documentclass[
   12pt,
   letterpaper,
-]{classicthesis}
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
 
 \usepackage{amsmath,amssymb}
 \usepackage{iftex}
@@ -128,10 +129,9 @@
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
-\usepackage{graphicx}
-\usepackage{amsmath}
 \usepackage{makeidx}
 \makeindex
+\KOMAoption{captions}{tableheading}
 \makeatletter
 \@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
 \makeatother
@@ -203,7 +203,7 @@
 Informationen aus Volltexten am Beispiel von französischen Romanen des
 XVIII. Jahrhunderts}
 \author{Julia Röttgermann}
-\date{2025-02-14}
+\date{2025-04-08}
 
 \begin{document}
 \maketitle
@@ -253,14 +253,15 @@ sowohl in den Digitalen Geisteswissenschaften als auch in der
 forensischen Linguistik findet, nutzt linguistische Merkmale,
 statistische Modelle, und computergestützte Verfahren, um stilistische
 Muster in schriftlichen Texten zu identifizieren und zu vergleichen.
-Eines der meist verbreiteten Ziele der Stilometrie ist es dabei, die
-Autorschaft eines Textes mit computationellen Mitteln nachzuweisen
-(Burrows 2002; Hoover 2010; Rotari / Jander / Rybicki 2021). Daneben
-gibt es jedoch auch Studien, die die statistischen sprachlichen
-Eigenschaften hinsichtlich von Gender-Unterschieden, Phänomene wie die
-individuellen Veränderungen eines Schreibstils im Laufe der Zeit oder in
-unterschiedlichen literarischen Gattungen analysieren (Holmes 1998;
-Jannidis / Lauer 2014; Schöch 2014; Weidman / Pastor 2021).\\
+Eines der meist verbreiteten Ziele der Stilometrie\index{Stilometrie}
+ist es dabei, die Autorschaft eines Textes mit computationellen Mitteln
+nachzuweisen (Burrows 2002; Hoover 2010; Rotari / Jander / Rybicki
+2021). Daneben gibt es jedoch auch Studien, die die statistischen
+sprachlichen Eigenschaften hinsichtlich von Gender-Unterschieden,
+Phänomene wie die individuellen Veränderungen eines Schreibstils im
+Laufe der Zeit oder in unterschiedlichen literarischen Gattungen
+analysieren (Holmes 1998; Jannidis / Lauer 2014; Schöch 2014; Weidman /
+Pastor 2021).\\
 Der Begriff Stilometrie setzt sich aus den beiden Wortteilen ``Stil''
 und ``-metrie'' zusammen, also eine literarische oder linguistische
 Kategorie (Stil) und das Konfix ``-metrie'', das suggeriert, dass etwas
@@ -270,7 +271,7 @@ gezählt wird.\footnote{Morozov (1854-1946) verwendet erstmals den
   Einführung in die Methode der Stilometrie im Kontext der Digital
   Humanities cf. (Laramée 2018; Horstmann 2024; Eder / Rybicki /
   Kestemont 2016).} Zunächst stellt sich daher die Frage: Was ist Stil?
-Dazu haben Herrmann / Van Dalen-Oskam / Schöch (2015) eine Definition
+Dazu haben (Herrmann / Van Dalen-Oskam / Schöch 2015) eine Definition
 formuliert, die man sowohl für computationelle Methoden als auch im
 klassischen literaturwissenschaftlichen Sinne anwenden kann: ``Style is
 a property of texts constituted by an ensemble of formal features which
@@ -1198,7 +1199,7 @@ Form?}\label{welche-gemeinsamkeiten-haben-werke-die-sich-basierend-auf-einer-sti
 
 \bookmarksetup{startatroot}
 
-\chapter{Abstract}\label{abstract}
+\chapter{Summary}\label{summary}
 
 Die im Kontext des Forschungsprojekts \emph{Mining and Modeling Text}
 (MiMoText) verortete Dissertation befasst sich mit der Erstellung eines
@@ -1439,8 +1440,6 @@ Humanities Quarterly} 15 (4):
 
 
 \printindex
-
-downloads: [pdf, epub]
 
 
 \end{document}
