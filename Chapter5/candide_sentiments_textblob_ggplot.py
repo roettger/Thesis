@@ -1,56 +1,64 @@
 import requests
+import re
 from textblob import TextBlob
 from textblob_fr import PatternTagger, PatternAnalyzer
 import pandas as pd
-from nltk import sent_tokenize
 from plotnine import *
 
-def fetch_text_from_github(url):
-    response = requests.get(url)
+def fetch_text_from_github(github_url):
+    response = requests.get(github_url)
     if response.status_code == 200:
         return response.text
     else:
         print("Fehler beim Abrufen des Textes von GitHub.")
         return None
 
+# Lade den französischen Text
 github_url = "https://raw.githubusercontent.com/MiMoText/roman18/master/plain/files/Voltaire_Candide.txt"
 voltaire_candide = fetch_text_from_github(github_url)
 
-# Erstelle ein TextBlob-Objekt aus dem Text
-voltaire_candide = TextBlob(voltaire_candide)
+# Kapitel anhand von "CHAPITRE" trennen 
+voltaire_candideParts = re.split(r'CHAPITRE', voltaire_candide)
 
-# Teile den Text anhand des Strings 'Chapitre'
-voltaire_candideParts = voltaire_candide.split('CHAPITRE')
+# Erster Split-Teil ist Vorspann → überspringen
+allChapters = [ch.strip() for ch in voltaire_candideParts[1:] if ch.strip()]
 
-# Nimm alle Kapitel
-allChapters = voltaire_candideParts[1:]  # skip 'CHAPITRE'
-allBlobs = [TextBlob(text).sentiment for text in allChapters]
+chapter_sentiments = []
+for i, chapter in enumerate(allChapters, 1):
+    blob = TextBlob(chapter, pos_tagger=PatternTagger(), analyzer=PatternAnalyzer())
+    sentiments = []
+    for sent in blob.sentences:
+        s = sent.sentiment
+        if s is not None and isinstance(s, tuple):
+            sentiments.append(s[0])  # Polarität
+    avg_sentiment = sum(sentiments) / len(sentiments) if sentiments else 0
+    chapter_sentiments.append(avg_sentiment)
 
-# Polarität pro Chapter
-allSentiments = [item.polarity for item in allBlobs]
-
-# Erstelle ein DataFrame für die Kapitel und deren Polarität
+# DataFrame erstellen
 chapters_df = pd.DataFrame({
-    'Chapter': ['Chapitre {}'.format(i) for i in range(1, len(allSentiments) + 1)],
-    'Polarity': allSentiments
+    'Kapitel': list(range(1, len(chapter_sentiments) + 1)),
+    'Polarität': chapter_sentiments
 })
 
-# Setze die Chapter-Spalte als kategorisch und ordne sie nach der Zahl
-chapters_df['Chapter'] = pd.Categorical(chapters_df['Chapter'], 
-                                         categories=['Chapitre {}'.format(i) for i in range(1, len(allSentiments) + 1)], 
-                                         ordered=True)
+# Visualisierung mit ggplot
+plot = (
+    ggplot(chapters_df, aes(x='Kapitel', y='Polarität')) +
+    geom_bar(stat='identity', fill="#69b3a2", color="black", alpha=0.7) +
+    #geom_smooth(method='lm', color='red', se=False, size=1.2) +
+    labs(
+        #title='Sentiment-Analyse mit TextBlob-fr: Candide',
+        x='Kapitel',
+        y='Durchschnittliche Polarität'
+    ) +
+    theme_minimal() +
+    theme(
+        axis_text_x=element_text(rotation=0, size=9),
+        axis_text_y=element_text(size=9),
+        plot_title=element_text(size=12, weight='bold', ha='center')
+    )
+)
 
-# Visualisiere die Polarität mit ggplot 
-plot = (ggplot(chapters_df, aes(x='Chapter', y='Polarity')) +
-        geom_bar(stat='identity') +
-        geom_smooth(method='lm', span=0.3, color='red', se=True) +
-        labs(title='Sentiment Analysis with Textblob: Candide', x='Chapter', y='Polarity') +
-        theme(axis_text_x=element_text(rotation=45, hjust=1)))
-
-# Zeige den Plot an
+# Plot anzeigen und speichern
 print(plot)
-
-# Speichern des Plots in einer Datei mit 300 DPI
-plot.save("candide_sentiment_analysis.png", dpi=300)
-
+plot.save("candide_sentiment_analysis_fr.png", dpi=300)
 print("Plot wurde gespeichert.")
