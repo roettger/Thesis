@@ -54,16 +54,26 @@ df = pd.DataFrame([
 ]).sort_values("date")
 
 # Visualisierung
-# Visualisierung mit Linie um die Bars
+import matplotlib.pyplot as plt
+import numpy as np
+
 plt.figure(figsize=(12,6))
 
-# Bars mit schwarzer Kontur
-plt.bar(df["date"], df["rel"], color="salmon", edgecolor="black", linewidth=1.5)
+# Bars mit transparenter Füllung, schwarzer Kontur und abgerundeten Ecken
+bars = plt.bar(
+    df["date"], 
+    df["rel"], 
+    color="salmon", 
+    edgecolor="black", 
+    linewidth=1.2, 
+    alpha=0.7, 
+    width=0.8
+)
+
 
 plt.xlabel("Year")
 plt.ylabel("Relative frequency (%)")
-plt.title('Evolution of "sensibility" theme in French novels (1751-1800)')
+#plt.title('Evolution of "sensibility" theme in French novels (1751-1800)')
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
-
