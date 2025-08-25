@@ -13,7 +13,7 @@ def fetch_text_from_github(github_url):
         print("Fehler beim Abrufen des Textes von GitHub.")
         return None
 
-# Lade den französischen Text
+# Lade den Text
 github_url = "https://raw.githubusercontent.com/MiMoText/roman18/master/plain/files/Voltaire_Candide.txt"
 voltaire_candide = fetch_text_from_github(github_url)
 
