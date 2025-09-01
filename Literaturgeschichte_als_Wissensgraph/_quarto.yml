@@ -11,6 +11,7 @@ book:
   downloads: [pdf, epub]
   chapters:
   - index.qmd
+  - chapter2_corpus.qmd
   - chapter6_stylometry.qmd
   - summary.qmd
   - references.qmd
