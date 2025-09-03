@@ -1,4 +1,4 @@
-# **Stilometrische Analyse von Französischen Romanen 1751-1800**
+# Stilometrische Analyse von Französischen Romanen 1751-1800
 
 > The close reader sees things in a text — single moments and large amorphous movements —to which 
 > computer programs give no easy access. The computer, on the other hand, reveals hidden patterns and 

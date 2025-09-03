@@ -229,9 +229,1304 @@ To learn more about Quarto books visit
 
 \bookmarksetup{startatroot}
 
-\chapter{\texorpdfstring{\textbf{Stilometrische Analyse von
-Französischen Romanen
-1751-1800}}{Stilometrische Analyse von Französischen Romanen 1751-1800}}\label{stilometrische-analyse-von-franzuxf6sischen-romanen-1751-1800}
+\chapter{Korpusaufbau der ``Collection de romans
+1751-1800''}\label{korpusaufbau-der-collection-de-romans-1751-1800}
+
+\emph{Data are capta}, taken not given, constructed as an interpretation
+of the phenomenal world, not inherent in it.
+
+\begin{quote}
+--- {[}Drucker (2011); pp.8{]}
+\end{quote}
+
+Die zweite Hälfte des 18. Jahrhunderts ist eine Zeit voller
+gesellschaftlicher und kultureller Veränderungen, die sich auch in den
+erzählenden Texten dieser Zeit widerspiegeln. Um diese Epoche im Sinne
+einer ``Data-Rich Literary History'' {[}Bode (2018); pp.37{]} oder
+datenbasierten Literaturgeschichte zu erforschen, besteht ein erster
+Schritt darin, ein systematisch strukturiertes Korpus an Volltexten
+aufzubauen, das es ermöglicht, diese Werke in einer standardisierten und
+maschinenlesbaren Form zu untersuchen. Ziel des hier beschriebenen
+Korpusaufbaus ist es, Methoden der Computational Literary Studies (CLS)
+wie Topic Modeling, Named Entity Recognition oder Sentiment Analysis auf
+das Korpus anzuwenden, um aus den Volltexten literaturhistorisch
+relevante Aussagen zu extrahieren, die in einen Knowledge Graphen zur
+Französischen Literaturgeschichte importiert und in weiteren Abfragen
+analysiert werden können. Das Zielformat ist daher ein Volltext in
+Plaintextformat, der möglichst modernisiert und normalisiert vorliegt.
+Als intermediäres Format zur langfristigen Speicherung wird ein
+XML-Format nach den Guidelines der \emph{Text Encoding Initiative} (TEI)
+anvisiert, ein Format, das sich in den Digital Humanities als
+Datenformat zur langfristigen Speicherung bewährt hat.
+
+Nachdem in der Einleitung bereits das Vorhaben einer datenbasierten
+Literaturgeschichte und das Ziel einer Erstellung eines Wissensgraphen
+umrissen wurde, sollen im vorliegenden Kapitel die Strategie des
+Korpusaufbaus als ein repräsentatives Sampling aus der literarischen
+Grundgesamtheit und die weiteren Schritte der Digitalisierung und
+Datenbereinigung dargelegt werden.{[}\^{}chapter2\_corpus-1{]}: Teile
+von Kapitel 2 werden in Abwandlung auf Französisch erscheinen als
+Röttgermann, Julia. „Établissement d'un corpus de romans français du
+XVIIIe siècle dans le cadre du projet Mining and Modeling Text``.
+\emph{promptus - Würzburger Beiträge zur Romanistik}, accepted. Dabei
+gehe ich auf die Kriterien des Korpusaufbaus, auf die Quellen des Korpus
+und auf die Digitalisierungspipeline mithilfe des Tools \emph{OCR4all}
+(Reul et al. 2019) ein. Ich beschreibe dabei das Verhältnis zwischen
+bibliographischen Metadaten und Volltexten und inwieweit beim Aufbau der
+Textsammlung FAIR data Prinzipien zum Tragen kamen. Als Zielformat liegt
+das Korpus in mehreren Versionen vor: als XML (Extensible Markup
+Language)-Datei nach den Richtlinien der \emph{Text Encoding
+Initiative,} als Plaintextdokumente in den Optionen modernisiert und
+nicht-modernisiert. Die Eigenschaften und Vorteile dieser Formate werden
+erläutert und so auch mögliche Szenarien der Nachnutzung der Sammlung,
+die in einer offenen Lizenz zur freien Nutzung vorliegt, dargelegt.
+
+Keywords\emph{:} Korpusaufbau, Literaturgeschichte, OCR4all, Optical
+Character Recognition, Double-Keying, Metadaten, Balancing, Text
+Encoding Initiative, XML, FAIR data, FRBR, Wikidata.
+
+\section{Kriterien des Korpusaufbaus}\label{kriterien-des-korpusaufbaus}
+
+Was ist ein Korpus? Im \emph{Dictionnaire raisonné des sciences, des
+arts et des métiers} von D'Alembert und Diderot wird als ``corps'' ``en
+matiere {[}sic{]} de Littérat.'' Folgendes definiert: ``plusieurs
+ouvrages de la même nature rassemblés \& reliés ensemble'' {[}D'Alembert
+/ Diderot (1751); pp.266{]}. In der modernen Korpuslinguistik versteht
+man unter Korpus eine ``Sammlung von Textdaten, also Sprache im Kontext,
+die dem Zweck der linguistischen Auswertung dient und eine quantitative
+Auswertung von (qualitativen) sprachlichen Merkmalen zulässt.
+{[}Hirschmann (2019); pp.2{]}. Im Kontext der Digital Humanities werden
+oft umfangreiche und vielfältige digitale Korpora erstellt, um
+sprachliche Muster, kulturelle Entwicklungen oder historische
+Veränderungen mithilfe von digitalen Methoden zu untersuchen. Eine
+Datensammlung in den Digital Humanities kann man definieren als
+``Zusammenführung einzelner (bereits existierender oder eigens
+erstellter) Datensätze nach einer Einheit stiftenden Systematik''
+{[}Schöch (2017a); pp.~223{]}. Kriterien können dabei zeitlicher
+und/oder räumlicher Natur sein und bei Textsammlungen die Gattung,
+Sprache oder Urheber:innen betreffen.\\
+Als bestehende Beispiele relevanter digitaler Datensammlungen
+französischer erzählender Texte seien hier \emph{Frantext}, \emph{ELTeC}
+und \emph{Wikisource} genannt. \emph{Frantext} ist eine seit 1998
+bestehende Datenbank, die aktuell 268 Mio Wörter enthält.\footnote{Zahl
+  laut Selbstauskunft auf
+  \href{http://www.frantext.fr}{www.frantext.fr},
+  \url{https://www.frantext.fr/repository/frantext}.} Zunächst lag der
+Fokus der Datensammlung auf der Sprache des 19. und 20. Jahrhunderts und
+wurde erst später um Texte aus dem Mittelalter oder dem 18. Jahrhundert
+erweitert, bei gleichzeitiger Erweiterung um weitere moderne Texte. Die
+Datensammlung enthält 10\% wissenschaftliche und technische Texte und
+90\% literarische Texte, die verschiedene Gattungen umfassen: Romane,
+Memoiren, Autobiographien, Tagebücher, Theaterstücke, Gedichte, Essays.
+Das ``Corpus classique'' umfasst die Zeit 1650-1799. Filtert man nach
+Gattung `roman' und Erstpublikation 1751-1799 bleiben 28 Texte übrig,
+von denen einige Textfiles Aufteilungen in Bände (tome I, tome II), also
+Teile von Werken darstellen. Frantext lässt sich über den
+Shibboleth-Zugang der Universität Trier mit Login abrufen, stellt jedoch
+keine schrankenlos frei verfügbare Textsammlung dar.
+
+\pandocbounded{\includegraphics[keepaspectratio]{img_02/frantext-corpus_classique.png}}
+\textbf{Abb. 2.1} ``Corpus classique'', 1650-1799, Frantext.\footnote{\url{https://www.frantext.fr/repository/frantext/corpora}.}
+
+Die \emph{European Literary Text Collection (ELTeC)} hingegen ist eine
+im Kontext der COST Action `Distant Reading for European Literary
+History' 2017-2022 erstellte multilinguale Sammlung an erzählenden
+Texten 1840 bis 1919, aufgebaut mit dem Ziel eine Referenzsammlung für
+die Digital Humanities hinsichtlich literaturhistorischer Forschung
+aufzubauen. Um eine Vergleichbarkeit der verschiedensprachlichen
+Sammlungen untereinander herzustellen, wurden die Sammlungen nach
+bestimmten Parametern zusammengestellt, die unter anderem die Textlänge,
+die Kanonizität, Gender und die Anzahl an Werken pro Autor:in betreffen.
+Die anvisierten Werte sind für alle Sprachen einheitlich definierte
+Werte und orientieren sich nicht an der jeweils historischen Anzahl an
+Romanveröffentlichungen. Die Kernsammlung von 10 Korpora mit jeweils 100
+Texten in 10 verschiedenen europäischen Sprachen wurde 2021 vollendet
+und liegt frei verfügbar auf GitHub vor. ELTeC-core wurde mittlerweile
+um verschiedene Erweiterungen (ELTeC extensions) ergänzt, sodass auch
+Sammlungen 1750 bis 1840 integriert werden können.
+
+Ein Subkorpus von 100 ausgewählten Werken aus dem hier beschriebenen
+Romankorpus roman18 hat daher als ELTeC extension innerhalb der
+\emph{European Literary Text Collection} einen weiteren Publikationsort
+gefunden.\footnote{Es wurden bereits 100 Werke als Subkorpus
+  zusammengestellt, die bereits im Repositorium von ELTeC gespeichert
+  sind:
+  \url{https://distantreading.github.io/ELTeC/fra-ext2/index.html}.}\\
+
+\pandocbounded{\includegraphics[keepaspectratio]{img_02/eltec.PNG}}
+\textbf{Abb. 2.2} Ausschnitt aus der Sammlung European Literary Text
+Collection, ELTeC-fra.\footnote{\url{https://distantreading.github.io/ELTeC/fra/index.html}}
+
+Im Unterschied dazu ist \emph{Wikisource} eine sehr breite Datensammlung
+von transkribierten Primärtexten aller Art, die alle urheberrechtsfrei
+sind oder unter einer freien Lizenz stehen. Das Projekt der Wikimedia
+Foundation gruppiert die Texte in verschiedenen Kategorien ein, so dass
+nach Romanen und Erstpublikationsdatum gefiltert werden kann (s. Abb
+2.3).\\
+\pandocbounded{\includegraphics[keepaspectratio]{img_02/wikisource.PNG}}
+
+\textbf{Abb. 2.3} Subkategorien der Kategorie ``Romans'' auf Wikisource,
+Wikimedia Foundation 2023.\footnote{\url{https://fr.wikisource.org/wiki/Cat\%C3\%A9gorie:Romans}.}
+
+Filtert man nach Kategorie ``Romans'' und Erstpublikationsdatum
+1751-1800, bleiben 38 Texte übrig, die jedoch auch nicht vollständig
+transkribierte Texte und auch Texte von Autor:innen außerhalb Europas
+enthalten. Des Weiteren besteht eine große Überschneidung zwischen
+Werktiteln aus Frantext und Wikisource.\\
+Die beschriebenen Datensammlungen auf Wikisource und Frantext enthalten
+wie gezeigt zwar relevante erzählende Texte der Zeit 1751-1800, jedoch
+ist die dort enthaltene Größenordnung an verfügbaren Texten
+(\textless40) nicht ausreichend, um Aussagen im Sinne einer
+datenbasierten Literaturgeschichte machen zu können. Die Sammlung ELTeC
+verfolgt einen geeigneten Ansatz, deckt jedoch einen anderen zeitlichen
+Rahmen (1840 - 1920) ab.\\
+Der Aufbau einer frei verfügbaren Datensammlung an französischer
+fiktionaler Prosa 1751-1800 stellt meiner Recherche nach eine
+Forschungslücke dar und war somit der erste Schritt, auf dem die im
+Weiteren beschriebenen Analysen aufbauen. Als Größenordnung der
+Datensammlung wurde ein Anteil an 10\% der bekannten
+Romanveröffentlichungen anvisiert, was circa 200 Werken entspricht.\\
+\pandocbounded{\includegraphics[keepaspectratio]{img_02/transformation_files.PNG}}
+\textbf{Abb. 2.4} Ein Roman in drei verschiedenen Repräsentationen: als
+Faksimile, als Wikisource-Objekt und als TEI/XML-File.
+
+Wie können wir von Daten in den Geisteswissenschaften sprechen? Christof
+Schöch definiert Daten in den Geisteswissenschaften folgendermaßen:
+''Data in the humanities could be considered a digital, selectively
+constructed, machine-actionable abstraction representing some aspects of
+a given object of humanistic inquiry.`` {[}(Schöch 2013, 4){]}). Wie
+Johanna Drucker, die von ``data are capta'' {[}(Drucker 2011, 8){]}
+spricht, wird damit auch der Aspekt betont, dass die Kategorien der
+gewählten Abstraktion -- in diesem Fall unter anderem ein Roman als
+TEI/XML-File mit bestimmten ausgezeichneten Elementen -- eine Auswahl
+aus der Vielfalt der Eigenschaften des Objekts darstellen. Auch in einer
+vermeintlich objektiven Apparatur sind Theorien verdinglicht, wie Gaston
+Bachelard 1934 ausführt
+\href{https://www.zotero.org/google-docs/?GR05Ur}{(Bachelard 1968,
+15)}.\footnote{``Naturellement, dès qu'on passe de l'observation à
+  l'expérimentation, le caractère polémique de la connaissance devient
+  plus net encore. Alors il faut que le phénomène soit trié, filtré,
+  épuré, coulé dans le moule des instruments, produit sur le plan des
+  instruments. Or les instruments ne sont que des théories
+  matérialisées. Il en sort des phénomènes qui portent de toutes parts
+  la marque théorique.''
+  \href{https://www.zotero.org/google-docs/?uAE0ie}{(Bachelard 1968,
+  15)}} Bachelard beobachtet das für die wissenschaftlichen Messgeräte
+seiner Zeit wie Thermometer oder Mikroskope, der Gedanke lässt sich
+jedoch auch auf die wissenschaftliche Apparatur des Computers
+übertragen.\footnote{cf.~auch dazu Hans Blumenbergs Ausführungen in
+  \emph{Lebenswelt und Technisierung}, der in Anlehnung an Husserl
+  unterstreicht: ``Die Technik ist primär nicht ein Reich bestimmter,
+  aus menschlicher Aktivität hervorgegangener Gegenstände; sie ist in
+  ihrer Ursprünglichkeit ein Zustand des menschlichen Weltverhältnisses
+  selbst.'' (Blumenberg 1963: 19) .}\\
+In Bezug auf sein Axiom ``The medium is the message'' argumentiert
+hingegen McLuhan, dass Technologien nicht einfach Erfindungen sind, die
+der Mensch einsetzt, sondern eine völlig neue Umgebung für den Menschen
+darstellen.\footnote{``The medium is the message'' means, in terms of
+  the electronic age, that a totally new environment has been created
+  \href{https://www.zotero.org/google-docs/?m2RJFc}{(McLuhan und Gordon
+  2003, 13)}.} Als Beispiel führt er das elektronische Zeitalter an:
+``in the electronic age, data classification yield to pattern
+recognition'' \href{https://www.zotero.org/google-docs/?47Xbnj}{(McLuhan
+und Gordon 2003, 12)}. So könnte man in Anlehnung an diesen Gedanken von
+McLuhan formulieren, dass die Möglichkeiten der in den Computational
+Literary Studies verwendeten Algorithmen einen neuen Rahmen oder eine
+neue Umgebung darstellen, innerhalb der die
+Literaturgeschichtsschreibung neu ergänzt und geschrieben werden kann.\\
+Die Kategorien in der verwendeten Auszeichnungssprache (XML), die
+selektiert wurden, um digitale Texte in Markup zu kodieren, wie
+beispielsweise die Elemente und Attribute in einem XML-Dokument sind
+dabei nur eine Auswahl an möglichen Auszeichnungen, die man vornehmen
+könnte (Abb. 2.4).
+
+Wie Berenike Herrmann und Gerhard Lauer im Hinblick auf den Aufbau von
+Datensammlungen bemerken, finden sich zwar online umfangreiche
+Textsammlungen teils mit beeindruckender Anzahl an Werken, wie Google
+Books oder HathiTrust, jedoch sind sie selten nach
+fachwissenschaftlichen Kriterien als Sample aus einer Grundgesamtheit,
+sondern häufig aus pragmatischen Gründen der Verfügbarkeit
+zusammengestellt. \footnote{``Im fachwissenschaftlichen Sinne
+  repräsentative, weil kriteriengeleitet und mit Bezug auf eine
+  angenommene Grundgesamtheit gesampelte Korpora gibt es {[}\ldots{]}
+  derzeit in der Literaturwissenschaft nur ansatzweise.''
+  \href{https://www.zotero.org/google-docs/?vaLrt7}{(Herrmann und Lauer
+  2018, 130)}.}
+
+Im Hinblick auf den Aufbau der Textsammlung macht es Sinn, sich das
+Verhältnis zwischen Archiv, Kanon und Korpus zu verdeutlichen. Jenes
+Verhältnis kann anhand des Literary Pamphlet 11 des \emph{Stanford
+Literary Lab} verstanden werden (Algee-Hewitt et al.~2016: 2).
+Algee-Hewitt et al.~unterscheiden zwischen ````the published, the
+archive, and the corpus''. In der Betrachtung von Algee-Hewitt et
+al.~ist jedes Verhältnis eine Teilmenge des vorherigen Verhältnisses.
+Das Archiv ist demnach eine Teilmenge aller je veröffentlichten Texte,
+der Kanon eine Teilmenge aus dem Archiv und das Korpus ebenfalls eine
+(andere) Auswahl aus dem Archiv.\footnote{Eine kritische Betrachtung,
+  inwieweit die Auswahl eines Archivs auch von Imperialismus und
+  Nationalismus getrieben sein kann, lieferte Amalia S. Levi in der
+  Opening Keynote der DHd-Konferenz 2022 (Levi 2022)}\\
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{img_02/korpusaufbau_ausbalancierung_Version2.png}}
+
+}
+
+\caption{Verhältnis ``the published /``the archive'' / ``the corpus''/
+``the canon'' {[}cf.~Heuser / Algee-Hewitt / Lockhart (2016); Stanford
+Literary Lab:2{]}. Die die Romanveröffentlichungen dokumentierenden
+Metadaten dienen als Parameter zur Ausbalancierung der Volltextsammlung
+roman18.}
+
+\end{figure}%
+
+\textbf{Abb. 2.5} Verhältnis ``the published /``the archive'' / ``the
+corpus''/ ``the canon'' {[}cf. Heuser / Algee-Hewitt / Lockhart (2016);
+Stanford Literary Lab:2{]}. Die die Romanveröffentlichungen
+dokumentierenden Metadaten dienen als Parameter zur Ausbalancierung der
+Volltextsammlung roman18.
+
+Für die Domäne des französischen Romans der zweiten Hälfte des 18.
+Jahrhunderts bestehen die erfreulichen Umstände, dass hinsichtlich der
+Grundgesamtheit der literarischen Produktion eine Dokumentation aller
+überliefert veröffentlichten Romane vorliegt, die Angus Martin, Vivienne
+Mylne und Richard Frautschi bis 1977 in einem über zehn Jahre dauernden,
+kollaborativen Forschungsprozess zusammengetragen haben. Das ist
+insofern eine Besonderheit, als dass die vollständige Dokumentation der
+literarischen Produktion einer Domäne eher den Ausnahmefall darstellt.
+Ted Underwood umreißt in ``Do we Understand the Outlines of Literary
+History?'' die lückenhaften Korpora, mit denen man in den Digital
+Humanities üblicherweise vorlieb nehmen muss, beispielsweise bei der
+Arbeit mit HathiTrust.\footnote{Die \emph{HathiTrust Shared Digital
+  Repository} startete zunächst als Backup von Google Books und wurde am
+  13. Oktober 2008 von einer Gruppe der größten amerikanischen
+  Forschungsbibliotheken gegründet. In diesem gemeinsamen Projekt werden
+  umfangreiche digitale Sammlungen von Büchern, sowohl Metadaten als
+  auch Volltexte, archiviert und erhalten.} Große Lücken in den
+Metadaten oder den berücksichtigten Volltexten einer Epoche lassen dann
+nur bedingt übergreifende Aussagen zur Literaturgeschichte zu. Er
+illustriert dies am Beispiel der Entwicklung der Erzählformen
+{[}Underwood (2013); pp.~1--33{]}.\\
+Die vorliegende Romansammlung roman18 kommt den von Lauer und Herrmann
+{[}Herrmann / Lauer (2018); pp.~130{]} formulierten wünschenswerten
+Kriterien eines Samplings des Korpus nach fachwissenschaftlichen
+Kriterien der Domäne (Literaturwissenschaft) hingegen approximativ nach:
+Es wurde ein Korpus an Primärtexten zusammengestellt, das französische
+erzählende Texte der zweiten Hälfte des 18. Jahrhunderts im Sinne eines
+repräsentativen Samples aus der literarischen Grundgesamtheit an Romanen
+dieser Dekaden enthält. Es handelt sich dabei nicht um ein zufälliges
+Sampling (Random Sampling), sondern die Werke wurden systematisch anhand
+ihrer Metadaten in Kombination mit der Verfügbarkeit einer Print- oder
+Digitalquelle des Volltextes zusammengestellt.\\
+Das Sampling bezieht sich dabei auf die Parameter
+\textbf{Erstpublikationsdatum}, \textbf{Gender} und \textbf{Erzählform}
+und bezieht sich auf Metadaten, die zur Gesamtproduktion aller
+französischen Romane 1751-1800 in besagter Bibliographie vorliegen
+(Martin / Mylne / Frautschi 1977). Die Verteilung der Parameter in der
+gesamten Romanproduktion sollten so ``en miniature'' im Volltextkorpus
+nachgebildet werden. Das Balancing hinsichtlich dieser Kategorien hat
+als Ziel, beim Korpusdesign repräsentativ vorzugehen, wie es auch von
+Douglas Biber beschrieben wird: ``Representativeness refers to the
+extent to which a sample includes the full range of variability in a
+population.'' {[}Biber (1993); pp.~243{]}.
+
+Das Volltext-Korpus grenzt sich hinsichtlich der Sprache, der Gattung
+und des Zeitraums demnach folgendermaßen ab:
+
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\item
+  Sprachliche Abgrenzung: Es werden Werke betrachtet, die auf
+  Französisch verfasst wurden. Der Schwerpunkt liegt geographisch auf
+  dem französischen Mutterland, aber beinhaltet auch einige Werke der
+  Frankoromania.\\
+\item
+  Gattungsgrenzen: Hinsichtlich der Gattung liegt der Fokus des
+  Textkorpus auf erzählenden Werken. Dabei folge ich der relativ breiten
+  und inklusiven Definition, die die Bibliograph:innen der
+  \emph{Bibliographie du genre romanesque français, 1751-1800} ihrer
+  Bibliographie zugrunde legen (Mylne, Martin und Frautschi 1977:
+  ix-xxxv). In der Einleitung der \emph{Bibliographie du genre
+  romanesque français, 1751-1800} definieren die Autor:innen die
+  erfassten Werke folgendermaßen: ``tout ce qui a été publié en langue
+  française en matière de roman, de conte, de nouvelle, de récit fictif
+  en prose sous toutes les formes'' (Mylne, Martin und Frautschi 1977:
+  ix). Auch für das Romankorpus werden fiktionale Werke verschiedener
+  Länge, Briefromane, Dialogromane, aber auch Novellen und Erzählungen
+  inkludiert.
+\item
+  Zeitliche Grenzen: Hinsichtlich des betrachteten Zeitraums werden
+  Werke aufgenommen, die einschließlich 1751-1800 erstmals erschienen
+  sind.
+\end{enumerate}
+
+\section{Unschärfen / Grenzfälle}\label{unschuxe4rfen-grenzfuxe4lle}
+
+Die zunächst eindeutig erscheinenden Kategorien (Erstpublikationsdatum,
+Gattung, Sprache) erwiesen sich in der Praxis nicht immer als stabile
+Grenzen. Die hier betrachteten Dekaden sind gezeichnet von politischen
+und gesellschaftlichen Umbrüchen, die auch für die erscheinenden Werke
+Auswirkungen haben. Das Datum des Redigierens und des Publizierens liegt
+teilweise weit auseinander.\footnote{Nicht mit in Betracht gezogen ist
+  dabei, dass die Publikation als Druck sich im 18. Jahrhundert in
+  Frankreich außerdem von der Zirkulation in Manuskriptform und von
+  partieller Publikation in Zeitschriften unterscheidet. Da die
+  verwendeten bibliographischen Metadaten nur von der geschlossenen
+  Werkform ausgehen, bleiben diese Phänomene für die vorliegende Analyse
+  leider unberücksichtigt.} Einige wichtige Werke dieser Zeit wie
+\emph{Les Cent Vingt Journées de Sodome} von De Sade wurden im genannten
+Zeitraum erstellt, aber erst viel später publiziert. Einige solcher
+Ausnahmen wurden in das Korpus aufgenommen, aber durch Kommentare im
+XML-Element \textless sourceDesc\textgreater{} im teiHeader näher
+beschrieben und erläutert:
+
+\textless bibl type=``unspecified''\textgreater{}\\
+\textless!-- Text included in the MiMoText corpus due to creation in
+1785 (stated in:LES CENT-VINGT JOURNÉES DE SODOME OU L'ÉCOLE DU
+LIBERTINAGE, in: Jens, Walter, und Rudolf Radler, Hrsg. Kindlers neues
+Literatur-Lexikon.Bd. 22: Supplement L - Z. Studienausg. Frechen: KOMET,
+2001.) The following \textless date\textgreater{} therefore represents
+the year of creation.--\textgreater{}
+
+\textless date\textgreater{}\\
+1785\\
+\textless/date\textgreater{}\\
+\textless/bibl\textgreater{}
+
+Ein anderes Beispiel ist Arnauds \emph{Les époux malheureux} (1783);
+eine neue Version eines bereits 1746 publizierten Werkes, welches jedoch
+zwei neue Teile enthält, wurde in das Romankorpus aufgenommen.\\
+Voltaires \emph{Babouc} (1751), das unter dem Titel \emph{Le monde comme
+il va} bereits 1748 erschienen ist, wurde nachträglich aussortiert, bzw.
+in eine ``extended version'' des Korpus verschoben, da die Textgrundlage
+nicht wesentlich von der früheren Version abweicht {[}Martin / Mylne /
+Frautschi (1977); pp.~58{]}. Diderots \emph{L'Oiseau blanc} wurde 1748
+geschrieben, aber 1798 erstmals publiziert und demnach aufgenommen.\\
+Diese und weitere Grenzfälle wurden innerhalb der erstellten
+XML/TEI-Dateien im TEI-Header erläutert, um in der Entscheidungsfindung
+transparent zu sein.
+
+\section{Werkabgrenzungen: Wann ist ein Werk ein neues
+Werk?}\label{werkabgrenzungen-wann-ist-ein-werk-ein-neues-werk}
+
+Die Grenzfälle verweisen auf eine grundsätzliche Frage der Trennschärfe
+zwischen Manifestation, Werk und Edition und auf Frage der Abgrenzung
+zweier Entitäten auf Work-(Werk)-Ebene. Im Sinne der Prinzipien der
+``Functional Requirements for Bibliographic Records'' (FRBR) kann man
+zwischen Werk, Expression, Manifestation und Item unterscheiden. Diese
+sind dabei folgendermaßen definiert:
+
+\pandocbounded{\includegraphics[keepaspectratio]{img_02/800px-FRBR-Group-2-entities-and-relations.svg.png}}
+\textbf{Abb. 2.6} Functional Requirements for Bibliographic Records
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Werk (Work): Ein Werk wird als abstrakte Konzeption eines kreativen
+  oder intellektuellen Inhalts definiert. Es repräsentiert die Idee oder
+  den Inhalt eines Werkes unabhängig von spezifischen Ausgaben,
+  Übersetzungen oder körperlichen Manifestationen. Ein Werk kann
+  beispielsweise ein bestimmtes Buch, Gemälde, Musikstück oder Film
+  sein.\\
+\item
+  Expression: Eine Expression ist die spezifische Art und Weise, wie ein
+  Werk verkörpert oder dargestellt wird. Sie bezieht sich auf die
+  sprachliche, künstlerische oder intellektuelle Form, in der ein Werk
+  ausgedrückt wird. Eine Expression kann verschiedene Formen annehmen,
+  wie zum Beispiel eine bestimmte Sprache, eine musikalische Partitur
+  oder eine Übersetzung.\\
+\item
+  Manifestation: Eine Manifestation ist eine physische oder digitale
+  Realisierung einer Expression. Sie bezieht sich auf eine konkrete
+  Version eines Werkes, die als Einheit betrachtet werden kann.
+  Beispiele für Manifestationen sind gedruckte Bücher, digitale E-Books,
+  Gemälde oder Tonträger.\\
+\item
+  Exemplar (Item): Ein Exemplar ist eine einzelne physische oder
+  digitale Instanz einer Manifestation.
+\end{enumerate}
+
+Eine interessante Frage ist dabei auch, ab wann ein Werk ein neues Werk
+ist. Werke als Knoten im Graphen sind im Gegensatz zu natürlichen
+Personen nicht eindeutig abgrenzbar. Man kann zur Beantwortung dieser
+Frage auf ein skalares Modell zurückgreifen (s. Abb. 2.7).
+\pandocbounded{\includegraphics[keepaspectratio]{img_02/werksabgrenzungen.png}}
+\textbf{Abb. 2.7} Werkfamilie oder die Abgrenzungsproblematik (nach
+\href{https://www.zotero.org/google-docs/?Zl1CkI}{Tillet 2005, 4)}.
+
+In Abb. 2.7 lässt sich erkennen, in welchen Abstufungen ein Ausgangswerk
+als selbes Werk oder als neues Werk gewertet werden kann. Eine neue
+Ausgabe, eine Illustrierung, eine Übersetzung werden in dieser skalaren
+Anordnung als `selbes Werk' gewertet, während Parodien, freie
+Übersetzungen, Dramatisierungen oder auch eine Änderung des Genres als
+`neues Werk' gewertet werden.\\
+Die verwendeten bibliographischen Metadaten
+\href{https://www.zotero.org/google-docs/?aBw3qF}{(Martin, Mylne, und
+Frautschi 1977)} enthalten ebenfalls in der Frage der Werkabgrenzung
+implizite Entscheidungen. Im Sinne einer einheitlichen Vorgehensweise
+ist ein Werk ein neues Werk im Knowledge Graphen, wenn es aus der die
+Datenbasis stiftenden Quelle der \emph{Bibliographie du genre romanesque
+francais, 1751-1800} als neuer Eintrag mit Identifier hervorgeht.
+
+Für den Korpusaufbau weiterhin relevant ist, dass ein selbes Werk in
+verschiedenen Expressionen unterschiedliche Titel tragen kann. Dieses
+Phänomen wird sowohl in den bibliographischen Metadaten abgebildet
+(nämlich in der Aufzählung der verschiedenen Editionen pro Eintrag) und
+kann im Wissensgraphen in der Software Wikibase ebenfalls modelliert
+werden. Zu jedem Label eines Items beispielsweise ``Lettres de deux
+amans, habitans d'une petite ville au pied des Alpes `` (Q1429), gibt es
+ebenfalls die Property ``Also known as'', die dann ein alternatives
+Label enthalten kann, beispielsweise ``La nouvelle
+Héloi͏̈se''.\footnote{Ein Beispiel für einen alternativen Labeleintrag
+  findet man im Graphen bei Item Q1429 mit \emph{Lettres de deux amans,
+  habitans d'une petite ville au pied des Alpes} \& \emph{La nouvelle
+  Héloi͏̈se} \url{https://data.mimotext.uni-trier.de/wiki/Item:Q1429}}\\
+Wann immer im Korpusaufbau der Romansammlung von den Knoten des
+Knowledge Graphen vereinzelt abgewichen wurde, ist dies im TEI-Header
+der XML-Version der Dateien vermerkt.
+
+\subsection{Textquellen}\label{textquellen}
+
+Für den Aufbau der Textsammlung werden einerseits verfügbare Scans
+(insbesondere aus Gallica der \emph{Bibliothèque Nationale Française})
+und geprüfte Texte insbesondere von \emph{Wikisource.fr}, \emph{Ebook
+libres et gratuits} und \emph{Frantext} gesammelt, andererseits das
+Verfahren des sogenannten `Double Keying' auf ein Korpus bisher nicht im
+Volltext verfügbarer Texte angewendet. Alle Texte werden mit Hilfe von
+Skripten (in TUSTEP und/oder Python) in ein einheitliches XML-Format
+konvertiert, das den Richtlinien der \emph{Text Encoding Initiative}
+\href{https://www.zotero.org/google-docs/?TGjn6e}{(Burnard 2014)}
+entspricht. Für die `Double Keying'-Dateien wurde zudem eine der Vorlage
+besonders nahe Textfassung erstellt, auf deren Grundlage mit dem Tool
+OCR4all \href{https://www.zotero.org/google-docs/?1IvomD}{(cf.~Reul
+u.~a. 2019)} ein OCR-Modell für französische Drucke der zweiten Hälfte
+des 18. Jahrhunderts trainiert wurde, mit dem weitere bildbasierte Scans
+in Volltext überführt werden konnten.\footnote{Das OCR-Modell liegt frei
+  verfügbar auf GitHub: ``Calamari models: 18th\_century\_french'' ,
+  \href{https://github.com/Calamari-OCR/calamari_models}{https://github.com/Calamari-OCR/calamari\_model}s.}
+
+Im Folgenden eine Erläuterung zu den genannten Quellen des
+Volltextkorpus:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Wikisource} (ein Schwesterprojekt von Wikipedia) vereint
+  Primärtexte in über 70 Sprachen. In einer auf Crowdsourcing
+  basierenden Transkriptionsumgebung werden Faksimile und per Optical
+  Character Recognition erkannter Text nebeneinander gestellt und von
+  der Crowd korrigiert. Die Dateien durchlaufen verschiedene
+  Qualitätsstufen. Es wurden Texte aufgenommen, die mindestens durch ein
+  gelbes oder grünes Label ausgezeichnet sind, also vollständig
+  transkribiert und von mindestens zwei verschiedenen Personen
+  korrigiert wurden.\\
+\item
+  Auf der Website \emph{Ebooks libres et gratuits} konnten vor allem
+  Werke kanonischer Autor:innen gefunden werden. Sie wurden als EPUB
+  heruntergeladen und in TEI/XML konvertiert. Ein Nachteil der Plattform
+  ist, dass sich die Provenienz der analogen Datenquelle (Print) leider
+  nicht einsehen lässt.\\
+\item
+  Die Datenqualität der französischen Romane, die sich im entsprechenden
+  Publikationsdatum frei verfügbar als EPUB auf \emph{GoogleBooks}
+  finden ließ, war sehr divers. Es wurden Werke nach der verfügbaren
+  Qualität im Hinblick auf eine möglichst geringe OCR-Fehlerquote
+  ausgewählt.\\
+\item
+  \emph{Frantext} enthält Primärtexte verschiedener Gattungen vom IX.
+  bis XXI. Jahrhundert. Es wurden Texte verwendet, die den Kriterien
+  Publikationsdatum 1751-1800, Gattung ``roman'' und Lizenz ``licence
+  libre'' entsprechen. Das auf Frantext vorliegende TEI/XML enthält eine
+  Vielzahl an linguistischen Annotationen, die mit Hilfe eines Skripts
+  entfernt wurden.\footnote{h\href{https://github.com/MiMoText/roman18/blob/master/Python-Scripts/Umwandlung_Frantext-Werke_in_TEI.py}{ttps://github.com/MiMoText/roman18/blob/master/Python-Scripts/Umwandlung\_Frantext-Werke\_in\_TEI.py},
+    6.12.2022.}\\
+\item
+  \emph{rousseauonline.ch} bietet Zugang zu allen Werken von
+  Jean-Jacques Rousseau (1712-1778) in ihrer ersten Referenzausgabe. Die
+  Texte sind online zum Lesen zugänglich und stehen zum kostenlosen
+  Download als PDF oder EPUB zur Verfügung.\footnote{\url{https://www.rousseauonline.ch/},
+    6.12.2022.}
+\end{itemize}
+
+In diesem Zusammenhang stellt XML (Extensible Markup Language) in
+Verbindung mit den Richtlinien der TEI (Text Encoding Initiative) ein
+geeignetes Format dar, um literarische Texte zu kodieren und zu
+organisieren. Die TEI-Richtlinien bieten einen umfassenden Standard für
+die textuelle Kodierung und Beschreibung von literarischen Werken und
+ermöglichen es Forschenden, detaillierte Metadaten zu erfassen. Alle
+Input-Dateien wurden in TEI-konformes XML nach den Richtlinien der
+\emph{Text Encoding Initiative}
+\href{https://www.zotero.org/google-docs/?8V58SA}{(Burnard 2014)} nach
+dem Schema der \emph{European Literary Text Collection} (\emph{ELTeC})
+in Level1 kodiert \href{https://www.zotero.org/google-docs/?I442ZU}{(Lou
+Burnard und Carolin Odebrecht 2019)}.
+
+Mit Hilfe eines Python-Skripts, das historische Verbformen und Schaft-S
+in den historischen Texten umwandelt, wurden die Texte auf der Grundlage
+der XML-TEI-Dateien zudem teilmodernisiert, normalisiert und als
+Plaintext extrahiert.\footnote{\url{https://github.com/MiMoText/roman18/tree/master/Python-Scripts/modernization\%20and\%20transformation\%20to\%20plaintext},
+  6.12.2022.} Wie bereits erwähnt liegt als Vergleichshorizont der Daten
+eine nahezu vollständige Dokumentation der literarischen Produktion
+französischer fiktionaler Werke 1751-1800 in Form einer Bibliographie
+\href{https://www.zotero.org/google-docs/?viBHsh}{(Martin, Mylne, und
+Frautschi 1977)} vor, die dank wissenschaftlicher Vorarbeiten
+digitalisiert in Form eines RDF-Graphen verwendet werden konnte
+\href{https://www.zotero.org/google-docs/?g9K1dG}{(Lüschow 2019)}.
+
+Aufgrund der statistischen Merkmale dieser bibliographischen Daten habe
+ich mich hinsichtlich der Ausgewogenheit des Romankorpus den
+Proportionen in diesen Metadaten angenähert und Merkmale wie
+Genderverteilung oder Erstpublikationsdaten approximativ im Romankorpus
+abgebildet ((\textbf{gender-fig?})). Die Angabe zum Geschlecht der
+Autor:innen ist nicht explizit in den Metadaten enthalten, wurde jedoch
+mithilfe der Python-Bibliothek gender-guesser ermittelt (Elmas 2016).
+Dazu wurden die Vornamen der Autor:innen mit dem gender-guesser in die
+Kategorien weiblich, männlich oder unbekannt eingeteilt. Zusätzliche
+domänenspezifische Begriffe wie ``Madame'', ``Comtesse'',
+``Baronne``oder ``Abbé'', ``Baron'', ``Chevalier'' wurden der Liste noch
+hinzugefügt.
+\pandocbounded{\includegraphics[keepaspectratio]{img_02/gender_proportion_without_unknown.png}}
+
+\textbf{Abb. 2.8} Annäherung der Gender-Verteilung zur bekannten
+Romanproduktion aus den bibliographischen Metadaten (grün:
+weiblich/grau: männlich) beim Erstellen des Romankorpus (hellgrün:
+weiblich / hellgrau: männlich), Ansicht pro Dekade ohne `unknown' Werte.
+
+Bei Abkürzungen wie ``M*** C*** de L***'', die nicht eindeutig erkennbar
+männliche oder weibliche Vornamen oder sonstige Titel (Marquise, Abbé,
+Baron etc.) enthalten, ist die Kategorie ``unbekannt``.
+
+Das Romankorpus wurde im Projekt fortlaufend um weitere erschlossene
+Quellen erweitert und ist somit kontinuierlich gewachsen, der
+Korpusaufbau ist Ende 2023 zum Abschluss gekommen. Das finale Korpus ist
+auf GitHub und Zenodo veröffentlicht und zusätzlich im
+Forschungsdatenrepositorium Romanistik auf Zenodo integriert
+\href{https://www.zotero.org/google-docs/?dL0rkv}{(Röttgermann 2021;
+2023)}\footnote{\url{https://zenodo.org/communities/reporom?q=&l=list&p=1&s=10&sort=newest},}.
+Das Korpus wurde auf Zenodo 2101 Mal betrachtet und 48 Mal
+heruntergeladen (Stand 7.5.2024), was davon zeugt, dass die Daten auch
+für externe Forschende von Interesse zu sein scheinen.
+
+\section{Die reichhaltigen Metadaten der «~Bibliographie du genre
+romanesque~» als statistische Grundlage zur Ausbalancierung des
+Korpus}\label{die-reichhaltigen-metadaten-der-bibliographie-du-genre-romanesque-als-statistische-grundlage-zur-ausbalancierung-des-korpus}
+
+Als Anspruch der quantitativen Ansätze der Digital Humanities kann es
+gesehen werden, über hohe Skalierungen an eingespeisten Daten ein
+gleichmäßiges, weniger auf den literarischen Kanon fokussiertes
+Analyseergebnis in der Betrachtung der literarischen Historiographie zu
+erzielen \href{https://www.zotero.org/google-docs/?OsdYtB}{(Moretti
+2013; Cohen 2009)}. Vielfach stellt sich jedoch die Herausforderung
+fehlender Metadaten zu diesem ``Great Unread''\footnote{Von Franco
+  Moretti genutzter Begriff, der beschreibt, dass in der
+  Literaturgeschichtsschreibung nur ein kleiner Prozentsatz von Werken
+  als Referenz für literaturgeschichtliche Phänomene herangezogen wird,
+  der als Spitze eines Eisbergs von ``nicht gelesener'' Literatur
+  herausragt. Der Begriff geht zurück auf Margaret Cohen, die feststellt
+  : ``as soon as scholars start to work on the archive of forgotten
+  literature, techniques of close reading come up short. Problems range
+  from the simple lack of time critics have to read closely all the
+  texts that make up the great unread to the failure of some of these
+  texts to signify in fashions that are meaningful using the criteria of
+  close, formal analysis.'' (Cohen, 2009)}.
+
+Im Falle des vorliegenden Romankorpus wurden Angaben in
+\href{https://www.zotero.org/google-docs/?uw8bLE}{(Martin, Mylne, und
+Frautschi 1977)} zu Autor:innen, Titeln, Publikationskontext,
+Handlungsort, Diegese, Erzählform und Protagonisten formal modelliert
+und als Linked Open Data im RDF-Format bereitgestellt
+\href{https://www.zotero.org/google-docs/?4tUdEJ}{(Lüschow 2020)}.\\
+Die so dokumentierte Romanproduktion dient als Grundlage für die
+systematische Zusammenstellung eines Korpus von rund 200 Romanen.\\
+\textbf{Abb. 2.9} Auswertung der \emph{Bibliographie du genre romanesque
+français,} \emph{1751-1800}
+\href{https://www.zotero.org/google-docs/?broken=xLHgxw}{(Martin et al.,
+1977)}\\
+hinsichtlich des Erstpublikationsdatums.
+
+Ziel war es, die Romanproduktion mit Blick auf bestimmte Kriterien wie
+Erstpublikationsdatum, Anteile der dominanten Erzählformen und
+Geschlecht der Autor:innen pro Jahrzehnt als Sampling der
+Grundgesamtheit abzubilden. In Abb. 2.9 zeigt sich, dass die
+bibliographischen Metadaten eine Zunahme der literarischen Produktion
+gegen Ende des Jahrhunderts erkennen lassen. Die Zahl der
+Romanveröffentlichungen schnellt hier sichtbar in die Höhe und auch eine
+entsprechende Regression zeigt einen statistisch signifikanten
+Zusammenhang.\footnote{Das entsprechende Python-Skript dazu gibt als
+  Ergebnis p-value \textless{} 0.05 mit einem Wert von} Basierend auf
+statistischen Merkmalen dieser Art lässt sich das Primärtextkorpus
+(Volltexte) entsprechend ausbalancieren.\\
+Die Strategie besteht dabei darin, von der tatsächlichen Grundgesamtheit
+der literarischen Produktion auszugehen und davon ausgehend ein
+repräsentatives Volltextkorpus zu erstellen. Da zu Beginn der
+Korpuserstellung auch von bereits vorhandenem Textmaterial ausgegangen
+wurde und vollständig digitalisiert vorliegende erzählende Texte in das
+Korpus integriert wurden, kann angenommen werden, dass diese Texte eine
+hohe Anzahl kanonischer Werke enthält, da diese mit höherer
+Wahrscheinlichkeit vollständig digitalisiert vorliegen.\\
+Eine zusätzliche Volltextdigitalisierung hingegen ergänzte das Korpus um
+weniger bekannte Werke aus der zweiten und dritten Reihe, mit dem Ziel
+auch weniger kanonisierte Werke zur Analyse der Literatur dieser Epoche
+als Quellen der datenbasierten Literaturgeschichtsschreibung
+heranzuziehen.
+
+\pandocbounded{\includegraphics[keepaspectratio]{img_02/comparison_publdate_bgrf_corpus.png}}
+\textbf{Abb. 2.10} Ausbalancierung des Korpus (corpus: grün)
+hinsichtlich des Erstpublikationsdatums anhand der Metadaten der
+\emph{Bibliographie du genre romanesque français}, 1751-1800 (wikibase:
+orange).
+
+Das bedeutet für Aussagen aus diesen Daten, dass sie dem Anspruch
+genügen können, nicht nur auf den Werken, die auch in traditionellen
+Literaturgeschichten wieder und wieder erwähnt werden, zu fußen, sondern
+auch heute weniger bekannte Werke mit in die Analyse zu beziehen.
+
+Hinsichtlich der Autor:innen mit hoher Relevanz (gemessen an Anzahl der
+Verlinkungen und Länge des Artikels in Byte) bildet sich auf der
+französischsprachigen Wikipedia folgendes Bild ab:
+
+\textbf{Abb. 2.11} Vorkommen und Kookkurrenzen von Werktiteln in
+Literaturgeschichten zu französischen Romanen des 18. Jahrhunderts,
+Tinghui Duan, 2023. Daten und Python-Skript unter:
+\url{https://github.com/MiMoText/lit_cooccurence}.
+
+Analysen von Duan
+\href{https://www.zotero.org/google-docs/?IqNt7g}{(2023)} zeigen, dass
+\emph{Les liaisons dangereuses} von Choderlos de Laclos
+überdurchschnittlich oft in deutschen Literaturgeschichten erwähnt wird.
+Außerdem werden Voltaires \emph{Candide}, in Kombination mit Voltaires
+\emph{Micromégas} und Denis Diderots \emph{Jacques le fataliste} häufig
+als Referenzen in Literaturgeschichten aufgeführt.
+
+Diese sehr bedeutsamen, herausragenden und viel rezipierten Werke, in
+denen sich auch Typisches der Epoche kristallisieren kann, haben
+einerseits ihre Berechtigung in den Literaturgeschichten, können jedoch
+nicht als repräsentativ für die gesamte literarische Produktion gelten.
+
+Es lassen sich, um ein Beispiel zu geben, aus einer Analyse, die alle
+Briefromane einer Zeit in Betracht zieht, beispielsweise größere Trends
+von Zunahmen und Abebben bestimmter narrativer Formen analysieren, eine
+Makroansicht, die die individuelle Analyse eines einzelnen Briefromans
+wie \emph{Les liaisons dangereuses} nicht ermöglicht. Eine an Prototypen
+oder ``Meisterwerken'' orientierte Geschichtsschreibung kann durch
+quantitative Analysen nicht ersetzt, jedoch um eine weitere relevante,
+datafizierte Perspektive erweitert werden. Anwendungsszenarien dieser
+``Vogelperspektive'' oder Betrachtung von Makrotrends im Graphen sind in
+Kapitel 3 beschrieben.
+
+\section{\texorpdfstring{Scans der \emph{Bibliothèque nationale de
+France} und das Open-Source-Tool \emph{OCR4all} zur Erschließung neuer
+Texte}{Scans der Bibliothèque nationale de France und das Open-Source-Tool OCR4all zur Erschließung neuer Texte}}\label{scans-der-bibliothuxe8que-nationale-de-france-und-das-open-source-tool-ocr4all-zur-erschlieuxdfung-neuer-texte}
+
+Gängige kommerzielle Tools zur Optical Character Recognition (OCR) wie
+\emph{ABBY Finereader} oder \emph{Adobe Pro} erzielen zwar mittlerweile
+sehr gute Erfolgsraten bei modernen Drucken, bei historischen Drucken
+stellen sich jedoch viele Herausforderungen der automatischen Erkennung
+\href{https://www.zotero.org/google-docs/?jnM2Hy}{(Alex u.~a. 2012)}. In
+den verwendeten Quellen (Faksimile der französischen Nationalbibliothek
+aus dem 18. und 19. Jahrhundert) finden sich häufig Phänomene wie ein
+unregelmäßiges Druckbild, Schaft-S, unregelmäßige Buchstaben-Abstände
+usw.\\
+Ein Team der Universität Würzburg am Lehrstuhl für Künstliche
+Intelligenz und Wissenssysteme hat ein semi-automatisches Open Source
+Tool zur Optical Character Recognition historischer Drucke entwickelt,
+das bei der Digitalisierung der Quellen eingesetzt wurde {[}(Reul u.~a.
+2019){]}. Der Vorteil von \emph{OCR4all} ist, dass das Tool auf
+historische Drucke spezialisiert ist und es ermöglicht, über die
+manuelle Eingabe von korrigierten Zeilen eine verfeinerte \emph{Ground
+Truth} zu erstellen, mithilfe der das Modell weiter trainiert werden
+kann. Zudem kombiniert und vereint \emph{OCR4all} OCR-Tools wie Larex
+oder Calamari \href{https://www.zotero.org/google-docs/?jFs6Nq}{(Reul
+u.~a. 2019)} in einer grafischen Benutzeroberfläche und bietet damit
+einen niedrigschwelligen Einstieg.\\
+
+\pandocbounded{\includegraphics[keepaspectratio]{img_02/ocr4all_tiphaigne_amilec_s69_300dpi_sw.jpg}}
+\textbf{Abb. 2.12} Über die manuelle Eingabe von korrigierten Zeilen
+wird in OCR4all \href{https://www.zotero.org/google-docs/?RzdE3e}{(Reul
+u.~a. 2019)} eine verfeinerte \emph{Ground Truth} erstellt, mit der das
+Modell weiter trainiert werden kann.
+
+Voraussetzung für das Trainieren eines Modells mithilfe von
+\emph{OCR4all} ist eine textgenaue Transkription als Trainingsgrundlage.
+Dazu wurde ein Subkorpus an Romanen mithilfe von Double Keying von einem
+Dienstleister in China erfasst. Beim Double-Keying Verfahren erfassen
+zwei Personen unabhängig voneinander die Textgrundlage. Gegebenenfalls
+auftretende Abweichungen lassen sich so leicht finden und korrigieren.
+Die Erfassung durch Nicht-Muttersprachler:innen hat zwei Vorteile: Es
+entsteht eine buchstabengenaue Repräsentation des Druckbildes. Zudem
+besteht die chinesische Schriftsprache aus sehr feingliedrigen
+Elementen, sodass auch eine kleinteilige Erfassung der erkannten
+französischen Buchstabenzeichen (zum Beispiel Diakritika) sichergestellt
+wird.\\
+Mithilfe dieser sehr genauen Repräsentation des Druckbildes wurde in
+Kooperation mit Christian Reul am \emph{Zentrum für Philologie und
+Digitalität ``Kallimachos''} der Universität Würzburg ein OCR-Modell
+basierend auf diesen Drucken trainiert und in eine OCR4all-Instanz
+eingespeist. Anschließend wurde das Modell in Trier durch weitere
+\emph{Ground Truth Production}\footnote{\emph{Bei der Ground Truth
+  Production} in dem OCR-Tool \emph{OCR4all} werden Trainingsdaten
+  erstellt, indem händisch Zeile für Zeile das Faksimile transkribiert,
+  bzw. die Transkription korrigiert wird. Darauf basierend wird durch
+  Machine Learning ein Modell trainiert, das ein ähnlich geartetes
+  Druckbild optimiert erkennen kann.} verfeinert (weiter trainiert) und
+auf weitere Drucke angewendet.\\
+Die Erkennungsraten von \emph{OCR4all} für historische Drucke liegen
+deutlich über den Standard-OCR-Anwendungen (Reul et al.~2019), dennoch
+gab es einen Restbestand an OCR-Fehlern im Output, die anschließend
+manuell über den Spellcheck des Atom Editors {[}(Sawicki u.~a.
+{[}2013{]} 2022){]} korrigiert wurden.\footnote{Es ist anzumerken, dass
+  der genutzte Editor \emph{Atom} mittlerweile nicht mehr
+  weiterentwickelt wird (2023).} Nach diesen Vorarbeiten wurden die
+Texte mithilfe eines Python-Skriptes in TEI konformes XML umgewandelt.
+
+\section{\texorpdfstring{Zielformat: Markup in XML nach den Richtlinien
+der \emph{Text Encoding Initiative} und teilmodernisierter
+Plaintext}{Zielformat: Markup in XML nach den Richtlinien der Text Encoding Initiative und teilmodernisierter Plaintext}}\label{zielformat-markup-in-xml-nach-den-richtlinien-der-text-encoding-initiative-und-teilmodernisierter-plaintext}
+
+Bereits 1987, zu einer Zeit, als auch das World Wide Web noch in seinen
+Kinderschuhen steckte, formierte sich eine Gruppe an
+Wissenschaftler:innen mit dem Ziel, sich auf eine einheitliche,
+maschinenlesbare Auszeichnung von Texten zu einigen: Die Geburtsstunde
+der \emph{Text Encoding Initiative} (TEI). Die TEI bezeichnet nicht nur
+diese Organisation, sondern auch den daraus resultierenden Textstandard,
+der sich heute als \emph{de facto Standard} der Repräsentation von
+Texten (aber auch Handschriften, Musiknoten usw.) in den digitalen
+Geisteswissenschaften durchgesetzt hat {[}(Burnard 2015){]}. TEI
+ermöglicht es, semantische Auszeichnung im Text vorzunehmen,
+beispielsweise Zitate, Sprache, Kapitelüberschriften und Ähnliches im
+Markup maschinenlesbar und einheitlich zu kodieren. Im sogenannten
+\emph{teiHeader} werden Metadaten der digitalen und analogen Quellen und
+aller Bearbeitungsschritte und bearbeitenden Personen und publizierenden
+Institutionen detailliert festgehalten. TEI/XML-Dokumente müssen
+wohlgeformt und valide sein. In einem \emph{RNG-File} wird definiert,
+nach welchem Schema das entsprechende Dokument valide ist.\footnote{Das
+  RNG-Schema für Eltec-1 ist hier einsehbar:
+  \url{https://github.com/MiMoText/roman18/blob/master/Schemas/eltec-1.rng}.}\\
+Alle Romane, die in das Primärtextkorpus aufgenommen wurden, wurden in
+TEI/XML umgewandelt. Lag die Ursprungsdatei im EPUB-Format vor, so ließ
+sich diese leicht strukturierte Auszeichnung mithilfe eines Skripts in
+TEI umwandeln\footnote{Entsprechende Skripte zur Wandlung von EPUB in
+  TEI und zur automatischen Generierung des teiHeaders liegen hier:
+  \url{https://github.com/MiMoText/roman18/tree/master/Python-Scripts} .}.
+Das Schema, dem die Dateien entsprechen, ist Level-1 der «European
+Literary Text Collection»
+\href{https://www.zotero.org/google-docs/?7VOkfw}{(Schöch u.~a. 2021)}.
+Die ELTeC Textsammlung beinhaltet Untersammlungen in 17 europäischen
+Sprachen, ausbalanciert nach bestimmten Kriterien der
+Repräsentativität\footnote{WG1, Cost Action CA16204. 2018. «Encoding
+  Guidelines for the ELTeC: Level 1»,
+  \url{https://distantreading.github.io/Schema/eltec-1.html}.} und
+kodiert in TEI/XML.\\
+Für den Aufbau des Romankorpus im MiMoText-Projekt fiel die Entscheidung
+aus mehreren Gründen für eine Enkodierung der Primärtexte in TEI/XML:
+Sie hängen alle eng mit den FAIR data Prinzipien von Auffindbarkeit,
+Zugänglichkeit, Interoperabilität und der Ermöglichung einer Nachnutzung
+der Ressourcen zusammen, die im folgenden Kapitel näher erläutert
+werden.\\
+Neben dem Output-Format XML/TEI steht ein Python-Skript zur Verfügung,
+das aus den entsprechenden TEI-Elementen den Plaintext des Romans
+extrahiert und optional eine Normalisierung der historischen
+Schreibweisen vornimmt.\footnote{Entsprechende Skripte zur Wandlung von
+  TEI in TXT sind hier zu finden:
+  \url{https://github.com/MiMoText/roman18/tree/master/Python-Scripts/modernization\%20and\%20transformation\%20to\%20plaintext}.}
+Die Normalisierung betrifft dabei vor allem historische Verbformen,
+Diakritika und Schaft-S.\\
+Das Format Plaintext ist ein geeignetes Input-Format für Methoden wie
+Topic Modeling (McCallum 2002), Named Entity Recognition mit SpaCy
+(Honnibal / Montani 2017) oder auch für Sentiment Analysis (Koncar et
+al. 2022) - dies alles sind Methoden, die im Verlauf der Arbeit relevant
+sind.
+
+\textbf{Metadaten zum Text, zur Autorschaft und zur Verarbeitung}
+
+Im teiHeader der XML-Dateien werden zwei verschiedene Arten von
+Metadaten vorgehalten: deskriptive Metadaten und administrative
+Metadaten.
+
+\textbf{Autorschaft}: Bezüglich der Autorschaft der Romane werden
+folgende Informationen im teiHeader verzeichnet: Der volle Vor- und
+Nachname (//\emph{titleStmt/author/}), der VIAF-Identifier
+(\emph{//titleStmt/author/ref=`viaf'{]})} der eine Disambiguierung über
+das MiMoText-Projekt hinausgehend ermöglicht, der Wikidata-Identifier
+(\emph{//titleStmt/author/ref=`wikidata'{]})}, der eine zusätzliche
+Normdaten-Verlinkung darstellt und soweit vorhanden, eine Genderangabe
+(\emph{(//textDesc/keywords/term(\textbf{type?}, =`authorGnder
+xmlns')).}
+
+\textbf{Text:} Vergleichbar zu den Metadaten zu den Autor:innen,
+enthalten die Metadaten zum Text den vollen Titel
+\emph{(//titleStmt/title{]}),} den entsprechenden Identifier aus der
+\emph{, 1751-1800} (Martin / Mylne / Frautschi
+1977)\emph{(//titleStmt/title(\textbf{type?}, =`ref')),} der als
+Zahlenfolge als Anker für die in den bibliographischen Nachweissystemen
+enthaltenenen Daten fungiert. Diese Referenz linkt zu dem Werk und nicht
+zu einer spezifischen Expression oder Manifestation. Die Metadaten zum
+Text enthalten des weiteren Angaben zum Umfang in Wörtern
+\emph{(//extent/measure(\textbf{unit?}, =`words')).} Die Quelle der
+digitalen Textausgabe wird angegeben
+\emph{(//sourceDesc/bibl(\textbf{type?}, =`digital-source'))} und die
+Printausgabe \emph{(//sourceDesc/bibl(\textbf{type?}, =`print-source'))}
+und erste Publikation des Textes
+\emph{(//sourceDesc/bibl(\textbf{type?}, =`first-edition'))}
+spezifiziert.
+
+\textbf{Erzählform:} Bezüglich der Erzählformen wurde ein Raster
+gewählt, das ausreichend grob ist, um eine überschaubare Anzahl an
+Parametern der Analyse zu bieten und ausreichend detailliert, um die
+verschiedenenen Muster an Erzählformen im französischen Roman der
+zweiten Hälfte des 18. Jahrhunderts abzudecken. Ein Kategoriensystem,
+das diesen Anforderungen entspricht, wurde von José Calvo Tello in
+\emph{The Novel in the Spanish Silver Age} erstellt, das in Anlehnung
+daran für die Erzählformen-Einteilung der Romansammlung und auch in der
+gesamten MiMoTextBase verwendet wird (Calvo Tello 2021).\\
+Die Kategorien, die gewählt wurden, sind: epistolary, heterodiegetic,
+autodiegetic, dialogue novel, mixed
+(\emph{//textClass/keywords/term(\textbf{type?}, =`form')}).
+
+Neben diesen deskriptiven Metadaten verzeichnet der teiHeader außerdem
+administrative Metadaten zum Projektkontext und zur Bearbeitung der
+Daten:
+
+Verantwortliche Personen für die Enkodierung oder Herausgeberschaft der
+TEI-Dokumente werden benannt (\emph{//titleStmt/respStmt/resp}), größere
+Veränderungen bzw. die erstmalige Erstellung des Dokuments werden
+dokumentiert (\emph{//revisionDesc}) und nicht zuletzt eine eindeutige
+Angabe des rechtlichen Status des Dokuments
+(\emph{//publicationStmt/availability}), eine für die Nachnutzung
+relevante Angabe.
+
+\section{Die Bedeutung der FAIR data Prinzipien im Kontext der
+Erstellung der
+Datensammlung}\label{die-bedeutung-der-fair-data-prinzipien-im-kontext-der-erstellung-der-datensammlung}
+
+\begin{verbatim}
+            “There is an urgent need to improve the infrastructure  
+            supporting the reuse of scholarly data” [@wilkinso]   
+\end{verbatim}
+
+\href{https://www.zotero.org/google-docs/?WjCRBv}{2016)}.
+
+Gemäß der \emph{FAIR Data Principles} sollen Forschungsdaten «Findable,
+Accessible, Interoperable, and Re-usable», also auffindbar, zugänglich,
+interoperabel und nachnutzbar sein
+\href{https://www.zotero.org/google-docs/?6xjYiO}{(Wilkinson u.~a.
+2016)}. Sie sind entstanden aus dem Bedürfnis nach klar ausgezeichneten,
+gut auffindbaren und interoperabel aufbereiteten Daten, die eine
+Nachnutzung von Forschungsdaten ermöglichen.
+
+Auch in den Geisteswissenschaften nimmt die Bedeutung von großen
+Datenmengen und deren langfristige Sicherung eine zunehmend wichtige
+Rolle ein. Die \emph{FAIR Data Principles}\footnote{\begin{enumerate}
+  \def\labelenumi{\alph{enumi}.}
+  \setcounter{enumi}{18}
+  \tightlist
+  \item
+    Appendix 1 für eine Übersicht der FAIR Principles.
+  \end{enumerate}} entwerfen eine Vision von klar ausgezeichneten, gut
+nachnutzbaren Forschungsdaten. Daten und Metadaten sollen mit Lizenzen
+und relevanten Attributen versehen werden und Referenzen zu weiteren
+Metadaten enthalten. Die Provenienz der Daten soll klar ausgezeichnet
+und persistente Identifier sollen vergeben werden.\\
+Im Kontext der hier beschriebenen Datensammlung an französischen Romanen
+des 18. Jahrhunderts, die aus heterogenen Quellen (OCR4all Output,
+Wikisource EPUBs, Frantext XML etc.) in ein einheitliches TEI/XML-Schema
+konvertiert wurde, wurden die FAIR data Prinzipien beim Aufbau des
+Korpus mitgedacht: Die Daten werden im Repositorium GitHub
+veröffentlicht, das über die Funktionalität \emph{Clone} eine lokale
+Kopie des entsprechenden Datensatzes ermöglicht und alle Versionierungen
+der Dateien dokumentiert. Zudem ist die Langzeitarchivierung der
+Forschungsdaten über GitHub-Releases auf Zenodo\footnote{Zenodo ist eine
+  Open-Access-Plattform, finanziert von der Europäischen Kommission, die
+  es Forscher:innen ermöglicht, wissenschaftliche Datensätze und andere
+  Forschungsergebnisse zu teilen, zu archivieren und weltweit zugänglich
+  zu machen, ggf. mit DOI (Digital Object Identifier) versehen.}
+gesichert.\\
+Im teiHeader wurden zu jedem/jeder Autor:in einer Referenz-ID der als
+``Anker-Elemente'' verwendeten Bibliographie (Mylne, Martin und
+Frautschi 1977), eine VIAF-ID, eine Wikidata-ID etc. hinterlegt. Hinter
+diesen Zahlenfolgen verbergen sich weitere Metadaten zu den
+entsprechenden Personenentitäten. Unter der Wikidata-ID Q448 findet man
+auf \href{http://www.wikidata.org}{www.wikidata.org} Denis Diderot, über
+den man über 90 verschiedensprachliche Wikipedia-Artikel einsehen kann,
+beispielsweise auch auf Bretonisch oder Catalanisch.
+
+\pandocbounded{\includegraphics[keepaspectratio]{img_02/diderot_wikidata_item.JPG}}
+\textbf{Abb. 2.13} Wikidata-item Q448 ``Denis Diderot''.
+
+Das Wikipedia-Schwesterprojekt \emph{Wikidata} hingegen bereitet das
+Wissen der Wikipedia-Artikel für alle Sprachversionen einheitlich in
+strukturierter Form auf. Es lassen sich über die ID Q448 viele weitere
+Statements abrufen, beispielsweise die Zugehörigkeit zu bestimmten
+Strömungen (``Denis Diderot'' -\textgreater{}``movement''-\textgreater{}
+``Encyclopédistes), über philosophische Einflüsse (``Denis Diderot''
+-\textgreater{} ``influenced by'' -\textgreater{} ``Voltaire''), aber
+auch Statements über lizenzrechtliche Angaben (``Denis Diderot ``
+-\textgreater{}
+``\href{https://www.wikidata.org/wiki/Property:P7763}{copyright status
+as a creator}'' -\textgreater{}
+``\href{https://www.wikidata.org/wiki/Q71887839}{copyrights on works
+have expired}'')\footnote{Alle Statements lassen sich hier abrufen:
+  «Denis Diderot (Q448)», \url{https://www.wikidata.org/wiki/Q448}.}.
+Der teiHeader enthält somit Identifier zu weiteren relevanten Metadaten
+wie zu Wikidata, die als Datensammlung selbst ebenfalls den FAIR data
+Kriterien entsprechen
+\href{https://www.zotero.org/google-docs/?BoI6tE}{(Jacobsen u.~a.
+2018)}. In jedem TEI-Dokument (Roman) wird die Provenienz der Daten
+spezifiziert und eine freie Lizenz zur Verwendung der so erstellten
+Datensammlung angegeben, die eine rechtssichere Weiterverwendung der
+Datensammlung ermöglicht.
+
+Ziel ist es, unter Beachtung der FAIR data Kriterien und unter
+Berücksichtigung der statistischen Parameter aus den bibliographischen
+Metadaten, die die Romanproduktion der betrachteten Dekaden abdecken,
+eine relevante und repräsentative Sammlung des französischen Romans der
+zweiten Hälfte des 18. Jahrhunderts aufzubauen, die nicht nur für
+projektspezifische quantitativen Analysen genutzt wird, sondern auch
+allen interessierten Forschenden im freien Download zugänglich ist.
+
+\subsection{Bibliographie}\label{bibliographie}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-apollinaire_lenfer_1919}
+\textbf{Apollinaire, Guillaume} (1919):
+\emph{\href{https://fr.wikisource.org/wiki/Livre:Apollinaire_-_L\%E2\%80\%99Enfer_de_la_Biblioth\%C3\%A8que_nationale.djvu}{L'{Enfer}
+de la {Bibliothèque} nationale}}. Bibliothèque des curieux.
+
+\bibitem[\citeproctext]{ref-biber_representativeness_1993}
+\textbf{Biber, D.} (1993): "Representativeness in {Corpus} {Design}",
+in: \emph{Literary and Linguistic Computing} 8 (4): 243--257.
+\href{https://doi.org/10.1093/llc/8.4.243}{10.1093/llc/8.4.243}.
+
+\bibitem[\citeproctext]{ref-bode_world_2018}
+\textbf{Bode, Katherine} (2018): \emph{A {World} of {Fiction}: {Digital}
+{Collections} and the {Future} of {Literary} {History}}. Illustrated
+Edition University of Michigan Press.
+
+\bibitem[\citeproctext]{ref-burrows_delta_2002}
+\textbf{Burrows, John} (2002): "{„{Delta}``}: a {Measure} of {Stylistic}
+{Difference} and a {Guide} to {Likely} {Authorship}", in: \emph{Literary
+and Linguistic Computing} 17 (3): 267--287.
+\href{https://doi.org/10.1093/llc/17.3.267}{10.1093/llc/17.3.267}.
+
+\bibitem[\citeproctext]{ref-buttner_delta_2017}
+\textbf{Büttner, Andreas} et al. (2017):
+"\href{http://dx.doi.org/10.17175/2017_006}{»{Delta}« in der
+stilometrischen {Autorschaftsattribution}}",.
+
+\bibitem[\citeproctext]{ref-calvo_tello_novel_2021}
+\textbf{Calvo Tello, José} (2021): \emph{The novel in the {Spanish}
+silver age: a digital analysis of genre using machine learning}.
+Bielefeld: transcript.
+
+\bibitem[\citeproctext]{ref-craig_shakespeare_2009}
+\textbf{Craig, Hugh} / \textbf{Kinney, Arthur F.} (eds.) (2009):
+\emph{\href{https://doi.org/10.1017/CBO9780511605437}{Shakespeare,
+{Computers}, and the {Mystery} of {Authorship}}}. Cambridge: Cambridge
+University Press.
+
+\bibitem[\citeproctext]{ref-dalembert_encyclope_1751}
+\textbf{D'Alembert, Jean Le Rond} / \textbf{Diderot, Denis} (1751):
+\emph{\href{https://fr.wikisource.org/wiki/Encyclop\%C3\%A9die,_ou_Dictionnaire_raisonn\%C3\%A9_des_sciences,_des_arts_et_des_m\%C3\%A9tiers}{Encyclopédie,
+ou {Dictionnaire} raisonné des sciences, des arts et des métiers}}.
+
+\bibitem[\citeproctext]{ref-drucker_humanities_2011}
+\textbf{Drucker, Johanna} (2011): "Humanities {Approaches} to
+{Graphical} {Display}", in: \emph{Digital Humanities Quarterly} 005 (1):
+
+\bibitem[\citeproctext]{ref-du_evaluation_2022}
+\textbf{Du, Keli} / \textbf{Dudar, Julia} / \textbf{Schöch, Christof}
+(2022): "Evaluation of {Measures} of {Distinctiveness}. {Classification}
+of {Literary} {Texts} on the {Basis} of {Distinctive} {Words}", in:
+\emph{Journal of Computational Literary Studies} 1 (1):
+\href{https://doi.org/10.48694/jcls.102}{10.48694/jcls.102}.
+
+\bibitem[\citeproctext]{ref-eder_does_2015}
+\textbf{Eder, Maciej} (2015): "Does size matter? {Authorship}
+attribution, small samples, big problem", in: \emph{Digital Scholarship
+in the Humanities} 30 (2): 167--182.
+\href{https://doi.org/10.1093/llc/fqt066}{10.1093/llc/fqt066}.
+
+\bibitem[\citeproctext]{ref-eder_stylometry_2016}
+\textbf{Eder, Maciej} / \textbf{Rybicki, Jan} / \textbf{Kestemont, Mike}
+(2016): "Stylometry with {R}: {A} {Package} for {Computational} {Text}
+{Analysis}", in: \emph{The R Journal} 8: 107--121.
+\href{https://doi.org/10.32614/RJ-2016-007}{10.32614/RJ-2016-007}.
+
+\bibitem[\citeproctext]{ref-elmas_gender-guesser_2016}
+\textbf{Elmas, Ferhat} (2016): \emph{gender-guesser}.
+\url{https://github.com/lead-ratings/gender-guesser} {[}letzter Zugriff
+9. Dezember 2022{]}.
+
+\bibitem[\citeproctext]{ref-evert_understanding_2017}
+\textbf{Evert, Stefan} / \textbf{Proisl, Thomas} / \textbf{Jannidis,
+Fotis} / \textbf{Reger, Isabella} / \textbf{Pielström, Steffen} /
+\textbf{Schöch, Christof} / \textbf{Vitt, Thorsten} (2017):
+"Understanding and explaining {Delta} measures for authorship
+attribution", in: \emph{Digital Scholarship in the Humanities} 32
+(suppl\_2): ii4--ii16.
+\href{https://doi.org/10.1093/llc/fqx023}{10.1093/llc/fqx023}.
+
+\bibitem[\citeproctext]{ref-herrmann_korpusliteraturwissenschaft_2018}
+\textbf{Herrmann, J. Berenike} / \textbf{Lauer, Gerhard} (2018):
+"\href{https://pub.uni-bielefeld.de/record/2955632}{Korpusliteraturwissenschaft.
+{Zur} {Konzeption} und {Praxis} am {Beispiel} eines {Korpus} zur
+literarischen {Moderne}}", in: \emph{Osnabrücker Beiträge zur
+Sprachtheorie} (92): 127--156.
+
+\bibitem[\citeproctext]{ref-heuser_mapping_2016}
+\textbf{Heuser, Ryan} / \textbf{Algee-Hewitt, Mark} / \textbf{Lockhart,
+Annalise} (2016): "Mapping the {Emotions} of {London} in {Fiction},
+1700--1900: {A} {Crowdsourcing} {Experiment}" in: \emph{Literary
+{Mapping} in the {Digital} {Age}}. London: Routledge.
+
+\bibitem[\citeproctext]{ref-hirschmann_theoretische_2019}
+\textbf{Hirschmann, Hagen} (2019): "Theoretische {Grundlagen}" in:
+Hirschmann, Hagen (ed.): \emph{Korpuslinguistik: {Eine} {Einführung}}.
+Stuttgart: J.B. Metzler 1--18.
+\href{https://doi.org/10.1007/978-3-476-05493-7_1}{10.1007/978-3-476-05493-7\_1}.
+
+\bibitem[\citeproctext]{ref-holmes_evolution_1998}
+\textbf{Holmes, D. I.} (1998): "The {Evolution} of {Stylometry} in
+{Humanities} {Scholarship}", in: \emph{Literary and Linguistic
+Computing} 13 (3): 111--117.
+\href{https://doi.org/10.1093/llc/13.3.111}{10.1093/llc/13.3.111}.
+
+\bibitem[\citeproctext]{ref-honnibal_spacy_2017}
+\textbf{Honnibal, Matthew} / \textbf{Montani, Ines} (2017):
+\emph{{spaCy} 2: {Natural} language understanding with {Bloom}
+embeddings, convolutional neural networks and incremental parsing}.
+\url{https://spacy.io/usage/v2}.
+
+\bibitem[\citeproctext]{ref-horstmann_methodenbeitrag_2024}
+\textbf{Horstmann, Jan} (2024): "Methodenbeitrag: {Stilometrie}",
+\href{https://doi.org/10.48694/FORTEXT.3769}{10.48694/FORTEXT.3769}.
+
+\bibitem[\citeproctext]{ref-jannidis_1_2014}
+\textbf{Jannidis, Fotis} / \textbf{Lauer, Gerhard} (2014): "1:
+{Burrows}'s {Delta} and {Its} {Use} in {German} {Literary} {History}"
+in: Erlin, Matt / Tatlock, Lynne (eds.): \emph{Distant {Readings}:
+{Topologies} of {German} {Culture} in the {Long} {Nineteenth}
+{Century}}. Boydell; Brewer 27--54.
+\href{https://doi.org/10.1515/9781571138903-003}{10.1515/9781571138903-003}.
+
+\bibitem[\citeproctext]{ref-juola_rowling_2015}
+\textbf{Juola, Patrick} (2015): "The {Rowling} {Case}: {A} {Proposed}
+{Standard} {Analytic} {Protocol} for {Authorship} {Questions}", in:
+\emph{Digital Scholarship in the Humanities}: fqv040.
+\href{https://doi.org/10.1093/llc/fqv040}{10.1093/llc/fqv040}.
+
+\bibitem[\citeproctext]{ref-kenny_1_1982}
+\textbf{Kenny, ANTHONY} (1982): "1 - {The} {Statistical} {Study} of
+{Literary} {Style}" in: Kenny, ANTHONY (ed.): \emph{The {Computation} of
+{Style}}. Amsterdam: Pergamon 1--14.
+\href{https://doi.org/10.1016/B978-0-08-024281-1.50006-1}{10.1016/B978-0-08-024281-1.50006-1}.
+
+\bibitem[\citeproctext]{ref-kestemont_function_2014}
+\textbf{Kestemont, Mike} (2014): \emph{Function {Words} in {Authorship}
+{Attribution}. {From} {Black} {Magic} to {Theory}?} in:
+\emph{Proceedings of the 3rd {Workshop} on {Computational} {Linguistics}
+for {Literature} ({CLFL})}. Gothenburg, Sweden: Association for
+Computational Linguistics. 59--66.
+\url{https://aclanthology.org/W14-0908} {[}letzter Zugriff 29. September
+2023{]}.
+
+\bibitem[\citeproctext]{ref-kohler_quantitative_2005}
+\textbf{Köhler, Reinhard} / \textbf{Altmann, Gabriel} /
+\textbf{Piotrowski, Rajmund G.} (2005): \emph{Quantitative {Linguistik}
+/ {Quantitative} {Linguistics}: {Ein} internationales {Handbuch} / {An}
+{International} {Handbook}}. 1. Aufl. Berlin: De Gruyter Mouton.
+
+\bibitem[\citeproctext]{ref-koncar_sentiment_2022}
+\textbf{Koncar, Philipp} / \textbf{Geiger, Bernhard} / \textbf{Glatz,
+Christina} / \textbf{Hobisch, Elisabeth} / \textbf{Saric, Sanja} /
+\textbf{Scholger, Martina} / \textbf{Völkl, Yvonne} / \textbf{Helic,
+Denis} (2022): "A {Sentiment} {Analysis} {Tool} {Chain} for 18th
+{Century} {Periodicals}" in: \emph{Fabrikation von {Erkenntnis}:
+{Experimente} in den {Digital} {Humanities}}. Luxembourg
+\href{https://doi.org/10.26298/EZPG-WK34}{10.26298/EZPG-WK34}.
+
+\bibitem[\citeproctext]{ref-laramee_introduction_2018}
+\textbf{Laramée, François Dominic} (2018):
+"\href{https://programminghistorian.org/en/lessons/introduction-to-stylometry-with-python}{Introduction
+to stylometry with {Python}}", in: \emph{Programming Historian}:
+
+\bibitem[\citeproctext]{ref-levi_filling_2022}
+\textbf{Levi, Amalia S.} (2022): \emph{Filling the {Gaps}: {Digital}
+{Humanities} as {Restorative} {Justice} {\textbar} {Opening} {Keynote}}.
+Potsdam. \url{https://dhd2022.dig-hum.de/opening-keynote/index.html}
+{[}letzter Zugriff 29. August 2025{]}.
+
+\bibitem[\citeproctext]{ref-malyshev_getting_2018}
+\textbf{Malyshev, Stanislav} / \textbf{Krötzsch, Markus} /
+\textbf{González, Larry} / \textbf{Gonsior, Julius} /
+\textbf{Bielefeldt, Adrian} (2018):
+\emph{\href{https://doi.org/10.1007/978-3-030-00668-6_23}{Getting the
+{Most} {Out} of {Wikidata}: {Semantic} {Technology} {Usage} in
+{Wikipedia}'s {Knowledge} {Graph}}}. in: Vrandečić, Denny / Bontcheva,
+Kalina / Suárez-Figueroa, Mari Carmen / Presutti, Valentina / Celino,
+Irene / Sabou, Marta / Kaffee, Lucie-Aimée / Simperl, Elena (eds.):
+\emph{The {Semantic} {Web} -- {ISWC} 2018} (= Lecture {Notes} in
+{Computer} {Science}). Cham: Springer International Publishing.
+376--394. (= Lecture {Notes} in {Computer} {Science}).
+
+\bibitem[\citeproctext]{ref-martin_bibliographie_1977}
+\textbf{Martin, Angus} / \textbf{Mylne, Vivienne} / \textbf{Frautschi,
+Richard L.} (1977): \emph{Bibliographie du genre romanesque français,
+1751-1800}. London: Mansell.
+
+\bibitem[\citeproctext]{ref-mccallum_mallet_2002}
+\textbf{McCallum, Andrew Kachites} (2002): \emph{{MALLET}: {A} {Machine}
+{Learning} for {Language} {Toolkit}}. \url{http://mallet.cs.umass.edu}.
+
+\bibitem[\citeproctext]{ref-mosteller_inference_1963}
+\textbf{Mosteller, Frederick} / \textbf{Wallace, David L.} (1963):
+"Inference in an {Authorship} {Problem}", in: \emph{Journal of the
+American Statistical Association} 58 (302): 275.
+\href{https://doi.org/10.2307/2283270}{10.2307/2283270}.
+
+\bibitem[\citeproctext]{ref-rebora_is_2018}
+\textbf{Rebora, Simone} / \textbf{Salgaro, Massimo} (2018):
+"\href{https://www.academia.edu/37943274/Is_Late_Style_measurable_A_stylometric_analysis_of_Johann_Wolfgang_Goethe_s_Robert_Musil_s_and_Franz_Kafka_s_late_works}{Is
+{„{Late} {Style}``} measurable? {A} stylometric analysis of {Johann}
+{Wolfgang} {Goethe}'s, {Robert} {Musil}'s, and {Franz} {Kafka}'s late
+works}", in: \emph{Elephant\&amp;Castle}:
+
+\bibitem[\citeproctext]{ref-reeve_jonathanreevelate-style-pca_nodate}
+\textbf{Reeve, Jonathan}: \emph{{JonathanReeve}/late-style-{PCA}: {An}
+attempt to experimentally test {Edward} {Said}'s claims about late style
+using computational text analysis and principal component analysis.}
+\url{https://github.com/JonathanReeve/late-style-PCA} {[}letzter Zugriff
+28. September 2023{]}.
+
+\bibitem[\citeproctext]{ref-reul_ocr4all_2019}
+\textbf{Reul, Christian} et al. (2019): "{OCR4all} -- {An}
+{Open}-{Source} {Tool} {Providing} a ({Semi}-){Automatic} {OCR}
+{Workflow} for {Historical} {Printings}", in: \emph{arXiv:1909.04032
+{[}cs{]}}: \url{https://doi.org/10.48550/arXiv.1909.04032}.
+
+\bibitem[\citeproctext]{ref-rotari_grimm_2021}
+\textbf{Rotari, Gabriela} / \textbf{Jander, Melina} / \textbf{Rybicki,
+Jan} (2021): "The {Grimm} {Brothers}: {A} stylometric network analysis",
+in: \emph{Digital Scholarship in the Humanities} 36 (1): 172--186.
+\href{https://doi.org/10.1093/llc/fqz088}{10.1093/llc/fqz088}.
+
+\bibitem[\citeproctext]{ref-rottgermann_collection_2023}
+\textbf{Röttgermann, Julia} (2023): \emph{Collection de romans français
+du dix-huitième siècle (1751-1800) / {Eighteenth}-{Century} {French}
+{Novels} (1751-1800) {[}dataset{]}}. Zenodo.
+\url{https://doi.org/10.5281/zenodo.10404966}.
+
+\bibitem[\citeproctext]{ref-schoch_corneille_2014}
+\textbf{Schöch, Christof} (2014): "Corneille, {Molière} et les autres.
+{Stilometrische} {Analysen} zu {Autorschaft} und {Gattungszugehörigkeit}
+im französischen {Theater} der {Klassik}", in:
+\emph{Literaturwissenschaft im digitalen Medienwandel} Beiheft 7:
+130--157.
+
+\bibitem[\citeproctext]{ref-schoch_aufbau_2017}
+\textbf{Schöch, Christof} (2017a): "Aufbau von {Datensammlungen}" in:
+Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte (eds.): \emph{Digital
+{Humanities}: {Eine} {Einführung}}. Stuttgart: J.B. Metzler 223--233.
+\href{https://doi.org/10.1007/978-3-476-05446-3_16}{10.1007/978-3-476-05446-3\_16}.
+
+\bibitem[\citeproctext]{ref-jannidis_quantitative_2017}
+\textbf{Schöch, Christof} (2017b): "Quantitative {Analyse}" in:
+Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte (eds.): \emph{Digital
+{Humanities}}. Stuttgart: J.B. Metzler 279--298.
+\href{https://doi.org/10.1007/978-3-476-05446-3_20}{10.1007/978-3-476-05446-3\_20}.
+
+\bibitem[\citeproctext]{ref-schoch_dear_2023}
+\textbf{Schöch, Christof} (2023): \emph{Dear fellow stylometrists, let's
+drop the dendrogram and cherish the distance matrix}. in: \emph{The
+Dragonfly's Gaze}. \url{https://dragonfly.hypotheses.org/1414}
+{[}letzter Zugriff 18. Februar 2025{]}.
+
+\bibitem[\citeproctext]{ref-smith_improving_2011}
+\textbf{Smith, Peter W. H.} / \textbf{Aldridge, W.} (2011): "Improving
+{Authorship} {Attribution}: {Optimizing} {Burrows}' {Delta} {Method}*",
+in: \emph{Journal of Quantitative Linguistics} 18 (1): 63--88.
+\href{https://doi.org/10.1080/09296174.2011.533591}{10.1080/09296174.2011.533591}.
+
+\bibitem[\citeproctext]{ref-underwood_we_2013}
+\textbf{Underwood, Ted} (2013): \emph{We don't already understand the
+broad outlines of literary history.} in: \emph{The Stone and the Shell}.
+\url{https://tedunderwood.com/2013/02/08/we-dont-already-know-the-broad-outlines-of-literary-history/}
+{[}letzter Zugriff 9. Mai 2023{]}.
+
+\bibitem[\citeproctext]{ref-ward_hierarchical_1963}
+\textbf{Ward, Joe H.} (1963): "Hierarchical {Grouping} to {Optimize} an
+{Objective} {Function}", in: \emph{Journal of the American Statistical
+Association} 58 (301): 236--244.
+\href{https://doi.org/10.1080/01621459.1963.10500845}{10.1080/01621459.1963.10500845}.
+
+\bibitem[\citeproctext]{ref-weidman_modernism_2021}
+\textbf{Weidman, Sean} / \textbf{Pastor, Aaren} (2021):
+"\href{https://www.digitalhumanities.org/dhq/vol/15/4/000566/000566.html}{Modernism
+and {Gender} at the {Limits} of {Stylometry}}", in: \emph{Digital
+Humanities Quarterly} 15 (4):
+
+\bibitem[\citeproctext]{ref-werner_einfuhrung_2014}
+\textbf{Werner, Helmut} (2014):
+"\href{https://seyerlein.de/shop/item/9783944964744/klassiker-der-erotik-62-der-lebemann-von-andrea-de-nerciat-e-book-epub}{Einführung:
+{Der} {Lebemann}}" in: \emph{Der {Lebemann}} (= Klassiker der {Erotik}
+62).
+
+\end{CSLReferences}
+
+\subsection{Appendix 1: The FAIR Guiding Principles (Wilkinson et
+al.~2016)}\label{appendix-1-the-fair-guiding-principles-wilkinson-et-al.-2016}
+
+\textbf{To be Findable:}
+
+F1. (meta)data are assigned a globally unique and persistent identifier
+
+F2. data are described with rich metadata (defined by R1 below)
+
+F3. metadata clearly and explicitly include the identifier of the data
+it describes
+
+F4. (meta)data are registered or indexed in a searchable resource
+
+\textbf{To be Accessible:}
+
+A1. (meta)data are retrievable by their identifier using a standardized
+communications protocol
+
+A1.1 the protocol is open, free, and universally implementable
+
+A1.2 the protocol allows for an authentication and authorization
+procedure, where necessary
+
+A2. metadata are accessible, even when the data are no longer available
+
+\textbf{To be Interoperable:}
+
+I1. (meta)data use a formal, accessible, shared, and broadly applicable
+language for knowledge representation.
+
+I2. (meta)data use vocabularies that follow FAIR principles
+
+I3. (meta)data include qualified references to other (meta)data
+
+\textbf{To be Reusable:}
+
+R1. meta(data) are richly described with a plurality of accurate and
+relevant attributes
+
+R1.1. (meta)data are released with a clear and accessible data usage
+license
+
+R1.2. (meta)data are associated with detailed provenance
+
+R1.3. (meta)data meet domain-relevant community standards
+
+\bookmarksetup{startatroot}
+
+\chapter{Stilometrische Analyse von Französischen Romanen
+1751-1800}\label{stilometrische-analyse-von-franzuxf6sischen-romanen-1751-1800}
 
 \begin{quote}
 The close reader sees things in a text --- single moments and large
@@ -255,13 +1550,13 @@ statistische Modelle, und computergestützte Verfahren, um stilistische
 Muster in schriftlichen Texten zu identifizieren und zu vergleichen.
 Eines der meist verbreiteten Ziele der Stilometrie\index{Stilometrie}
 ist es dabei, die Autorschaft eines Textes mit computationellen Mitteln
-nachzuweisen (Burrows 2002; Hoover 2010; Rotari / Jander / Rybicki
-2021). Daneben gibt es jedoch auch Studien, die die statistischen
-sprachlichen Eigenschaften hinsichtlich von Gender-Unterschieden,
-Phänomene wie die individuellen Veränderungen eines Schreibstils im
-Laufe der Zeit oder in unterschiedlichen literarischen Gattungen
-analysieren (Holmes 1998; Jannidis / Lauer 2014; Schöch 2014; Weidman /
-Pastor 2021).\\
+nachzuweisen (Burrows 2002; \textbf{hoover\_dh2010\_nodate?}; Rotari /
+Jander / Rybicki 2021). Daneben gibt es jedoch auch Studien, die die
+statistischen sprachlichen Eigenschaften hinsichtlich von
+Gender-Unterschieden, Phänomene wie die individuellen Veränderungen
+eines Schreibstils im Laufe der Zeit oder in unterschiedlichen
+literarischen Gattungen analysieren (Holmes 1998; Jannidis / Lauer 2014;
+Schöch 2014; Weidman / Pastor 2021).\\
 Der Begriff Stilometrie setzt sich aus den beiden Wortteilen ``Stil''
 und ``-metrie'' zusammen, also eine literarische oder linguistische
 Kategorie (Stil) und das Konfix ``-metrie'', das suggeriert, dass etwas
@@ -271,23 +1566,24 @@ gezählt wird.\footnote{Morozov (1854-1946) verwendet erstmals den
   Einführung in die Methode der Stilometrie im Kontext der Digital
   Humanities cf. (Laramée 2018; Horstmann 2024; Eder / Rybicki /
   Kestemont 2016).} Zunächst stellt sich daher die Frage: Was ist Stil?
-Dazu haben (Herrmann / Van Dalen-Oskam / Schöch 2015) eine Definition
-formuliert, die man sowohl für computationelle Methoden als auch im
-klassischen literaturwissenschaftlichen Sinne anwenden kann: ``Style is
-a property of texts constituted by an ensemble of formal features which
-can be observed quantitatively or qualitatively'' (Herrmann / Van
-Dalen-Oskam / Schöch 2015). Stilometrie nutzt das Zählen stilistischer
-Merkmale in Form der Verwendungshäufigkeit bestimmter Wörter (`most
-frequent words'), um Aussagen zur Textähnlichkeit zu generieren, die
-unter bestimmten Bedingungen Rückschlüsse auf die Autorschaft
-zulassen.\footnote{Hinzufügen könnte man außerdem, dass der Computer
-  hier völlig neue Möglichkeiten eröffnete. Gingen Mosteller und Wallace
-  in Teilen ihrer Berechnung noch händisch vor, ist es heute eine
-  Selbstverständlichkeit, eine stilometrische Studie von einem Computer
-  berechnen zu lassen. ``The most important technological advances in
-  authorship studies have arisen from the computer.'' stellen sie auch
-  selbst 20 Jahre nach ihrer wegweisenden Studie in einem Zusatzkapitel
-  fest {[}Mosteller / Wallace (1963); pp.~268{]}.}
+Dazu haben (\textbf{berenike\_herrmann\_revisiting\_2015?}) eine
+Definition formuliert, die man sowohl für computationelle Methoden als
+auch im klassischen literaturwissenschaftlichen Sinne anwenden kann:
+``Style is a property of texts constituted by an ensemble of formal
+features which can be observed quantitatively or qualitatively''
+(\textbf{berenike\_herrmann\_revisiting\_2015?}). Stilometrie nutzt das
+Zählen stilistischer Merkmale in Form der Verwendungshäufigkeit
+bestimmter Wörter (`most frequent words'), um Aussagen zur
+Textähnlichkeit zu generieren, die unter bestimmten Bedingungen
+Rückschlüsse auf die Autorschaft zulassen.\footnote{Hinzufügen könnte
+  man außerdem, dass der Computer hier völlig neue Möglichkeiten
+  eröffnete. Gingen Mosteller und Wallace in Teilen ihrer Berechnung
+  noch händisch vor, ist es heute eine Selbstverständlichkeit, eine
+  stilometrische Studie von einem Computer berechnen zu lassen. ``The
+  most important technological advances in authorship studies have
+  arisen from the computer.'' stellen sie auch selbst 20 Jahre nach
+  ihrer wegweisenden Studie in einem Zusatzkapitel fest {[}Mosteller /
+  Wallace (1963); pp.~268{]}.}
 
 Das vorliegende Kapitel beginnt damit, die Anfänge bzw. wegweisende
 Studien der Stilometrie zu beschreiben. Als Pionierstudien der
@@ -377,7 +1673,7 @@ Lizenziert unter Creative Commons Namensnennung 4.0 International
 \end{figure}%
 
 Im Kontext der Textanalyse werden verschiedene Distanzmaße verwendet, um
-die Unterschiede zwischen Texten zu quantifizieren {[}Schöch (2017);
+die Unterschiede zwischen Texten zu quantifizieren {[}Schöch (2017b);
 pp.~294--295{]}. Die \textbf{Manhattan-Distanz} misst die absolute
 Distanz zweier Vektoren in jeder einzelnen Dimension. Die Summe dieser
 absoluten Distanzen ergibt die Gesamtdistanz, wobei jede Dimension
@@ -872,7 +2168,7 @@ basierend auf den numerischen Ergebnissen der vorgestellten
 stilometrischen Analyse, Nerciat der Autor war? Dies ist in dieser
 Eindeutigkeit sicher nicht möglich, da die stilometrische Analyse
 einerseits vom Vergleichskorpus und andererseits von weiteren
-Einflussfaktoren abhängen kann (Schöch 2017, pp.~296). Schon Burrows
+Einflussfaktoren abhängen kann (Schöch 2017b, pp.~296). Schon Burrows
 spricht in seiner wegweisenden Studie von ``likely authorship'' (Burrows
 2002). So hat neben dem Autorschaftssignal auch die thematische Nähe
 oder ähnliche Gattung einen Einfluss darauf, ob sich Werke in der
@@ -967,7 +2263,7 @@ Die Nutzung von Rängen (`ranks') ermöglicht über die Qualifizierung von
 Statements eine Abstufung der Plausibilität der möglichen
 Autorschafts-Varianten.
 
-\section{Bibliographie}\label{bibliographie}
+\section{Bibliographie}\label{bibliographie-1}
 
 \phantomsection\label{refs}
 \begin{CSLReferences}{1}{0}
@@ -975,6 +2271,16 @@ Autorschafts-Varianten.
 \textbf{Apollinaire, Guillaume} (1919):
 \emph{\href{https://fr.wikisource.org/wiki/Livre:Apollinaire_-_L\%E2\%80\%99Enfer_de_la_Biblioth\%C3\%A8que_nationale.djvu}{L'{Enfer}
 de la {Bibliothèque} nationale}}. Bibliothèque des curieux.
+
+\bibitem[\citeproctext]{ref-biber_representativeness_1993}
+\textbf{Biber, D.} (1993): "Representativeness in {Corpus} {Design}",
+in: \emph{Literary and Linguistic Computing} 8 (4): 243--257.
+\href{https://doi.org/10.1093/llc/8.4.243}{10.1093/llc/8.4.243}.
+
+\bibitem[\citeproctext]{ref-bode_world_2018}
+\textbf{Bode, Katherine} (2018): \emph{A {World} of {Fiction}: {Digital}
+{Collections} and the {Future} of {Literary} {History}}. Illustrated
+Edition University of Michigan Press.
 
 \bibitem[\citeproctext]{ref-burrows_delta_2002}
 \textbf{Burrows, John} (2002): "{„{Delta}``}: a {Measure} of {Stylistic}
@@ -987,11 +2293,25 @@ and Linguistic Computing} 17 (3): 267--287.
 "\href{http://dx.doi.org/10.17175/2017_006}{»{Delta}« in der
 stilometrischen {Autorschaftsattribution}}",.
 
+\bibitem[\citeproctext]{ref-calvo_tello_novel_2021}
+\textbf{Calvo Tello, José} (2021): \emph{The novel in the {Spanish}
+silver age: a digital analysis of genre using machine learning}.
+Bielefeld: transcript.
+
 \bibitem[\citeproctext]{ref-craig_shakespeare_2009}
 \textbf{Craig, Hugh} / \textbf{Kinney, Arthur F.} (eds.) (2009):
 \emph{\href{https://doi.org/10.1017/CBO9780511605437}{Shakespeare,
 {Computers}, and the {Mystery} of {Authorship}}}. Cambridge: Cambridge
 University Press.
+
+\bibitem[\citeproctext]{ref-dalembert_encyclope_1751}
+\textbf{D'Alembert, Jean Le Rond} / \textbf{Diderot, Denis} (1751):
+\emph{\href{https://fr.wikisource.org/wiki/Encyclop\%C3\%A9die,_ou_Dictionnaire_raisonn\%C3\%A9_des_sciences,_des_arts_et_des_m\%C3\%A9tiers}{Encyclopédie,
+ou {Dictionnaire} raisonné des sciences, des arts et des métiers}}.
+
+\bibitem[\citeproctext]{ref-drucker_humanities_2011}
+\textbf{Drucker, Johanna} (2011): "Humanities {Approaches} to
+{Graphical} {Display}", in: \emph{Digital Humanities Quarterly} 005 (1):
 
 \bibitem[\citeproctext]{ref-du_evaluation_2022}
 \textbf{Du, Keli} / \textbf{Dudar, Julia} / \textbf{Schöch, Christof}
@@ -1012,6 +2332,11 @@ in the Humanities} 30 (2): 167--182.
 {Analysis}", in: \emph{The R Journal} 8: 107--121.
 \href{https://doi.org/10.32614/RJ-2016-007}{10.32614/RJ-2016-007}.
 
+\bibitem[\citeproctext]{ref-elmas_gender-guesser_2016}
+\textbf{Elmas, Ferhat} (2016): \emph{gender-guesser}.
+\url{https://github.com/lead-ratings/gender-guesser} {[}letzter Zugriff
+9. Dezember 2022{]}.
+
 \bibitem[\citeproctext]{ref-evert_understanding_2017}
 \textbf{Evert, Stefan} / \textbf{Proisl, Thomas} / \textbf{Jannidis,
 Fotis} / \textbf{Reger, Isabella} / \textbf{Pielström, Steffen} /
@@ -1021,11 +2346,24 @@ attribution", in: \emph{Digital Scholarship in the Humanities} 32
 (suppl\_2): ii4--ii16.
 \href{https://doi.org/10.1093/llc/fqx023}{10.1093/llc/fqx023}.
 
-\bibitem[\citeproctext]{ref-berenike_herrmann_revisiting_2015}
-\textbf{Herrmann, Berenike} / \textbf{Van Dalen-Oskam, Karina} /
-\textbf{Schöch, Christof} (2015): "Revisiting {Style}, a {Key} {Concept}
-in {Literary} {Studies}", in: \emph{Journal of Literary Theory} 9 (1):
-\href{https://doi.org/10.1515/jlt-2015-0003}{10.1515/jlt-2015-0003}.
+\bibitem[\citeproctext]{ref-herrmann_korpusliteraturwissenschaft_2018}
+\textbf{Herrmann, J. Berenike} / \textbf{Lauer, Gerhard} (2018):
+"\href{https://pub.uni-bielefeld.de/record/2955632}{Korpusliteraturwissenschaft.
+{Zur} {Konzeption} und {Praxis} am {Beispiel} eines {Korpus} zur
+literarischen {Moderne}}", in: \emph{Osnabrücker Beiträge zur
+Sprachtheorie} (92): 127--156.
+
+\bibitem[\citeproctext]{ref-heuser_mapping_2016}
+\textbf{Heuser, Ryan} / \textbf{Algee-Hewitt, Mark} / \textbf{Lockhart,
+Annalise} (2016): "Mapping the {Emotions} of {London} in {Fiction},
+1700--1900: {A} {Crowdsourcing} {Experiment}" in: \emph{Literary
+{Mapping} in the {Digital} {Age}}. London: Routledge.
+
+\bibitem[\citeproctext]{ref-hirschmann_theoretische_2019}
+\textbf{Hirschmann, Hagen} (2019): "Theoretische {Grundlagen}" in:
+Hirschmann, Hagen (ed.): \emph{Korpuslinguistik: {Eine} {Einführung}}.
+Stuttgart: J.B. Metzler 1--18.
+\href{https://doi.org/10.1007/978-3-476-05493-7_1}{10.1007/978-3-476-05493-7\_1}.
 
 \bibitem[\citeproctext]{ref-holmes_evolution_1998}
 \textbf{Holmes, D. I.} (1998): "The {Evolution} of {Stylometry} in
@@ -1033,11 +2371,11 @@ in {Literary} {Studies}", in: \emph{Journal of Literary Theory} 9 (1):
 Computing} 13 (3): 111--117.
 \href{https://doi.org/10.1093/llc/13.3.111}{10.1093/llc/13.3.111}.
 
-\bibitem[\citeproctext]{ref-hoover_dh2010_nodate}
-\textbf{Hoover, David L.} (2010): \emph{{DH2010}: {Teasing} {Out}
-{Authorship} and {Style} with {T}-tests and {Zeta}}.
-\url{https://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/html/ab-658.html}
-{[}letzter Zugriff 18. Februar 2025{]}.
+\bibitem[\citeproctext]{ref-honnibal_spacy_2017}
+\textbf{Honnibal, Matthew} / \textbf{Montani, Ines} (2017):
+\emph{{spaCy} 2: {Natural} language understanding with {Bloom}
+embeddings, convolutional neural networks and incremental parsing}.
+\url{https://spacy.io/usage/v2}.
 
 \bibitem[\citeproctext]{ref-horstmann_methodenbeitrag_2024}
 \textbf{Horstmann, Jan} (2024): "Methodenbeitrag: {Stilometrie}",
@@ -1078,10 +2416,25 @@ Computational Linguistics. 59--66.
 / {Quantitative} {Linguistics}: {Ein} internationales {Handbuch} / {An}
 {International} {Handbook}}. 1. Aufl. Berlin: De Gruyter Mouton.
 
+\bibitem[\citeproctext]{ref-koncar_sentiment_2022}
+\textbf{Koncar, Philipp} / \textbf{Geiger, Bernhard} / \textbf{Glatz,
+Christina} / \textbf{Hobisch, Elisabeth} / \textbf{Saric, Sanja} /
+\textbf{Scholger, Martina} / \textbf{Völkl, Yvonne} / \textbf{Helic,
+Denis} (2022): "A {Sentiment} {Analysis} {Tool} {Chain} for 18th
+{Century} {Periodicals}" in: \emph{Fabrikation von {Erkenntnis}:
+{Experimente} in den {Digital} {Humanities}}. Luxembourg
+\href{https://doi.org/10.26298/EZPG-WK34}{10.26298/EZPG-WK34}.
+
 \bibitem[\citeproctext]{ref-laramee_introduction_2018}
 \textbf{Laramée, François Dominic} (2018):
 "\href{https://programminghistorian.org/en/lessons/introduction-to-stylometry-with-python}{Introduction
 to stylometry with {Python}}", in: \emph{Programming Historian}:
+
+\bibitem[\citeproctext]{ref-levi_filling_2022}
+\textbf{Levi, Amalia S.} (2022): \emph{Filling the {Gaps}: {Digital}
+{Humanities} as {Restorative} {Justice} {\textbar} {Opening} {Keynote}}.
+Potsdam. \url{https://dhd2022.dig-hum.de/opening-keynote/index.html}
+{[}letzter Zugriff 29. August 2025{]}.
 
 \bibitem[\citeproctext]{ref-malyshev_getting_2018}
 \textbf{Malyshev, Stanislav} / \textbf{Krötzsch, Markus} /
@@ -1100,6 +2453,10 @@ Irene / Sabou, Marta / Kaffee, Lucie-Aimée / Simperl, Elena (eds.):
 \textbf{Martin, Angus} / \textbf{Mylne, Vivienne} / \textbf{Frautschi,
 Richard L.} (1977): \emph{Bibliographie du genre romanesque français,
 1751-1800}. London: Mansell.
+
+\bibitem[\citeproctext]{ref-mccallum_mallet_2002}
+\textbf{McCallum, Andrew Kachites} (2002): \emph{{MALLET}: {A} {Machine}
+{Learning} for {Language} {Toolkit}}. \url{http://mallet.cs.umass.edu}.
 
 \bibitem[\citeproctext]{ref-mosteller_inference_1963}
 \textbf{Mosteller, Frederick} / \textbf{Wallace, David L.} (1963):
@@ -1121,6 +2478,12 @@ using computational text analysis and principal component analysis.}
 \url{https://github.com/JonathanReeve/late-style-PCA} {[}letzter Zugriff
 28. September 2023{]}.
 
+\bibitem[\citeproctext]{ref-reul_ocr4all_2019}
+\textbf{Reul, Christian} et al. (2019): "{OCR4all} -- {An}
+{Open}-{Source} {Tool} {Providing} a ({Semi}-){Automatic} {OCR}
+{Workflow} for {Historical} {Printings}", in: \emph{arXiv:1909.04032
+{[}cs{]}}: \url{https://doi.org/10.48550/arXiv.1909.04032}.
+
 \bibitem[\citeproctext]{ref-rotari_grimm_2021}
 \textbf{Rotari, Gabriela} / \textbf{Jander, Melina} / \textbf{Rybicki,
 Jan} (2021): "The {Grimm} {Brothers}: {A} stylometric network analysis",
@@ -1140,9 +2503,15 @@ im französischen {Theater} der {Klassik}", in:
 \emph{Literaturwissenschaft im digitalen Medienwandel} Beiheft 7:
 130--157.
 
+\bibitem[\citeproctext]{ref-schoch_aufbau_2017}
+\textbf{Schöch, Christof} (2017a): "Aufbau von {Datensammlungen}" in:
+Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte (eds.): \emph{Digital
+{Humanities}: {Eine} {Einführung}}. Stuttgart: J.B. Metzler 223--233.
+\href{https://doi.org/10.1007/978-3-476-05446-3_16}{10.1007/978-3-476-05446-3\_16}.
+
 \bibitem[\citeproctext]{ref-jannidis_quantitative_2017}
-\textbf{Schöch, Christof} (2017): "Quantitative {Analyse}" in: Jannidis,
-Fotis / Kohle, Hubertus / Rehbein, Malte (eds.): \emph{Digital
+\textbf{Schöch, Christof} (2017b): "Quantitative {Analyse}" in:
+Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte (eds.): \emph{Digital
 {Humanities}}. Stuttgart: J.B. Metzler 279--298.
 \href{https://doi.org/10.1007/978-3-476-05446-3_20}{10.1007/978-3-476-05446-3\_20}.
 
@@ -1157,6 +2526,12 @@ Dragonfly's Gaze}. \url{https://dragonfly.hypotheses.org/1414}
 {Authorship} {Attribution}: {Optimizing} {Burrows}' {Delta} {Method}*",
 in: \emph{Journal of Quantitative Linguistics} 18 (1): 63--88.
 \href{https://doi.org/10.1080/09296174.2011.533591}{10.1080/09296174.2011.533591}.
+
+\bibitem[\citeproctext]{ref-underwood_we_2013}
+\textbf{Underwood, Ted} (2013): \emph{We don't already understand the
+broad outlines of literary history.} in: \emph{The Stone and the Shell}.
+\url{https://tedunderwood.com/2013/02/08/we-dont-already-know-the-broad-outlines-of-literary-history/}
+{[}letzter Zugriff 9. Mai 2023{]}.
 
 \bibitem[\citeproctext]{ref-ward_hierarchical_1963}
 \textbf{Ward, Joe H.} (1963): "Hierarchical {Grouping} to {Optimize} an
@@ -1235,6 +2610,16 @@ content whatsoever.
 \emph{\href{https://fr.wikisource.org/wiki/Livre:Apollinaire_-_L\%E2\%80\%99Enfer_de_la_Biblioth\%C3\%A8que_nationale.djvu}{L'{Enfer}
 de la {Bibliothèque} nationale}}. Bibliothèque des curieux.
 
+\bibitem[\citeproctext]{ref-biber_representativeness_1993}
+\textbf{Biber, D.} (1993): "Representativeness in {Corpus} {Design}",
+in: \emph{Literary and Linguistic Computing} 8 (4): 243--257.
+\href{https://doi.org/10.1093/llc/8.4.243}{10.1093/llc/8.4.243}.
+
+\bibitem[\citeproctext]{ref-bode_world_2018}
+\textbf{Bode, Katherine} (2018): \emph{A {World} of {Fiction}: {Digital}
+{Collections} and the {Future} of {Literary} {History}}. Illustrated
+Edition University of Michigan Press.
+
 \bibitem[\citeproctext]{ref-burrows_delta_2002}
 \textbf{Burrows, John} (2002): "{„{Delta}``}: a {Measure} of {Stylistic}
 {Difference} and a {Guide} to {Likely} {Authorship}", in: \emph{Literary
@@ -1246,11 +2631,25 @@ and Linguistic Computing} 17 (3): 267--287.
 "\href{http://dx.doi.org/10.17175/2017_006}{»{Delta}« in der
 stilometrischen {Autorschaftsattribution}}",.
 
+\bibitem[\citeproctext]{ref-calvo_tello_novel_2021}
+\textbf{Calvo Tello, José} (2021): \emph{The novel in the {Spanish}
+silver age: a digital analysis of genre using machine learning}.
+Bielefeld: transcript.
+
 \bibitem[\citeproctext]{ref-craig_shakespeare_2009}
 \textbf{Craig, Hugh} / \textbf{Kinney, Arthur F.} (eds.) (2009):
 \emph{\href{https://doi.org/10.1017/CBO9780511605437}{Shakespeare,
 {Computers}, and the {Mystery} of {Authorship}}}. Cambridge: Cambridge
 University Press.
+
+\bibitem[\citeproctext]{ref-dalembert_encyclope_1751}
+\textbf{D'Alembert, Jean Le Rond} / \textbf{Diderot, Denis} (1751):
+\emph{\href{https://fr.wikisource.org/wiki/Encyclop\%C3\%A9die,_ou_Dictionnaire_raisonn\%C3\%A9_des_sciences,_des_arts_et_des_m\%C3\%A9tiers}{Encyclopédie,
+ou {Dictionnaire} raisonné des sciences, des arts et des métiers}}.
+
+\bibitem[\citeproctext]{ref-drucker_humanities_2011}
+\textbf{Drucker, Johanna} (2011): "Humanities {Approaches} to
+{Graphical} {Display}", in: \emph{Digital Humanities Quarterly} 005 (1):
 
 \bibitem[\citeproctext]{ref-du_evaluation_2022}
 \textbf{Du, Keli} / \textbf{Dudar, Julia} / \textbf{Schöch, Christof}
@@ -1271,6 +2670,11 @@ in the Humanities} 30 (2): 167--182.
 {Analysis}", in: \emph{The R Journal} 8: 107--121.
 \href{https://doi.org/10.32614/RJ-2016-007}{10.32614/RJ-2016-007}.
 
+\bibitem[\citeproctext]{ref-elmas_gender-guesser_2016}
+\textbf{Elmas, Ferhat} (2016): \emph{gender-guesser}.
+\url{https://github.com/lead-ratings/gender-guesser} {[}letzter Zugriff
+9. Dezember 2022{]}.
+
 \bibitem[\citeproctext]{ref-evert_understanding_2017}
 \textbf{Evert, Stefan} / \textbf{Proisl, Thomas} / \textbf{Jannidis,
 Fotis} / \textbf{Reger, Isabella} / \textbf{Pielström, Steffen} /
@@ -1280,11 +2684,24 @@ attribution", in: \emph{Digital Scholarship in the Humanities} 32
 (suppl\_2): ii4--ii16.
 \href{https://doi.org/10.1093/llc/fqx023}{10.1093/llc/fqx023}.
 
-\bibitem[\citeproctext]{ref-berenike_herrmann_revisiting_2015}
-\textbf{Herrmann, Berenike} / \textbf{Van Dalen-Oskam, Karina} /
-\textbf{Schöch, Christof} (2015): "Revisiting {Style}, a {Key} {Concept}
-in {Literary} {Studies}", in: \emph{Journal of Literary Theory} 9 (1):
-\href{https://doi.org/10.1515/jlt-2015-0003}{10.1515/jlt-2015-0003}.
+\bibitem[\citeproctext]{ref-herrmann_korpusliteraturwissenschaft_2018}
+\textbf{Herrmann, J. Berenike} / \textbf{Lauer, Gerhard} (2018):
+"\href{https://pub.uni-bielefeld.de/record/2955632}{Korpusliteraturwissenschaft.
+{Zur} {Konzeption} und {Praxis} am {Beispiel} eines {Korpus} zur
+literarischen {Moderne}}", in: \emph{Osnabrücker Beiträge zur
+Sprachtheorie} (92): 127--156.
+
+\bibitem[\citeproctext]{ref-heuser_mapping_2016}
+\textbf{Heuser, Ryan} / \textbf{Algee-Hewitt, Mark} / \textbf{Lockhart,
+Annalise} (2016): "Mapping the {Emotions} of {London} in {Fiction},
+1700--1900: {A} {Crowdsourcing} {Experiment}" in: \emph{Literary
+{Mapping} in the {Digital} {Age}}. London: Routledge.
+
+\bibitem[\citeproctext]{ref-hirschmann_theoretische_2019}
+\textbf{Hirschmann, Hagen} (2019): "Theoretische {Grundlagen}" in:
+Hirschmann, Hagen (ed.): \emph{Korpuslinguistik: {Eine} {Einführung}}.
+Stuttgart: J.B. Metzler 1--18.
+\href{https://doi.org/10.1007/978-3-476-05493-7_1}{10.1007/978-3-476-05493-7\_1}.
 
 \bibitem[\citeproctext]{ref-holmes_evolution_1998}
 \textbf{Holmes, D. I.} (1998): "The {Evolution} of {Stylometry} in
@@ -1292,11 +2709,11 @@ in {Literary} {Studies}", in: \emph{Journal of Literary Theory} 9 (1):
 Computing} 13 (3): 111--117.
 \href{https://doi.org/10.1093/llc/13.3.111}{10.1093/llc/13.3.111}.
 
-\bibitem[\citeproctext]{ref-hoover_dh2010_nodate}
-\textbf{Hoover, David L.} (2010): \emph{{DH2010}: {Teasing} {Out}
-{Authorship} and {Style} with {T}-tests and {Zeta}}.
-\url{https://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/html/ab-658.html}
-{[}letzter Zugriff 18. Februar 2025{]}.
+\bibitem[\citeproctext]{ref-honnibal_spacy_2017}
+\textbf{Honnibal, Matthew} / \textbf{Montani, Ines} (2017):
+\emph{{spaCy} 2: {Natural} language understanding with {Bloom}
+embeddings, convolutional neural networks and incremental parsing}.
+\url{https://spacy.io/usage/v2}.
 
 \bibitem[\citeproctext]{ref-horstmann_methodenbeitrag_2024}
 \textbf{Horstmann, Jan} (2024): "Methodenbeitrag: {Stilometrie}",
@@ -1337,10 +2754,25 @@ Computational Linguistics. 59--66.
 / {Quantitative} {Linguistics}: {Ein} internationales {Handbuch} / {An}
 {International} {Handbook}}. 1. Aufl. Berlin: De Gruyter Mouton.
 
+\bibitem[\citeproctext]{ref-koncar_sentiment_2022}
+\textbf{Koncar, Philipp} / \textbf{Geiger, Bernhard} / \textbf{Glatz,
+Christina} / \textbf{Hobisch, Elisabeth} / \textbf{Saric, Sanja} /
+\textbf{Scholger, Martina} / \textbf{Völkl, Yvonne} / \textbf{Helic,
+Denis} (2022): "A {Sentiment} {Analysis} {Tool} {Chain} for 18th
+{Century} {Periodicals}" in: \emph{Fabrikation von {Erkenntnis}:
+{Experimente} in den {Digital} {Humanities}}. Luxembourg
+\href{https://doi.org/10.26298/EZPG-WK34}{10.26298/EZPG-WK34}.
+
 \bibitem[\citeproctext]{ref-laramee_introduction_2018}
 \textbf{Laramée, François Dominic} (2018):
 "\href{https://programminghistorian.org/en/lessons/introduction-to-stylometry-with-python}{Introduction
 to stylometry with {Python}}", in: \emph{Programming Historian}:
+
+\bibitem[\citeproctext]{ref-levi_filling_2022}
+\textbf{Levi, Amalia S.} (2022): \emph{Filling the {Gaps}: {Digital}
+{Humanities} as {Restorative} {Justice} {\textbar} {Opening} {Keynote}}.
+Potsdam. \url{https://dhd2022.dig-hum.de/opening-keynote/index.html}
+{[}letzter Zugriff 29. August 2025{]}.
 
 \bibitem[\citeproctext]{ref-malyshev_getting_2018}
 \textbf{Malyshev, Stanislav} / \textbf{Krötzsch, Markus} /
@@ -1359,6 +2791,10 @@ Irene / Sabou, Marta / Kaffee, Lucie-Aimée / Simperl, Elena (eds.):
 \textbf{Martin, Angus} / \textbf{Mylne, Vivienne} / \textbf{Frautschi,
 Richard L.} (1977): \emph{Bibliographie du genre romanesque français,
 1751-1800}. London: Mansell.
+
+\bibitem[\citeproctext]{ref-mccallum_mallet_2002}
+\textbf{McCallum, Andrew Kachites} (2002): \emph{{MALLET}: {A} {Machine}
+{Learning} for {Language} {Toolkit}}. \url{http://mallet.cs.umass.edu}.
 
 \bibitem[\citeproctext]{ref-mosteller_inference_1963}
 \textbf{Mosteller, Frederick} / \textbf{Wallace, David L.} (1963):
@@ -1380,6 +2816,12 @@ using computational text analysis and principal component analysis.}
 \url{https://github.com/JonathanReeve/late-style-PCA} {[}letzter Zugriff
 28. September 2023{]}.
 
+\bibitem[\citeproctext]{ref-reul_ocr4all_2019}
+\textbf{Reul, Christian} et al. (2019): "{OCR4all} -- {An}
+{Open}-{Source} {Tool} {Providing} a ({Semi}-){Automatic} {OCR}
+{Workflow} for {Historical} {Printings}", in: \emph{arXiv:1909.04032
+{[}cs{]}}: \url{https://doi.org/10.48550/arXiv.1909.04032}.
+
 \bibitem[\citeproctext]{ref-rotari_grimm_2021}
 \textbf{Rotari, Gabriela} / \textbf{Jander, Melina} / \textbf{Rybicki,
 Jan} (2021): "The {Grimm} {Brothers}: {A} stylometric network analysis",
@@ -1399,9 +2841,15 @@ im französischen {Theater} der {Klassik}", in:
 \emph{Literaturwissenschaft im digitalen Medienwandel} Beiheft 7:
 130--157.
 
+\bibitem[\citeproctext]{ref-schoch_aufbau_2017}
+\textbf{Schöch, Christof} (2017a): "Aufbau von {Datensammlungen}" in:
+Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte (eds.): \emph{Digital
+{Humanities}: {Eine} {Einführung}}. Stuttgart: J.B. Metzler 223--233.
+\href{https://doi.org/10.1007/978-3-476-05446-3_16}{10.1007/978-3-476-05446-3\_16}.
+
 \bibitem[\citeproctext]{ref-jannidis_quantitative_2017}
-\textbf{Schöch, Christof} (2017): "Quantitative {Analyse}" in: Jannidis,
-Fotis / Kohle, Hubertus / Rehbein, Malte (eds.): \emph{Digital
+\textbf{Schöch, Christof} (2017b): "Quantitative {Analyse}" in:
+Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte (eds.): \emph{Digital
 {Humanities}}. Stuttgart: J.B. Metzler 279--298.
 \href{https://doi.org/10.1007/978-3-476-05446-3_20}{10.1007/978-3-476-05446-3\_20}.
 
@@ -1416,6 +2864,12 @@ Dragonfly's Gaze}. \url{https://dragonfly.hypotheses.org/1414}
 {Authorship} {Attribution}: {Optimizing} {Burrows}' {Delta} {Method}*",
 in: \emph{Journal of Quantitative Linguistics} 18 (1): 63--88.
 \href{https://doi.org/10.1080/09296174.2011.533591}{10.1080/09296174.2011.533591}.
+
+\bibitem[\citeproctext]{ref-underwood_we_2013}
+\textbf{Underwood, Ted} (2013): \emph{We don't already understand the
+broad outlines of literary history.} in: \emph{The Stone and the Shell}.
+\url{https://tedunderwood.com/2013/02/08/we-dont-already-know-the-broad-outlines-of-literary-history/}
+{[}letzter Zugriff 9. Mai 2023{]}.
 
 \bibitem[\citeproctext]{ref-ward_hierarchical_1963}
 \textbf{Ward, Joe H.} (1963): "Hierarchical {Grouping} to {Optimize} an

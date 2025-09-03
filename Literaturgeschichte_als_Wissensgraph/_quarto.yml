@@ -23,6 +23,7 @@ format:
     toc: true
     toc-depth: 3
   pdf:
+    toc: true
     documentclass: scrreprt
     include-in-header:
       text: |
