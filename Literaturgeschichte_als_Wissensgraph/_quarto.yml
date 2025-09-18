@@ -13,6 +13,7 @@ book:
   - index.qmd
   - chapter2_corpus.qmd
   - chapter3_themes.qmd
+  - chapter4_spaces.qmd
   - chapter6_stylometry.qmd
   - summary.qmd
   - references.qmd

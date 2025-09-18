@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.40">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>1&nbsp; Korpusaufbau der “Collection de romans 1751-1800” – Literaturgeschichte als Wissensgraph</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter3_themes.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-8da5b4427184b79ecddefad3d342027e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter2_corpus.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Korpusaufbau der “Collection de romans 1751-1800”</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Literaturgeschichte als Wissensgraph</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/roettger/Thesis" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Literaturgeschichte-als-Wissensgraph.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Literaturgeschichte-als-Wissensgraph.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter2_corpus.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Korpusaufbau der “Collection de romans 1751-1800”</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter3_themes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Extraktion thematischer Statements</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter4_spaces.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">4 Literarische Entitäten: Orte</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter6_stylometry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stilometrische Analyse von Französischen Romanen 1751-1800</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#kriterien-des-korpusaufbaus" id="toc-kriterien-des-korpusaufbaus" class="nav-link active" data-scroll-target="#kriterien-des-korpusaufbaus"><span class="header-section-number">1.1</span> Kriterien des Korpusaufbaus</a></li>
+  <li><a href="#unschärfen-grenzfälle" id="toc-unschärfen-grenzfälle" class="nav-link" data-scroll-target="#unschärfen-grenzfälle"><span class="header-section-number">1.2</span> Unschärfen / Grenzfälle</a></li>
+  <li><a href="#werkabgrenzungen-wann-ist-ein-werk-ein-neues-werk" id="toc-werkabgrenzungen-wann-ist-ein-werk-ein-neues-werk" class="nav-link" data-scroll-target="#werkabgrenzungen-wann-ist-ein-werk-ein-neues-werk"><span class="header-section-number">1.3</span> Werkabgrenzungen: Wann ist ein Werk ein neues Werk?</a>
+  <ul class="collapse">
+  <li><a href="#textquellen" id="toc-textquellen" class="nav-link" data-scroll-target="#textquellen"><span class="header-section-number">1.3.1</span> Textquellen</a></li>
+  </ul></li>
+  <li><a href="#die-reichhaltigen-metadaten-der-bibliographie-du-genre-romanesque-als-statistische-grundlage-zur-ausbalancierung-des-korpus" id="toc-die-reichhaltigen-metadaten-der-bibliographie-du-genre-romanesque-als-statistische-grundlage-zur-ausbalancierung-des-korpus" class="nav-link" data-scroll-target="#die-reichhaltigen-metadaten-der-bibliographie-du-genre-romanesque-als-statistische-grundlage-zur-ausbalancierung-des-korpus"><span class="header-section-number">1.4</span> Die reichhaltigen Metadaten der «&nbsp;Bibliographie du genre romanesque&nbsp;» als statistische Grundlage zur Ausbalancierung des Korpus</a></li>
+  <li><a href="#scans-der-bibliothèque-nationale-de-france-und-das-open-source-tool-ocr4all-zur-erschließung-neuer-texte" id="toc-scans-der-bibliothèque-nationale-de-france-und-das-open-source-tool-ocr4all-zur-erschließung-neuer-texte" class="nav-link" data-scroll-target="#scans-der-bibliothèque-nationale-de-france-und-das-open-source-tool-ocr4all-zur-erschließung-neuer-texte"><span class="header-section-number">1.5</span> Scans der <em>Bibliothèque nationale de France</em> und das Open-Source-Tool <em>OCR4all</em> zur Erschließung neuer Texte</a></li>
+  <li><a href="#zielformat-markup-in-xml-nach-den-richtlinien-der-text-encoding-initiative-und-teilmodernisierter-plaintext" id="toc-zielformat-markup-in-xml-nach-den-richtlinien-der-text-encoding-initiative-und-teilmodernisierter-plaintext" class="nav-link" data-scroll-target="#zielformat-markup-in-xml-nach-den-richtlinien-der-text-encoding-initiative-und-teilmodernisierter-plaintext"><span class="header-section-number">1.6</span> Zielformat: Markup in XML nach den Richtlinien der <em>Text Encoding Initiative</em> und teilmodernisierter Plaintext</a></li>
+  <li><a href="#die-bedeutung-der-fair-data-prinzipien-im-kontext-der-erstellung-der-datensammlung" id="toc-die-bedeutung-der-fair-data-prinzipien-im-kontext-der-erstellung-der-datensammlung" class="nav-link" data-scroll-target="#die-bedeutung-der-fair-data-prinzipien-im-kontext-der-erstellung-der-datensammlung"><span class="header-section-number">1.7</span> Die Bedeutung der FAIR data Prinzipien im Kontext der Erstellung der Datensammlung</a>
+  <ul class="collapse">
+  <li><a href="#appendix-1-the-fair-guiding-principles-wilkinson-et-al.-2016" id="toc-appendix-1-the-fair-guiding-principles-wilkinson-et-al.-2016" class="nav-link" data-scroll-target="#appendix-1-the-fair-guiding-principles-wilkinson-et-al.-2016"><span class="header-section-number">1.7.1</span> Appendix 1: The FAIR Guiding Principles (Wilkinson et al.&nbsp;2016)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Korpusaufbau der “Collection de romans 1751-1800”</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><em>Data are capta</em>, taken not given, constructed as an interpretation of the phenomenal world, not inherent in it.</p>
+<p>— <span class="citation" data-cites="drucker_humanities_2011">Drucker (<a href="chapter6_stylometry.html#ref-drucker_humanities_2011" role="doc-biblioref">2011</a>)</span>, 8</p>
+</blockquote>
+<p>Die zweite Hälfte des 18. Jahrhunderts ist eine Zeit voller gesellschaftlicher und kultureller Veränderungen, die sich auch in den erzählenden Texten dieser Zeit widerspiegeln. Um diese Epoche im Sinne einer “Data-Rich Literary History” <span class="citation" data-cites="bode_world_2018">(<a href="chapter6_stylometry.html#ref-bode_world_2018" role="doc-biblioref">Bode 2018: 37</a>)</span> oder datenbasierten Literaturgeschichte zu erforschen, besteht ein erster Schritt darin, ein systematisch strukturiertes Korpus an Volltexten aufzubauen, das es ermöglicht, diese Werke in einer standardisierten und maschinenlesbaren Form zu untersuchen. Ziel des hier beschriebenen Korpusaufbaus ist es, Methoden der Computational Literary Studies (CLS) wie Topic Modeling, Named Entity Recognition oder Sentiment Analysis auf das Korpus anzuwenden, um aus den Volltexten literaturhistorisch relevante Aussagen zu extrahieren, die in einen Knowledge Graphen zur Französischen Literaturgeschichte importiert und in weiteren Abfragen analysiert werden können. Das Zielformat ist daher ein Volltext in Plaintextformat, der möglichst modernisiert und normalisiert vorliegt. Als intermediäres Format zur langfristigen Speicherung wird ein XML-Format nach den Guidelines der <em>Text Encoding Initiative</em> (TEI) anvisiert, ein Format, das sich in den Digital Humanities als Datenformat zur langfristigen Speicherung bewährt hat.</p>
+<p>Nachdem in der Einleitung bereits das Vorhaben einer datenbasierten Literaturgeschichte und das Ziel einer Erstellung eines Wissensgraphen umrissen wurde, sollen im vorliegenden Kapitel die Strategie des Korpusaufbaus als ein repräsentatives Sampling aus der literarischen Grundgesamtheit und die weiteren Schritte der Digitalisierung und Datenbereinigung dargelegt werden.[^chapter2_corpus-1]: Teile von Kapitel 2 werden in Abwandlung auf Französisch erscheinen als Röttgermann, Julia. „Établissement d’un corpus de romans français du XVIIIe siècle dans le cadre du projet Mining and Modeling Text“. <em>promptus - Würzburger Beiträge zur Romanistik</em>, accepted. Dabei gehe ich auf die Kriterien des Korpusaufbaus, auf die Quellen des Korpus und auf die Digitalisierungspipeline mithilfe des Tools <em>OCR4all</em> <span class="citation" data-cites="reul_ocr4all_2019">(<a href="chapter6_stylometry.html#ref-reul_ocr4all_2019" role="doc-biblioref">Reul et al. 2019</a>)</span> ein. Ich beschreibe dabei das Verhältnis zwischen bibliographischen Metadaten und Volltexten und inwieweit beim Aufbau der Textsammlung FAIR data Prinzipien zum Tragen kamen. Als Zielformat liegt das Korpus in mehreren Versionen vor: als Extensible Markup Language (XML)-Datei nach den Richtlinien der <em>Text Encoding Initiative,</em> als Plaintextdokumente in den Optionen modernisiert und nicht-modernisiert. Die Eigenschaften und Vorteile dieser Formate werden erläutert und so auch mögliche Szenarien der Nachnutzung der Sammlung, die in einer offenen Lizenz zur freien Nutzung vorliegt, dargelegt.</p>
+<p>Keywords:<em>Korpusaufbau, Literaturgeschichte, OCR4all, Optical Character Recognition, Double-Keying, Metadaten, Balancing, Text Encoding Initiative, XML, FAIR data, FRBR, Wikidata.</em></p>
+<section id="kriterien-des-korpusaufbaus" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="kriterien-des-korpusaufbaus"><span class="header-section-number">1.1</span> Kriterien des Korpusaufbaus</h2>
+<p>Was ist ein Korpus? Im <em>Dictionnaire raisonné des sciences, des arts et des métiers</em> von D’Alembert und Diderot wird als “corps” “en matiere [sic] de Littérat.” Folgendes definiert: “plusieurs ouvrages de la même nature rassemblés &amp; reliés ensemble” [<span class="citation" data-cites="dalembert_encyclope_1751">D’Alembert / Diderot (<a href="chapter6_stylometry.html#ref-dalembert_encyclope_1751" role="doc-biblioref">1751</a>)</span>; pp.266]. In der modernen Korpuslinguistik versteht man unter Korpus eine “Sammlung von Textdaten, also Sprache im Kontext, die dem Zweck der linguistischen Auswertung dient und eine quantitative Auswertung von (qualitativen) sprachlichen Merkmalen zulässt. <span class="citation" data-cites="hirschmann_theoretische_2019">(<a href="chapter6_stylometry.html#ref-hirschmann_theoretische_2019" role="doc-biblioref">Hirschmann 2019: 2</a>)</span>. Im Kontext der Digital Humanities werden oft umfangreiche und vielfältige digitale Korpora erstellt, um sprachliche Muster, kulturelle Entwicklungen oder historische Veränderungen mithilfe von digitalen Methoden zu untersuchen. Eine Datensammlung in den Digital Humanities kann man definieren als “Zusammenführung einzelner (bereits existierender oder eigens erstellter) Datensätze nach einer Einheit stiftenden Systematik” <span class="citation" data-cites="schoch_aufbau_2017">(<a href="chapter6_stylometry.html#ref-schoch_aufbau_2017" role="doc-biblioref">Schöch 2017: 223</a>)</span>. Kriterien können dabei zeitlicher und/oder räumlicher Natur sein und bei Textsammlungen die Gattung, Sprache oder Urheber:innen betreffen.<br>
+Als bestehende Beispiele relevanter digitaler Datensammlungen französischer erzählender Texte seien hier <em>Frantext</em>, <em>ELTeC</em> und <em>Wikisource</em> genannt. <em>Frantext</em> ist eine seit 1998 bestehende Datenbank, die aktuell 268 Mio Wörter enthält.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Zunächst lag der Fokus der Datensammlung auf der Sprache des 19. und 20. Jahrhunderts und wurde erst später um Texte aus dem Mittelalter oder dem 18. Jahrhundert erweitert, bei gleichzeitiger Erweiterung um weitere moderne Texte (<a href="#fig-frantext" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>). Die Datensammlung enthält 10% wissenschaftliche und technische Texte und 90% literarische Texte, die verschiedene Gattungen umfassen: Romane, Memoiren, Autobiographien, Tagebücher, Theaterstücke, Gedichte, Essays. Das “Corpus classique” umfasst die Zeit 1650-1799. Filtert man nach Gattung ‘roman’ und Erstpublikation 1751-1799 bleiben 28 Texte übrig, von denen einige Textfiles Aufteilungen in Bände (tome I, tome II), also Teile von Werken darstellen. Frantext lässt sich über den Shibboleth-Zugang der Universität Trier mit Login abrufen, stellt jedoch keine schrankenlos frei verfügbare Textsammlung dar.</p>
+<div id="fig-frantext" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-frantext-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img_02/frantext-corpus_classique.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-frantext-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: “Corpus classique”, 1650-1799, Frantext.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>
+</figcaption>
+</figure>
+</div>
+<p>Die <em>European Literary Text Collection (ELTeC)</em> hingegen ist eine im Kontext der COST Action ‘Distant Reading for European Literary History’ 2017-2022 erstellte multilinguale Sammlung an erzählenden Texten 1840 bis 1919, aufgebaut mit dem Ziel eine Referenzsammlung für die Digital Humanities hinsichtlich literaturhistorischer Forschung aufzubauen (<a href="#fig-eltec" class="quarto-xref">Figure&nbsp;<span>1.2</span></a>). Um eine Vergleichbarkeit der verschiedensprachlichen Sammlungen untereinander herzustellen, wurden die Sammlungen nach bestimmten Parametern zusammengestellt, die unter anderem die Textlänge, die Kanonizität, Gender und die Anzahl an Werken pro Autor:in betreffen. Die anvisierten Werte sind für alle Sprachen einheitlich definierte Werte und orientieren sich nicht an der jeweils historischen Anzahl an Romanveröffentlichungen. Die Kernsammlung von 10 Korpora mit jeweils 100 Texten in 10 verschiedenen europäischen Sprachen wurde 2021 vollendet und liegt frei verfügbar auf GitHub vor. ELTeC-core wurde mittlerweile um verschiedene Erweiterungen (ELTeC extensions) ergänzt, sodass auch Sammlungen 1750 bis 1840 integriert werden können.</p>
+<p>Ein Subkorpus von 100 ausgewählten Werken aus dem hier beschriebenen Romankorpus roman18 hat daher als ELTeC extension innerhalb der <em>European Literary Text Collection</em> einen weiteren Publikationsort gefunden.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a><br>
+</p>
+<div id="fig-eltec" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eltec-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img_02/eltec.PNG" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eltec-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.2: Ausschnitt aus der Sammlung European Literary Text Collection, ELTeC-fra.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>
+</figcaption>
+</figure>
+</div>
+<p>Im Unterschied dazu ist <em>Wikisource</em> eine sehr breite Datensammlung von transkribierten Primärtexten aller Art, die alle urheberrechtsfrei sind oder unter einer freien Lizenz stehen. Das Projekt der Wikimedia Foundation gruppiert die Texte in verschiedenen Kategorien ein, so dass nach Romanen und Erstpublikationsdatum gefiltert werden kann (<a href="#fig-wikisource" class="quarto-xref">Figure&nbsp;<span>1.3</span></a>).<br>
+</p>
+<div id="fig-wikisource" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-wikisource-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img_02/wikisource.PNG" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-wikisource-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.3: Subkategorien der Kategorie “Romans” auf Wikisource.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>
+</figcaption>
+</figure>
+</div>
+<p>Filtert man nach Kategorie “Romans” und Erstpublikationsdatum 1751-1800, bleiben 38 Texte übrig, die jedoch auch nicht vollständig transkribierte Texte und auch Texte von Autor:innen außerhalb Europas enthalten. Des Weiteren besteht eine große Überschneidung zwischen Werktiteln aus Frantext und Wikisource.<br>
+Die beschriebenen Datensammlungen auf Wikisource und Frantext enthalten wie gezeigt zwar relevante erzählende Texte der Zeit 1751-1800, jedoch ist die dort enthaltene Größenordnung an verfügbaren Texten (&lt;40) nicht ausreichend, um Aussagen im Sinne einer datenbasierten Literaturgeschichte machen zu können. Die Sammlung ELTeC verfolgt einen geeigneten Ansatz, deckt jedoch einen anderen zeitlichen Rahmen (1840 - 1920) ab.<br>
+Der Aufbau einer frei verfügbaren Datensammlung an französischer fiktionaler Prosa 1751-1800 stellt meiner Recherche nach eine Forschungslücke dar und war somit der erste Schritt, auf dem die im Weiteren beschriebenen Analysen aufbauen. Als Größenordnung der Datensammlung wurde ein Anteil an 10% der bekannten Romanveröffentlichungen anvisiert, was circa 200 Werken entspricht.</p>
+<div id="fig-dataprocessing" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dataprocessing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img_02/transformation_files.PNG" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dataprocessing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.4: Ein Roman in drei verschiedenen Repräsentationen: als Faksimile, als Wikisource-Objekt und als TEI/XML-File.
+</figcaption>
+</figure>
+</div>
+<p>Wie können wir von Daten in den Geisteswissenschaften sprechen? Christof Schöch definiert Daten in den Geisteswissenschaften folgendermaßen: ”Data in the humanities could be considered a digital, selectively constructed, machine-actionable abstraction representing some aspects of a given object of humanistic inquiry.“ (<span class="citation" data-cites="schoch_big_2016">Schöch (<a href="chapter6_stylometry.html#ref-schoch_big_2016" role="doc-biblioref">2016</a>)</span>, 4). Wie Johanna Drucker, die von “data are capta” <span class="citation" data-cites="drucker_humanities_2011">(<a href="chapter6_stylometry.html#ref-drucker_humanities_2011" role="doc-biblioref">Drucker 2011: 8</a>)</span> spricht, wird damit auch der Aspekt betont, dass die Kategorien der gewählten Abstraktion – in diesem Fall unter anderem ein Roman als TEI/XML-File mit bestimmten ausgezeichneten Elementen – eine Auswahl aus der Vielfalt der Eigenschaften des Objekts darstellen. Auch in einer vermeintlich objektiven Apparatur sind Theorien verdinglicht, wie Gaston Bachelard 1934 ausführt [<span class="citation" data-cites="bachelard_nouvel_1968">Bachelard (<a href="chapter6_stylometry.html#ref-bachelard_nouvel_1968" role="doc-biblioref">1968</a>)</span>; 15].<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> Bachelard beobachtet das für die wissenschaftlichen Messgeräte seiner Zeit wie Thermometer oder Mikroskope, der Gedanke lässt sich jedoch auch auf die wissenschaftliche Apparatur des Computers übertragen.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a><br>
+In Bezug auf sein Axiom “The medium is the message” argumentiert hingegen McLuhan, dass Technologien nicht einfach Erfindungen sind, die der Mensch einsetzt, sondern eine völlig neue Umgebung für den Menschen darstellen.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> Als Beispiel führt er das elektronische Zeitalter an: “in the electronic age, data classification yield to pattern recognition” [<span class="citation" data-cites="mcluhan_understanding_2003">McLuhan / Gordon (<a href="chapter6_stylometry.html#ref-mcluhan_understanding_2003" role="doc-biblioref">2003</a>)</span>; 12]. So könnte man in Anlehnung an diesen Gedanken von McLuhan formulieren, dass die Möglichkeiten der in den Computational Literary Studies verwendeten Algorithmen einen neuen Rahmen oder eine neue Umgebung darstellen, innerhalb der die Literaturgeschichtsschreibung neu ergänzt und geschrieben werden kann.<br>
+Die Kategorien in der verwendeten Auszeichnungssprache (XML), die selektiert wurden, um digitale Texte in Markup zu kodieren, wie beispielsweise die Elemente und Attribute in einem XML-Dokument sind dabei nur eine Auswahl an möglichen Auszeichnungen, die man vornehmen könnte (Abb. 2.4).</p>
+<p>Wie Berenike Herrmann und Gerhard Lauer im Hinblick auf den Aufbau von Datensammlungen bemerken, finden sich zwar online umfangreiche Textsammlungen teils mit beeindruckender Anzahl an Werken, wie Google Books oder HathiTrust, jedoch sind sie selten nach fachwissenschaftlichen Kriterien als Sample aus einer Grundgesamtheit, sondern häufig aus pragmatischen Gründen der Verfügbarkeit zusammengestellt. <a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></p>
+<p>Im Hinblick auf den Aufbau der Textsammlung macht es Sinn, sich das Verhältnis zwischen Archiv, Kanon und Korpus zu verdeutlichen. Jenes Verhältnis kann anhand des Literary Pamphlet 11 des <em>Stanford Literary Lab</em> verstanden werden [<span class="citation" data-cites="heuser_mapping_2016">Heuser / Algee-Hewitt / Lockhart (<a href="chapter6_stylometry.html#ref-heuser_mapping_2016" role="doc-biblioref">2016</a>)</span>; 2]. Algee-Hewitt et al.&nbsp;unterscheiden zwischen ““the published, the archive, and the corpus”. In der Betrachtung von Algee-Hewitt et al.&nbsp;ist jedes Verhältnis eine Teilmenge des vorherigen Verhältnisses (<a href="#fig-thepublished" class="quarto-xref">Figure&nbsp;<span>1.5</span></a>). Das Archiv ist demnach eine Teilmenge aller je veröffentlichten Texte, der Kanon eine Teilmenge aus dem Archiv und das Korpus ebenfalls eine (andere) Auswahl aus dem Archiv.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a><br>
+</p>
+<div id="fig-thepublished" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-thepublished-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img_02/korpusaufbau_ausbalancierung_Version2.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-thepublished-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.5: Verhältnis “the published /“the archive” / “the corpus”/ “the canon” [cf. <span class="citation" data-cites="heuser_mapping_2016">Heuser / Algee-Hewitt / Lockhart (<a href="chapter6_stylometry.html#ref-heuser_mapping_2016" role="doc-biblioref">2016</a>)</span>; Stanford Literary Lab:2]. Die die Romanveröffentlichungen dokumentierenden Metadaten dienen als Parameter zur Ausbalancierung der Volltextsammlung roman18.
+</figcaption>
+</figure>
+</div>
+<p>Für die Domäne des französischen Romans der zweiten Hälfte des 18. Jahrhunderts bestehen die erfreulichen Umstände, dass hinsichtlich der Grundgesamtheit der literarischen Produktion eine Dokumentation aller überliefert veröffentlichten Romane vorliegt, die Angus Martin, Vivienne Mylne und Richard Frautschi bis 1977 in einem über zehn Jahre dauernden, kollaborativen Forschungsprozess zusammengetragen haben. Das ist insofern eine Besonderheit, als dass die vollständige Dokumentation der literarischen Produktion einer Domäne eher den Ausnahmefall darstellt. Ted Underwood umreißt in “Do we Understand the Outlines of Literary History?” die lückenhaften Korpora, mit denen man in den Digital Humanities üblicherweise vorlieb nehmen muss, beispielsweise bei der Arbeit mit HathiTrust.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> Große Lücken in den Metadaten oder den berücksichtigten Volltexten einer Epoche lassen dann nur bedingt übergreifende Aussagen zur Literaturgeschichte zu. Er illustriert dies am Beispiel der Entwicklung der Erzählformen [<span class="citation" data-cites="underwood_we_2013">Underwood (<a href="chapter6_stylometry.html#ref-underwood_we_2013" role="doc-biblioref">2013</a>)</span>; pp.&nbsp;1–33].<br>
+Die vorliegende Romansammlung roman18 kommt den von Lauer und Herrmann [<span class="citation" data-cites="herrmann_korpusliteraturwissenschaft_2018">Herrmann / Lauer (<a href="chapter6_stylometry.html#ref-herrmann_korpusliteraturwissenschaft_2018" role="doc-biblioref">2018</a>)</span>; 130] formulierten wünschenswerten Kriterien eines Samplings des Korpus nach fachwissenschaftlichen Kriterien der Domäne (Literaturwissenschaft) hingegen approximativ nach: Es wurde ein Korpus an Primärtexten zusammengestellt, das französische erzählende Texte der zweiten Hälfte des 18. Jahrhunderts im Sinne eines repräsentativen Samples aus der literarischen Grundgesamtheit an Romanen dieser Dekaden enthält. Es handelt sich dabei nicht um ein zufälliges Sampling (Random Sampling), sondern die Werke wurden systematisch anhand ihrer Metadaten in Kombination mit der Verfügbarkeit einer Print- oder Digitalquelle des Volltextes zusammengestellt.<br>
+Das Sampling bezieht sich dabei auf die Parameter <strong>Erstpublikationsdatum</strong>, <strong>Gender</strong> und <strong>Erzählform</strong> und bezieht sich auf Metadaten, die zur Gesamtproduktion aller französischen Romane 1751-1800 in besagter Bibliographie vorliegen <span class="citation" data-cites="martin_bibliographie_1977">(<a href="chapter6_stylometry.html#ref-martin_bibliographie_1977" role="doc-biblioref">Martin / Mylne / Frautschi 1977</a>)</span>. Die Verteilung der Parameter in der gesamten Romanproduktion sollten so “en miniature” im Volltextkorpus nachgebildet werden. Das Balancing hinsichtlich dieser Kategorien hat als Ziel, beim Korpusdesign repräsentativ vorzugehen, wie es auch von Douglas Biber beschrieben wird: “Representativeness refers to the extent to which a sample includes the full range of variability in a population.” [<span class="citation" data-cites="biber_representativeness_1993">Biber (<a href="chapter6_stylometry.html#ref-biber_representativeness_1993" role="doc-biblioref">1993</a>)</span>; pp.&nbsp;243].</p>
+<p>Das Volltext-Korpus grenzt sich hinsichtlich der Sprache, der Gattung und des Zeitraums demnach folgendermaßen ab:</p>
+<ol type="1">
+<li><p>Sprachliche Abgrenzung: Es werden Werke betrachtet, die auf Französisch verfasst wurden. Der Schwerpunkt liegt geographisch auf dem französischen Mutterland, aber beinhaltet auch einige Werke der Frankoromania.<br>
+</p></li>
+<li><p>Gattungsgrenzen: Hinsichtlich der Gattung liegt der Fokus des Textkorpus auf erzählenden Werken. Dabei folge ich der relativ breiten und inklusiven Definition, die die Bibliograph:innen der <em>Bibliographie du genre romanesque français, 1751-1800</em> ihrer Bibliographie zugrunde legen <span class="citation" data-cites="martin_bibliographie_1977">(<a href="chapter6_stylometry.html#ref-martin_bibliographie_1977" role="doc-biblioref">Martin / Mylne / Frautschi 1977</a>, ix-xxxv)</span>. In der Einleitung der <em>Bibliographie du genre romanesque français, 1751-1800</em> definieren die Autor:innen die erfassten Werke folgendermaßen: “tout ce qui a été publié en langue française en matière de roman, de conte, de nouvelle, de récit fictif en prose sous toutes les formes” (Mylne, Martin und Frautschi 1977: ix). Auch für das Romankorpus werden fiktionale Werke verschiedener Länge, Briefromane, Dialogromane, aber auch Novellen und Erzählungen inkludiert.</p></li>
+<li><p>Zeitliche Grenzen: Hinsichtlich des betrachteten Zeitraums werden Werke aufgenommen, die einschließlich 1751-1800 erstmals erschienen sind.</p></li>
+</ol>
+</section>
+<section id="unschärfen-grenzfälle" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="unschärfen-grenzfälle"><span class="header-section-number">1.2</span> Unschärfen / Grenzfälle</h2>
+<p>Die zunächst eindeutig erscheinenden Kategorien (Erstpublikationsdatum, Gattung, Sprache) erwiesen sich in der Praxis nicht immer als stabile Grenzen. Die hier betrachteten Dekaden sind gezeichnet von politischen und gesellschaftlichen Umbrüchen, die auch für die erscheinenden Werke Auswirkungen haben. Das Datum des Redigierens und des Publizierens liegt teilweise weit auseinander.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> Einige wichtige Werke dieser Zeit wie <em>Les Cent Vingt Journées de Sodome</em> von De Sade wurden im genannten Zeitraum erstellt, aber erst viel später publiziert. Einige solcher Ausnahmen wurden in das Korpus aufgenommen, aber durch Kommentare im XML-Element &lt;sourceDesc&gt; im teiHeader näher beschrieben und erläutert:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">bibl</span><span class="ot"> type=</span><span class="st">"unspecified"</span>&gt;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- Text included in the MiMoText corpus due to creation in 1785 </span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">(stated in: LES CENT-VINGT JOURNÉES DE SODOME OU L’ÉCOLE DU </span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">LIBERTINAGE,in: Jens, Walter, und Rudolf Radler, Hrsg. Kindlers neues Literatur-Lexikon. Bd.</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">22: Supplement L - Z. Studienausg. Frechen: KOMET, 2001.) </span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">The following &lt;date&gt; therefore represents the year of creation.--&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">date</span>&gt;1785&lt;/<span class="kw">date</span>&gt;</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">bibl</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Ein anderes Beispiel ist Arnauds <em>Les époux malheureux</em> (1783); eine neue Version eines bereits 1746 publizierten Werkes, welches jedoch zwei neue Teile enthält, wurde in das Romankorpus aufgenommen.<br>
+Voltaires <em>Babouc</em> (1751), das unter dem Titel <em>Le monde comme il va</em> bereits 1748 erschienen ist, wurde nachträglich aussortiert, bzw. in eine “extended version” des Korpus verschoben, da die Textgrundlage nicht wesentlich von der früheren Version abweicht [<span class="citation" data-cites="martin_bibliographie_1977">Martin / Mylne / Frautschi (<a href="chapter6_stylometry.html#ref-martin_bibliographie_1977" role="doc-biblioref">1977</a>)</span>; pp.&nbsp;58]. Diderots <em>L’Oiseau blanc</em> wurde 1748 geschrieben, aber 1798 erstmals publiziert und demnach aufgenommen.<br>
+Diese und weitere Grenzfälle wurden innerhalb der erstellten XML/TEI-Dateien im TEI-Header erläutert, um in der Entscheidungsfindung transparent zu sein.</p>
+</section>
+<section id="werkabgrenzungen-wann-ist-ein-werk-ein-neues-werk" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="werkabgrenzungen-wann-ist-ein-werk-ein-neues-werk"><span class="header-section-number">1.3</span> Werkabgrenzungen: Wann ist ein Werk ein neues Werk?</h2>
+<p>Die Grenzfälle verweisen auf eine grundsätzliche Frage der Trennschärfe zwischen Manifestation, Werk und Edition und auf Frage der Abgrenzung zweier Entitäten auf Work-(Werk)-Ebene. Im Sinne der Prinzipien der “Functional Requirements for Bibliographic Records” (FRBR) kann man zwischen Werk, Expression, Manifestation und Item unterscheiden. Diese sind dabei folgendermaßen definiert:</p>
+<div id="fig-frbr" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-frbr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img_02/800px-FRBR-Group-2-entities-and-relations.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-frbr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.6: Functional Requirements for Bibliographic Records
+</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li>Werk (Work): Ein Werk wird als abstrakte Konzeption eines kreativen oder intellektuellen Inhalts definiert. Es repräsentiert die Idee oder den Inhalt eines Werkes unabhängig von spezifischen Ausgaben, Übersetzungen oder physischen Manifestationen. Ein Werk kann beispielsweise ein bestimmtes Buch, Gemälde, Musikstück oder Film sein.<br>
+</li>
+<li>Expression: Eine Expression ist die spezifische Art und Weise, wie ein Werk verkörpert oder dargestellt wird. Sie bezieht sich auf die sprachliche, künstlerische oder intellektuelle Form, in der ein Werk ausgedrückt wird. Eine Expression kann verschiedene Formen annehmen, wie zum Beispiel eine bestimmte Sprache, eine musikalische Partitur oder eine Übersetzung.<br>
+</li>
+<li>Manifestation: Eine Manifestation ist eine physische oder digitale Realisierung einer Expression. Sie bezieht sich auf eine konkrete Version eines Werkes, die als Einheit betrachtet werden kann. Beispiele für Manifestationen sind gedruckte Bücher, digitale E-Books, Gemälde oder Tonträger.<br>
+</li>
+<li>Exemplar (Item): Ein Exemplar ist eine einzelne physische oder digitale Instanz einer Manifestation.</li>
+</ol>
+<p>Eine interessante Frage ist dabei auch, ab wann ein Werk ein neues Werk ist. Werke als Knoten im Graphen sind im Gegensatz zu natürlichen Personen nicht eindeutig abgrenzbar. Man kann zur Beantwortung dieser Frage auf ein skalares Modell zurückgreifen (s. <a href="#fig-werkfamilie" class="quarto-xref">Figure&nbsp;<span>1.7</span></a>).</p>
+<div id="fig-werkfamilie" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-werkfamilie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img_02/werksabgrenzungen.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-werkfamilie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.7: Werkfamilie oder die Abgrenzungsproblematik (nach <span class="citation" data-cites="tillet_what_2005">Tillet (<a href="chapter6_stylometry.html#ref-tillet_what_2005" role="doc-biblioref">2005</a>)</span>, 4)
+</figcaption>
+</figure>
+</div>
+<p>In <a href="#fig-werkfamilie" class="quarto-xref">Figure&nbsp;<span>1.7</span></a> lässt sich erkennen, in welchen Abstufungen ein Ausgangswerk als selbes Werk oder als neues Werk gewertet werden kann. Eine neue Ausgabe, eine Illustrierung, eine Übersetzung werden in dieser skalaren Anordnung als ‘selbes Werk’ gewertet, während Parodien, freie Übersetzungen, Dramatisierungen oder auch eine Änderung des Genres als ‘neues Werk’ gewertet werden.<br>
+Die verwendeten bibliographischen Metadaten <span class="citation" data-cites="martin_bibliographie_1977">(<a href="chapter6_stylometry.html#ref-martin_bibliographie_1977" role="doc-biblioref">Martin / Mylne / Frautschi 1977</a>)</span> enthalten ebenfalls in der Frage der Werkabgrenzung implizite Entscheidungen. Im Sinne einer einheitlichen Vorgehensweise ist ein Werk ein neues Werk im Knowledge Graphen, wenn es aus der die Datenbasis stiftenden Quelle der <em>Bibliographie du genre romanesque francais, 1751-1800</em> als neuer Eintrag mit Identifier hervorgeht.</p>
+<p>Für den Korpusaufbau weiterhin relevant ist, dass ein selbes Werk in verschiedenen Expressionen unterschiedliche Titel tragen kann. Dieses Phänomen wird sowohl in den bibliographischen Metadaten abgebildet (nämlich in der Aufzählung der verschiedenen Editionen pro Eintrag) und kann im Wissensgraphen in der Software Wikibase ebenfalls modelliert werden. Zu jedem Label eines Items beispielsweise “Lettres de deux amans, habitans d’une petite ville au pied des Alpes “ (Q1429), gibt es ebenfalls die Property “Also known as”, die dann ein alternatives Label enthalten kann, beispielsweise “La nouvelle Héloi͏̈se”.<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a><br>
+Wann immer im Korpusaufbau der Romansammlung von den Knoten des Knowledge Graphen vereinzelt abgewichen wurde, ist dies im TEI-Header der XML-Version der Dateien vermerkt.</p>
+<section id="textquellen" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="textquellen"><span class="header-section-number">1.3.1</span> Textquellen</h3>
+<p>Für den Aufbau der Textsammlung werden einerseits verfügbare Scans (insbesondere aus Gallica der <em>Bibliothèque Nationale Française</em>) und geprüfte Texte insbesondere von <em>Wikisource.fr</em>, <em>Ebook libres et gratuits</em> und <em>Frantext</em> gesammelt, andererseits das Verfahren des sogenannten ‘Double Keying’ auf ein Korpus bisher nicht im Volltext verfügbarer Texte angewendet. Alle Texte werden mit Hilfe von Skripten (in TUSTEP und/oder Python) in ein einheitliches XML-Format konvertiert, das den Richtlinien der <em>Text Encoding Initiative</em><span class="citation" data-cites="burnard_what_2014">(<a href="chapter6_stylometry.html#ref-burnard_what_2014" role="doc-biblioref">Burnard 2014</a>)</span>entspricht. Für die ‘Double Keying’-Dateien wurde zudem eine der Vorlage besonders nahe Textfassung erstellt, auf deren Grundlage mit dem Tool OCR4all <span class="citation" data-cites="reul_ocr4all_2019">(cf. <a href="chapter6_stylometry.html#ref-reul_ocr4all_2019" role="doc-biblioref">Reul et al. 2019</a>)</span> ein OCR-Modell für französische Drucke der zweiten Hälfte des 18. Jahrhunderts trainiert wurde, mit dem weitere bildbasierte Scans in Volltext überführt werden konnten.<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></p>
+<p>Im Folgenden eine Erläuterung zu den genannten Quellen des Volltextkorpus:</p>
+<ul>
+<li><em>Wikisource</em> (ein Schwesterprojekt von Wikipedia) vereint Primärtexte in über 70 Sprachen. In einer auf Crowdsourcing basierenden Transkriptionsumgebung werden Faksimile und per Optical Character Recognition erkannter Text nebeneinander gestellt und von der Crowd korrigiert. Die Dateien durchlaufen verschiedene Qualitätsstufen. Es wurden Texte aufgenommen, die mindestens durch ein gelbes oder grünes Label ausgezeichnet sind, also vollständig transkribiert und von mindestens zwei verschiedenen Personen korrigiert wurden.<br>
+</li>
+<li>Auf der Website <em>Ebooks libres et gratuits</em> konnten vor allem Werke kanonischer Autor:innen gefunden werden. Sie wurden als EPUB heruntergeladen und in TEI/XML konvertiert. Ein Nachteil der Plattform ist, dass sich die Provenienz der analogen Datenquelle (Print) leider nicht einsehen lässt.<br>
+</li>
+<li>Die Datenqualität der französischen Romane, die sich im entsprechenden Publikationsdatum frei verfügbar als EPUB auf <em>GoogleBooks</em> finden ließ, war sehr divers. Es wurden Werke nach der verfügbaren Qualität im Hinblick auf eine möglichst geringe OCR-Fehlerquote ausgewählt.<br>
+</li>
+<li><em>Frantext</em> enthält Primärtexte verschiedener Gattungen vom IX. bis XXI. Jahrhundert. Es wurden Texte verwendet, die den Kriterien Publikationsdatum 1751-1800, Gattung “roman” und Lizenz “licence libre” entsprechen. Das auf Frantext vorliegende TEI/XML enthält eine Vielzahl an linguistischen Annotationen, die mit Hilfe eines Skripts entfernt wurden.<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a><br>
+</li>
+<li><em>rousseauonline.ch</em> bietet Zugang zu allen Werken von Jean-Jacques Rousseau (1712-1778) in ihrer ersten Referenzausgabe. Die Texte sind online zum Lesen zugänglich und stehen zum kostenlosen Download als PDF oder EPUB zur Verfügung.<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></li>
+</ul>
+<p>In diesem Zusammenhang stellt XML (Extensible Markup Language) in Verbindung mit den Richtlinien der TEI (Text Encoding Initiative) ein geeignetes Format dar, um literarische Texte zu kodieren, zu organisieren und zu archivieren. Die TEI-Richtlinien bieten einen umfassenden Standard für die textuelle Kodierung und Beschreibung von literarischen Werken und ermöglichen es Forschenden, detaillierte Metadaten zu erfassen. Alle Input-Dateien wurden in TEI-konformes XML nach den Richtlinien der <em>Text Encoding Initiative</em> <span class="citation" data-cites="burnard_what_2014">(<a href="chapter6_stylometry.html#ref-burnard_what_2014" role="doc-biblioref">Burnard 2014</a>)</span> nach dem Schema der <em>European Literary Text Collection</em> (<em>ELTeC</em>) in Level1 kodiert <span class="citation" data-cites="lou_burnard_cost-eltecschemas_2019">(<a href="chapter6_stylometry.html#ref-lou_burnard_cost-eltecschemas_2019" role="doc-biblioref">Burnard / Odebrecht 2019</a>)</span>.</p>
+<p>Mit Hilfe eines Python-Skripts, das historische Verbformen und Schaft-S in den historischen Texten umwandelt, wurden die Texte auf der Grundlage der XML-TEI-Dateien zudem teilmodernisiert, normalisiert und als Plaintext extrahiert.<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a> Wie bereits erwähnt liegt als Vergleichshorizont der Daten eine nahezu vollständige Dokumentation der literarischen Produktion französischer fiktionaler Werke 1751-1800 in Form einer Bibliographie <span class="citation" data-cites="martin_bibliographie_1977">(<a href="chapter6_stylometry.html#ref-martin_bibliographie_1977" role="doc-biblioref">Martin / Mylne / Frautschi 1977</a>)</span> vor, die dank wissenschaftlicher Vorarbeiten digitalisiert in Form eines RDF-Graphen verwendet werden konnte <span class="citation" data-cites="luschow_bibliographie_2019">(<a href="chapter6_stylometry.html#ref-luschow_bibliographie_2019" role="doc-biblioref">Lüschow 2019</a>)</span>.</p>
+<p>Aufgrund der statistischen Merkmale dieser bibliographischen Daten habe ich mich hinsichtlich der Ausgewogenheit des Romankorpus den Proportionen in diesen Metadaten angenähert und Merkmale wie Genderverteilung oder Erstpublikationsdaten approximativ im Romankorpus abgebildet (<a href="#fig-gender" class="quarto-xref">Figure&nbsp;<span>1.8</span></a>).<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a> Die Angabe zum Geschlecht der Autor:innen ist nicht explizit in den Metadaten enthalten, wurde jedoch mithilfe der Python-Bibliothek gender-guesser ermittelt <span class="citation" data-cites="elmas_gender-guesser_2016">(<a href="chapter6_stylometry.html#ref-elmas_gender-guesser_2016" role="doc-biblioref">Elmas 2016</a>)</span>. Dazu wurden die Vornamen der Autor:innen mit dem gender-guesser in die Kategorien weiblich, männlich oder unbekannt eingeteilt. Zusätzliche domänenspezifische Begriffe wie “Madame”, “Comtesse”, “Baronne“oder “Abbé”, “Baron”, “Chevalier” wurden der Liste noch hinzugefügt.</p>
+<div id="fig-gender" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gender-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img_02/gender_proportion_without_unknown.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gender-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.8: Annäherung der Gender-Verteilung zur bekannten Romanproduktion aus den bibliographischen Metadaten (grün: weiblich/grau: männlich) beim Erstellen des Romankorpus (hellgrün: weiblich / hellgrau: männlich), Ansicht pro Dekade ohne ‘unknown’ Werte.
+</figcaption>
+</figure>
+</div>
+<p>Bei Abkürzungen wie “M*** C*** de L***”, die nicht eindeutig erkennbar männliche oder weibliche Vornamen oder sonstige Titel (Marquise, Abbé, Baron etc.) enthalten, ist die Kategorie “unbekannt“.</p>
+<p>Das Romankorpus wurde im Projekt fortlaufend um weitere erschlossene Quellen erweitert und ist somit kontinuierlich gewachsen, der Korpusaufbau ist Ende 2023 zum Abschluss gekommen. Das finale Korpus ist auf GitHub und Zenodo veröffentlicht und zusätzlich im Forschungsdatenrepositorium Romanistik auf Zenodo integriert <span class="citation" data-cites="rottgermann_collection_2021">(<a href="chapter6_stylometry.html#ref-rottgermann_collection_2021" role="doc-biblioref">Röttgermann 2021</a>)</span>. Das Korpus wurde auf Zenodo 2938 Mal betrachtet und 203 Mal heruntergeladen (Stand 10.9.2025), was davon zeugt, dass die Daten auch für externe Forschende von Interesse sind.</p>
+</section>
+</section>
+<section id="die-reichhaltigen-metadaten-der-bibliographie-du-genre-romanesque-als-statistische-grundlage-zur-ausbalancierung-des-korpus" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="die-reichhaltigen-metadaten-der-bibliographie-du-genre-romanesque-als-statistische-grundlage-zur-ausbalancierung-des-korpus"><span class="header-section-number">1.4</span> Die reichhaltigen Metadaten der «&nbsp;Bibliographie du genre romanesque&nbsp;» als statistische Grundlage zur Ausbalancierung des Korpus</h2>
+<p>Als Anspruch der quantitativen Ansätze der Digital Humanities kann es gesehen werden, über hohe Skalierungen an eingespeisten Daten ein gleichmäßiges, weniger auf den literarischen Kanon fokussiertes Analyseergebnis in der Betrachtung der literarischen Historiographie zu erzielen <span class="citation" data-cites="moretti_distant_2013">Cohen (<a href="chapter6_stylometry.html#ref-cohen_narratology_2009" role="doc-biblioref">2009</a>)</span>. Vielfach stellt sich jedoch die Herausforderung fehlender Metadaten zu diesem “Great Unread”<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a>.</p>
+<div id="fig-publ" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-publ-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img_02/publication_date.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publ-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.9: Auswertung der Metadaten
+</figcaption>
+</figure>
+</div>
+<p>Im Falle des vorliegenden Romankorpus wurden Angaben in <span class="citation" data-cites="martin_bibliographie_1977">(<a href="chapter6_stylometry.html#ref-martin_bibliographie_1977" role="doc-biblioref">Martin / Mylne / Frautschi 1977</a>)</span> zu Autor:innen, Titeln, Publikationskontext, Handlungsort, Diegese, Erzählform und Protagonisten formal modelliert und als Linked Open Data im RDF-Format bereitgestellt <span class="citation" data-cites="luschow_automatische_2020">(<a href="chapter6_stylometry.html#ref-luschow_automatische_2020" role="doc-biblioref">Lüschow 2020</a>)</span>.<br>
+Die so dokumentierte Romanproduktion dient als Grundlage für die systematische Zusammenstellung eines Korpus von rund 200 Romanen.<br>
+</p>
+<p>Ziel war es, die Romanproduktion mit Blick auf bestimmte Kriterien wie Erstpublikationsdatum, Anteile der dominanten Erzählformen und Geschlecht der Autor:innen pro Jahrzehnt als Sampling der Grundgesamtheit abzubilden. In <a href="#fig-publ" class="quarto-xref">Figure&nbsp;<span>1.9</span></a> zeigt sich, dass die bibliographischen Metadaten eine Zunahme der literarischen Produktion gegen Ende des Jahrhunderts erkennen lassen. Die Zahl der Romanveröffentlichungen schnellt hier sichtbar in die Höhe und auch eine entsprechende Regression zeigt einen statistisch signifikanten Zusammenhang.<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a> Basierend auf statistischen Merkmalen dieser Art lässt sich das Primärtextkorpus (Volltexte) entsprechend ausbalancieren.<br>
+Die Strategie besteht dabei darin, von der tatsächlichen Grundgesamtheit der literarischen Produktion auszugehen und davon ausgehend ein repräsentatives Volltextkorpus zu erstellen. Da zu Beginn der Korpuserstellung auch von bereits vorhandenem Textmaterial ausgegangen wurde und vollständig digitalisiert vorliegende erzählende Texte in das Korpus integriert wurden, kann angenommen werden, dass diese Texte eine hohe Anzahl kanonischer Werke enthält, da diese mit höherer Wahrscheinlichkeit vollständig digitalisiert vorliegen.<br>
+Eine zusätzliche Volltextdigitalisierung hingegen ergänzte das Korpus um weniger bekannte Werke aus der zweiten und dritten Reihe, mit dem Ziel auch weniger kanonisierte Werke zur Analyse der Literatur dieser Epoche als Quellen der datenbasierten Literaturgeschichtsschreibung heranzuziehen.</p>
+<div id="fig-metadaten" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-metadaten-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img_02/pubyear-decade.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-metadaten-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.10: Ausbalancierung des Korpus (corpus: grün) hinsichtlich des Erstpublikationsdatums anhand der Metadaten der <em>Bibliographie du genre romanesque français</em>, 1751-1800 (wikibase: orange)
+</figcaption>
+</figure>
+</div>
+<p>Das bedeutet für Aussagen aus diesen Daten, dass sie dem Anspruch genügen können, nicht nur auf den Werken, die auch in traditionellen Literaturgeschichten wieder und wieder erwähnt werden, zu fußen, sondern auch heute weniger bekannte Werke mit in die Analyse zu beziehen.</p>
+<p>Andererseits haben bedeutsame, herausragende und viel rezipierte Werke, in denen sich auch Typisches der Epoche kristallisieren kann ihre Berechtigung in den Literaturgeschichten, können jedoch nicht als repräsentativ für die gesamte literarische Produktion gelten.</p>
+<p>Es lassen sich, um ein Beispiel zu geben, aus einer Analyse, die alle Briefromane einer Zeit in Betracht zieht, beispielsweise größere Trends von Zunahmen und Abebben bestimmter narrativer Formen analysieren, eine Makroansicht, die die individuelle Analyse eines einzelnen Briefromans wie <em>Les liaisons dangereuses</em> nicht ermöglicht. Eine an Prototypen oder “Meisterwerken” orientierte Geschichtsschreibung kann durch quantitative Analysen nicht ersetzt, jedoch um eine weitere relevante, datafizierte Perspektive erweitert werden. Musterhafte Erkenntnisse aus dieser “Vogelperspektive” oder Betrachtung von Makrotrends im Graphen sind in Kapitel 3 beschrieben.</p>
+</section>
+<section id="scans-der-bibliothèque-nationale-de-france-und-das-open-source-tool-ocr4all-zur-erschließung-neuer-texte" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="scans-der-bibliothèque-nationale-de-france-und-das-open-source-tool-ocr4all-zur-erschließung-neuer-texte"><span class="header-section-number">1.5</span> Scans der <em>Bibliothèque nationale de France</em> und das Open-Source-Tool <em>OCR4all</em> zur Erschließung neuer Texte</h2>
+<p>Gängige kommerzielle Tools zur Optical Character Recognition (OCR) wie <em>ABBY Finereader</em> oder <em>Adobe Pro</em> erzielen zwar mittlerweile sehr gute Erfolgsraten bei modernen Drucken, bei historischen Drucken stellen sich jedoch viele Herausforderungen der automatischen Erkennung <span class="citation" data-cites="alex_digitised_2012">(<a href="chapter6_stylometry.html#ref-alex_digitised_2012" role="doc-biblioref">Alex et al. 2012</a>)</span>. In den verwendeten Quellen (Faksimile der französischen Nationalbibliothek aus dem 18. und 19. Jahrhundert) finden sich häufig Phänomene wie ein unregelmäßiges Druckbild, Schaft-S, unregelmäßige Buchstaben-Abstände usw.<br>
+Ein Team der Universität Würzburg am Lehrstuhl für Künstliche Intelligenz und Wissenssysteme hat ein semi-automatisches Open Source Tool zur Optical Character Recognition historischer Drucke entwickelt, das bei der Digitalisierung der Quellen eingesetzt wurde <span class="citation" data-cites="reul_ocr4all_2019">(<a href="chapter6_stylometry.html#ref-reul_ocr4all_2019" role="doc-biblioref">Reul et al. 2019</a>)</span>. Der Vorteil von <em>OCR4all</em> ist, dass das Tool auf historische Drucke spezialisiert ist und es ermöglicht, über die manuelle Eingabe von korrigierten Zeilen eine verfeinerte <em>Ground Truth</em> zu erstellen, mithilfe der das Modell weiter trainiert werden kann. Zudem kombiniert und vereint <em>OCR4all</em> OCR-Tools wie Larex oder Calamari <span class="citation" data-cites="reul_ocr4all_2019">(<a href="chapter6_stylometry.html#ref-reul_ocr4all_2019" role="doc-biblioref">Reul et al. 2019</a>)</span> in einer grafischen Benutzeroberfläche und bietet damit einen niedrigschwelligen Einstieg.<br>
+</p>
+<div id="fig-ocr4all" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ocr4all-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img_02/ocr4all_tiphaigne_amilec_s69_300dpi_sw.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ocr4all-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.11: Über die manuelle Eingabe von korrigierten Zeilen wird in OCR4all <span class="citation" data-cites="reul_ocr4all_2019">(<a href="chapter6_stylometry.html#ref-reul_ocr4all_2019" role="doc-biblioref">Reul et al. 2019</a>)</span> eine verfeinerte <em>Ground Truth</em> erstellt, mit der das Modell weiter trainiert werden kann.
+</figcaption>
+</figure>
+</div>
+<p>Voraussetzung für das Trainieren eines Modells mithilfe von <em>OCR4all</em> ist eine textgenaue Transkription als Trainingsgrundlage. Dazu wurde ein Subkorpus an Romanen mithilfe von Double Keying von einem Dienstleister in China erfasst. Beim Double-Keying Verfahren erfassen zwei Personen unabhängig voneinander die Textgrundlage. Gegebenenfalls auftretende Abweichungen lassen sich so leicht finden und korrigieren. Die Erfassung durch Nicht-Muttersprachler:innen hat zwei Vorteile: Es entsteht eine buchstabengenaue Repräsentation des Druckbildes. Zudem besteht die chinesische Schriftsprache aus sehr feingliedrigen Elementen, sodass auch eine kleinteilige Erfassung der erkannten französischen Buchstabenzeichen (zum Beispiel Diakritika) sichergestellt wird.<br>
+Mithilfe dieser sehr genauen Repräsentation des Druckbildes wurde in Kooperation mit Christian Reul am <em>Zentrum für Philologie und Digitalität “Kallimachos”</em> der Universität Würzburg ein OCR-Modell basierend auf diesen Drucken trainiert und in eine OCR4all-Instanz eingespeist. Anschließend wurde das Modell in Trier durch weitere <em>Ground Truth Production</em><a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a> verfeinert (weiter trainiert) und auf weitere Drucke angewendet.<br>
+Die Erkennungsraten von <em>OCR4all</em> für historische Drucke liegen deutlich über den Standard-OCR-Anwendungen <span class="citation" data-cites="reul_ocr4all_2019">(<a href="chapter6_stylometry.html#ref-reul_ocr4all_2019" role="doc-biblioref">Reul et al. 2019</a>)</span>, dennoch gab es einen Restbestand an OCR-Fehlern im Output, die anschließend manuell über den Spellcheck des Atom Editors korrigiert wurden.<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a> Nach diesen Vorarbeiten wurden die Texte mithilfe eines Python-Skriptes in TEI konformes XML umgewandelt.</p>
+</section>
+<section id="zielformat-markup-in-xml-nach-den-richtlinien-der-text-encoding-initiative-und-teilmodernisierter-plaintext" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="zielformat-markup-in-xml-nach-den-richtlinien-der-text-encoding-initiative-und-teilmodernisierter-plaintext"><span class="header-section-number">1.6</span> Zielformat: Markup in XML nach den Richtlinien der <em>Text Encoding Initiative</em> und teilmodernisierter Plaintext</h2>
+<p>Bereits 1987, zu einer Zeit, als auch das World Wide Web noch in seinen Kinderschuhen steckte, formierte sich eine Gruppe an Wissenschaftler:innen mit dem Ziel, sich auf eine einheitliche, maschinenlesbare Auszeichnung von Texten zu einigen: Die Geburtsstunde der <em>Text Encoding Initiative</em> (TEI). Die TEI bezeichnet nicht nur diese Organisation, sondern auch den daraus resultierenden Textstandard, der sich heute als <em>de facto Standard</em> der Repräsentation von Texten (aber auch Handschriften, Musiknoten usw.) in den digitalen Geisteswissenschaften durchgesetzt hat <span class="citation" data-cites="burnard_what_2014">(<a href="chapter6_stylometry.html#ref-burnard_what_2014" role="doc-biblioref">Burnard 2014</a>)</span>. TEI ermöglicht es, semantische Auszeichnung im Text vorzunehmen, beispielsweise Zitate, Sprache, Kapitelüberschriften und Ähnliches im Markup maschinenlesbar und einheitlich zu kodieren. Im sogenannten <em>teiHeader</em> werden Metadaten der digitalen und analogen Quellen und aller Bearbeitungsschritte und bearbeitenden Personen und publizierenden Institutionen detailliert festgehalten. TEI/XML-Dokumente müssen wohlgeformt und valide sein. In einem <em>RNG-File</em> wird definiert, nach welchem Schema das entsprechende Dokument valide ist.<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a><br>
+Alle Romane, die in das Primärtextkorpus aufgenommen wurden, wurden in TEI/XML umgewandelt. Lag die Ursprungsdatei im EPUB-Format vor, so ließ sich diese leicht strukturierte Auszeichnung mithilfe eines Skripts in TEI umwandeln<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a>. Das Schema, dem die Dateien entsprechen, ist Level-1 der «European Literary Text Collection» <span class="citation" data-cites="schoch_creating_2021">(<a href="chapter6_stylometry.html#ref-schoch_creating_2021" role="doc-biblioref">Schöch et al. 2021</a>)</span>. Die ELTeC Textsammlung beinhaltet Untersammlungen in 17 europäischen Sprachen, ausbalanciert nach bestimmten Kriterien der Repräsentativität<a href="#fn25" class="footnote-ref" id="fnref25" role="doc-noteref"><sup>25</sup></a> und kodiert in TEI/XML.<br>
+Für den Aufbau des Romankorpus fiel die Entscheidung aus mehreren Gründen für eine Enkodierung der Primärtexte in TEI/XML: Sie hängen alle eng mit den FAIR data Prinzipien von Auffindbarkeit, Zugänglichkeit, Interoperabilität und der Ermöglichung einer Nachnutzung der Ressourcen zusammen, die im folgenden Kapitel näher erläutert werden.<br>
+Neben dem Output-Format XML/TEI steht ein Python-Skript zur Verfügung, das aus den entsprechenden TEI-Elementen den Plaintext des Romans extrahiert und optional eine Normalisierung der historischen Schreibweisen vornimmt.<a href="#fn26" class="footnote-ref" id="fnref26" role="doc-noteref"><sup>26</sup></a> Die Normalisierung betrifft dabei vor allem historische Verbformen, Diakritika und Schaft-S.<br>
+Das Format Plaintext ist ein geeignetes Input-Format für Methoden wie Topic Modeling <span class="citation" data-cites="mccallum_mallet_2002">(<a href="chapter6_stylometry.html#ref-mccallum_mallet_2002" role="doc-biblioref">McCallum 2002</a>)</span>, Named Entity Recognition mit SpaCy <span class="citation" data-cites="honnibal_spacy_2017">(<a href="chapter6_stylometry.html#ref-honnibal_spacy_2017" role="doc-biblioref">Honnibal / Montani 2017</a>)</span> oder auch für Sentiment Analysis <span class="citation" data-cites="koncar_sentiment_2022">(<a href="chapter6_stylometry.html#ref-koncar_sentiment_2022" role="doc-biblioref">Koncar et al. 2022</a>)</span> - dies alles sind Methoden, die im Verlauf der Arbeit relevant sind.</p>
+<p><strong>Metadaten zum Text, zur Autorschaft und zur Verarbeitung</strong></p>
+<p>Im teiHeader der XML-Dateien werden zwei verschiedene Arten von Metadaten vorgehalten: deskriptive Metadaten und administrative Metadaten.</p>
+<p><strong>Autorschaft</strong>: Bezüglich der Autorschaft der Romane werden folgende Informationen im teiHeader verzeichnet: Der volle Vor- und Nachname (//<em>titleStmt/author/</em>), der VIAF-Identifier (<em>//titleStmt/author/ref=‘viaf’])</em> der eine Disambiguierung über das MiMoText-Projekt hinausgehend ermöglicht, der Wikidata-Identifier (<em>//titleStmt/author/ref=‘wikidata’])</em>, der eine zusätzliche Normdaten-Verlinkung darstellt und soweit vorhanden, eine Genderangabe (<em>(//textDesc/keywords/term<span class="citation" data-cites="type">(<a href="chapter6_stylometry.html#ref-type" role="doc-biblioref"><strong>type?</strong></a>, =‘authorGnder xmlns’)</span>).</em></p>
+<p><strong>Text:</strong> Vergleichbar zu den Metadaten zu den Autor:innen, enthalten die Metadaten zum Text den vollen Titel <em>(//titleStmt/title]),</em> den entsprechenden Identifier aus der <em>, 1751-1800</em> <span class="citation" data-cites="martin_bibliographie_1977">(<a href="chapter6_stylometry.html#ref-martin_bibliographie_1977" role="doc-biblioref">Martin / Mylne / Frautschi 1977</a>)</span><em>(//titleStmt/title<span class="citation" data-cites="type">(<a href="chapter6_stylometry.html#ref-type" role="doc-biblioref"><strong>type?</strong></a>, =‘ref’)</span>),</em> der als Zahlenfolge als Anker für die in den bibliographischen Nachweissystemen enthaltenenen Daten fungiert. Diese Referenz linkt zu dem Werk und nicht zu einer spezifischen Expression oder Manifestation. Die Metadaten zum Text enthalten des weiteren Angaben zum Umfang in Wörtern <em>(//extent/measure<span class="citation" data-cites="unit">(<a href="chapter6_stylometry.html#ref-unit" role="doc-biblioref"><strong>unit?</strong></a>, =‘words’)</span>).</em> Die Quelle der digitalen Textausgabe wird angegeben <em>(//sourceDesc/bibl<span class="citation" data-cites="type">(<a href="chapter6_stylometry.html#ref-type" role="doc-biblioref"><strong>type?</strong></a>, =‘digital-source’)</span>)</em> und die Printausgabe <em>(//sourceDesc/bibl<span class="citation" data-cites="type">(<a href="chapter6_stylometry.html#ref-type" role="doc-biblioref"><strong>type?</strong></a>, =‘print-source’)</span>)</em> und erste Publikation des Textes <em>(//sourceDesc/bibl<span class="citation" data-cites="type">(<a href="chapter6_stylometry.html#ref-type" role="doc-biblioref"><strong>type?</strong></a>, =‘first-edition’)</span>)</em> spezifiziert.</p>
+<p><strong>Erzählform:</strong> Bezüglich der Erzählformen wurde ein Raster gewählt, das ausreichend grob ist, um eine überschaubare Anzahl an Parametern der Analyse zu bieten und ausreichend detailliert, um die verschiedenenen Muster an Erzählformen im französischen Roman der zweiten Hälfte des 18. Jahrhunderts abzudecken. Ein Kategoriensystem, das diesen Anforderungen entspricht, wurde von José Calvo Tello in <em>The Novel in the Spanish Silver Age</em> erstellt, das in Anlehnung daran für die Erzählformen-Einteilung der Romansammlung und auch in der gesamten MiMoTextBase verwendet wird <span class="citation" data-cites="calvo_tello_novel_2021">(<a href="chapter6_stylometry.html#ref-calvo_tello_novel_2021" role="doc-biblioref">Calvo Tello 2021</a>)</span>.<br>
+Die Kategorien, die gewählt wurden, sind: epistolary, heterodiegetic, autodiegetic, dialogue novel, mixed (<em>//textClass/keywords/term<span class="citation" data-cites="type">(<a href="chapter6_stylometry.html#ref-type" role="doc-biblioref"><strong>type?</strong></a>, =‘form’)</span></em>).</p>
+<p>Neben diesen deskriptiven Metadaten verzeichnet der teiHeader außerdem administrative Metadaten zum Projektkontext und zur Bearbeitung der Daten:</p>
+<p>Verantwortliche Personen für die Enkodierung oder Herausgeberschaft der TEI-Dokumente werden benannt (<em>//titleStmt/respStmt/resp</em>), größere Veränderungen bzw. die erstmalige Erstellung des Dokuments werden dokumentiert (<em>//revisionDesc</em>) und nicht zuletzt eine eindeutige Angabe des rechtlichen Status des Dokuments (<em>//publicationStmt/availability</em>), eine für die Nachnutzung relevante Angabe.</p>
+</section>
+<section id="die-bedeutung-der-fair-data-prinzipien-im-kontext-der-erstellung-der-datensammlung" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="die-bedeutung-der-fair-data-prinzipien-im-kontext-der-erstellung-der-datensammlung"><span class="header-section-number">1.7</span> Die Bedeutung der FAIR data Prinzipien im Kontext der Erstellung der Datensammlung</h2>
+<blockquote class="blockquote">
+<p>“There is an urgent need to improve the infrastructure supporting the reuse of scholarly data” <span class="citation" data-cites="wilkinson_fair_2016">(<a href="chapter6_stylometry.html#ref-wilkinson_fair_2016" role="doc-biblioref">Wilkinson et al. 2016</a>)</span></p>
+</blockquote>
+<p>Gemäß der <em>FAIR Data Principles</em> sollen Forschungsdaten «Findable, Accessible, Interoperable, and Re-usable», also auffindbar, zugänglich, interoperabel und nachnutzbar sein <span class="citation" data-cites="wilkinson_fair_2016">(<a href="chapter6_stylometry.html#ref-wilkinson_fair_2016" role="doc-biblioref">Wilkinson et al. 2016</a>)</span>. Sie sind entstanden aus dem Bedürfnis nach klar ausgezeichneten, gut auffindbaren und interoperabel aufbereiteten Daten, die eine Nachnutzung von Forschungsdaten ermöglichen.</p>
+<p>Auch in den Geisteswissenschaften nimmt die Bedeutung von großen Datenmengen und deren langfristige Sicherung eine zunehmend wichtige Rolle ein. Die <em>FAIR Data Principles</em><a href="#fn27" class="footnote-ref" id="fnref27" role="doc-noteref"><sup>27</sup></a> entwerfen eine Vision von klar ausgezeichneten, gut nachnutzbaren Forschungsdaten. Daten und Metadaten sollen mit Lizenzen und relevanten Attributen versehen werden und Referenzen zu weiteren Metadaten enthalten. Die Provenienz der Daten soll klar ausgezeichnet und persistente Identifier sollen vergeben werden.<br>
+Im Kontext der hier beschriebenen Datensammlung an französischen Romanen des 18. Jahrhunderts, die aus heterogenen Quellen (OCR4all Output, Wikisource EPUBs, Frantext XML etc.) in ein einheitliches TEI/XML-Schema konvertiert wurde, wurden die FAIR data Prinzipien beim Aufbau des Korpus mitgedacht: Die Daten werden im Repositorium GitHub veröffentlicht, das über die Funktionalität <em>Clone</em> eine lokale Kopie des entsprechenden Datensatzes ermöglicht und alle Versionierungen der Dateien dokumentiert. Zudem ist die Langzeitarchivierung der Forschungsdaten über GitHub-Releases auf Zenodo<a href="#fn28" class="footnote-ref" id="fnref28" role="doc-noteref"><sup>28</sup></a> gesichert.<br>
+Im teiHeader wurden zu jedem/jeder Autor:in einer Referenz-ID der als “Anker-Elemente” verwendeten Bibliographie <span class="citation" data-cites="martin_bibliographie_1977">(<a href="chapter6_stylometry.html#ref-martin_bibliographie_1977" role="doc-biblioref">Martin / Mylne / Frautschi 1977</a>)</span>, eine VIAF-ID, eine Wikidata-ID etc. hinterlegt. Hinter diesen Zahlenfolgen verbergen sich weitere Metadaten zu den entsprechenden Personenentitäten. Unter der Wikidata-ID Q448 findet man auf <a href="http://www.wikidata.org">www.wikidata.org</a> Denis Diderot, über den man über 90 verschiedensprachliche Wikipedia-Artikel einsehen kann, beispielsweise auch auf Bretonisch oder Catalanisch.</p>
+<div id="fig-diderot" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-diderot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img_02/diderot_wikidata_item.JPG" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-diderot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.12: Wikidata-item Q448 “Denis Diderot”
+</figcaption>
+</figure>
+</div>
+<p>Das Wikipedia-Schwesterprojekt <em>Wikidata</em> hingegen bereitet das Wissen der Wikipedia-Artikel für alle Sprachversionen einheitlich in strukturierter Form auf(<a href="#fig-diderot" class="quarto-xref">Figure&nbsp;<span>1.12</span></a>). Es lassen sich über die ID Q448 viele weitere Statements abrufen, beispielsweise die Zugehörigkeit zu bestimmten Strömungen (“Denis Diderot” -&gt;“movement”-&gt; “Encyclopédistes), über philosophische Einflüsse (“Denis Diderot” -&gt; “influenced by” -&gt; “Voltaire”), aber auch Statements über lizenzrechtliche Angaben (“Denis Diderot “ -&gt; “<a href="https://www.wikidata.org/wiki/Property:P7763">copyright status as a creator</a>” -&gt; “<a href="https://www.wikidata.org/wiki/Q71887839">copyrights on works have expired</a>”)<a href="#fn29" class="footnote-ref" id="fnref29" role="doc-noteref"><sup>29</sup></a>. Der teiHeader enthält somit Identifier zu weiteren relevanten Metadaten wie zu Wikidata, die als Datensammlung selbst ebenfalls den FAIR data Kriterien entsprechen <span class="citation" data-cites="jacobsen_wikidata_2018">(<a href="chapter6_stylometry.html#ref-jacobsen_wikidata_2018" role="doc-biblioref">Jacobsen et al. 2018</a>)</span>. In jedem TEI-Dokument (Roman) wird die Provenienz der Daten spezifiziert und eine freie Lizenz zur Verwendung der so erstellten Datensammlung angegeben, die eine rechtssichere Weiterverwendung der Datensammlung ermöglicht.</p>
+<p>Ziel ist es, unter Beachtung der FAIR data Kriterien und unter Berücksichtigung der statistischen Parameter aus den bibliographischen Metadaten, die die Romanproduktion der betrachteten Dekaden abdecken, eine relevante und repräsentative Sammlung des französischen Romans der zweiten Hälfte des 18. Jahrhunderts aufzubauen, die nicht nur für projektspezifische quantitativen Analysen genutzt wird, sondern auch allen interessierten Forschenden im freien Download zugänglich ist.</p>
+<section id="appendix-1-the-fair-guiding-principles-wilkinson-et-al.-2016" class="level3" data-number="1.7.1">
+<h3 data-number="1.7.1" class="anchored" data-anchor-id="appendix-1-the-fair-guiding-principles-wilkinson-et-al.-2016"><span class="header-section-number">1.7.1</span> Appendix 1: The FAIR Guiding Principles (Wilkinson et al.&nbsp;2016)</h3>
+<p><strong>To be Findable:</strong></p>
+<p>F1. (meta)data are assigned a globally unique and persistent identifier</p>
+<p>F2. data are described with rich metadata (defined by R1 below)</p>
+<p>F3. metadata clearly and explicitly include the identifier of the data it describes</p>
+<p>F4. (meta)data are registered or indexed in a searchable resource</p>
+<p><strong>To be Accessible:</strong></p>
+<p>A1. (meta)data are retrievable by their identifier using a standardized communications protocol</p>
+<p>A1.1 the protocol is open, free, and universally implementable</p>
+<p>A1.2 the protocol allows for an authentication and authorization procedure, where necessary</p>
+<p>A2. metadata are accessible, even when the data are no longer available</p>
+<p><strong>To be Interoperable:</strong></p>
+<p>I1. (meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.</p>
+<p>I2. (meta)data use vocabularies that follow FAIR principles</p>
+<p>I3. (meta)data include qualified references to other (meta)data</p>
+<p><strong>To be Reusable:</strong></p>
+<p>R1. meta(data) are richly described with a plurality of accurate and relevant attributes</p>
+<p>R1.1. (meta)data are released with a clear and accessible data usage license</p>
+<p>R1.2. (meta)data are associated with detailed provenance</p>
+<p>R1.3. (meta)data meet domain-relevant community standards</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-alex_digitised_2012" class="csl-entry" role="listitem">
+<strong>Alex, Beatrice</strong> / <strong>Grover, C.</strong> / <strong>Klein, Ewan</strong> / <strong>Tobin, R.</strong> (2012): <em>Digitised historical text: <span>Does</span> it have to be <span class="nocase">mediOCRe</span>?</em> in: <em>Proceedings of the 9th conference on the natural language processing</em>. Vienna: ÖGAL. 401–409.
+</div>
+<div id="ref-bachelard_nouvel_1968" class="csl-entry" role="listitem">
+<strong>Bachelard, Gaston</strong> (1968): <em>Le nouvel esprit scientifique 4</em>. (= Collection : <span>Nouvelle</span> encyclopédie philosophique) 10e édition Paris: Les Presses universitaires de France.
+</div>
+<div id="ref-biber_representativeness_1993" class="csl-entry" role="listitem">
+<strong>Biber, D.</strong> (1993): "Representativeness in <span>Corpus</span> <span>Design</span>", in: <em>Literary and Linguistic Computing</em> 8 (4): 243–257. <a href="https://doi.org/10.1093/llc/8.4.243">10.1093/llc/8.4.243</a>.
+</div>
+<div id="ref-blumenberg_lebenswelt_1963" class="csl-entry" role="listitem">
+<strong>Blumenberg, Hans</strong> (1963): <em>Lebenswelt und <span>Technisierung</span> unter <span>Aspekten</span> der <span>Phänomenologie</span> / <span>Hans</span> <span>Blumenberg</span></em>. (= Sguardi su la filosofia contemporanea 51) Torino: Ed. di Filosofia.
+</div>
+<div id="ref-bode_world_2018" class="csl-entry" role="listitem">
+<strong>Bode, Katherine</strong> (2018): <em>A <span>World</span> of <span>Fiction</span>: <span>Digital</span> <span>Collections</span> and the <span>Future</span> of <span>Literary</span> <span>History</span></em>. Illustrated Edition University of Michigan Press.
+</div>
+<div id="ref-burnard_what_2014" class="csl-entry" role="listitem">
+<strong>Burnard, Lou</strong> (2014): <em><a href="http://books.openedition.org/oep/426">What is the <span>Text</span> <span>Encoding</span> <span>Initiative</span>? : <span>How</span> to add intelligent markup to digital resources</a></em>. (= Encyclopédie numérique) Marseille: OpenEdition Press.
+</div>
+<div id="ref-lou_burnard_cost-eltecschemas_2019" class="csl-entry" role="listitem">
+<strong>Burnard, Lou</strong> / <strong>Odebrecht, Carolin</strong> (2019): <em><span>COST</span>-<span>ELTeC</span>/<span>Schemas</span>: level0 and level1 release</em>. Zenodo. <a href="https://zenodo.org/record/3490758">https://zenodo.org/record/3490758</a> [letzter Zugriff January 27, 2021].
+</div>
+<div id="ref-calvo_tello_novel_2021" class="csl-entry" role="listitem">
+<strong>Calvo Tello, José</strong> (2021): <em>The novel in the <span>Spanish</span> silver age: A digital analysis of genre using machine learning</em>. Bielefeld: transcript.
+</div>
+<div id="ref-cohen_narratology_2009" class="csl-entry" role="listitem">
+<strong>Cohen, Margaret</strong> (2009): "Narratology in the <span>Archive</span> of <span>Literature</span>", in: <em>Representations</em> 108 (1): 51–75. <a href="https://doi.org/10.1525/rep.2009.108.1.51">10.1525/rep.2009.108.1.51</a>.
+</div>
+<div id="ref-dalembert_encyclope_1751" class="csl-entry" role="listitem">
+<strong>D’Alembert, Jean Le Rond</strong> / <strong>Diderot, Denis</strong> (1751): <em><a href="https://fr.wikisource.org/wiki/Encyclop%C3%A9die,_ou_Dictionnaire_raisonn%C3%A9_des_sciences,_des_arts_et_des_m%C3%A9tiers">Encyclopédie, ou <span>Dictionnaire</span> raisonné des sciences, des arts et des métiers</a></em>.
+</div>
+<div id="ref-drucker_humanities_2011" class="csl-entry" role="listitem">
+<strong>Drucker, Johanna</strong> (2011): "Humanities <span>Approaches</span> to <span>Graphical</span> <span>Display</span>", in: <em>Digital Humanities Quarterly</em> 005 (1):
+</div>
+<div id="ref-elmas_gender-guesser_2016" class="csl-entry" role="listitem">
+<strong>Elmas, Ferhat</strong> (2016): <em>Gender-guesser</em>. <a href="https://github.com/lead-ratings/gender-guesser">https://github.com/lead-ratings/gender-guesser</a> [letzter Zugriff December 9, 2022].
+</div>
+<div id="ref-herrmann_korpusliteraturwissenschaft_2018" class="csl-entry" role="listitem">
+<strong>Herrmann, J. Berenike</strong> / <strong>Lauer, Gerhard</strong> (2018): "<a href="https://pub.uni-bielefeld.de/record/2955632">Korpusliteraturwissenschaft. <span>Zur</span> <span>Konzeption</span> und <span>Praxis</span> am <span>Beispiel</span> eines <span>Korpus</span> zur literarischen <span>Moderne</span></a>", in: <em>Osnabrücker Beiträge zur Sprachtheorie</em> (92): 127–156.
+</div>
+<div id="ref-heuser_mapping_2016" class="csl-entry" role="listitem">
+<strong>Heuser, Ryan</strong> / <strong>Algee-Hewitt, Mark</strong> / <strong>Lockhart, Annalise</strong> (2016): "Mapping the <span>Emotions</span> of <span>London</span> in <span>Fiction</span>, 1700–1900: <span>A</span> <span>Crowdsourcing</span> <span>Experiment</span>" in: <em>Literary <span>Mapping</span> in the <span>Digital</span> <span>Age</span></em>. London: Routledge.
+</div>
+<div id="ref-hirschmann_theoretische_2019" class="csl-entry" role="listitem">
+<strong>Hirschmann, Hagen</strong> (2019): "Theoretische <span>Grundlagen</span>" in: Hirschmann, Hagen (ed.): <em>Korpuslinguistik: <span>Eine</span> <span>Einführung</span></em>. Stuttgart: J.B. Metzler 1–18. <a href="https://doi.org/10.1007/978-3-476-05493-7_1">10.1007/978-3-476-05493-7_1</a>.
+</div>
+<div id="ref-honnibal_spacy_2017" class="csl-entry" role="listitem">
+<strong>Honnibal, Matthew</strong> / <strong>Montani, Ines</strong> (2017): <em><span class="nocase">spaCy</span> 2: <span>Natural</span> language understanding with <span>Bloom</span> embeddings, convolutional neural networks and incremental parsing</em>. <a href="https://spacy.io/usage/v2">https://spacy.io/usage/v2</a>.
+</div>
+<div id="ref-jacobsen_wikidata_2018" class="csl-entry" role="listitem">
+<strong>Jacobsen, Annika</strong> / <strong>Waagmeester, Andra</strong> / <strong>Kaliyaperumal, Rajaram</strong> / <strong>Stupp, Gregory S.</strong> / <strong>M. Schriml, Lynn</strong> / <strong>Thompson, Mark</strong> / <strong>I. Su, Andrew</strong> / <strong>Roos, Marco</strong> (2018): "Wikidata as an intuitive resource towards semantic data modeling in data <span>FAIRification</span>", <a href="https://doi.org/10.6084/m9.figshare.7415282.v2">10.6084/m9.figshare.7415282.v2</a>.
+</div>
+<div id="ref-koncar_sentiment_2022" class="csl-entry" role="listitem">
+<strong>Koncar, Philipp</strong> / <strong>Geiger, Bernhard</strong> / <strong>Glatz, Christina</strong> / <strong>Hobisch, Elisabeth</strong> / <strong>Saric, Sanja</strong> / <strong>Scholger, Martina</strong> / <strong>Völkl, Yvonne</strong> / <strong>Helic, Denis</strong> (2022): "A <span>Sentiment</span> <span>Analysis</span> <span>Tool</span> <span>Chain</span> for 18th <span>Century</span> <span>Periodicals</span>" in: <em>Fabrikation von <span>Erkenntnis</span>: <span>Experimente</span> in den <span>Digital</span> <span>Humanities</span></em>. Luxembourg <a href="https://doi.org/10.26298/EZPG-WK34">10.26298/EZPG-WK34</a>.
+</div>
+<div id="ref-levi_filling_2022" class="csl-entry" role="listitem">
+<strong>Levi, Amalia S.</strong> (2022): <em>Filling the <span>Gaps</span>: <span>Digital</span> <span>Humanities</span> as <span>Restorative</span> <span>Justice</span> <span></span> <span>Opening</span> <span>Keynote</span></em>. Potsdam. <a href="https://dhd2022.dig-hum.de/opening-keynote/index.html">https://dhd2022.dig-hum.de/opening-keynote/index.html</a> [letzter Zugriff August 29, 2025].
+</div>
+<div id="ref-luschow_bibliographie_2019" class="csl-entry" role="listitem">
+<strong>Lüschow, Andreas</strong> (2019): <em>Bibliographie du genre romanesque français, 1751-1800: <span>RDF</span> model [<span>Data</span> set]</em>. Trier: Trier University. <a href="http://doi.org/10.5281/zenodo.3401428">http://doi.org/10.5281/zenodo.3401428</a>.
+</div>
+<div id="ref-luschow_automatische_2020" class="csl-entry" role="listitem">
+<strong>Lüschow, Andreas</strong> (2020): <em><a href="https://doi.org/10.5281/zenodo.3666690">Automatische <span>Extraktion</span> und semantische <span>Modellierung</span> der <span>Einträge</span> einer <span>Bibliographie</span> französischsprachiger <span>Romane</span></a></em>. in: Schöch, Christof (ed.): <em>Spielräume: <span>Digital</span> <span>Humanities</span> zwischen <span>Modellierung</span> und <span>Interpretation</span>. <span>Konferenzabstracts</span></em>. Paderborn: DHd-Verband. 80–84.
+</div>
+<div id="ref-martin_bibliographie_1977" class="csl-entry" role="listitem">
+<strong>Martin, Angus</strong> / <strong>Mylne, Vivienne</strong> / <strong>Frautschi, Richard L.</strong> (1977): <em>Bibliographie du genre romanesque français, 1751-1800</em>. London: Mansell.
+</div>
+<div id="ref-mccallum_mallet_2002" class="csl-entry" role="listitem">
+<strong>McCallum, Andrew Kachites</strong> (2002): <em><span>MALLET</span>: <span>A</span> <span>Machine</span> <span>Learning</span> for <span>Language</span> <span>Toolkit</span></em>. <a href="http://mallet.cs.umass.edu">http://mallet.cs.umass.edu</a>.
+</div>
+<div id="ref-mcluhan_understanding_2003" class="csl-entry" role="listitem">
+<strong>McLuhan, Marshall</strong> / <strong>Gordon, W. Terrence</strong> (2003): <em>Understanding media: The extensions of man</em>. Critical ed Corte Madera, CA: Gingko Press.
+</div>
+<div id="ref-moretti_distant_2013" class="csl-entry" role="listitem">
+<strong>Moretti, Franco</strong> (2013): <em>Distant <span>Reading</span></em>. Verso Books.
+</div>
+<div id="ref-reul_ocr4all_2019" class="csl-entry" role="listitem">
+<strong>Reul, Christian</strong> et al. (2019): "<span>OCR4all</span> – <span>An</span> <span>Open</span>-<span>Source</span> <span>Tool</span> <span>Providing</span> a (<span>Semi</span>-)<span>Automatic</span> <span>OCR</span> <span>Workflow</span> for <span>Historical</span> <span>Printings</span>", in: <em>arXiv:1909.04032 [cs]</em>: <a href="https://doi.org/10.48550/arXiv.1909.04032">https://doi.org/10.48550/arXiv.1909.04032</a>.
+</div>
+<div id="ref-rottgermann_collection_2021" class="csl-entry" role="listitem">
+<strong>Röttgermann, Julia</strong> (ed.) (2021): "Collection de romans français du dix-huitième siècle (1750-1800) / <span>Eighteenth</span>-<span>Century</span> <span>French</span> <span>Novels</span> (1750-1800) [dataset]", in: <em>Release v0.2.0</em>: <a href="https://doi.org/10.5281/zenodo.5040855">10.5281/zenodo.5040855</a>.
+</div>
+<div id="ref-schoch_big_2016" class="csl-entry" role="listitem">
+<strong>Schöch, Christof</strong> (2016): <em>Big? <span>Smart</span>? <span>Clean</span>? <span>Messy</span>? <span>Data</span> in the <span>Humanities</span></em>. in: <em>The Dragonfly’s Gaze</em>. <a href="https://dragonfly.hypotheses.org/443">https://dragonfly.hypotheses.org/443</a> [letzter Zugriff June 25, 2020].
+</div>
+<div id="ref-schoch_aufbau_2017" class="csl-entry" role="listitem">
+<strong>Schöch, Christof</strong> (2017): "Aufbau von <span>Datensammlungen</span>" in: Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte (eds.): <em>Digital <span>Humanities</span>: <span>Eine</span> <span>Einführung</span></em>. Stuttgart: J.B. Metzler 223–233. <a href="https://doi.org/10.1007/978-3-476-05446-3_16">10.1007/978-3-476-05446-3_16</a>.
+</div>
+<div id="ref-schoch_creating_2021" class="csl-entry" role="listitem">
+<strong>Schöch, Christof</strong> / <strong>Patras, Roxana</strong> / <strong>Erjavec, Tomaž</strong> / <strong>Santos, Diana</strong> (2021): "Creating the <span>European</span> <span>Literary</span> <span>Text</span> <span>Collection</span> (<span>ELTeC</span>): <span>Challenges</span> and <span>Perspectives</span>", in: <em>Modern Languages Open</em> 1: 25. <a href="https://doi.org/10.3828/mlo.v0i0.364">10.3828/mlo.v0i0.364</a>.
+</div>
+<div id="ref-tillet_what_2005" class="csl-entry" role="listitem">
+<strong>Tillet, Barbara</strong> (2005): <em>What is <span>FRBR</span>? <span>A</span> <span>Conceptual</span> <span>Model</span> for the <span>Bibliographic</span> <span>Universe</span></em>. Library of Congress. <a href="https://www.loc.gov/cds/products/product.php?productID=86">https://www.loc.gov/cds/products/product.php?productID=86</a> [letzter Zugriff October 18, 2023].
+</div>
+<div id="ref-underwood_we_2013" class="csl-entry" role="listitem">
+<strong>Underwood, Ted</strong> (2013): <em>We don’t already understand the broad outlines of literary history.</em> in: <em>The Stone and the Shell</em>. <a href="https://tedunderwood.com/2013/02/08/we-dont-already-know-the-broad-outlines-of-literary-history/">https://tedunderwood.com/2013/02/08/we-dont-already-know-the-broad-outlines-of-literary-history/</a> [letzter Zugriff May 9, 2023].
+</div>
+<div id="ref-wilkinson_fair_2016" class="csl-entry" role="listitem">
+<strong>Wilkinson, Mark D.</strong> et al. (2016): "The <span>FAIR</span> <span>Guiding</span> <span>Principles</span> for scientific data management and stewardship", in: <em>Scientific Data</em> 3 (1): 160018. <a href="https://doi.org/10.1038/sdata.2016.18">10.1038/sdata.2016.18</a>.
+</div>
+</div>
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Zahl laut Selbstauskunft auf <a href="http://www.frantext.fr">www.frantext.fr</a>, <a href="https://www.frantext.fr/repository/frantext" class="uri">https://www.frantext.fr/repository/frantext</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://www.frantext.fr/repository/frantext/corpora" class="uri">https://www.frantext.fr/repository/frantext/corpora</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Es wurden bereits 100 Werke als Subkorpus zusammengestellt, die bereits im Repositorium von ELTeC gespeichert sind: <a href="https://distantreading.github.io/ELTeC/fra-ext2/index.html" class="uri">https://distantreading.github.io/ELTeC/fra-ext2/index.html</a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p><a href="https://distantreading.github.io/ELTeC/fra/index.html" class="uri">https://distantreading.github.io/ELTeC/fra/index.html</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p><a href="https://fr.wikisource.org/wiki/Cat%C3%A9gorie:Romans" class="uri">https://fr.wikisource.org/wiki/Cat%C3%A9gorie:Romans</a>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>“Naturellement, dès qu’on passe de l’observation à l’expérimentation, le caractère polémique de la connaissance devient plus net encore. Alors il faut que le phénomène soit trié, filtré, épuré, coulé dans le moule des instruments, produit sur le plan des instruments. Or les instruments ne sont que des théories matérialisées. Il en sort des phénomènes qui portent de toutes parts la marque théorique.” [<span class="citation" data-cites="bachelard_nouvel_1968">Bachelard (<a href="chapter6_stylometry.html#ref-bachelard_nouvel_1968" role="doc-biblioref">1968</a>)</span>; 15].<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>cf.&nbsp;auch dazu Hans Blumenbergs Ausführungen in <em>Lebenswelt und Technisierung</em>, der in Anlehnung an Husserl unterstreicht: “Die Technik ist primär nicht ein Reich bestimmter, aus menschlicher Aktivität hervorgegangener Gegenstände; sie ist in ihrer Ursprünglichkeit ein Zustand des menschlichen Weltverhältnisses selbst.” [<span class="citation" data-cites="blumenberg_lebenswelt_1963">Blumenberg (<a href="chapter6_stylometry.html#ref-blumenberg_lebenswelt_1963" role="doc-biblioref">1963</a>)</span>; 19].<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>“The medium is the message” means, in terms of the electronic age, that a totally new environment has been created [<span class="citation" data-cites="mcluhan_understanding_2003">McLuhan / Gordon (<a href="chapter6_stylometry.html#ref-mcluhan_understanding_2003" role="doc-biblioref">2003</a>)</span>; 13].<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>“Im fachwissenschaftlichen Sinne repräsentative, weil kriteriengeleitet und mit Bezug auf eine angenommene Grundgesamtheit gesampelte Korpora gibt es […] derzeit in der Literaturwissenschaft nur ansatzweise.” <span class="citation" data-cites="herrmann_korpusliteraturwissenschaft_2018">(<a href="chapter6_stylometry.html#ref-herrmann_korpusliteraturwissenschaft_2018" role="doc-biblioref">Herrmann / Lauer 2018: 130</a>)</span>.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Eine kritische Betrachtung, inwieweit die Auswahl eines Archivs auch von Imperialismus und Nationalismus getrieben sein kann, lieferte Amalia S. Levi in der Opening Keynote der DHd-Konferenz 2022 <span class="citation" data-cites="levi_filling_2022">(<a href="chapter6_stylometry.html#ref-levi_filling_2022" role="doc-biblioref">Levi 2022</a>)</span>.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>Die <em>HathiTrust Shared Digital Repository</em> startete zunächst als Backup von Google Books und wurde am 13. Oktober 2008 von einer Gruppe der größten amerikanischen Forschungsbibliotheken gegründet. In diesem gemeinsamen Projekt werden umfangreiche digitale Sammlungen von Büchern, sowohl Metadaten als auch Volltexte, archiviert und erhalten.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>Nicht mit in Betracht gezogen ist dabei, dass die Publikation als Druck sich im 18. Jahrhundert in Frankreich außerdem von der Zirkulation in Manuskriptform und von partieller Publikation in Zeitschriften unterscheidet. Da die verwendeten bibliographischen Metadaten nur von der geschlossenen Werkform ausgehen, bleiben diese Phänomene für die vorliegende Analyse leider unberücksichtigt.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>Ein Beispiel für einen alternativen Labeleintrag findet man im Graphen bei Item Q1429 mit <em>Lettres de deux amans, habitans d’une petite ville au pied des Alpes</em> &amp; <em>La nouvelle Héloi͏̈se</em> <a href="https://data.mimotext.uni-trier.de/wiki/Item:Q1429" class="uri">https://data.mimotext.uni-trier.de/wiki/Item:Q1429</a><a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>Das OCR-Modell liegt frei verfügbar auf GitHub: “Calamari models: 18th_century_french” , <a href="https://github.com/Calamari-OCR/calamari_models">https://github.com/Calamari-OCR/calamari_model</a>s.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p><a href="https://github.com/MiMoText/roman18/blob/master/Python-Scripts/Umwandlung_Frantext-Werke_in_TEI.py">https://github.com/MiMoText/roman18/blob/master/Python-Scripts/Umwandlung_Frantext-Werke_in_TEI.py</a>, 6.12.2022.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p><a href="https://www.rousseauonline.ch/" class="uri">https://www.rousseauonline.ch/</a>, 6.12.2022.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p><a href="https://github.com/MiMoText/roman18/tree/master/Python-Scripts/modernization%20and%20transformation%20to%20plaintext" class="uri">https://github.com/MiMoText/roman18/tree/master/Python-Scripts/modernization%20and%20transformation%20to%20plaintext</a>, 6.12.2022.<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p><a href="https://github.com/MiMoText/balance_novels" class="uri">https://github.com/MiMoText/balance_novels</a>.<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19"><p>Von Franco Moretti genutzter Begriff, der beschreibt, dass in der Literaturgeschichtsschreibung nur ein kleiner Prozentsatz von Werken als Referenz für literaturgeschichtliche Phänomene herangezogen wird, der als Spitze eines Eisbergs von “nicht gelesener” Literatur herausragt. Der Begriff geht zurück auf Margaret Cohen, die feststellt : “as soon as scholars start to work on the archive of forgotten literature, techniques of close reading come up short. Problems range from the simple lack of time critics have to read closely all the texts that make up the great unread to the failure of some of these texts to signify in fashions that are meaningful using the criteria of close, formal analysis.” <span class="citation" data-cites="cohen_narratology_2009">(<a href="chapter6_stylometry.html#ref-cohen_narratology_2009" role="doc-biblioref">Cohen 2009</a>)</span>.<a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn20"><p>Das entsprechende Python-Skript dazu gibt als Ergebnis p-value &lt; 0.05 mit einem Wert von<a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn21"><p><em>Bei der Ground Truth Production</em> in dem OCR-Tool <em>OCR4all</em> werden Trainingsdaten erstellt, indem händisch Zeile für Zeile das Faksimile transkribiert, bzw. die Transkription korrigiert wird. Darauf basierend wird durch Machine Learning ein Modell trainiert, das ein ähnlich geartetes Druckbild optimiert erkennen kann (<a href="#fig-ocr4all" class="quarto-xref">Figure&nbsp;<span>1.11</span></a>).<a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn22"><p>Es ist anzumerken, dass der genutzte Editor <em>Atom</em> mittlerweile nicht mehr weiterentwickelt wird (2023).<a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn23"><p>Das RNG-Schema für Eltec-1 ist hier einsehbar: <a href="https://github.com/MiMoText/roman18/blob/master/Schemas/eltec-1.rng" class="uri">https://github.com/MiMoText/roman18/blob/master/Schemas/eltec-1.rng</a>.<a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn24"><p>Entsprechende Skripte zur Wandlung von EPUB in TEI und zur automatischen Generierung des teiHeaders liegen hier: <a href="https://github.com/MiMoText/roman18/tree/master/Python-Scripts" class="uri">https://github.com/MiMoText/roman18/tree/master/Python-Scripts</a> .<a href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn25"><p>WG1, Cost Action CA16204. 2018. «Encoding Guidelines for the ELTeC: Level 1», <a href="https://distantreading.github.io/Schema/eltec-1.html" class="uri">https://distantreading.github.io/Schema/eltec-1.html</a>.<a href="#fnref25" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn26"><p>Entsprechende Skripte zur Wandlung von TEI in TXT sind hier zu finden: <a href="https://github.com/MiMoText/roman18/tree/master/Python-Scripts/modernization%20and%20transformation%20to%20plaintext" class="uri">https://github.com/MiMoText/roman18/tree/master/Python-Scripts/modernization%20and%20transformation%20to%20plaintext</a>.<a href="#fnref26" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn27"><ol start="19" type="a">
+<li>Appendix 1 für eine Übersicht der FAIR Principles.</li>
+</ol>
+<a href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn28"><p>Zenodo ist eine Open-Access-Plattform, finanziert von der Europäischen Kommission, die es Forscher:innen ermöglicht, wissenschaftliche Datensätze und andere Forschungsergebnisse zu teilen, zu archivieren und weltweit zugänglich zu machen, ggf. mit DOI (Digital Object Identifier) versehen.<a href="#fnref28" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn29"><p>Alle Statements lassen sich hier abrufen: «Denis Diderot (Q448)», <a href="https://www.wikidata.org/wiki/Q448" class="uri">https://www.wikidata.org/wiki/Q448</a>.<a href="#fnref29" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="Preface">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter3_themes.html" class="pagination-link" aria-label="Extraktion thematischer Statements">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Extraktion thematischer Statements</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

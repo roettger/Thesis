@@ -34,7 +34,10 @@ df_pct <- df_clean %>%
 # Long-Format für ggplot
 df_long <- df_pct %>%
   pivot_longer(cols = c("France", "Angleterre", "Pays_imaginaires"),
-               names_to = "Lieu", values_to = "Percent")
+               names_to = "Lieu", values_to = "Percent") %>%
+  # Label anpassen
+  mutate(Lieu = ifelse(Lieu == "Pays_imaginaires", "Pays imaginaires", Lieu))
+
 
 # Visualisierung mit facet_wrap
 ggplot(df_long, aes(x = year, y = Percent)) +
