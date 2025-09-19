@@ -49,7 +49,7 @@ ggplot(df_long, aes(x = year, y = Percent)) +
   geom_line(color = "steelblue", size = 1.2) +
   facet_wrap(~Lieu, ncol = 1) +
   labs(title = " ",
-       x = "Jahr", y = "Anteil (%)") +
+       x = "Jahr", y = "Anteil (%) an allen Orten") +
   theme_minimal() +
   theme(strip.text = element_text(size = 12, face = "bold"))
 
