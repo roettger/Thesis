@@ -3,11 +3,10 @@
 > The computer knows nothing about literary history: it models only the  evidence we give it.  
 > (Underwood 2019: 36\)
 
-Als der russische Literat Nikolaï Karamzine im August 1789 um 5 Uhr morgens in Lausanne aufbricht, hat er “la gaieté dans la coeur, l’*Héloïse* de Rousseau à la main”[^1]. In seinem Reisebericht schreibt er: “Vous devinez sans doute le but de ma promenade. Oui, mes amis, je voulais voir de mes propres yeux les lieux charmants où l’immortel Rousseau a mis en scène ses héros.” (Karamzine 2002: 880). Gegen 9 Uhr erreicht er Vevey, das Ziel seiner Reise. Ergriffen fühlt er sich den Protagonisten des Romans *Julie ou la Nouvelle Héloïse* (1761) nahe, denn er hat sich an den physischen, geographischen Ort der Handlung des Romans von Jean-Jacques Rousseau begeben: “Il faut que la beauté de ces lieux ait fait une profonde impression sur l’âme de Rousseau pour que ses tableaux fussent si exacts et en même temps si animés. En regardant bien, il me semblait reconnaître de loin l’esplanade qui avait eu tant d’attrait pour Saint-Preux. Ah\! mes amis, pourquoi faut-il que Julie n’ait jamais existé\!” (Karamzine 2002, 881).   
-	Auf seiner literarischen Pilgerreise[^2] begegnet er auch einem Bauern, der bereits das Phänomen zu kennen scheint, dass sich Lesende auf den geographischen Spuren der Orte des sentimentalen Romans begeben: ”Le cultivateur, en y voyant venir quelque nouveau curieux, lui dit avec un sourire narquois:  « Monsieur a sans doute lu la *Nouvelle Héloïse*. » (Karamzine 2002, 881). 
+Als der russische Literat Nikolaï Karamzine im August 1789 um 5 Uhr morgens in Lausanne aufbricht, hat er “la gaieté dans la coeur, l’*Héloïse* de Rousseau à la main”[^1]. In seinem Reisebericht schreibt er: “Vous devinez sans doute le but de ma promenade. Oui, mes amis, je voulais voir de mes propres yeux les lieux charmants où l’immortel Rousseau a mis en scène ses héros.” (Karamzine 2002: 880). Gegen 9 Uhr erreicht er Vevey, das Ziel seiner Reise (@fig-vevey). Ergriffen fühlt er sich den Protagonisten des Romans *Julie ou la Nouvelle Héloïse* (1761) nahe, denn er hat sich an den physischen, geographischen Ort der Handlung des Romans von Jean-Jacques Rousseau begeben: “Il faut que la beauté de ces lieux ait fait une profonde impression sur l’âme de Rousseau pour que ses tableaux fussent si exacts et en même temps si animés. En regardant bien, il me semblait reconnaître de loin l’esplanade qui avait eu tant d’attrait pour Saint-Preux. Ah\! mes amis, pourquoi faut-il que Julie n’ait jamais existé\!” (Karamzine 2002, 881).   
+Auf seiner literarischen Pilgerreise begegnet er auch einem Bauern, der bereits das Phänomen zu kennen scheint, dass sich Lesende auf den geographischen Spuren der Orte des sentimentalen Romans begeben: ”Le cultivateur, en y voyant venir quelque nouveau curieux, lui dit avec un sourire narquois:  « Monsieur a sans doute lu la *Nouvelle Héloïse*. » (Karamzine 2002, 881).[^2] 
 
-![][image1]  
-**Abb. 4.1** Vevey, Handlungsort von *Julie ou la Nouvelle Héloïse* (1761). 
+![Vevey, Handlungsort von *Julie ou la Nouvelle Héloïse* (1761).][img_04/vevey.jpg]{#fig-vevey}  
 
 Diese Begebenheit aus dem 18\. Jahrhundert ähnelt jener Sehnsucht, die sich auch heute noch findet, wenn sich Serienfans in die Gegend in New Jersey begeben, in der die Serie *The Sopranos* spielt oder sich Bewunderer der Kunst von Van Gogh nach Saint-Rémy-de-Provence begeben: an einem realen geographischen Ort möglichst eins mit einem Kunstwerk oder literarischen Werk zu sein, es an einem realen geographischen Ort quasi zu “erfühlen”. Ähnlich können wir dies im 18\. Jahrhundert für Bewunderer der *Nouvelle Héloïse* beobachten, die sich in Scharen nach Vevey begeben.[^3] 
 
@@ -270,8 +269,8 @@ Nun können die eigenen Personen-Daten (Autor:innen-Namen) mit Ortsdaten (Geburt
 ::: {.video}
 <video width="576" height="324" controls autoplay loop muted>
 <source src="media/birth_and-death_places_of_authors.mp4" type="video/mp4">
-Animation: Geburts- und Sterbeorte der Autor:innen des Korpus im Zeitverlauf.
 </video>
+
 :::
 
 Animation: Geburts- und Sterbeorte der Autor:innen des Korpus im Zeitverlauf, Video:   
