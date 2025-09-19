@@ -53,7 +53,7 @@ In einem nachgelagerten Schritt wurden die Ergebnisse der automatischen Extrakti
 
 In einem dritten Schritt wurden die extrahierten Ortsnamen mithilfe des Tools OpenRefine (@huynh_openrefine_2010) mit Entitäten auf Wikidata in einem teil-automatisierten Prozess gematched (@fig-openrefine). Dazu wurde zunächst ein Matching gegen die Wikidata-Kategorien: political entity (Q16562419) und human settlement(Q486972)getestet, ein Reconciliation-Prozess ohne gefilterte Kategorien zeigte jedoch die beste Trefferquote  und wurde im Weiteren angewandt. 
 
-![Reconciliation-Prozess mit Wikidata unter Nutzung von OpenRefine (@huynh_openrefine_2010).](img_04/NER_diderot_la_religieuse.PNG){#fig-openrefine}
+![Reconciliation-Prozess mit Wikidata unter Nutzung von OpenRefine (@huynh_openrefine_2010).](img_04/OpenRefine.PNG){#fig-openrefine}
 
 Die Extraktion der Ortsnamen und der Prozess der Reconciliation mit dem Wikidata Knowledge Graphen zeigte einige Herausforderungen, die sich unter den folgenden Kategorien subsumieren lassen: Ambiguität der Strings, Fiktionalität und Textebenen, Historizität der Ortsnamen.
 
@@ -72,7 +72,7 @@ Ryan Heuser und  Mark Algee-Hewitt stellten in ihrer Studie zu Ortsnamen in Lond
 Städte, Länder, Ortsnamen und Grenzen haben die Eigenschaft, historischem Wandel zu unterliegen. Die aus dem 18\. Jahrhundert stammenden Texte enthalten Ortsnamen, die auf Entitäten verweisen, die in ihrer heutigen geographischen Benennung abweichen. Ein Beispiel dafür ist der Handlungsort “Constantinople” aus Voltaires Werk *Candide* (1759), der dem heutigen Istanbul entspricht.  
  Im Wikidata-Knowledge Graphen ist die Historizität der Orte nicht systematisch modelliert, jedoch konnten für die extrahierten Ortsnamen adäquate Matches zugeordnet werden, die der Historizität der Orte gerecht werden. Als Beispiele seien hier das Wikidata-Item Q12060804 (Label: Isle de France), das von 1715 bis 1810 den Namen der Insel Mauritius bezeichnet oder Q16869 (Label: Constantinople, “appellation ancienne et historique de l'actuelle ville d'Istanbul en Turquie”) genannt. Es ist auf Wikidata zu beobachten, dass es auch bei einigen Datenobjekten der Orte eine Unterscheidung zwischen dem realweltlichen Ort (beispielweise “El dorado”[^11]) und dem Ort in Literatur und Kunst (mythischer Ort El dorado, @fig-dorado **[^12]**) zu finden ist. Grundsätzlich wurde jedoch beim Prozess des Matchings per OpenRefine auf die Unterscheidung zwischen dem fiktionalen Ort (z.B. fiktionales Paris in einem definierten Roman) und dem realweltlichen Ort (Wikidata-Datenobjekt Paris) verzichtet, da die Datenabdeckung auf Wikidata hierzu nicht ausgelegt ist
     
-![Wikidata-item Q192550, “El Dorado”, [https://www.wikidata.org/wiki/Q192550](https://www.wikidata.org/wiki/Q192550)](image_04/eldorado.jpg){#fig-dorado}
+![Wikidata-item Q192550, “El Dorado”, [https://www.wikidata.org/wiki/Q192550](https://www.wikidata.org/wiki/Q192550)](image_04/eldorado.JPG){#fig-dorado}
 
 Beim Prozess der Disambiguierung von Entity-Matches war eine manuelle Überarbeitung erforderlich, mit besonderem Augenmerk auf die Historizität und Fiktionalität der Texte. Das Ergebnis des Prozesses liegt als Liste im GitHub Repository Wikibase-Bot vor.[^13] 
 
@@ -123,66 +123,74 @@ Insgesamt können wir in den aggregierten Daten nach der Französischen Revoluti
 In Miriam Eliav-Feldons Worten ist Utopie “a presentation of a positive and possible alternative to the social reality, intended as a model to be emulated or aspired to” (Eliav-Feldon 1982\). In diesem Sinne ließe sich argumentieren, dass die politische Realität in Frankreich, als der utopische Gedanke von „Liberté, Égalité, Fraternité“ in der Französischen Revolution seinen Höhepunkt und seine Verwirklichung findet, möglicherweise einen Einfluss auf den Rückgang der imaginären Orte im französischen Aufklärungsroman hat.   
 Imaginäre Handlungsorte wie erfundene Staaten können als Vehikel für versteckte Kritik an der Monarchie oder der Kirche genutzt werden. Dieses “Verstecken” der Kritik scheint mit dem Voranschreiten der Dekaden in der zweiten Hälfte des Jahrhunderts abzunehmen. 
 
-Als weiterer Grund für den Rückgang des Handlungsortes der imaginären Orte kommt hinzu, dass Romane im 18\. Jahrhundert nicht nur an imaginären Orten spielen, sondern zunehmend als neue Spielart eine Versetzung der Handlung in zeitlicher Entfernung (in der Zukunft) zum Tragen kommt. *L'An deux mille quatre cent quarante, rêve s'il en fut jamais* (1771) von Louis-Sébastien Mercier gilt als erster utopischer französischer Roman, dessen Handlung in der Zeit und nicht im Ort versetzt ist (Trousson 2006: 89; Heyer 2006: 203). Diese Verschiebung von der Utopie im Raum hin zur Utopie in der Zeit lässt sich hier auch im diachronen Verlauf der Daten als Abnehmen des Handlungsortes “pays imaginaire” beobachten.
+Als weiterer Grund für den Rückgang des Handlungsortes der imaginären Orte kommt hinzu, dass Romane im 18\. Jahrhundert nicht nur an imaginären Orten spielen, sondern zunehmend als neue Spielart eine Versetzung der Handlung in zeitlicher Entfernung (in der Zukunft) zum Tragen kommt. *L'An deux mille quatre cent quarante, rêve s'il en fut jamais* (1771) von Louis-Sébastien Mercier gilt als erster utopischer französischer Roman, dessen Handlung in der Zeit und nicht im Ort versetzt ist (Trousson 2006: 89; Heyer 2006: 203). Diese Verschiebung von der Utopie im Raum hin zur Utopie in der Zeit könnte als weiterer Erklärungsansatz für das Abnehmen des Handlungsortes “pays imaginaire" herangezogen werden.
 
-## 4.4 Räumliche Konzepte in den Ergebnissen des Topic Modelings: Natur und *locus amoenus*
+## Räumliche Konzepte in den Ergebnissen des Topic Modelings: Natur und *locus amoenus*
 
 Im vorangegangenen Kapitel 3 wurde eine Information Extraction Pipeline vorgestellt, mit deren Hilfe sich aus den Primärtexten (Romanen) Topics extrahieren ließen.[^19] Dabei wurden als häufig vorkommenden Topics im französischen Roman der zweiten Hälfte des 18\. Jahrhunderts ‘amour’, ‘sentiment’, ‘deuil’, ‘nuit’, ‘famille’, ‘destin’, ‘vertu’, ‘voyage’ oder ‘philosophie’ für das Volltextkorpus (Röttgermann, 2023\) extrahiert. Aus der Topic Modeling Pipeline sind als semantische Cluster im Hinblick auf räumliche Konzepte auch zwei Topics von Interesse: das Topic ‘nature’ und das Topic ‘locus amoenus’, die im Folgenden näher betrachtet werden. 
 
-### 4.4.1 Natur 
+### Natur 
 
-Das mit dem Begriff ‘nature’ gelabelte Topic enthält Top Topicwörtern wie Wasser (“eau”), Erde (“terre”), Baum (“arbre”), Gebirge (“montagne”), Wald (“forêt”) und findet auch in den bibliographischen Metadaten eine Entsprechung im Themenkonzept ‘nature’.   
-![][image10]  
-**Abb. 4.8** Topic “nature”, https://data.mimotext.uni-trier.de/wiki/Item:Q4036.
+Das mit dem Begriff ‘nature’ gelabelte Topic enthält Top Topicwörtern wie Wasser (“eau”), Erde (“terre”), Baum (“arbre”), Gebirge (“montagne”), Wald (“forêt”) und findet auch in den bibliographischen Metadaten eine Entsprechung im Themenkonzept ‘nature’.
 
-Wie hat sich das Thema “Natur | nature | nature” in diachroner Betrachtung verändert? Eine SPAQRL-Query, die nach dem Erstpublikationsdatum und dem entsprechenden Themenkonzept “Natur | nature | nature” fragt, gibt hier Aufschluss: Als Ergebnis lässt sich erkennen, dass es \- relativ betrachtet-  einen Höhepunkt der Natur-Thematik im Jahr 1794 gibt.[^20]  
+![Topic “nature”, https://data.mimotext.uni-trier.de/wiki/Item:Q4036](img_04/topic_027_nature.png){#fig-topic-nature}
 
-![][image11]  
-**Abb 4.9**  SPARQL-Query: Thema Natur im Zeitverlauf,  https://tinyurl.com/2cf7c28x.
+Wie hat sich das Thema “Natur | nature | nature” in diachroner Betrachtung verändert? Eine SPAQRL-Query, die nach dem Erstpublikationsdatum und dem entsprechenden Themenkonzept “Natur | nature | nature” fragt, gibt hier Aufschluss: Als Ergebnis lässt sich erkennen, dass es \- relativ betrachtet-  einen Höhepunkt der Natur-Thematik im Jahr 1794 gibt (@fig-nature).[^20]  
 
 Das Themenkonzept “Natur” tritt beispielsweise mit Handlungsorten wie “Samarah” (Vathek, 1787), “Ile-de France”[^21] (Paul et Virginie, 1788), “Babylone” (La princesse de Babylone, 1768\) oder “cadre pastoral (Cévennes)” (Claris de Estelle, 1788\) gemeinsam auf. 
 
-Wie ist das thematische Konzept “Natur” im französischen Roman und in der französischen Gesellschaft des 18\. Jahrhundert einzuordnen? Neben Erde (‘terre’) fallen im extrahierten Topic die Dominanz von Bergen (‘montagne’, ‘rocher’) und Meer (‘eau’, ‘mer’, ‘bord’) auf (Abb. 4.8).  In der zweiten Hälfte des 18\. Jahrhunderts übt die Natur in Form von Gebirgen und Meeresküsten eine magische Anziehungskraft auf die westliche Elite aus, sowohl als Topos in Literatur und Malerei, als auch als physische Reise, sei es als wissenschaftliche Erkundungsreise oder als medizinische Kur (Briffaud 2021: 75–104). In der Kontemplation der Natur wird das göttliche Werk als Spektakel betrachtet und löst in den Betrachtenden das Gefühl des Erhabenen aus. Die Natur ist im 18\. Jahrhundert einerseits ein ästhetisches Objekt der Kontemplation, andererseits Objekt wissenschaftlicher Untersuchungen und wird zunehmend vermessen, kategorisiert und in Wissenssystemen aufgezeichnet. Carl von Linné (1707-1778) beispielsweise verzeichnet und benennt Pflanzen, Mineralien und Tiere in einer wissenschaftlichen Nomenklatur, die bis heute Gültigkeit hat.   
-Ein Beispiel für die Verbindung zwischen Gebirge und Erhabenem in Philosophie und Literatur des 18\. Jahrhunderts ist der *Essai sur les usages des montagnes* (1754) des schweizer Pfarrers und Naturwissenschaftlers Élie Bertrand. Wie er in diesem Essay schreibt,  sind die Berge einerseits als Objekt wissenschaftlicher Untersuchungen relevant (ihr Nutzen im Kreislauf des Wassers und der Winde), andererseits werden sie als ästhetisches Objekt der Kontemplation beschrieben: “Les montagnes ſont belles, indépendamment de leurs uſages.” (Bertrand 1754: 9). Im Makrokosmos der Natur sieht Bertrand ein Ebenbild des Mikrokosmos des menschlichen Körpers, er vergleicht beispielsweise das menschliche Knochengerüst mit den Bergen und Felsen, die der Erde Stabilität geben (Bertrand 1754: 14\).[^22]
+Wie ist das thematische Konzept “Natur” im französischen Roman und in der französischen Gesellschaft des 18\. Jahrhundert einzuordnen? Neben Erde (‘terre’) fallen im extrahierten Topic die Dominanz von Bergen (‘montagne’, ‘rocher’) und Meer (‘eau’, ‘mer’, ‘bord’) auf (Abb. 4.8).  In der zweiten Hälfte des 18\. Jahrhunderts übt die Natur in Form von Gebirgen und Meeresküsten eine magische Anziehungskraft auf die westliche Elite aus, sowohl als Topos in Literatur und Malerei, als auch als physische Reise, sei es als wissenschaftliche Erkundungsreise oder als medizinische Kur (Briffaud 2021: 75–104). In der Kontemplation der Natur wird das göttliche Werk als Spektakel betrachtet und löst in den Betrachtenden das Gefühl des Erhabenen aus. Die Natur ist im 18\. Jahrhundert einerseits ein ästhetisches Objekt der Kontemplation, andererseits Objekt wissenschaftlicher Untersuchungen und wird zunehmend vermessen, kategorisiert und in Wissenssystemen aufgezeichnet. Carl von Linné (1707-1778) beispielsweise verzeichnet und benennt Pflanzen, Mineralien und Tiere in einer wissenschaftlichen Nomenklatur, die bis heute Gültigkeit hat.
+
+![SPARQL-Query: Thema Natur im Zeitverlauf,  https://tinyurl.com/2cf7c28x](img_04/nature_as_narrative_place.png){#fig-nature}
+
+Ein Beispiel für die Verbindung zwischen Gebirge und Erhabenem in Philosophie und Literatur des 18\. Jahrhunderts ist der *Essai sur les usages des montagnes* (1754) des Schweizer Pfarrers und Naturwissenschaftlers Élie Bertrand. Wie er in diesem Essay schreibt,  sind die Berge einerseits als Objekt wissenschaftlicher Untersuchungen relevant (ihr Nutzen im Kreislauf des Wassers und der Winde), andererseits werden sie als ästhetisches Objekt der Kontemplation beschrieben: “Les montagnes ſont belles, indépendamment de leurs uſages.” (Bertrand 1754: 9). Im Makrokosmos der Natur sieht Bertrand ein Ebenbild des Mikrokosmos des menschlichen Körpers, er vergleicht beispielsweise das menschliche Knochengerüst mit den Bergen und Felsen, die der Erde Stabilität geben (Bertrand 1754: 14\).[^22]
 
 Auch Bernadin de Saint Pierre, der mit seinem in den Tropen spielenden Roman *Paul et Virginie* (1788) großen literarischen Erfolg hat, untersucht in *Harmonies de la Nature* (1815) die Interdependenzen aus göttlicher Harmonie in der Natur und menschlicher Seele. Die Natur, so Bernadin, ist immens, aber wohlgeordnet und von den Prinzipien der *bienfaisance* und *providence* geprägt. Dass es zu jeder Jahreszeit verschiedene Früchte gibt, die den Menschen nähren, oder dass es in unwirtlichen Landschaften wie in einer Sand- oder Eiswüste dennoch Pflanzen und Tiere gibt, die dem Menschen Schutz und Nahrung bieten, sieht er als göttliche Ordnung und Vorhersehung. Prinzipien wie die Symmetrie sind für ihn Belege für das wohlgeordnete Sein der Natur und als Hinweis auf ihren Schöpfer, Gott, zu verstehen.   
 Auch als “dernier des grands physico-théologiens des Lumières” (Briffaud 2021: 79\) bezeichnet, greift Bernadin de Saint-Pierre in seinem Roman *Paul et Virginie* das Bild der harmonischen Natur zusammen mit der Vision einer idealisierten natürlichen Gesellschaft auf.
 
 Zusammengefasst lässt sich sagen, dass der Natur im 18\. Jahrhundert die Rolle zukommt, einerseits Gegenstand von Erkundungsreisen und wissenschaftlichen Untersuchungen zu sein und gleichzeitig Katalysator von Gefühlen, Ausdruck einer kosmischen Verbundenheit und für einige Autor:innen und Philosoph:innen auch Ausdruck der göttlichen Ordnung und Schöpfung.   
 Wie die Datenanalyse zeigt, nimmt die Natur als Thema französischer Romane jedoch zur Jahrhundertwende hin rapide ab (Abb. 4.9).   
-Als weiteres Muster in den Daten ist komplementär erkennbar, dass auch der ländliche Raum als Handlungsort in Romanen im Verlauf der zweiten Hälfte des 18\. Jahrhunderts abnimmt (Abb. 4.10).   
-![][image12]  
-**Abb. 4.10** Ländlicher Raum als Handlungsort im Französischen Roman 1751-1800 [https://tinyurl.com/2baefmoo](https://tinyurl.com/2baefmoo). 
+Als weiteres Muster in den Daten ist komplementär erkennbar, dass auch der ländliche Raum als Handlungsort in Romanen im Verlauf der zweiten Hälfte des 18\. Jahrhunderts abnimmt (@fig-rural).
+
+![Ländlicher Raum als Handlungsort im Französischen Roman 1751-1800 [https://tinyurl.com/2baefmoo]](img_04/rural_area_french_novels.png){#fig-rural}  
 
 Entsprechend der Zunahme der Bedeutung des urbanen Raums in gesellschaftlicher, kultureller und politischer Hinsicht, insbesondere der Metropole Paris, nimmt im Roman hin zur Jahrhundertwende auch die Bedeutung des ländlichen Raums als Handlungsort ab.[^23] 
 
-### 4.4.2 Locus amoenus
+### Locus amoenus
 
-Ein weiteres aus dem Topic Modeling hervorgegangenes Topic, das im Kontext der Orte von Bedeutung ist, ist jenes des locus amoenus:   
-![][image13]  
-**Abb. 4.11** Topic „locus amoenus” / “Pastorale in der Literatur”, [https://data.mimotext.uni-trier.de/wiki/Item:Q3857](https://data.mimotext.uni-trier.de/wiki/Item:Q3857).
+Ein weiteres aus dem Topic Modeling hervorgegangenes Topic, das im Kontext der Orte von Bedeutung ist, ist jenes des locus amoenus: 
 
-Das aus den in der Wordcloud (Abb. 4.8) visualisierten Top Topic-Wörtern bestehende Topic mutet wie eine Beschreibung des locus amoenus an. Es enthält Top-Topic-Wörter wie Liebe („amour“),  schön (“beau”), Blume („fleur “), Hirte („berger“), Geliebter („amant“), singen („chanter“). Im Zuge des Labelings wurde es mit dem Label ‘locus amoenus’ und ‘Pastorale in der Literatur’ versehen. 
+![Topic „locus amoenus” / “Pastorale in der Literatur”, [https://data.mimotext.uni-trier.de/wiki/Item:Q3857](https://data.mimotext.uni-trier.de/wiki/Item:Q3857)](img_04/topic_006_locus_amoenus_pastorale_in_litterature.png){#fig-amoenus}  
 
-Wie Karin Peters es in „Arcadia Goes Overseas“ ausdrückt, ist es gewagt, die  Pastorale als Gattung zu bezeichnen, da die Pastorale “almost transgeneric qualities” habe [(Peters 2015, 90\)](https://www.zotero.org/google-docs/?broken=8uKKYM). Am Beispiel des Romans *Paul et Virginie* (1788) analysiert sie die Transformation des Pastoralen in den exotischen Diskurs und den Topos des „homme sauvage“.  In *Paul et Virginie* wurde der locus amoenus in exotische Kontexte verlagert, um neue narrative und thematische Dimensionen zu erkunden. 
+Das aus den in der Wordcloud (@fig-amoenus) visualisierten Top Topic-Wörtern bestehende Topic mutet wie eine Beschreibung des locus amoenus an. Es enthält Top-Topic-Wörter wie Liebe („amour“),  schön (“beau”), Blume („fleur “), Hirte („berger“), Geliebter („amant“), singen („chanter“). Im Zuge des Labelings wurde es mit dem Label ‘locus amoenus’ und ‘Pastorale in der Literatur’ versehen. 
+
+Wie Karin Peters es in „Arcadia Goes Overseas“ ausdrückt, ist es gewagt, die  Pastorale als Gattung zu bezeichnen, da die Pastorale “almost transgeneric qualities” habe [(Peters 2015, 90\)]. Am Beispiel des Romans *Paul et Virginie* (1788) analysiert sie die Transformation des Pastoralen in den exotischen Diskurs und den Topos des „homme sauvage“.  In *Paul et Virginie* wurde der locus amoenus in exotische Kontexte verlagert, um neue narrative und thematische Dimensionen zu erkunden. 
 
 Die Pastorale ist außerdem im Zusammenhang mit der *Querelle des Anciens et des Modernes* zu sehen [(Niderst 1987\)](https://www.zotero.org/google-docs/?broken=9hPYyM). Bei der *Querelle des Anciens et des Modernes* ging es um eine Grundsatzfrage: Sollen sich Literatur und Kunst am Ideal der Antike orientieren? Der locus amoenus, also der "liebliche Ort," spielte in diesem Zusammenhang eine zentrale Rolle. In der Literatur der Antike war der locus amoenus ein idealisierter, paradiesischer Ort, oft mit paradiesischen Landschaften, Blumen, Bäumen und einer harmonischen Natur. Dieser Ort wurde nicht nur als physischer Raum, sondern auch als metaphorischer Raum des Friedens und der Unschuld dargestellt. Im 18\. Jahrhundert, insbesondere im französischen Roman, wurde dieser Topos wiederbelebt und angepasst. Der locus amoenus in der pastoralen Literatur des 18\. Jahrhunderts repräsentierte die Ideale von Harmonie, Schönheit und natürlicher Ordnung, die die "Anciens" hochhielten.  
-Auf der anderen Seite sahen die "Modernes" die Notwendigkeit, die Literatur weiterzuentwickeln und sie an die zeitgenössischen Realitäten und Empfindungen anzupassen. Der traditionelle europäische Garten oder Hain wurde durch tropische Inseln und ferne Landschaften ersetzt, was den Diskurs über Natur und Zivilisation erweiterte und die pastoralen Ideale in ein neues Licht rückte.  
-![][image14]  
-**Abb. 4.12**  Handlungsorte kombiniert mit ‘locus amoenus’,  [https://tinyurl.com/2csassc2](https://tinyurl.com/2csassc2).
+Auf der anderen Seite sahen die "Modernes" die Notwendigkeit, die Literatur weiterzuentwickeln und sie an die zeitgenössischen Realitäten und Empfindungen anzupassen. Der traditionelle europäische Garten oder Hain wurde durch tropische Inseln und ferne Landschaften ersetzt, was den Diskurs über Natur und Zivilisation erweiterte und die pastoralen Ideale in ein neues Licht rückte.
+
+::: {.html}
+<iframe 
+  src="https://tinyurl.com/2csassc2" 
+  width="100%" 
+  height="600" 
+  style="border:1px solid #ccc;">
+</iframe>
+
+Handlungsorte kombiniert mit ‘locus amoenus’, [https://tinyurl.com/2csassc2](https://tinyurl.com/2csassc2).
 
 Mit welchen narrativen Orten ist der ‘locus amoenus’ im Graphen verknüpft?[^24] Die Pastorale tritt im Wissensgraphen zusammen mit einer Vielzahl von narrativen Orten auf: Paris (*Zoloé et ses deux acolythes*, 1800), „Frankreich“ (*Ma conversion*, 1783), Cevennen (*Claris de Estelle*, 1788\) oder Lyon (*Lettres de deux amans habitans de Lyon*, 1783). Man sieht jedoch auch in den Daten Landschaften fern Europas wie “Samarah” (*Vathek*, 1787), “Indes, aux temps des Fées” (*Mirza et Fatmé*, 1754), „cadre fantaisiste“ (*Naufrage des isles flotantes*, 1753\) oder “terre sainte” (*Ollivier*, 1763). Was das Ergebnis aus dem Graphen betrifft, so können wir in den 1780er Jahren im Vergleich zu den vorangegangenen Jahrzehnten eine moderate Zunahme von Romanen beobachten, die das Thema „Pastorale“ enthalten.[^25] 
 
 Die Kombination aus dem thematischen Konzept ‘locus amoenus’, hervorgegangen aus Topic Modeling, und Handlungsorten zeigt, dass die Pastorale einerseits in Europa, insbesondere in Griechenland, aber auch in Frankreich verortet ist; andererseits tropische Inseln und ferne exotische Landschaften in Kombination mit dem Konzept des ‘locus amoenus’ im Roman des 18\. Jahrhunderts auftauchen (Treemap, Abb. 4.12). 
 
-## 4.5 Publikationsorte 
+## Publikationsorte 
 
 Wo findet Aufklärung geographisch gesehen statt? Diese Frage ist auch im Zusammenhang mit den Wegen, die Druckerzeugnisse im 18\. Jahrhundert nehmen zu sehen, insbesondere die **Orte der Publikation** werden hier im Folgenden näher betrachtet. Die israelische Historikerin Fania Oz-Salzberge identifiziert die Metropolen von West- und Zentraleuropa “Paris, most famously, alongside Vienna, Milan, Naples, Edinburgh, and Berlin” als für die Aufklärung zentrale geographische Räume, auch im Hinblick auf Netzwerke von Autor:innen und Druckereien.    
 “Circulation grew thinner in eastern Europe, where writers linked to Enlightenment ideas were sparser, and readership more circumscribed. In North America, most notably in Philadelphia, authors and printers belonged to Enlightenment networks with strong European connections.”  
  (Oz-Salzberger 2011: 33\)**.**  
 Wie Oz-Salzberger zurecht anmerkt, sind die außer-europäischen Räume zwar als exotisierte Handlungsorte in der Literatur der europäischen Aufklärung präsent, jedoch nicht als gleichwertiger Dialogpartner. Welche Muster lassen sich in den Statements zu Publikationsorten feststellen?
 
-### 4.5.1 Muster in den Publikationsorten
+### Muster in den Publikationsorten
 
 Betrachten wir nun die Daten aus dem MiMoText Graphen zu Publikationsorten französischer Romane. Diese SPARQL-Query fragt nach den Publikationsorten in französischen Romanen 1751-1800: 
 
@@ -255,16 +263,13 @@ Anhand des Themas Schiffbruch im Korpus können wir nun umgekehrt untersuchen, m
 Dabei tauchen als häufige Orte abstrakte Orte wie (einsame) Insel (“desert island”) auf, aber auch konkrete geographisch präzise Bennungen wie Martinique, Normandie, Ägypten.
 
 Das mit dem Handlungsort “Orient” verknüpfte Themenkonzept “Wunder” können wir aufgreifen und umgekehrt fragen: Mit welchen narrativen Orten sind Romane verknüpft, die das Thema “Wunder” behandeln?  Wir können als Ergebnis Orte wie China, Italien, Ägypten, antikes Griechenland, römisches Reich, Mond, Neapel, Schweiz verzeichnen.  Bei den Ergebnissen fällt insgesamt auf, dass die Handlungsorte in räumlicher (Orient, Indien, China, Konstantinopel) oder zeitlicher Distanz (Römisches Reich, antikes Griechenland) liegen oder explizit als fiktive Orte gekennzeichnet sind (fiktive Insel, imaginäres Land).  
-Sowohl Ägypten, als auch China und das römische Reich sind im 18\. Jahrhundert wichtige Bezugspunkte für eine Diskussion der Moralphilosophie und gesellschaftlichen Ordnung. Ein Autor, der im 18\. Jahrhundert eine perfekte gesellschaftliche Ordnung demonstrieren wollte, verlagerte die Handlung nicht selten nach Ägypten, China oder in die römische Antike  (Tricoire 2023: 139).  
-![][image20]  
-**Abb. 4.21** An welchen Orten spielen Romane mit dem Thema “Wunder”? [https://tinyurl.com/2otrs29n](https://tinyurl.com/2otrs29n). 
+Sowohl Ägypten, als auch China und das römische Reich sind im 18\. Jahrhundert wichtige Bezugspunkte für eine Diskussion der Moralphilosophie und gesellschaftlichen Ordnung. Ein Autor, der im 18\. Jahrhundert eine perfekte gesellschaftliche Ordnung demonstrieren wollte, verlagerte die Handlung nicht selten nach Ägypten, China oder in die römische Antike  (Tricoire 2023: 139).
 
-**![][image21]**  
-**Abb. 4.21** Handlungsorte von Romanen mit dem Thema ‘Wunder’, TreeMap [https://tinyurl.com/2m5e7ncn](https://tinyurl.com/2m5e7ncn). 
+![An welchen Orten spielen Romane mit dem Thema “Wunder”? [https://tinyurl.com/2otrs29n](https://tinyurl.com/2otrs29n)](img_04/map_thema_wunder.JPG){#fig-map-wunder}  
 
-## 4.7 Exkurs: Erweiterung des Datensatzes mithilfe von 
+![Handlungsorte von Romanen mit dem Thema ‘Wunder’, TreeMap [https://tinyurl.com/2m5e7ncn](https://tinyurl.com/2m5e7ncn)](img_04/treemap-miracle.png){#fig-miracle}  
 
-## Federation und Nodegoat
+## Exkurs: Erweiterung des Datensatzes mithilfe von Federation und Nodegoat
 
 Abschließend sei noch in einem kleinen Use Case mit dem Tool Nodegoat demonstriert, wie sich mithilfe von Linked Open Data eigene Datensätze sinnvoll mit Ortsdaten ergänzen lassen. Dazu wurde der Datensatz aller 258 Autor:innen aus MiMoTextBase, die über ein Wikidata-Match verfügen, in Nodegoat (Bree / Kessels 2013\) eingespeist. Federation beinhaltet, sich die Verbindungspunkte zwischen Datensätzen zunutze zu machen, sodass sich im Idealfall Informationen komplementär zueinander fügen lassen (@fig-nodegoat).   
 
@@ -283,8 +288,7 @@ Nun können die eigenen Personen-Daten (Autor:innen-Namen) mit Ortsdaten (Geburt
 
 > Animation: Geburts- und Sterbeorte der Autor:innen des Korpus im Zeitverlauf
 
-Trotz der Verlegung des politischen Mittelpunkts nach Versailles durch Ludwig XIV. entwickelte sich Paris zur intellektuellen Hauptstadt Europas (Goodman 1994: 23–24). Die Visualisierung verdeutlicht, wie junge Schriftsteller und Schriftstellerinnen dieser Zeit aus der Provinz nach Paris strömten, in die Hauptstadt der ‘Republic of Letters’  und in die damals größte Stadt Europas.  
- 
+Trotz der Verlegung des politischen Mittelpunkts nach Versailles durch Ludwig XIV. entwickelte sich Paris zur intellektuellen Hauptstadt Europas (Goodman 1994: 23–24). Die Visualisierung verdeutlicht, wie junge Schriftsteller und Schriftstellerinnen dieser Zeit aus der Provinz nach Paris strömten, in die Hauptstadt der ‘Republic of Letters’  und in die damals größte Stadt Europas.   
 
 ## Resumé 
 
@@ -352,11 +356,21 @@ Andererseits wurde demonstriert, dass der Graph jedoch auch Handlungsorte wie �
 
 ## Appendix: SPARQL-Queries
 
-### Handlungsorte, referenziert durch Named Entity Recognition (https://tinyurl.com/28ehncth)
+### Handlungsorte, referenziert durch Named Entity Recognition
 
-```{=html}
-<p><iframe  style="width:100%;max-width:100%;height:450px" frameborder="0" allowfullscreen src="https://tinyurl.com/28ehncth" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></p>
-```
+[Handlungsorte, referenziert durch Named Entity Recognitiony](https://tinyurl.com/28ehncth)
+
+<div style="margin-top:1em; margin-bottom:2em;">
+  <iframe 
+    src="https://tinyurl.com/28ehncth" 
+    style="width:100%; height:500px; border:1px solid #ccc; border-radius:8px;" 
+    frameborder="0" 
+    allowfullscreen 
+    referrerpolicy="origin" 
+    sandbox="allow-scripts allow-same-origin allow-popups allow-forms">
+  </iframe>
+</div>
+
 [Handlungsort “imaginärer Ort”](https://tinyurl.com/2bgrpqvg)
 
 ```{=html}
