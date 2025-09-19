@@ -269,11 +269,12 @@ Nun können die eigenen Personen-Daten (Autor:innen-Namen) mit Ortsdaten (Geburt
 
 ::: {.video}
 <video width="576" height="324" controls autoplay loop muted>
-  <source src="media/birth_and-death_places_of_authors.mp4" type="video/mp4">
+<source src="media/birth_and-death_places_of_authors.mp4" type="video/mp4">
+Animation: Geburts- und Sterbeorte der Autor:innen des Korpus im Zeitverlauf.
 </video>
 :::
 
-**Abb.4.24** Animation: Geburts- und Sterbeorte der Autor:innen des Korpus im Zeitverlauf, Video:   
+Animation: Geburts- und Sterbeorte der Autor:innen des Korpus im Zeitverlauf, Video:   
  [https://raw.githubusercontent.com/roettger/Thesis/main/Chapter4/birth\_and-death\_places\_of\_authors.mp4](https://raw.githubusercontent.com/roettger/Thesis/main/Chapter4/birth_and-death_places_of_authors.mp4)
 
 Trotz der Verlegung des politischen Mittelpunkts nach Versailles durch Ludwig XIV. entwickelte sich Paris zur intellektuellen Hauptstadt Europas (Goodman 1994: 23–24). Die Visualisierung verdeutlicht, wie junge Schriftsteller und Schriftstellerinnen dieser Zeit aus der Provinz nach Paris strömten, in die Hauptstadt der ‘Republic of Letters’  und in die damals größte Stadt Europas.  

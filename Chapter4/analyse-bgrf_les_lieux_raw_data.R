@@ -14,7 +14,16 @@ df_clean <- df %>%
     year,
     France = `(a) France`,
     Angleterre = `(b) Angleterre`,
-    Pays_imaginaires = `(l) Pays imaginaires` )
+    Pays_imaginaires = `(l) Pays imaginaires`,
+    Allemagne = `(c) Allemagne`,
+    Italie =`(d) Italie`,
+    Espagne =`(e) Espagne`,
+    Grèce = `(f) Grèce`,
+    Autres_Europe = `(g) Autre pays d'Europe`,
+    Egypte = `(h) Egypte`,
+    Autres_Afrique =`(i) Autre pays d'Afrique`,
+    Amérique = `(j) Amérique`,
+    Orient = `(k)Orient`)
 
 # Sicherstellen, dass year numerisch ist
 df_clean$year <- as.numeric(df_clean$year)
@@ -22,7 +31,7 @@ df_clean$year <- as.numeric(df_clean$year)
 # Prozentwerte berechnen
 df_pct <- df_clean %>%
   rowwise() %>%
-  mutate(total = sum(c_across(c(France, Angleterre, Pays_imaginaires)), na.rm = TRUE)) %>%
+  mutate(total = sum(c_across(c(France, Angleterre, Pays_imaginaires, Allemagne, Italie, Espagne, Grèce, Autres_Europe, Egypte, Autres_Afrique, Amérique, Orient)), na.rm = TRUE)) %>%
   mutate(
     France = ifelse(total > 0, France / total * 100, 0),
     Angleterre = ifelse(total > 0, Angleterre / total * 100, 0),
