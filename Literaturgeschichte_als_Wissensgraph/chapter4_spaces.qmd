@@ -1,24 +1,26 @@
-# 4 Literarische Entitäten: Orte
+# Literarische Entitäten: Orte
 
 > The computer knows nothing about literary history: it models only the  evidence we give it.  
-> (Underwood 2019: 36\)
+> (@underwood_distant_2019, 36\)
 
-Als der russische Literat Nikolaï Karamzine im August 1789 um 5 Uhr morgens in Lausanne aufbricht, hat er “la gaieté dans la coeur, l’*Héloïse* de Rousseau à la main”[^1]. In seinem Reisebericht schreibt er: “Vous devinez sans doute le but de ma promenade. Oui, mes amis, je voulais voir de mes propres yeux les lieux charmants où l’immortel Rousseau a mis en scène ses héros.” (Karamzine 2002: 880). Gegen 9 Uhr erreicht er Vevey, das Ziel seiner Reise (@fig-vevey). Ergriffen fühlt er sich den Protagonisten des Romans *Julie ou la Nouvelle Héloïse* (1761) nahe, denn er hat sich an den physischen, geographischen Ort der Handlung des Romans von Jean-Jacques Rousseau begeben: “Il faut que la beauté de ces lieux ait fait une profonde impression sur l’âme de Rousseau pour que ses tableaux fussent si exacts et en même temps si animés. En regardant bien, il me semblait reconnaître de loin l’esplanade qui avait eu tant d’attrait pour Saint-Preux. Ah\! mes amis, pourquoi faut-il que Julie n’ait jamais existé\!” (Karamzine 2002, 881).   
-Auf seiner literarischen Pilgerreise begegnet er auch einem Bauern, der bereits das Phänomen zu kennen scheint, dass sich Lesende auf den geographischen Spuren der Orte des sentimentalen Romans begeben: ”Le cultivateur, en y voyant venir quelque nouveau curieux, lui dit avec un sourire narquois:  « Monsieur a sans doute lu la *Nouvelle Héloïse*. » (Karamzine 2002, 881).[^2] 
+Als der russische Literat Nikolaï Karamzine im August 1789 um 5 Uhr morgens in Lausanne aufbricht, hat er “la gaieté dans la coeur, l’*Héloïse* de Rousseau à la main”[^1]. In seinem Reisebericht schreibt er: “Vous devinez sans doute le but de ma promenade. Oui, mes amis, je voulais voir de mes propres yeux les lieux charmants où l’immortel Rousseau a mis en scène ses héros.” (@goulemot_voyage_2002, 880). Gegen 9 Uhr erreicht er Vevey, das Ziel seiner Reise (@fig-vevey). Ergriffen fühlt er sich den Protagonisten des Romans *Julie ou la Nouvelle Héloïse* (1761) nahe, denn er hat sich an den physischen, geographischen Ort der Handlung des Romans von Jean-Jacques Rousseau begeben: “Il faut que la beauté de ces lieux ait fait une profonde impression sur l’âme de Rousseau pour que ses tableaux fussent si exacts et en même temps si animés. En regardant bien, il me semblait reconnaître de loin l’esplanade qui avait eu tant d’attrait pour Saint-Preux. Ah\! mes amis, pourquoi faut-il que Julie n’ait jamais existé\!” (@goulemot_voyage_2002, 881).   
 
-![Vevey, Handlungsort von *Julie ou la Nouvelle Héloïse* (1761).][img_04/vevey.jpg]{#fig-vevey}  
+Auf seiner literarischen Pilgerreise begegnet er auch einem Bauern, der bereits das Phänomen zu kennen scheint, dass sich Lesende auf den geographischen Spuren der Orte des sentimentalen Romans begeben: ”Le cultivateur, en y voyant venir quelque nouveau curieux, lui dit avec un sourire narquois:  « Monsieur a sans doute lu la *Nouvelle Héloïse*. » (@goulemot_voyage_2002, 881).[^2] 
+
+![Vevey, Handlungsort von *Julie ou la Nouvelle Héloïse* (1761).](img_04/vevey.jpg){#fig-vevey}  
 
 Diese Begebenheit aus dem 18\. Jahrhundert ähnelt jener Sehnsucht, die sich auch heute noch findet, wenn sich Serienfans in die Gegend in New Jersey begeben, in der die Serie *The Sopranos* spielt oder sich Bewunderer der Kunst von Van Gogh nach Saint-Rémy-de-Provence begeben: an einem realen geographischen Ort möglichst eins mit einem Kunstwerk oder literarischen Werk zu sein, es an einem realen geographischen Ort quasi zu “erfühlen”. Ähnlich können wir dies im 18\. Jahrhundert für Bewunderer der *Nouvelle Héloïse* beobachten, die sich in Scharen nach Vevey begeben.[^3] 
 
-Wie Barbara Piatti bemerkt, müsste sich “die dichterische Phantasie an keinerlei physischen Raum halten und auch nicht an dessen geographische und topographische Gesetzmässigkeiten – und doch tut sie genau das sehr oft” (Piatti 2010, 7). Piatti beobachtet auch, dass es auf der Weltkarte der Literatur bestimmte Verdichtungspunkte sowie unberührte Flecken gibt.   
-Die Beziehungen zwischen Raum im literarischen Werk und Raum im realweltlichen physischen Sinne passioniert nicht nur die zeitgenössischen Lesenden des 18\. Jahrhunderts wie Karamzin, sondern ist auch im Kontext der digitalen Geisteswissenschaften und Möglichkeiten der digitalen Erfassung und Kartierung Gegenstand aktueller Forschung (Piatti 2017; Heuser / Algee-Hewitt / Lockhart 2016; Herrmann / Grisot 2022; Wilkens et al. 2024).    
+Wie Barbara Piatti bemerkt, müsste sich “die dichterische Phantasie an keinerlei physischen Raum halten und auch nicht an dessen geographische und topographische Gesetzmässigkeiten – und doch tut sie genau das sehr oft” (@piatti_auf_2010, 7). Piatti beobachtet auch, dass es auf der Weltkarte der Literatur bestimmte Verdichtungspunkte sowie unberührte Flecken gibt. Die Beziehungen zwischen Raum im literarischen Werk und Raum im realweltlichen physischen Sinne passioniert nicht nur die zeitgenössischen Lesenden des 18\. Jahrhunderts wie Karamzin, sondern ist auch im Kontext der digitalen Geisteswissenschaften und Möglichkeiten der digitalen Erfassung und Kartierung Gegenstand aktueller Forschung (@piatti_literary_2017, @heuser_mapping_2016, @herrmann_lieblingsgegenden_2022, @wilkens_small_2024).
+
 Raum und Zeit sind grundlegende Kategorien der Literatur und der literaturwissenschaftlichen Forschung.  Die Transgression von symbolischen Ortsgrenzen kann – wie im russischen Strukturalismus formuliert – Auslöser einer Handlungsabfolge sein, Orte können wie Kant es in Anbetracht von übermächtigen Naturphänomenen wie einem Gebirge oder Meer beschreibt mit dem Gefühl des Erhabenen verbunden sein.[^4]   
-In der Literaturgeschichte und Geschichtsschreibung spielen Orte und Räume eine wichtige Rolle – nicht zuletzt im Kontext des „spatial turn“ (Lafon 1997; Weber 2014; Frank 2009). In literarischen Werken sind insbesondere Handlungsorte relevant (Dennerlein 2009), es können aber auch Publikationsorte sowie weitere räumliche Dimensionen berücksichtigt werden [(Curran 2018; Burrows u. a. 2016\)](https://www.zotero.org/google-docs/?broken=yQhVII). Daher können entsprechende Informationen wohl als “literaturhistorisch relevant” gelten.    
-In der hier vorgeschlagenen Analyse wird ein Begriff von Entitäten des Ortes verwendet, der sowohl geographisch realweltlich vorhandene politische oder geographische Einheiten wie Paris als Publikationsort umfasst, als auch imaginäre Orte wie El Dorado als Handlungsort. Nicht behandelt wird ein umfassender Begriff des literarischen Raumes, der auch Entitäten wie eine Türschwelle, ein Boudoir etc. umfassen würde. Es gibt zwar Versuche diese maschinell zu erfassen [(Schumacher 2023\)](https://www.zotero.org/google-docs/?broken=KKZsjN), jedoch sind die Erkennungsraten der maschinellen Extraktion hier noch nicht vergleichbar mit Ergebnisraten einer maschinellen Named Entity Recognition von Ortsnamen. Zudem ist der literarische Raum in einer sehr breiten, umfassenden Definition weniger anschlussfähig an das Paradigma von Linked Open Data.
 
-## 4.1 Spatial Humanities
+In der Literaturgeschichte und Geschichtsschreibung spielen Orte und Räume eine wichtige Rolle – nicht zuletzt im Kontext des „spatial turn“ (Lafon 1997; Weber 2014; Frank 2009). In literarischen Werken sind insbesondere Handlungsorte relevant (Dennerlein 2009), es können aber auch Publikationsorte sowie weitere räumliche Dimensionen berücksichtigt werden [(Curran 2018; Burrows u. a. 2016\)]. Daher können entsprechende Informationen wohl als “literaturhistorisch relevant” gelten.    
+In der hier vorgeschlagenen Analyse wird ein Begriff von Entitäten des Ortes verwendet, der sowohl geographisch realweltlich vorhandene politische oder geographische Einheiten wie Paris als Publikationsort umfasst, als auch imaginäre Orte wie El Dorado als Handlungsort. Nicht behandelt wird ein umfassender Begriff des literarischen Raumes, der auch Entitäten wie eine Türschwelle, ein Boudoir etc. umfassen würde. Es gibt zwar Versuche diese maschinell zu erfassen [(Schumacher 2023\)], jedoch sind die Erkennungsraten der maschinellen Extraktion hier noch nicht vergleichbar mit Ergebnisraten einer maschinellen Named Entity Recognition von Ortsnamen. Zudem ist der literarische Raum in einer sehr breiten, umfassenden Definition weniger anschlussfähig an das Paradigma von Linked Open Data.
 
-Die Möglichkeit, mit digitalen Methoden in größeren Textsammlungen Ortsnamen zu identifizieren und quantitativ auszuwerten, eröffnete im Bereich der Digital Humanities ein weites Feld der Analysen von Beziehungen zwischen Geographie und Literatur (Bodenhamer 2015). Die Studien von Franco Moretti zu einem *Atlas of the European Novel* oder Barbara Piattis Projekt *A Literary Atlas of Europe* können dabei als wegweisend  betrachtet werden ([Moretti 1999](https://www.zotero.org/google-docs/?broken=1gBVjG); Piatti u. a. 2009\).[^5]   
+## Spatial Humanities
+
+Die Möglichkeit, mit digitalen Methoden in größeren Textsammlungen Ortsnamen zu identifizieren und quantitativ auszuwerten, eröffnete im Bereich der Digital Humanities ein weites Feld der Analysen von Beziehungen zwischen Geographie und Literatur (Bodenhamer 2015). Die Studien von Franco Moretti zu einem *Atlas of the European Novel* oder Barbara Piattis Projekt *A Literary Atlas of Europe* können dabei als wegweisend  betrachtet werden ([Moretti 1999]; Piatti u. a. 2009\).[^5]   
 Morettis Studie *Atlas of the European Novel,* erschienen als gedrucktes Buch, sieht Karten nicht als Metaphern, sondern als analytisches Tool: “geography is not an inert container, is not a box where cultural history ‘happens’, but an active force, that pervades the literary field and shapes it in depth.” (Moretti 1999b: 3). Laut Moretti gibt es dabei zwei Möglichkeiten: die Untersuchung von “*space in literature*” oder von “*literature in space*”, wobei beides auch gelegentlich überlappen kann (Moretti 1999b: 3\).[^6] Bei seinen Untersuchungen zu Romanen 1800-1900 verortet er beispielsweise die Herkunft der Bösewichte auf einer Landkarte; Frankreich zeigt sich hier als “epicentre of the world’s evils” im Roman des 19\. Jahrhunderts (Moretti 1999b: 30).   
 Inspiriert von Moretti arbeitet das interdisziplinäre Verbundprojekt von Partnern aus Schweiz, Deutschland und Tschechien *A Literary Atlas of Europe,* welches eine elektronische Datenbank aufbaute, die das literarisch-geographische System Europas dokumentiert: “What comes in sight is Europe’s (imaginary) space of literature, which has its own dimensions, which functions according to its own rules, but which is nevertheless anchored in the ‘reality’ of existing places and spaces.” (Piatti et al. 2009: 191). Es werden Regionen Europas sichtbar, die von einem dichten fiktionalen Layer besiedelt sind, aber auch spärlich vertretene Regionen im literarisch-geographischen Raum Europas.  Die Erfassung der Orte und Räume erfolgte in einer relationalen Datenbank.   
 Einen Schritt weiter als Piattis Projekt gehen Ryan Heuser, Mark Algee-Hewitt et al., wenn sie nicht nur die Handlungsorte erfassen und kartieren, sondern sie mit einer weiteren Variablen in Verbindung setzen: Emotionen. In ihrer Studie *Mapping the Emotions of London in Fiction, 1700–1900* extrahieren sie Ortsnamen und Emotionen aus literarischen Werken und analysieren so aufkommende Muster. So werden Orte, die mit Angst (Gefängnis, Berg) oder Glück (Kirche, Theater) korrelieren, sichtbar.   
@@ -34,7 +36,7 @@ Und abschließend: Welche *Espace autres* können wir im Graphen finden? Mit wel
 
 Im folgenden Unterkapitel soll dargestellt werden, wie Informationen zu räumlichen Entitäten aus diesen beiden Informationsquellen gewonnen und in einem Wissensnetzwerk basierend auf dem Linked Open Data (LOD)-Paradigma (Berners-Lee et al. 2006; Chiarcos / Pareja-Lora 2020\) kombiniert werden. Beispielhafte Anwendungsszenarien zeigen, auf welche Weise sich in dieser datenbasierten Herangehensweise Erkenntnisse über Handlungs- und Publikationsorte im französischen Roman 1751-1800 gewinnen lassen. 
 
-## 4.2 Methode: Extraktion von Ortsnamen aus der Primärliteratur durch *Named Entity Recognition* mit SpaCy 
+## Methode: Extraktion von Ortsnamen aus der Primärliteratur durch *Named Entity Recognition* mit SpaCy 
 
 *Named entity recognition* (NER) ist eine weit verbreitete algorithmische Methode der Informationsextraktion aus Texten, “to identify and segment named entities and classify or categorize them under various predefined classes” (Sarkar 2019: 536). Ziel der *named entity recognition* ist es, Entitäten, die Orte, Personen, Werke oder Organisationen bezeichnen, zu extrahieren. Der im Folgenden verwendete Algorithmus von SpaCy (Honnibal / Montani 2017\) enthält im französischen Sprachpaket folgende Entitäten, von denen die LOC (location) Entitäten als Kategorie ausgewählt wurden.
 
@@ -43,15 +45,15 @@ Im folgenden Unterkapitel soll dargestellt werden, wie Informationen zu räumlic
 * ORG: Organisation  
 * MISC: Miscellaneous
 
-![][image2]  
-**Abb. 4.2** Auszug aus Diderots Roman *La Religieuse* (1792) mit Entitäten, die von SpaCy getaggt wurden. Darstellung mit dem Visualisierungs-Paket displacy. 
+![Auszug aus Diderots Roman *La Religieuse* (1792) mit Entitäten, die von SpaCy getaggt wurden. Darstellung mit dem Visualisierungs-Paket displacy.](img_04/NER_diderot_la_religieuse.PNG){#fig-displacy} 
 
-Als Input der Pipeline zur Ortsnamenerkennung dient die bereits in Kapitel II beschriebene Romansammlung “Collection de romans français du dix-huitième siècle” (Röttgermann 2021), welches im Plaintextformat eingespeist wurde.  Mithilfe der Named Entity Recognition (NER) Pipeline von SpaCy mit dem größten verfügbaren französischen Sprachpaket fr core news lg[^7], wurden alle Entitäten, die als Orte identifiziert wurden (mit dem Label “LOC” gekennzeichnet), sowie die Anzahl an Erwähnungen der Ortsnamen im Text extrahiert.[^8] Als Grundlage für Statements zu den häufigsten in den Primärtexten enthaltenen Orten wurde als Schwelle fünf festgelegt, mit dem Ziel, eine zur Quelle der bibliographischen Metadaten vergleichbare Anzahl an Orten pro Roman zu erhalten.   
-In einem nachgelagerten Schritt wurden die Ergebnisse der automatischen Extraktion manuell überprüft und gegebenenfalls “false positives” entfernt. “False negatives” wurden nicht ergänzt.  Häufige Verwechslungen zeigten sich bei Figuren- und Ortsnamen. Der String ‘Vénus’ kommt beispielsweise als Handlungsort, aber auch als Figur vor.[^9] Da die in den bibliographischen Daten (Martin / Mylne / Frautschi 1977\) vorliegenden bibliographischen Metadaten nicht nur Handlungsorte, sondern auch die Figurennamen der Hauptprotagonisten pro literarischen Text enthalten, diente diese Information als zusätzliche Abgleichmöglichkeit zur Erkennung von ‘false  positives’.   
-In einem dritten Schritt wurden die extrahierten Ortsnamen mithilfe des Tools OpenRefine (Huynh 2010\) mit Entitäten auf Wikidata in einem teil-automatisierten Prozess gematched. Dazu wurde zunächst ein Matching gegen die Wikidata-Kategorien: political entity (Q16562419) und human settlement(Q486972)getestet, ein Reconciliation-Prozess ohne gefilterte Kategorien zeigte jedoch die beste Trefferquote  und wurde im Weiteren angewandt. 
+Als Input der Pipeline zur Ortsnamenerkennung dient die bereits in Kapitel II beschriebene Romansammlung “Collection de romans français du dix-huitième siècle” (@rottgermann_collection_2021), welches im Plaintextformat eingespeist wurde.  Mithilfe der Named Entity Recognition (NER) Pipeline von SpaCy mit dem größten verfügbaren französischen Sprachpaket fr core news lg[^7], wurden alle Entitäten, die als Orte identifiziert wurden (mit dem Label “LOC” gekennzeichnet), sowie die Anzahl an Erwähnungen der Ortsnamen im Text extrahiert.[^8] Als Grundlage für Statements zu den häufigsten in den Primärtexten enthaltenen Orten wurde als Schwelle fünf festgelegt, mit dem Ziel, eine zur Quelle der bibliographischen Metadaten vergleichbare Anzahl an Orten pro Roman zu erhalten.
 
-![][image3]  
-**Abb. 4.3** Reconciliation-Prozess mit Wikidata unter Nutzung von OpenRefine (Huynh 2010). 
+In einem nachgelagerten Schritt wurden die Ergebnisse der automatischen Extraktion manuell überprüft und gegebenenfalls “false positives” entfernt. “False negatives” wurden nicht ergänzt.  Häufige Verwechslungen zeigten sich bei Figuren- und Ortsnamen. Der String ‘Vénus’ kommt beispielsweise als Handlungsort, aber auch als Figur vor.[^9] Da die in den bibliographischen Daten (Martin / Mylne / Frautschi 1977\) vorliegenden bibliographischen Metadaten nicht nur Handlungsorte, sondern auch die Figurennamen der Hauptprotagonisten pro literarischen Text enthalten, diente diese Information als zusätzliche Abgleichmöglichkeit zur Erkennung von ‘false  positives’.
+
+In einem dritten Schritt wurden die extrahierten Ortsnamen mithilfe des Tools OpenRefine (@huynh_openrefine_2010) mit Entitäten auf Wikidata in einem teil-automatisierten Prozess gematched (@fig-openrefine). Dazu wurde zunächst ein Matching gegen die Wikidata-Kategorien: political entity (Q16562419) und human settlement(Q486972)getestet, ein Reconciliation-Prozess ohne gefilterte Kategorien zeigte jedoch die beste Trefferquote  und wurde im Weiteren angewandt. 
+
+![Reconciliation-Prozess mit Wikidata unter Nutzung von OpenRefine (@huynh_openrefine_2010).](img_04/NER_diderot_la_religieuse.PNG){#fig-openrefine}
 
 Die Extraktion der Ortsnamen und der Prozess der Reconciliation mit dem Wikidata Knowledge Graphen zeigte einige Herausforderungen, die sich unter den folgenden Kategorien subsumieren lassen: Ambiguität der Strings, Fiktionalität und Textebenen, Historizität der Ortsnamen.
 
@@ -68,18 +70,25 @@ Ryan Heuser und  Mark Algee-Hewitt stellten in ihrer Studie zu Ortsnamen in Lond
 3) Historizität
 
 Städte, Länder, Ortsnamen und Grenzen haben die Eigenschaft, historischem Wandel zu unterliegen. Die aus dem 18\. Jahrhundert stammenden Texte enthalten Ortsnamen, die auf Entitäten verweisen, die in ihrer heutigen geographischen Benennung abweichen. Ein Beispiel dafür ist der Handlungsort “Constantinople” aus Voltaires Werk *Candide* (1759), der dem heutigen Istanbul entspricht.  
- Im Wikidata-Knowledge Graphen ist die Historizität der Orte nicht systematisch modelliert, jedoch konnten für die extrahierten Ortsnamen adäquate Matches zugeordnet werden, die der Historizität der Orte gerecht werden. Als Beispiele seien hier das Wikidata-Item Q12060804 (Label: Isle de France), das von 1715 bis 1810 den Namen der Insel Mauritius bezeichnet oder Q16869 (Label: Constantinople, “appellation ancienne et historique de l'actuelle ville d'Istanbul en Turquie”) genannt. Es ist auf Wikidata zu beobachten, dass es auch bei einigen Datenobjekten der Orte eine Unterscheidung zwischen dem realweltlichen Ort (beispielweise “El dorado”[^11]) und dem Ort in Literatur und Kunst (mythischer Ort El dorado **[^12]**) zu finden ist. Grundsätzlich wurde jedoch beim Prozess des Matchings per OpenRefine auf die Unterscheidung zwischen dem fiktionalen Ort (z.B. fiktionales Paris in einem definierten Roman) und dem realweltlichen Ort (Wikidata-Datenobjekt Paris) verzichtet, da die Datenabdeckung auf Wikidata hierzu nicht ausgelegt ist.   
-![][image4]  
-**Abb. 4.4** Wikidata-item Q192550, “El Dorado”, [https://www.wikidata.org/wiki/Q192550](https://www.wikidata.org/wiki/Q192550). 
+ Im Wikidata-Knowledge Graphen ist die Historizität der Orte nicht systematisch modelliert, jedoch konnten für die extrahierten Ortsnamen adäquate Matches zugeordnet werden, die der Historizität der Orte gerecht werden. Als Beispiele seien hier das Wikidata-Item Q12060804 (Label: Isle de France), das von 1715 bis 1810 den Namen der Insel Mauritius bezeichnet oder Q16869 (Label: Constantinople, “appellation ancienne et historique de l'actuelle ville d'Istanbul en Turquie”) genannt. Es ist auf Wikidata zu beobachten, dass es auch bei einigen Datenobjekten der Orte eine Unterscheidung zwischen dem realweltlichen Ort (beispielweise “El dorado”[^11]) und dem Ort in Literatur und Kunst (mythischer Ort El dorado, @fig-dorado **[^12]**) zu finden ist. Grundsätzlich wurde jedoch beim Prozess des Matchings per OpenRefine auf die Unterscheidung zwischen dem fiktionalen Ort (z.B. fiktionales Paris in einem definierten Roman) und dem realweltlichen Ort (Wikidata-Datenobjekt Paris) verzichtet, da die Datenabdeckung auf Wikidata hierzu nicht ausgelegt ist
+    
+![Wikidata-item Q192550, “El Dorado”, [https://www.wikidata.org/wiki/Q192550](https://www.wikidata.org/wiki/Q192550)](image_04/eldorado.jpg){#fig-dorado}
 
-Beim Prozess der Disambiguierung von Entity-Matches war eine manuelle Überarbeitung erforderlich, mit besonderem Augenmerk auf die Historizität und Fiktionalität der Texte. Das Ergebnis des Prozesses liegt als Liste im MiMoText Repository Wikibase-Bot vor.[^13] 
+Beim Prozess der Disambiguierung von Entity-Matches war eine manuelle Überarbeitung erforderlich, mit besonderem Augenmerk auf die Historizität und Fiktionalität der Texte. Das Ergebnis des Prozesses liegt als Liste im GitHub Repository Wikibase-Bot vor.[^13] 
 
 Die vereinheitlichte Verwendung des Ortsvokabulars und das Mapping auf Wikidata Entitäten ermöglichen es, heterogene Daten über Informationsquellen hinweg vergleichbar zu machen und hinsichtlich der Orte auf Properties des Wikidata Knowledge Graphen zurückzugreifen.
 
-![][image5]  
-**Abb. 4.5A** Überblick über die 20 häufigsten Handlungsorte von etwa 1700 französischen Aufklärungsromanen, [https://tinyurl.com/2bv9cdln](https://tinyurl.com/2bv9cdln).   
-**![][image6]**  
-**Abb. 4.5B** Überblick über die 20 häufigsten Handlungsorte laut Named Entity Recognition, [https://tinyurl.com/28ehncth](https://tinyurl.com/28ehncth).
+[Überblick über die 20 häufigsten Handlungsorte von etwa 1700 französischen Aufklärungsromanen](https://tinyurl.com/2bv9cdln)
+
+```{=html}
+<p><iframe  style="width:100%;max-width:100%;height:450px" frameborder="0" allowfullscreen src="https://tinyurl.com/2bv9cdln" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></p>
+```
+
+[Überblick über die 20 häufigsten Handlungsorte laut Named Entity Recognition](https://tinyurl.com/28ehncth)
+
+```{=html}
+<p><iframe  style="width:100%;max-width:100%;height:450px" frameborder="0" allowfullscreen src="https://tinyurl.com/28ehncth" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></p>
+```
 
 Als Ergebnis der Extraktion der Handlungsorte ist festzuhalten, dass die häufigsten Handlungsorte im französischen Roman der zweiten Hälfte des 18\. Jahrhunderts Paris (365), Frankreich (225),  ländlicher Raum (151) und England (124) sind.[^14] 
 
@@ -89,7 +98,7 @@ Der gewählte Ansatz einer Extraktion von Ortsnamen mithilfe einer *Named Entity
 
 Die ‘Named Entity Recognition’ ist jedoch nicht die alleinige Quelle der Statements zu Handlungsorten, wie im folgenden Abschnitt beschrieben wird. 
 
-## 4.3 Extraktion von Informationen zu Handlungs- und Publikations- orten aus der *Bibliographie du genre romanesque français 1751-1800*
+## Informationen zu Handlungs- und Publikations- orten aus der *Bibliographie du genre romanesque français 1751-1800*
 
 Eine wichtige Quelle an Metadaten stellt die in den 1970er Jahren erstellte *Bibliographie du genre romanesque français 1751-1800* dar,  die 2020 von Andreas Lüschow umfassend analysiert und nach aktuellen bibliographischen Standards modelliert wurde (Lüschow, 2020). Eine Volltextdigitalisierung und halbautomatische Kodierung mit einem Klassifikator für maschinelles Lernen – Conditional Random Fields – wurden dabei bereits vorgenommen.  Daran anschließend wurde eine semantische Modellierung der in den einzelnen Bibliographie-Einträgen enthaltenen Keywords vorgenommen. Wie im Fall der Ergebnisse der *Named Entity Recognition (*NER) konnten in einem teil-automatisierten Prozess die Strings mithilfe des Tools OpenRefine Wikidata-Entitäten zugeordnet werden. Dieser Prozess wird innerhalb von OpenRefine (Huynh 2010\) als *reconciliation* bezeichnet. In beiden Pipelines der Informationsextraktion der Orte wurde ein gemeinsames kontrolliertes Vokabular verwendet.[^15]   
 
@@ -97,15 +106,17 @@ Eine wichtige Quelle an Metadaten stellt die in den 1970er Jahren erstellte *Bib
 
 Die in den bibliographischen Metadaten enthaltenen Informationen zu Handlungsorten im französischen Roman 1751-1800 zeigen in dieser statistischen Übersicht (@fig-handlungsorte) einige interessante Muster: der Anteil des Handlungsortes “Angleterre” (England) nimmt im Zeitverlauf zu. Dies, so könnte man argumentieren, ist keine sehr überraschende Erkenntnis, ist doch der Einfluss des englischen Romans – wie zum Beispiel Samuel Richardsons *Clarissa* (1748) – auf den französischen Roman ein in der literaturwissenschaftlichen Forschung bekanntes Phänomen im 18\. Jahrhundert (Engler 1982; Lehmann 2016). Man denke an die *Éloge de Richardson* (1762) von Denis Diderot und an eine ganze Welle von sentimentalen Romanen, die Bezug auf den englischen Roman nehmen. Auch die englische “gothic novel” fand in Frankreich zahlreiche Übersetzungen und Nachahmungen, wie es Bellin de La Liborlières in *La Nuit anglaise* (1799) parodiert (Prungnaud 1994; Schöch 2009). Eine Zunahme an englischen Settings der Handlungsorte als Phänomen erscheint im Kontext des Einflusses des englischen Romans als Modell für die französischen Romanciers plausibel. 
 
-Als weiteres Muster in den Daten der Handlungsorte lässt sich beobachten, dass der Anteil der imaginären  Orte (“pays imaginaires”) im Zeitverlauf deutlich abnimmt. Eine Erklärung für dieses Muster in den Daten ist, dass der utopische Roman des 18\. Jahrhunderts die Narration in imaginäre Königreiche (*Le Roi Guiot*), auf Planeten (*Micromégas*), in weit entfernte Universen verlegt. Diese Tendenz ist jedoch rückläufig, wie die aggregierten Daten zu narrativen Orten zeigen:   
-![][image9]  
-**Abb. 4.7** Romane mit narrativem Ort “imaginary place” pro Dekade,  [https://tinyurl.com/2bgrpqvg](https://tinyurl.com/2bgrpqvg).[^17]   
-   
-Ein früher Science-Fiction-Roman wie Tiphaigne de La Roches Roman *Amilec ou la graine d'homme* (1753), der auch Fragen der frühen Genetik und Eugenik verhandelt, wirft ein Licht darauf, warum es notwendig sein könnte, die Erzählung nicht im geographischen und politischen Jetzt sondern \- wie in diesem Anschauungsbeispiel \- auf dem Planeten Mars und auf dem Mond zu verorten: Diese gängige Praxis der “Verlegung” der Handlung an einen anderen Ort ermöglicht es dem Erzähler oder der Erzählerin, die politische Realität auf indirekte Weise zu kritisieren, indem die politischen Machthaber in Frankreich nicht erwähnt werden, sondern \- wie hier auf satirische Weise \- die Machthaber in weit entfernten imaginierten Gesellschaften beschrieben werden. Die Gesellschaft auf dem Mond, wie in *Amilec* beschrieben, weist daher bemerkenswerte Phänomene wie Schriftsteller:innen, einen Index und eine Zensur von Büchern mit klaren Bezügen zur politischen Situation in Frankreich auf. Eines der Bücher auf dem Index in der Mondgesellschaft nennt sich „Dictionnaire Univerſel“ und verweist damit vermutlich auf das *Dictionnaire universel* (1690) von Furetière:  
-„Le ſecond des Ouvrages Lunaires qui actuellement font le plus de bruit, eſt le grand Dictionnaire Univserſel, oû l'on apprend à parler de tout & à ne raiſonner ſur rien; Ouvrage très-utile aux fainéans, & dont aucun demi \- ſçavant ne ſe peut paſſer.[^18]   
-[(Tiphaigne de la Roche 1754, 54\)](https://www.zotero.org/google-docs/?broken=BFAGGv)
+Als weiteres Muster in den Daten der Handlungsorte lässt sich beobachten, dass der Anteil der imaginären  Orte (“pays imaginaires”) im Zeitverlauf deutlich abnimmt. Eine Erklärung für dieses Muster in den Daten ist, dass der utopische Roman des 18\. Jahrhunderts die Narration in imaginäre Königreiche (*Le Roi Guiot*), auf Planeten (*Micromégas*), in weit entfernte Universen verlegt. Diese Tendenz ist jedoch rückläufig, wie die aggregierten Daten zu narrativen Orten zeigen:
 
-Auch in einem satirischen Werk wie Jean Vesque de Puttelanges *Roi Guiot* (1791), dessen Handlungsort in den Metadaten (Martin / Mylne / Frautschi 1977\) mit “royaume des pacans” beschrieben ist, finden wir eine ähnliche Praxis der sehr direkten Kritik von Monarchie und Absolutismus, die jedoch in einem imaginären Königreich spielt. 
+![Romane mit narrativem Ort “imaginary place” pro Dekade [https://tinyurl.com/2bgrpqvg](https://tinyurl.com/2bgrpqvg).[^17]  ](img_04/imaginary_place_per_decade.PNG){#fig-imaginary-decade}
+
+Ein früher Science-Fiction-Roman wie Tiphaigne de La Roches Roman *Amilec ou la graine d'homme* (1753), der auch Fragen der frühen Genetik und Eugenik verhandelt, wirft ein Licht darauf, warum es notwendig sein könnte, die Erzählung nicht im geographischen und politischen Jetzt sondern \- wie in diesem Anschauungsbeispiel \- auf dem Planeten Mars und auf dem Mond zu verorten: Diese gängige Praxis der “Verlegung” der Handlung an einen anderen Ort ermöglicht es dem Erzähler oder der Erzählerin, die politische Realität auf indirekte Weise zu kritisieren, indem die politischen Machthaber in Frankreich nicht erwähnt werden, sondern \- wie hier auf satirische Weise \- die Machthaber in weit entfernten imaginierten Gesellschaften beschrieben werden. Die Gesellschaft auf dem Mond, wie in *Amilec* beschrieben, weist daher bemerkenswerte Phänomene wie Schriftsteller:innen, einen Index und eine Zensur von Büchern mit klaren Bezügen zur politischen Situation in Frankreich auf. Eines der Bücher auf dem Index in der Mondgesellschaft nennt sich „Dictionnaire Univerſel“ und verweist damit vermutlich auf das *Dictionnaire universel* (1690) von Furetière:
+
+> „Le ſecond des Ouvrages Lunaires qui actuellement font le plus de bruit, eſt le grand Dictionnaire Univserſel, oû l'on apprend à parler de tout & à ne raiſonner ſur rien;  
+> Ouvrage très-utile aux fainéans, & dont aucun demi-ſçavant ne ſe peut paſſer.[^18]“  
+> — @tiphaigne_de_la_roche_amilec_1754, 54
+
+Auch in einem satirischen Werk wie Jean Vesque de Puttelanges *Roi Guiot* (1791), dessen Handlungsort in den Metadaten (Martin / Mylne / Frautschi 1977\) mit “royaume des pacanLe ſecond des Ouvragess” beschrieben ist, finden wir eine ähnliche Praxis der sehr direkten Kritik von Monarchie und Absolutismus, die jedoch in einem imaginären Königreich spielt. 
 
 Insgesamt können wir in den aggregierten Daten nach der Französischen Revolution beobachten, dass Frankreich und insbesondere Paris als Handlungsorte zunehmen und dass der Anteil der „imaginären Orte“ abnimmt. Welche Erklärungsansätze gibt es für dieses zu beobachtende Muster in den Daten?
 
@@ -255,31 +266,27 @@ Sowohl Ägypten, als auch China und das römische Reich sind im 18\. Jahrhundert
 
 ## Federation und Nodegoat
 
-Abschließend sei noch in einem kleinen Use Case mit dem Tool Nodegoat demonstriert, wie sich mithilfe von Linked Open Data eigene Datensätze sinnvoll mit Ortsdaten ergänzen lassen. Dazu wurde der Datensatz aller 258 Autor:innen aus MiMoTextBase, die über ein Wikidata-Match verfügen, in Nodegoat (Bree / Kessels 2013\) eingespeist. Federation beinhaltet, sich die Verbindungspunkte zwischen Datensätzen zunutze zu machen, sodass sich im Idealfall Informationen komplementär zueinander fügen lassen.   
-![][image22]  
-**Abb. 4.22** Nodegoat Object Type: Person
+Abschließend sei noch in einem kleinen Use Case mit dem Tool Nodegoat demonstriert, wie sich mithilfe von Linked Open Data eigene Datensätze sinnvoll mit Ortsdaten ergänzen lassen. Dazu wurde der Datensatz aller 258 Autor:innen aus MiMoTextBase, die über ein Wikidata-Match verfügen, in Nodegoat (Bree / Kessels 2013\) eingespeist. Federation beinhaltet, sich die Verbindungspunkte zwischen Datensätzen zunutze zu machen, sodass sich im Idealfall Informationen komplementär zueinander fügen lassen (@fig-nodegoat).   
 
-Man kann in Nodegoat Daten über SPARQL-Abfragen oder über CSV-Listen importieren. Ich habe eine Reconciliation der Personen-Daten mit dem Tool OpenRefine durchgeführt, über die Wikidata API die Geburts- und Sterbeorte, sowie Geokoordinaten automatisiert abgerufen und diese Daten über ‘Import Templates’ in Nodegoat geladen.   
-![][image23]  
-**Abb. 4.23**   Datenersatz, erweitert mit ‘Birth place’ und ‘Death place’ Koordinaten
+![Nodegoat Object Type: Person](img_04/nodegoat.jpg){#fig-nodegoat}  
+
+Man kann in Nodegoat Daten über SPARQL-Abfragen oder über CSV-Listen importieren. Ich habe eine Reconciliation der Personen-Daten mit dem Tool OpenRefine durchgeführt, über die Wikidata API die Geburts- und Sterbeorte, sowie Geokoordinaten automatisiert abgerufen und diese Daten über ‘Import Templates’ in Nodegoat geladen. 
+
+![Datenersatz, erweitert mit ‘Birth place’ und ‘Death place’ Koordinaten](img_04/nodegoat_data.jpg){#fig-nodegoat_data}   
 
 Nun können die eigenen Personen-Daten (Autor:innen-Namen) mit Ortsdaten (Geburts- und Sterbeort) ergänzt werden. So kann man die Daten nun beispielsweise in eine Animation überführen, die im Zeitverlauf 1644-1865 anzeigt, wo die Autor:innen des Korpus geboren werden \[blauer Punkt\] und wo sie sterben \[roter Punkt\]. Die animierte Visualisierung im Zeitverlauf macht hier deutlich, dass es im untersuchten aggregierten Datensatz eine starke zentralistische Bewegung der Schriftsteller:innen des 18\. Jahrhunderts hin nach Paris als Ort des Schreibens und Lebens und schließlich Sterbens gibt.[^32]    
-[![][image24]](https://raw.githubusercontent.com/roettger/Thesis/main/Chapter4/birth_and-death_places_of_authors.mp4)  
 
-::: {.video}
+:::{.video}
 <video width="576" height="324" controls autoplay loop muted>
 <source src="media/birth_and-death_places_of_authors.mp4" type="video/mp4">
 </video>
 
-:::
-
-Animation: Geburts- und Sterbeorte der Autor:innen des Korpus im Zeitverlauf, Video:   
- [https://raw.githubusercontent.com/roettger/Thesis/main/Chapter4/birth\_and-death\_places\_of\_authors.mp4](https://raw.githubusercontent.com/roettger/Thesis/main/Chapter4/birth_and-death_places_of_authors.mp4)
+> Animation: Geburts- und Sterbeorte der Autor:innen des Korpus im Zeitverlauf
 
 Trotz der Verlegung des politischen Mittelpunkts nach Versailles durch Ludwig XIV. entwickelte sich Paris zur intellektuellen Hauptstadt Europas (Goodman 1994: 23–24). Die Visualisierung verdeutlicht, wie junge Schriftsteller und Schriftstellerinnen dieser Zeit aus der Provinz nach Paris strömten, in die Hauptstadt der ‘Republic of Letters’  und in die damals größte Stadt Europas.  
  
 
-## 4.8 Resumé 
+## Resumé 
 
 Es wurde gezeigt, wie aus zwei verschiedenen Quellen  \- Romane im Volltext und bibliographische Metadaten \- Entitäten der Orte extrahiert wurden und in einem Wissensgraphen als Handlungsorte und Publikationsorte modelliert wurden. Diese Entitäten der Orte verfügen über eine Zuordnung (Matching) zu Entitäten des Wikidata-Knowledge Graphen, was beispielsweise eine Darstellung in Geokoordinaten (als Landkarte), aber auch potentiell die Nutzung weiterer dort enthaltener Informationen wie Informationen zu Geburts- und Sterbeorten ermöglicht.   
 Properties zu Themenaussagen \[about\] oder Properties zum jeweiligen Erstpublikationsdatum \[publication date\] und Aussagen zu Handlungsorten \[narrative location\] oder Publikationsorten \[place of publication\] lassen sich im Knowledge Graphen miteinander kombiniert abfragen. In Anwendungsszenarien wurde der so erstellte Graph befragt: Wie haben sich die Publikationsorte französischer Romane nach der Revolution verändert? Mit welchen narrativen Orten ist das Themenkonzept “Wunder” verknüpft? Welche Themen werden am narrativen Ort “Afrika” verhandelt? Welche Muster lassen sich erkennen, wenn man alle Geburts- und Sterbeorte der Autor:innen dieser Zeit aggregiert betrachtet?   
@@ -345,30 +352,24 @@ Andererseits wurde demonstriert, dass der Graph jedoch auch Handlungsorte wie �
 
 ## Appendix: SPARQL-Queries
 
-##### **4.5** Handlungsorte, referenziert durch Named Entity Recognition, https://tinyurl.com/2npbrypu
+### Handlungsorte, referenziert durch Named Entity Recognition (https://tinyurl.com/28ehncth)
 
-| \# Places referenced by Named Entity Recognition (Q27) \#defaultView:BubbleChartd prefix wd:\<http://data.mimotext.uni-trier.de/entity/\> prefix wdt:\<http://data.mimotext.uni-trier.de/prop/direct/\> prefix ps:\<http://data.mimotext.uni-trier.de/prop/statement/\> prefix pr: \<http://data.mimotext.uni-trier.de/prop/reference/\> SELECT ?themeLabel (count(\*) as ?count) WHERE { 	?statement ps:P32 ?theme. \#statement has property 'about' 	?statement prov:wasDerivedFrom ?refnode. \#statement has a reference 	?refnode   pr:P18 wd:Q27. \#reference statement uses 'P18'=stated in; stated in: Q27 	SERVICE wikibase:label { bd:serviceParam wikibase:language "en". } } GROUP BY ?themeLabel ORDER BY ?count 4.5 Die 20 häufigsten Handlungsorte im französischen Roman 1751-1800, [https://tinyurl.com/2bv9cdln](https://tinyurl.com/2bv9cdln)  |
-| :---- |
+```{=html}
+<p><iframe  style="width:100%;max-width:100%;height:450px" frameborder="0" allowfullscreen src="https://tinyurl.com/28ehncth" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></p>
+```
+[Handlungsort “imaginärer Ort”](https://tinyurl.com/2bgrpqvg)
 
-| \#defaultView:BubbleChartSELECT ?placelabel (COUNT(\*) as ?countyearplace) WHERE {  ?item wdt:P2 wd:Q2.  ?item wdt:P32 ?place.  ?place rdfs:label ?placelabel .  FILTER(lang(?placelabel) \= "en")  SERVICE wikibase:label {bd:serviceParam wikibase:language "en" .}}GROUP BY ?year ?placelabelORDER BY DESC(?countyearplace)LIMIT 20 |
-| :---- |
+```{=html}
+<p><iframe  style="width:100%;max-width:100%;height:450px" frameborder="0" allowfullscreen src="https://tinyurl.com/2bgrpqvg" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></p>
+```
 
-##### **4.7** Handlungsort “imaginärer Ort”,  [https://tinyurl.com/2bgrpqvg](https://tinyurl.com/2bgrpqvg) 
+### Natur als Thema französischer Romane 1751-1800 [https://tinyurl.com/29lr6owy](https://tinyurl.com/29lr6owy) 
 
-| \# Query to retrieve the narrative location 'imaginary place' \# defaultView:BarChartSELECT ?decade ((?countPlace / ?countAll) \* 100  AS ?percent) ?countPlace WHERE {  {	SELECT ?decade (COUNT(\*) AS ?countPlace) WHERE {  	?item wdt:P9 ?date;    	wdt:P32 ?place.  	?place rdfs:label ?placeLabel.  	FILTER((LANG(?placeLabel)) \= "en")  	FILTER((LCASE(?placeLabel)) \= "imaginary place"@en)  	BIND(YEAR(?date) AS ?year)  	FILTER(?year \>= 1750 )  	BIND(IF(?year \< 1760 , "1750s", IF(?year \< 1770 , "1760s", IF(?year \< 1780 , "1770s", IF(?year \< 1790 , "1780s", IF(?year \< 1800 , "1790s", "1800, or later"))))) AS ?decade)	}	GROUP BY ?decade  }  {	SELECT ?decade (COUNT(\*) AS ?countAll) WHERE {  	?item wdt:P9 ?date.  	BIND(YEAR(?date) AS ?year)  	FILTER(?year \>= 1750 )  	BIND(IF(?year \< 1760 , "1750s", IF(?year \< 1770 , "1760s", IF(?year \< 1780 , "1770s", IF(?year \< 1790 , "1780s", IF(?year \< 1800 , "1790s", "1800, or later"))))) AS ?decade)	}	GROUP BY ?decade  }}  |
-| :---- |
+```{=html}
+<p><iframe  style="width:100%;max-width:100%;height:450px" frameborder="0" allowfullscreen src="https://tinyurl.com/29lr6owy" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></p>
+```
 
-##### **4.9** Natur als Thema französischer Romane 1751-1800, [https://tinyurl.com/29lr6owy](https://tinyurl.com/29lr6owy) 
-
-| \#defaultView:LineChartSELECT ?date ((?countNature / ?countAll) \* 100  AS ?rel) WHERE {  {	SELECT ?date (COUNT(\*) AS ?countNature) WHERE {  	?item wdt:P9 ?date;    	wdt:P36 ?topic.  	?topic rdfs:label ?topicLabel.  	FILTER((LANG(?topicLabel)) \= "en")  	FILTER((LCASE(?topicLabel)) \= "nature"@en)	}	GROUP BY ?date  }  {	SELECT ?date (COUNT(\*) AS ?countAll) WHERE {  	?item wdt:P9 ?date;    	wdt:P36 ?topic.  	?topic rdfs:label ?topicLabel.  	FILTER((LANG(?topicLabel)) \= "en")	}	GROUP BY ?date  }}ORDER BY (?date) |
-| :---- |
-
-**4.12** Handlungsorte mit Thema ‘locus amoenus’, [https://tinyurl.com/2csassc2](https://tinyurl.com/2csassc2). 
-
-| \#defaultView:TreeMapSELECT ?locationLabel ?item ?itemLabelWHERE{?item wdt:P36 wd:Q3026. \# Thema Pastorale?item wdt:P32 ?location \# items with narrative locationSERVICE wikibase:label{bd:serviceParam wikibase:language "fr". }  |
-| :---- |
-
-**4.13** Publikationsorte französischer Romane 1751-1800 in BarChartView, https://tinyurl.com/29wy8z7p.
+### Publikationsorte französischer Romane 1751-1800 in BarChartView, https://tinyurl.com/29wy8z7p.
 
 | \#title: 20 most common publication places\#defaultView:BarChartSELECT ?placelabel (COUNT(\*) as ?countyearplace) WHERE {  ?item wdt:P2 wd:Q2.  ?item wdt:P10 ?place.  ?place rdfs:label ?placelabel .  FILTER(lang(?placelabel) \= "fr")  SERVICE wikibase:label {bd:serviceParam wikibase:language "fr" .}}GROUP BY ?year ?placelabelORDER BY DESC(?countyearplace)LIMIT 20 |
 | :---- |
