@@ -1,0 +1,17 @@
+# authors with novels about sentimentalism
+#defaultView:BubbleChart
+prefix wd:<http://data.mimotext.uni-trier.de/entity/> 
+prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+SELECT ?name  (count(*) as ?count) where {
+  ?item wdt:P36 ?theme ;
+        wdt:P5 ?author .
+  ?theme rdfs:label ?about .
+  ?author rdfs:label ?name .
+    
+  filter(lang(?about) = "en")
+  filter(lang(?name) = "en")
+   filter(contains(lcase(?about), "sentimentalism"))
+}
+
+group by ?name
+order by desc(?count)

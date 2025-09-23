@@ -1,0 +1,29 @@
+#defaultView:BarChart
+prefix wd:<http://data.mimotext.uni-trier.de/entity/> 
+prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+
+SELECT (str(SAMPLE(year(?date))) as ?year) ((COUNT(?themelabel) / ?totalThemes) * 100 as ?proportion) ?themelabel 
+WHERE {
+  {
+    SELECT (COUNT(?themelabel) as ?totalThemes) ?date
+    WHERE {
+      ?item wdt:P32 ?theme.
+      ?theme rdfs:label ?themelabel.
+      ?item wdt:P9 ?date.
+      FILTER(LANG(?themelabel) = "en")
+      BIND(str(year(?date)) as ?year)
+    }
+    GROUP BY ?date
+  }
+  
+  ?item wdt:P32 ?theme.
+  ?theme rdfs:label ?themelabel.
+  ?item wdt:P9 ?date.
+  FILTER(LANG(?themelabel) = "en")
+  BIND(str(year(?date)) as ?year)
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+GROUP BY ?themelabel ?year ?totalThemes
+HAVING (COUNT(?themelabel) > 2)

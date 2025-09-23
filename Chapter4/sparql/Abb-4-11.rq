@@ -1,0 +1,11 @@
+#defaultView:BubbleChart
+prefix wd:<http://data.mimotext.uni-trier.de/entity/>
+prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/>
+SELECT ?topLabel (count(*) as ?count)
+WHERE {
+?item wdt:P32 ?top . #P8 = 'narrative location'
+?top rdfs:label ?topLabel .
+filter(lang(?topLabel) = "en")
+}
+GROUP BY ?topLabel 
+ORDER BY desc(?count)

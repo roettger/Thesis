@@ -1,0 +1,14 @@
+#defaultView:Map{"markercluster":"true"}
+PREFIX wid: <http://www.wikidata.org/entity/> #wikidata wd
+PREFIX widt: <http://www.wikidata.org/prop/direct/> #wikidata wdt
+PREFIX wd:<http://data.mimotext.uni-trier.de/entity/>
+PREFIX wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+SELECT DISTINCT ?item ?itemLabel ?pub_loc ?pub_locLabel ?WikiDataEntity ?coordinateLocation
+WHERE { ?item wdt:P10 ?pub_loc.
+  ?pub_loc wdt:P13 ?WikiDataEntity.
+  #Federated Query -> Wikidata
+  SERVICE <https://query.wikidata.org/sparql> {
+    ?WikiDataEntity widt:P625 ?coordinateLocation
+  }           
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . }
+}

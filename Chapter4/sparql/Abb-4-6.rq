@@ -1,0 +1,25 @@
+# Query to retrieve the theme 'travel' over time in French novels 1750-1800
+#defaultView:BarChart
+prefix wd:<http://data.mimotext.uni-trier.de/entity/> 
+prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+SELECT ?date  (?countPlace / ?countAll * 100 AS ?percent) ?countPlace
+WHERE {
+ {  
+   SELECT ?date (count(*) AS ?countPlace)
+   WHERE {
+     ?item wdt:P9 ?date;
+           wdt:P32 ?place .
+     ?place rdfs:label ?placeLabel .
+     filter(lang(?placeLabel) = "en")
+     filter(lcase(?placeLabel) = "imaginary place"@en)
+   }
+   GROUP BY ?date
+ }
+ {
+   SELECT ?date (count(*) AS ?countAll)
+   WHERE {
+     ?item wdt:P9 ?date.
+   }
+   GROUP BY ?date
+ }
+}

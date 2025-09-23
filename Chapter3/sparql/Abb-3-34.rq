@@ -1,0 +1,16 @@
+# Topics referenced by Bibliographie du genre romanesque français, 1751-1800 (Q1)
+prefix wd:<http://data.mimotext.uni-trier.de/entity/>
+prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+prefix ps:<http://data.mimotext.uni-trier.de/prop/statement/>
+prefix pr: <http://data.mimotext.uni-trier.de/prop/reference/>
+SELECT ?themeLabel
+        (count(*) as ?count) 
+WHERE
+{
+    ?statement ps:P36 ?theme. #statement has property 'about'
+    ?statement prov:wasDerivedFrom ?refnode. #statement has a reference
+    ?refnode   pr:P18 wd:Q1. #reference statement uses 'P18'=stated in; stated in: Q1
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+GROUP BY ?themeLabel
+ORDER BY DESC(?count)

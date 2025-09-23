@@ -1,0 +1,25 @@
+# Narrative locations per theme in French novels 1751-1800
+prefix wd:<http://data.mimotext.uni-trier.de/entity/>
+prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+#defaultView:Map{"hide": ["?nar_loc", "?topic"], "layer": "?themeLabel"}
+PREFIX wid: <http://www.wikidata.org/entity/> #wikidata wd
+PREFIX widt: <http://www.wikidata.org/prop/direct/> #wikidata wdt
+
+Select DISTINCT ?item ?itemLabel ?nar_loc ?nar_locLabel ?wikidataEntityLink ?coordinateLocation ?theme ?themeLabel
+{
+  ?item wdt:P36 ?theme.
+  ?item wdt:P32
+        ?nar_loc.
+  ?nar_loc wdt:P13 ?WikiLink.
+  
+  BIND(IRI(REPLACE( STR(?WikiLink),"https://www.wikidata.org/wiki","http://www.wikidata.org/entity" )) AS ?wikidataEntityLink).
+  #Federated Query -> Wikidata
+  SERVICE <https://query.wikidata.org/sparql> {
+    ?wikidataEntityLink 
+                  widt:P625 ?coordinateLocation
+  }      
+           
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en" .
+  }
+}

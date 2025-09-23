@@ -1,0 +1,18 @@
+#Themen der Romane mit narrative location (P32) “Afrika” 
+#defaultView:BubbleChart
+prefix wd:<http://data.mimotext.uni-trier.de/entity/>
+prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+SELECT ?about (count(*) as ?count) where {
+  ?item wdt:P32 ?place ;
+        wdt:P36 ?topic .
+  ?place rdfs:label ?name .
+  ?topic rdfs:label ?about .
+
+    
+  filter(lang(?name) = "en")
+  filter(lang(?about) = "en")
+   filter(contains(lcase(?name), "africa"))
+}
+
+group by ?about
+order by desc(?count)

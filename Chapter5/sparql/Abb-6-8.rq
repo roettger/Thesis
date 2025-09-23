@@ -1,0 +1,14 @@
+prefix wd:<http://data.mimotext.uni-trier.de/entity/>
+prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+
+SELECT ?item ?title 
+WHERE
+{
+  ?item wdt:P4 ?title. 
+#?item wdt:P36 ?theme.
+   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr". }  
+  FILTER(LANG(?title) = "fr") .
+  FILTER(CONTAINS(LCASE(?title), "servir")).
+}
+
+

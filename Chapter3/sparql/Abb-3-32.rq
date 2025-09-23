@@ -1,0 +1,18 @@
+PREFIX wd:<http://data.mimotext.uni-trier.de/entity/>
+PREFIX wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+
+# Show the thematic vocabulary and the corresponding item on Wikidata
+#defaultView:Dimensions
+SELECT
+  ?itemLabel ?value 
+# valueLabel is only useful for properties with item-datatype
+WHERE
+{ ?item wdt:P2 wd:Q20.
+ ?item wdt:P13 ?value.
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "de". }
+}
+# remove or change limit for more results
+ORDER BY ?value
+
+LIMIT 50

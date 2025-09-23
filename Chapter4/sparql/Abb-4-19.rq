@@ -1,0 +1,12 @@
+#defaultView:TreeMap
+prefix wd:<http://data.mimotext.uni-trier.de/entity/> #mimotext prefix for entity is wd
+prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/> #mimotext prefix for property is wdt
+SELECT DISTINCT
+?locationLabel ?itemLabel
+WHERE
+{
+?item wdt:P36 wd:Q2990. # Thema Wunder
+?item wdt:P32 ?location # Handlungsort
+SERVICE wikibase:label{bd:serviceParam wikibase:language "de". }
+}
+

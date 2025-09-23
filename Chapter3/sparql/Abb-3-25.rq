@@ -1,0 +1,26 @@
+# Query to retrieve the narrative form 'epistolary' over time in French novels 1751-1800
+#defaultView:BarChart
+prefix wd:<http://data.mimotext.uni-trier.de/entity/> 
+prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+SELECT ?year (?countnarration/ ?countAll AS ?rel)  ?countnarration
+WHERE {
+ {  
+   SELECT (str(SAMPLE(year(?date))) as ?year) (count(*) AS ?countnarration)
+   WHERE {
+     ?item wdt:P9 ?date;
+           wdt:P33 ?narration.
+     ?narration rdfs:label ?narrationLabel .
+     filter(lang(?narrationLabel) = "en")
+     filter(lcase(?narrationLabel) = "epistolary"@en)
+   }
+   GROUP BY ?date
+ }
+ {
+   SELECT (str(SAMPLE(year(?date))) as ?year) (count(*) AS ?countAll)
+   WHERE {
+     ?item wdt:P9 ?date.
+
+   }
+   GROUP BY ?date
+ }
+}

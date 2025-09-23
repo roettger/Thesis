@@ -1,0 +1,19 @@
+#Statements on consistent topics in novels from both sources: Topic Modeling & bibliographic metadata
+prefix wd:<http://data.mimotext.uni-trier.de/entity/>
+prefix wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+prefix ps:<http://data.mimotext.uni-trier.de/prop/statement/>
+prefix pr: <http://data.mimotext.uni-trier.de/prop/reference/>
+PREFIX p: <http://data.mimotext.uni-trier.de/prop/>
+SELECT   ?item ?itemLabel ?value ?valueLabel
+WHERE
+{   
+    ?item p:P36 ?statement.
+    ?statement ps:P36 ?value .
+    ?statement prov:wasDerivedFrom ?refnode. #statement has a reference
+    ?refnode pr:P18 wd:Q21.  #reference statement uses 'P18'='stated in' topic modeling
+  
+    ?statement prov:wasDerivedFrom ?refnodeB.
+    ?refnodeB pr:P18 wd:Q1 .#reference statement uses 'P18'='stated in' bibliographie
+    
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}

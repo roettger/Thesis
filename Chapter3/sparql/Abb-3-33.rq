@@ -1,0 +1,19 @@
+#defaultView:Map{"hide": ["?nar_loc", "?topic"], "layer": "?themeLabel"}
+PREFIX wd:<http://data.mimotext.uni-trier.de/entity/>
+PREFIX wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+PREFIX wid: <http://www.wikidata.org/entity/> #wikidata wd
+PREFIX widt: <http://www.wikidata.org/prop/direct/> #wikidata wdt
+
+SELECT DISTINCT ?item ?itemLabel ?place?placeLabel ?wikidataEntityLink ?coordinateLocation ?theme ?themeLabel WHERE {
+  ?item wdt:P36 wd:Q3126.  # about travel
+  ?item wdt:P36 ?theme.    # work with 0 or more topics
+  ?item wdt:P32 ?place.  # work has narrative location
+  ?place wdt:P13 ?WikiLink.  # place of publication ist mit Wikidata-Link verknüpft
+  #Federated Query -> Wikidata
+  SERVICE <https://query.wikidata.org/sparql> {
+    ?WikiLink widt:P625 ?coordinateLocation .
+  }
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en" .
+  }
+}

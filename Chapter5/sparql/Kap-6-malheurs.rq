@@ -1,0 +1,11 @@
+# novels by François-Thomas-Marie de Baculard d’ARNAUD
+PREFIX wd:<http://data.mimotext.uni-trier.de/entity/>
+PREFIX wdt:<http://data.mimotext.uni-trier.de/prop/direct/> 
+SELECT ?date  ?tonality  
+WHERE
+{
+  ?work wdt:P9 ?date. 
+  OPTIONAL { ?work wdt:P30 ?tonality. }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]". }
+  FILTER(CONTAINS(LCASE(?tonality), "malheurs")).
+}
