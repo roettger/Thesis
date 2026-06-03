@@ -7,8 +7,7 @@ A collection of SPARQL queries per chapter. Endpoint is: https://query.mimotext.
 
 The French epistolary novel in diachronic perspective 1751-1800 [https://tinyurl.com/2bh53yc7](https://tinyurl.com/2bh53yc7) 
 
-![The epistolary novel in diachronic perspective](https://raw.githubusercontent.com/roettger/Thesis/main/Chapter6/epistolary_novels_over_time_procentual.PNG)
-
+![The epistolary novel in diachronic perspective](https://raw.githubusercontent.com/roettger/Thesis/main/Chapter6/3_15_epistolary_novels_over_time_procentual.PNG)
 
 # Chapter III - Thematic concepts
 
